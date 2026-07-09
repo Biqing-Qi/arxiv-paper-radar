@@ -51,5 +51,49 @@
     "pretraining": 1,
     "scaling": 1,
     "inference": 1
-  }
+  },
+  "x_watchlist": [
+    {
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "focus": "LLM, agents, AI education"
+    },
+    {
+      "name": "Yann LeCun",
+      "handle": "ylecun",
+      "focus": "AI research, world models"
+    },
+    {
+      "name": "François Chollet",
+      "handle": "fchollet",
+      "focus": "reasoning, abstraction, Keras"
+    },
+    {
+      "name": "Jeremy Howard",
+      "handle": "jeremyphoward",
+      "focus": "practical deep learning"
+    },
+    {
+      "name": "Jim Fan",
+      "handle": "DrJimFan",
+      "focus": "agents, robotics, embodied AI"
+    },
+    {
+      "name": "Noam Brown",
+      "handle": "polynoamial",
+      "focus": "reasoning, game AI, OpenAI"
+    },
+    {
+      "name": "Sebastian Ruder",
+      "handle": "seb_ruder",
+      "focus": "NLP research"
+    },
+    {
+      "name": "Lilian Weng",
+      "handle": "lilianweng",
+      "focus": "agents, alignment, research notes"
+    }
+  ],
+  "x_max_posts_per_account": 3,
+  "x_rsshub_base": "https://rsshub.app"
 }

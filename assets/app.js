@@ -1,5 +1,6 @@
 const state = {
   site: null,
+  social: null,
   selectedDate: null,
   selectedTopic: "all",
   query: "",
@@ -15,10 +16,22 @@ const els = {
   metricCount: document.querySelector("#metric-count"),
   metricScore: document.querySelector("#metric-score"),
   metricUpdated: document.querySelector("#metric-updated"),
+  socialStatus: document.querySelector("#social-status"),
+  socialAccounts: document.querySelector("#social-accounts"),
+  socialFeed: document.querySelector("#social-feed"),
   emptyState: document.querySelector("#empty-state"),
   detail: document.querySelector("#paper-detail"),
   template: document.querySelector("#paper-card-template"),
 };
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
 
 function fmtDate(value) {
   if (!value) return "--";
@@ -142,33 +155,83 @@ function renderDetail(paper) {
 
   const keywords = unique((paper.topics || []).flatMap((topic) => topic.keywords || []));
   const topics = unique((paper.topics || []).map((topic) => topic.label));
-  const pdfLink = paper.pdf_url ? `<a href="${paper.pdf_url}">PDF</a>` : "";
+  const pdfLink = paper.pdf_url ? `<a href="${escapeHtml(paper.pdf_url)}">PDF</a>` : "";
 
   els.detail.innerHTML = `
     <div class="detail-top">
-      <p class="eyebrow">${paper.recommendation || "Recommendation"}</p>
-      <h2 class="detail-title">${paper.title}</h2>
-      <p class="detail-summary">${paper.summary || ""}</p>
+      <p class="eyebrow">${escapeHtml(paper.recommendation || "Recommendation")}</p>
+      <h2 class="detail-title">${escapeHtml(paper.title)}</h2>
+      <p class="detail-summary">${escapeHtml(paper.summary || "")}</p>
       <div class="detail-tags">
-        ${topics.map((item) => `<span class="tag">${item}</span>`).join("")}
-        ${keywords.slice(0, 10).map((item) => `<span class="keyword">${item}</span>`).join("")}
+        ${topics.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}
+        ${keywords.slice(0, 10).map((item) => `<span class="keyword">${escapeHtml(item)}</span>`).join("")}
       </div>
     </div>
 
     <div class="detail-meta-grid">
       <div class="detail-meta"><span>Score</span><strong>${paper.score || 0}</strong></div>
       <div class="detail-meta"><span>Published</span><strong>${fmtDate(paper.published)}</strong></div>
-      <div class="detail-meta"><span>Authors</span><strong>${authorsText(paper)}</strong></div>
-      <div class="detail-meta"><span>Categories</span><strong>${(paper.categories || []).join(", ") || "--"}</strong></div>
+      <div class="detail-meta"><span>Authors</span><strong>${escapeHtml(authorsText(paper))}</strong></div>
+      <div class="detail-meta"><span>Categories</span><strong>${escapeHtml((paper.categories || []).join(", ") || "--")}</strong></div>
     </div>
 
     <div class="detail-links">
-      <a href="${paper.url}">arXiv</a>
+      <a href="${escapeHtml(paper.url)}">arXiv</a>
       ${pdfLink}
     </div>
 
-    <div class="abstract-box">${paper.abstract || "No abstract available."}</div>
+    <div class="abstract-box">${escapeHtml(paper.abstract || "No abstract available.")}</div>
   `;
+}
+
+function renderSocial() {
+  const social = state.social || { accounts: [], posts: [] };
+  const accounts = social.accounts || [];
+  const posts = social.posts || [];
+  const okAccounts = accounts.filter((account) => account.status === "ok").length;
+
+  els.socialStatus.textContent = posts.length
+    ? `已汇总 ${posts.length} 条最新动态，覆盖 ${okAccounts}/${accounts.length} 个账号。`
+    : `暂时没有抓到动态。仍可直接打开 ${accounts.length} 个账号主页查看。`;
+
+  els.socialAccounts.innerHTML = "";
+  accounts.forEach((account) => {
+    const card = document.createElement("a");
+    card.className = "account-chip";
+    card.href = account.profile_url;
+    card.innerHTML = `
+      <span>${escapeHtml(account.name)}</span>
+      <small>@${escapeHtml(account.handle)} · ${escapeHtml(account.focus || "AI")}</small>
+    `;
+    els.socialAccounts.append(card);
+  });
+
+  els.socialFeed.innerHTML = "";
+  const feedItems = posts.length ? posts.slice(0, 12) : accounts.map((account) => ({
+    account: account.name,
+    handle: account.handle,
+    title: "打开 X 主页查看最新动态",
+    summary: account.status === "ok" ? "这个账号暂时没有返回新内容。" : account.status,
+    url: account.search_url,
+    published: social.generated_at,
+  }));
+
+  feedItems.forEach((post) => {
+    const item = document.createElement("article");
+    item.className = "social-post";
+    item.innerHTML = `
+      <div>
+        <p class="social-author">${escapeHtml(post.account)} <span>@${escapeHtml(post.handle)}</span></p>
+        <h3>${escapeHtml(post.title)}</h3>
+        <p>${escapeHtml(post.summary || "")}</p>
+      </div>
+      <div class="social-post-foot">
+        <span>${fmtDate(post.published)}</span>
+        <a href="${escapeHtml(post.url)}">查看原文</a>
+      </div>
+    `;
+    els.socialFeed.append(item);
+  });
 }
 
 function render() {
@@ -189,6 +252,15 @@ async function init() {
       dates: [],
       papers: [],
     };
+    console.error(error);
+  }
+
+  try {
+    const response = await fetch("data/social.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    state.social = await response.json();
+  } catch (error) {
+    state.social = { generated_at: null, accounts: [], posts: [] };
     console.error(error);
   }
 
@@ -217,6 +289,7 @@ async function init() {
     });
   });
 
+  renderSocial();
   render();
 }
 

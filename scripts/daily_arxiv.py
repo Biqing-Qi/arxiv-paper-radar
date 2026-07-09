@@ -38,6 +38,7 @@ REPORTS_DIR = ROOT / "reports"
 SEEN_PATH = DATA_DIR / "seen.json"
 PAPERS_PATH = DATA_DIR / "papers.jsonl"
 SITE_DATA_PATH = DATA_DIR / "site.json"
+SOCIAL_DATA_PATH = DATA_DIR / "social.json"
 README_PATH = ROOT / "README.md"
 
 ATOM_NS = {"atom": "http://www.w3.org/2005/Atom"}
@@ -305,6 +306,98 @@ def build_report(papers: list[dict], config: dict) -> tuple[str, str]:
     return today, "\n".join(lines).rstrip() + "\n"
 
 
+def parse_rss_datetime(value: str) -> str | None:
+    if not value:
+        return None
+    try:
+        from email.utils import parsedate_to_datetime
+
+        return parsedate_to_datetime(value).astimezone(dt.timezone.utc).isoformat()
+    except (TypeError, ValueError, IndexError):
+        return value
+
+
+def child_text(node: ET.Element, name: str) -> str:
+    child = node.find(name)
+    return clean_text(child.text or "") if child is not None else ""
+
+
+def fetch_x_posts(account: dict, config: dict) -> tuple[list[dict], str]:
+    handle = account["handle"].lstrip("@")
+    base = os.environ.get("RSSHUB_BASE") or config.get("x_rsshub_base") or "https://rsshub.app"
+    base = base.rstrip("/")
+    url = f"{base}/twitter/user/{urllib.parse.quote(handle)}"
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": "daily-arxiv-paper-radar/1.0 (personal research digest)"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=25) as response:
+            raw = response.read()
+    except (TimeoutError, urllib.error.URLError, OSError) as exc:
+        return [], f"feed unavailable: {exc}"
+
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError as exc:
+        return [], f"feed parse failed: {exc}"
+
+    posts = []
+    for item in root.findall("./channel/item"):
+        title = child_text(item, "title")
+        link = child_text(item, "link")
+        published = parse_rss_datetime(child_text(item, "pubDate"))
+        description = re.sub(r"<[^>]+>", " ", child_text(item, "description"))
+        posts.append(
+            {
+                "account": account["name"],
+                "handle": handle,
+                "focus": account.get("focus", ""),
+                "title": title or description[:180] or "X post",
+                "summary": description[:360] if description else title,
+                "url": link or f"https://x.com/{handle}",
+                "published": published,
+            }
+        )
+    max_posts = int(config.get("x_max_posts_per_account", 3))
+    return posts[:max_posts], "ok"
+
+
+def write_social_data(config: dict) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    accounts = config.get("x_watchlist", [])
+    all_posts = []
+    account_status = []
+    for index, account in enumerate(accounts):
+        if index:
+            time.sleep(1.5)
+        posts, status = fetch_x_posts(account, config)
+        handle = account["handle"].lstrip("@")
+        account_status.append(
+            {
+                "name": account["name"],
+                "handle": handle,
+                "focus": account.get("focus", ""),
+                "profile_url": f"https://x.com/{handle}",
+                "search_url": f"https://x.com/search?q=from%3A{urllib.parse.quote(handle)}&src=typed_query&f=live",
+                "status": status,
+                "post_count": len(posts),
+            }
+        )
+        all_posts.extend(posts)
+
+    all_posts.sort(key=lambda item: item.get("published") or "", reverse=True)
+    payload = {
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "source": "RSSHub best-effort X/Twitter feeds",
+        "accounts": account_status,
+        "posts": all_posts,
+    }
+    with SOCIAL_DATA_PATH.open("w", encoding="utf-8") as fh:
+        json.dump(payload, fh, ensure_ascii=False, indent=2, sort_keys=True)
+        fh.write("\n")
+
+
 def get_timezone(name: str) -> dt.tzinfo:
     if ZoneInfo is not None:
         return ZoneInfo(name)
@@ -498,6 +591,7 @@ def main(argv: list[str]) -> int:
         tz = get_timezone(config["timezone"])
         today = dt.datetime.now(tz).date().isoformat()
         write_site_data(today, [], config)
+        write_social_data(config)
         print(f"Rebuilt site data for {today}.")
         return 0
 
@@ -508,6 +602,7 @@ def main(argv: list[str]) -> int:
     write_outputs(today, report)
     append_papers_jsonl(selected)
     write_site_data(today, selected, config)
+    write_social_data(config)
 
     for paper in selected:
         seen.add(paper["arxiv_id"])
