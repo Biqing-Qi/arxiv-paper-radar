@@ -3,6 +3,8 @@
 This repository is maintained by a scheduled GitHub Actions workflow.
 It tracks arXiv papers related to diffusion language models and model architecture.
 
+Web dashboard: [index.html](index.html)
+
 Latest digest: [reports/latest.md](reports/latest.md)
 
 Latest run: 2026-07-09

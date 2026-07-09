@@ -7,7 +7,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/karpathy",
       "search_url": "https://x.com/search?q=from%3Akarpathy&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>"
+      "status": "feed unavailable: HTTP Error 404: Not Found"
     },
     {
       "focus": "AI research, world models",
@@ -16,7 +16,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/ylecun",
       "search_url": "https://x.com/search?q=from%3Aylecun&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>"
+      "status": "feed unavailable: HTTP Error 404: Not Found"
     },
     {
       "focus": "reasoning, abstraction, Keras",
@@ -25,7 +25,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/fchollet",
       "search_url": "https://x.com/search?q=from%3Afchollet&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>"
+      "status": "feed unavailable: HTTP Error 404: Not Found"
     },
     {
       "focus": "practical deep learning",
@@ -34,7 +34,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/jeremyphoward",
       "search_url": "https://x.com/search?q=from%3Ajeremyphoward&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>"
+      "status": "feed unavailable: HTTP Error 404: Not Found"
     },
     {
       "focus": "agents, robotics, embodied AI",
@@ -43,7 +43,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/DrJimFan",
       "search_url": "https://x.com/search?q=from%3ADrJimFan&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>"
+      "status": "feed unavailable: HTTP Error 404: Not Found"
     },
     {
       "focus": "reasoning, game AI, OpenAI",
@@ -52,7 +52,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/polynoamial",
       "search_url": "https://x.com/search?q=from%3Apolynoamial&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>"
+      "status": "feed unavailable: HTTP Error 404: Not Found"
     },
     {
       "focus": "NLP research",
@@ -61,7 +61,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/seb_ruder",
       "search_url": "https://x.com/search?q=from%3Aseb_ruder&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>"
+      "status": "feed unavailable: HTTP Error 404: Not Found"
     },
     {
       "focus": "agents, alignment, research notes",
@@ -70,10 +70,10 @@
       "post_count": 0,
       "profile_url": "https://x.com/lilianweng",
       "search_url": "https://x.com/search?q=from%3Alilianweng&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>"
+      "status": "feed unavailable: HTTP Error 404: Not Found"
     }
   ],
-  "generated_at": "2026-07-09T13:45:01.920779+00:00",
+  "generated_at": "2026-07-09T13:49:21.721226+00:00",
   "posts": [],
   "source": "RSSHub best-effort X/Twitter feeds"
 }
