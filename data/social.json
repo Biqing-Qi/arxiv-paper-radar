@@ -10,7 +10,7 @@
       "profile_url": "https://x.com/sama",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Asama&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "company",
         "frontier-lab",
@@ -29,7 +29,7 @@
       "profile_url": "https://x.com/gdb",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Agdb&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "company",
         "engineering",
@@ -47,7 +47,7 @@
       "profile_url": "https://x.com/ilyasut",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Ailyasut&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "frontier-lab",
         "alignment",
@@ -65,7 +65,7 @@
       "profile_url": "https://x.com/polynoamial",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Apolynoamial&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "reasoning",
         "search",
@@ -83,7 +83,7 @@
       "profile_url": "https://x.com/lilianweng",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Alilianweng&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "agents",
         "alignment",
@@ -138,7 +138,7 @@
       "profile_url": "https://x.com/janleike",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Ajanleike&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "alignment",
         "frontier-lab",
@@ -156,7 +156,7 @@
       "profile_url": "https://x.com/AmandaAskell",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3AAmandaAskell&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "alignment",
         "product",
@@ -174,7 +174,7 @@
       "profile_url": "https://x.com/demishassabis",
       "region": "UK",
       "search_url": "https://x.com/search?q=from%3Ademishassabis&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "company",
         "frontier-lab",
@@ -193,7 +193,7 @@
       "profile_url": "https://x.com/OriolVinyalsML",
       "region": "UK",
       "search_url": "https://x.com/search?q=from%3AOriolVinyalsML&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "frontier-lab",
         "llm",
@@ -229,7 +229,7 @@
       "profile_url": "https://x.com/shakir_za",
       "region": "UK",
       "search_url": "https://x.com/search?q=from%3Ashakir_za&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "responsible-ai",
         "research",
@@ -247,7 +247,7 @@
       "profile_url": "https://x.com/NandoDF",
       "region": "UK",
       "search_url": "https://x.com/search?q=from%3ANandoDF&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "frontier-lab",
         "rl",
@@ -265,7 +265,7 @@
       "profile_url": "https://x.com/tegmark",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Ategmark&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "university",
         "safety",
@@ -301,7 +301,7 @@
       "profile_url": "https://x.com/jacobandreas",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Ajacobandreas&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "university",
         "agents",
@@ -337,7 +337,7 @@
       "profile_url": "https://x.com/songhanMIT",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3AsonghanMIT&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "university",
         "systems",
@@ -355,7 +355,7 @@
       "profile_url": "https://x.com/drfeifei",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Adrfeifei&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "university",
         "vision",
@@ -373,7 +373,7 @@
       "profile_url": "https://x.com/percyliang",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Apercyliang&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "university",
         "evaluation",
@@ -391,7 +391,7 @@
       "profile_url": "https://x.com/chrmanning",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Achrmanning&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "university",
         "nlp",
@@ -409,7 +409,7 @@
       "profile_url": "https://x.com/chelseabfinn",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Achelseabfinn&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "university",
         "robotics",
@@ -446,7 +446,7 @@
       "profile_url": "https://x.com/AndrewYNg",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3AAndrewYNg&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "education",
         "product",
@@ -464,7 +464,7 @@
       "profile_url": "https://x.com/ylecun",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Aylecun&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "company",
         "university",
@@ -482,7 +482,7 @@
       "profile_url": "https://x.com/fchollet",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Afchollet&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "reasoning",
         "evaluation",
@@ -500,7 +500,7 @@
       "profile_url": "https://x.com/karpathy",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Akarpathy&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "llm",
         "agents",
@@ -518,7 +518,7 @@
       "profile_url": "https://x.com/simonw",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Asimonw&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "tools",
         "evals",
@@ -536,7 +536,7 @@
       "profile_url": "https://x.com/chipro",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Achipro&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "engineering",
         "systems",
@@ -554,7 +554,7 @@
       "profile_url": "https://x.com/emollick",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Aemollick&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "education",
         "product",
@@ -572,7 +572,7 @@
       "profile_url": "https://x.com/kaifulee",
       "region": "China",
       "search_url": "https://x.com/search?q=from%3Akaifulee&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "tags": [
         "china",
         "company",
@@ -908,7 +908,7 @@
       "why_watch": "适合观察豆包/Seed 模型、多模态、推荐生态和大规模产品迭代。"
     }
   ],
-  "generated_at": "2026-07-09T14:22:27.978915+00:00",
+  "generated_at": "2026-07-09T14:24:07.023466+00:00",
   "posts": [],
   "source": "RSSHub best-effort X/Twitter feeds"
 }
