@@ -323,7 +323,9 @@ def child_text(node: ET.Element, name: str) -> str:
 
 
 def fetch_x_posts(account: dict, config: dict) -> tuple[list[dict], str]:
-    handle = account["handle"].lstrip("@")
+    handle = account.get("handle", "").lstrip("@")
+    if not handle:
+        return [], "no x handle configured"
     base = os.environ.get("RSSHUB_BASE") or config.get("x_rsshub_base") or "https://rsshub.app"
     base = base.rstrip("/")
     url = f"{base}/twitter/user/{urllib.parse.quote(handle)}"
@@ -332,7 +334,7 @@ def fetch_x_posts(account: dict, config: dict) -> tuple[list[dict], str]:
         headers={"User-Agent": "daily-arxiv-paper-radar/1.0 (personal research digest)"},
     )
     try:
-        with urllib.request.urlopen(request, timeout=25) as response:
+        with urllib.request.urlopen(request, timeout=8) as response:
             raw = response.read()
     except (TimeoutError, urllib.error.URLError, OSError) as exc:
         return [], f"feed unavailable: {exc}"
@@ -353,6 +355,9 @@ def fetch_x_posts(account: dict, config: dict) -> tuple[list[dict], str]:
                 "account": account["name"],
                 "handle": handle,
                 "focus": account.get("focus", ""),
+                "org": account.get("org", ""),
+                "region": account.get("region", ""),
+                "tags": account.get("tags", []),
                 "blog_url": account.get("blog_url", ""),
                 "why_watch": account.get("why_watch", ""),
                 "title": title or description[:180] or "X post",
@@ -372,18 +377,27 @@ def write_social_data(config: dict) -> None:
     account_status = []
     for index, account in enumerate(accounts):
         if index:
-            time.sleep(1.5)
+            time.sleep(0.4)
         posts, status = fetch_x_posts(account, config)
-        handle = account["handle"].lstrip("@")
+        handle = account.get("handle", "").lstrip("@")
+        profile_url = account.get("profile_url") or (f"https://x.com/{handle}" if handle else account.get("blog_url", ""))
+        search_url = account.get("search_url") or (
+            f"https://x.com/search?q=from%3A{urllib.parse.quote(handle)}&src=typed_query&f=live"
+            if handle
+            else account.get("blog_url", "")
+        )
         account_status.append(
             {
                 "name": account["name"],
                 "handle": handle,
                 "focus": account.get("focus", ""),
+                "org": account.get("org", ""),
+                "region": account.get("region", ""),
+                "tags": account.get("tags", []),
                 "blog_url": account.get("blog_url", ""),
                 "why_watch": account.get("why_watch", ""),
-                "profile_url": f"https://x.com/{handle}",
-                "search_url": f"https://x.com/search?q=from%3A{urllib.parse.quote(handle)}&src=typed_query&f=live",
+                "profile_url": profile_url,
+                "search_url": search_url,
                 "status": status,
                 "post_count": len(posts),
             }

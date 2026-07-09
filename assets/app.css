@@ -211,6 +211,46 @@ select {
   color: rgba(247, 251, 250, 0.62);
 }
 
+.people-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 0.7fr)) minmax(220px, 1.2fr);
+  gap: 10px;
+}
+
+.people-filters label {
+  display: grid;
+  gap: 6px;
+  min-height: 62px;
+  padding: 9px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.people-filters span {
+  color: rgba(247, 251, 250, 0.68);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.people-filters select,
+.people-filters input {
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font-weight: 800;
+}
+
+.people-filters option {
+  color: var(--ink);
+}
+
+.people-filters input::placeholder {
+  color: rgba(247, 251, 250, 0.56);
+}
+
 .social-accounts {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -271,8 +311,26 @@ select {
   color: rgba(247, 251, 250, 0.82);
   font-size: 13px;
   line-height: 1.5;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.person-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.person-tags span {
+  min-height: 22px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(247, 251, 250, 0.78);
+  font-size: 11px;
+  font-weight: 800;
 }
 
 .person-links {
@@ -625,6 +683,7 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .people-filters,
   .social-accounts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -652,6 +711,10 @@ select {
   }
 
   .social-accounts {
+    grid-template-columns: 1fr;
+  }
+
+  .people-filters {
     grid-template-columns: 1fr;
   }
 }

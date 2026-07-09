@@ -3,6 +3,10 @@ const state = {
   social: null,
   selectedDate: null,
   selectedTopic: "all",
+  selectedOrg: "all",
+  selectedRegion: "all",
+  selectedPeopleTag: "all",
+  peopleQuery: "",
   query: "",
   selectedId: null,
 };
@@ -19,6 +23,10 @@ const els = {
   socialStatus: document.querySelector("#social-status"),
   socialAccounts: document.querySelector("#social-accounts"),
   socialFeed: document.querySelector("#social-feed"),
+  orgFilter: document.querySelector("#org-filter"),
+  regionFilter: document.querySelector("#region-filter"),
+  tagFilter: document.querySelector("#tag-filter"),
+  peopleSearch: document.querySelector("#people-search"),
   emptyState: document.querySelector("#empty-state"),
   detail: document.querySelector("#paper-detail"),
   template: document.querySelector("#paper-card-template"),
@@ -184,32 +192,76 @@ function renderDetail(paper) {
   `;
 }
 
+function optionList(values, allLabel) {
+  return [`<option value="all">${allLabel}</option>`]
+    .concat(values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`))
+    .join("");
+}
+
+function renderPeopleFilters(accounts) {
+  const orgs = unique(accounts.map((account) => account.org)).sort();
+  const regions = unique(accounts.map((account) => account.region)).sort();
+  const tags = unique(accounts.flatMap((account) => account.tags || [])).sort();
+  els.orgFilter.innerHTML = optionList(orgs, "全部机构");
+  els.regionFilter.innerHTML = optionList(regions, "全部地区");
+  els.tagFilter.innerHTML = optionList(tags, "全部标签");
+  els.orgFilter.value = state.selectedOrg;
+  els.regionFilter.value = state.selectedRegion;
+  els.tagFilter.value = state.selectedPeopleTag;
+}
+
+function filteredAccounts(accounts) {
+  const query = state.peopleQuery.trim().toLowerCase();
+  return accounts.filter((account) => {
+    if (state.selectedOrg !== "all" && account.org !== state.selectedOrg) return false;
+    if (state.selectedRegion !== "all" && account.region !== state.selectedRegion) return false;
+    if (state.selectedPeopleTag !== "all" && !(account.tags || []).includes(state.selectedPeopleTag)) return false;
+    if (!query) return true;
+    const text = [
+      account.name,
+      account.handle,
+      account.org,
+      account.region,
+      account.focus,
+      account.why_watch,
+      ...(account.tags || []),
+    ].join(" ").toLowerCase();
+    return text.includes(query);
+  });
+}
+
 function renderSocial() {
   const social = state.social || { accounts: [], posts: [] };
   const accounts = social.accounts || [];
+  const visibleAccounts = filteredAccounts(accounts);
+  const visibleHandles = new Set(visibleAccounts.map((account) => account.handle));
+  const visibleNames = new Set(visibleAccounts.map((account) => account.name));
   const posts = social.posts || [];
   const okAccounts = accounts.filter((account) => account.status === "ok").length;
 
   els.socialStatus.textContent = posts.length
-    ? `已汇总 ${posts.length} 条最新动态，覆盖 ${okAccounts}/${accounts.length} 个账号。`
-    : `暂时没有抓到具体推文，已切换为 ${accounts.length} 位 AI 研究者/创业者观察清单。`;
+    ? `已汇总 ${posts.length} 条最新动态，当前显示 ${visibleAccounts.length}/${accounts.length} 个条目。`
+    : `暂时没有抓到具体推文，当前显示 ${visibleAccounts.length}/${accounts.length} 位 AI 研究者/机构观察卡。`;
 
   els.socialAccounts.innerHTML = "";
-  accounts.forEach((account) => {
+  visibleAccounts.forEach((account) => {
     const card = document.createElement("article");
     card.className = "person-card";
+    const handleLine = account.handle ? `@${escapeHtml(account.handle)} · ` : "";
+    const tags = (account.tags || []).slice(0, 5).map((item) => `<span>${escapeHtml(item)}</span>`).join("");
     card.innerHTML = `
       <div class="person-card-head">
         <div>
           <h3>${escapeHtml(account.name)}</h3>
-          <p>@${escapeHtml(account.handle)} · ${escapeHtml(account.focus || "AI")}</p>
+          <p>${handleLine}${escapeHtml(account.org || "Unknown")} · ${escapeHtml(account.focus || "AI")}</p>
         </div>
         <span>${account.post_count || 0}</span>
       </div>
       <p class="person-note">${escapeHtml(account.why_watch || "适合持续观察 AI 研究、产品和产业信号。")}</p>
+      <div class="person-tags">${tags}</div>
       <div class="person-links">
-        <a href="${escapeHtml(account.profile_url)}">X 主页</a>
-        <a href="${escapeHtml(account.search_url)}">最新搜索</a>
+        ${account.profile_url ? `<a href="${escapeHtml(account.profile_url)}">X 主页</a>` : ""}
+        ${account.search_url ? `<a href="${escapeHtml(account.search_url)}">最新搜索</a>` : ""}
         ${account.blog_url ? `<a href="${escapeHtml(account.blog_url)}">博客/主页</a>` : ""}
       </div>
     `;
@@ -217,7 +269,8 @@ function renderSocial() {
   });
 
   els.socialFeed.innerHTML = "";
-  const feedItems = posts.length ? posts.slice(0, 12) : accounts.map((account) => ({
+  const filteredPosts = posts.filter((post) => visibleHandles.has(post.handle) || visibleNames.has(post.account));
+  const feedItems = filteredPosts.length ? filteredPosts.slice(0, 12) : visibleAccounts.map((account) => ({
     account: account.name,
     handle: account.handle,
     title: `${account.name}：值得关注点`,
@@ -229,9 +282,10 @@ function renderSocial() {
   feedItems.forEach((post) => {
     const item = document.createElement("article");
     item.className = "social-post";
+    const handle = post.handle ? `@${escapeHtml(post.handle)}` : escapeHtml(post.account);
     item.innerHTML = `
       <div>
-        <p class="social-author">${escapeHtml(post.account)} <span>@${escapeHtml(post.handle)}</span></p>
+        <p class="social-author">${escapeHtml(post.account)} <span>${handle}</span></p>
         <h3>${escapeHtml(post.title)}</h3>
         <p>${escapeHtml(post.summary || "")}</p>
       </div>
@@ -297,6 +351,24 @@ async function init() {
       els.topicButtons.forEach((item) => item.classList.toggle("is-active", item === button));
       render();
     });
+  });
+
+  renderPeopleFilters(state.social.accounts || []);
+  els.orgFilter.addEventListener("change", (event) => {
+    state.selectedOrg = event.target.value;
+    renderSocial();
+  });
+  els.regionFilter.addEventListener("change", (event) => {
+    state.selectedRegion = event.target.value;
+    renderSocial();
+  });
+  els.tagFilter.addEventListener("change", (event) => {
+    state.selectedPeopleTag = event.target.value;
+    renderSocial();
+  });
+  els.peopleSearch.addEventListener("input", (event) => {
+    state.peopleQuery = event.target.value;
+    renderSocial();
   });
 
   renderSocial();

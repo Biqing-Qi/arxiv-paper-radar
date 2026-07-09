@@ -53,118 +53,55 @@
     "inference": 1
   },
   "x_watchlist": [
-    {
-      "name": "Andrej Karpathy",
-      "handle": "karpathy",
-      "focus": "LLM, agents, AI education",
-      "blog_url": "https://karpathy.ai/",
-      "why_watch": "适合跟踪 LLM 训练直觉、agent 产品形态、AI 教育和工程化观点。"
-    },
-    {
-      "name": "Yann LeCun",
-      "handle": "ylecun",
-      "focus": "AI research, world models",
-      "blog_url": "https://yann.lecun.com/",
-      "why_watch": "适合观察世界模型、非自回归智能、Meta AI 研究路线和对主流 LLM 范式的批评。"
-    },
-    {
-      "name": "François Chollet",
-      "handle": "fchollet",
-      "focus": "reasoning, abstraction, Keras",
-      "blog_url": "https://fchollet.com/",
-      "why_watch": "适合关注抽象推理、ARC、智能测评、Keras 生态和对纯规模化路线的反思。"
-    },
-    {
-      "name": "Jeremy Howard",
-      "handle": "jeremyphoward",
-      "focus": "practical deep learning",
-      "blog_url": "https://www.fast.ai/",
-      "why_watch": "适合跟踪实用深度学习、开源模型、训练技巧和面向开发者的 AI 工具。"
-    },
-    {
-      "name": "Jim Fan",
-      "handle": "DrJimFan",
-      "focus": "agents, robotics, embodied AI",
-      "blog_url": "https://jimfan.me/",
-      "why_watch": "适合看 agent、机器人、具身智能、仿真环境和 NVIDIA 相关前沿应用。"
-    },
-    {
-      "name": "Noam Brown",
-      "handle": "polynoamial",
-      "focus": "reasoning, game AI, OpenAI",
-      "blog_url": "https://www.noambrown.com/",
-      "why_watch": "适合关注推理模型、博弈 AI、搜索/规划和 OpenAI 研究方向。"
-    },
-    {
-      "name": "Sebastian Ruder",
-      "handle": "seb_ruder",
-      "focus": "NLP research",
-      "blog_url": "https://ruder.io/",
-      "why_watch": "适合看 NLP 综述、语言模型趋势、多语言和迁移学习研究脉络。"
-    },
-    {
-      "name": "Lilian Weng",
-      "handle": "lilianweng",
-      "focus": "agents, alignment, research notes",
-      "blog_url": "https://lilianweng.github.io/",
-      "why_watch": "适合读高质量技术长文，尤其是 agent、RL、alignment 和 LLM 系统总结。"
-    },
-    {
-      "name": "Chip Huyen",
-      "handle": "chipro",
-      "focus": "AI engineering, ML systems",
-      "blog_url": "https://huyenchip.com/blog/",
-      "why_watch": "适合跟踪 AI 工程、生产系统、评估、数据和企业落地经验。"
-    },
-    {
-      "name": "Ethan Mollick",
-      "handle": "emollick",
-      "focus": "AI adoption, product, education",
-      "blog_url": "https://www.oneusefulthing.org/",
-      "why_watch": "适合观察 AI 产品使用、组织采纳、教育场景和普通用户如何被模型改变。"
-    },
-    {
-      "name": "Simon Willison",
-      "handle": "simonw",
-      "focus": "LLM tools, evals, web engineering",
-      "blog_url": "https://simonwillison.net/",
-      "why_watch": "适合跟踪 LLM 工具链、prompt/eval 实践、安全边界和开发者生态。"
-    },
-    {
-      "name": "Clement Delangue",
-      "handle": "ClementDelangue",
-      "focus": "open-source AI, Hugging Face",
-      "blog_url": "https://huggingface.co/blog",
-      "why_watch": "适合观察开源模型、数据集、Hugging Face 生态和开放 AI 社区趋势。"
-    },
-    {
-      "name": "Percy Liang",
-      "handle": "percyliang",
-      "focus": "foundation models, evaluation",
-      "blog_url": "https://crfm.stanford.edu/",
-      "why_watch": "适合关注基础模型评估、透明度、学术基准和 Stanford CRFM 工作。"
-    },
-    {
-      "name": "Denny Zhou",
-      "handle": "denny_zhou",
-      "focus": "reasoning, prompting, LLM research",
-      "blog_url": "https://research.google/people/105690/",
-      "why_watch": "适合关注 chain-of-thought、推理、提示方法和 Google 研究动向。"
-    },
-    {
-      "name": "Aidan McLaughlin",
-      "handle": "aidan_mclau",
-      "focus": "Claude, product, AI systems",
-      "blog_url": "https://www.anthropic.com/news",
-      "why_watch": "适合观察 Claude 产品、Anthropic 系统能力和前沿模型发布信号。"
-    },
-    {
-      "name": "Nat Friedman",
-      "handle": "natfriedman",
-      "focus": "AI startups, tools, open source",
-      "blog_url": "https://www.nat.org/",
-      "why_watch": "适合观察 AI 创业、开发者工具、开源项目和产业机会。"
-    }
+    {"name":"Sam Altman","handle":"sama","org":"OpenAI","region":"US","focus":"OpenAI strategy, frontier AI, product","tags":["company","frontier-lab","product","policy"],"blog_url":"https://openai.com/news/","why_watch":"适合观察 OpenAI 战略、产品节奏、资本/政策信号和前沿模型发布风向。"},
+    {"name":"Greg Brockman","handle":"gdb","org":"OpenAI","region":"US","focus":"OpenAI engineering, products","tags":["company","engineering","product"],"blog_url":"https://openai.com/news/","why_watch":"适合看 OpenAI 工程文化、产品实现和模型系统落地信号。"},
+    {"name":"Ilya Sutskever","handle":"ilyasut","org":"SSI / OpenAI alumni","region":"US","focus":"superintelligence, alignment, training","tags":["frontier-lab","alignment","training"],"blog_url":"https://ssi.inc/","why_watch":"适合关注超级智能、安全、训练范式和前 OpenAI 核心研究脉络。"},
+    {"name":"Noam Brown","handle":"polynoamial","org":"OpenAI","region":"US","focus":"reasoning, search, game AI","tags":["reasoning","search","frontier-lab"],"blog_url":"https://www.noambrown.com/","why_watch":"适合关注推理模型、搜索/规划、博弈 AI 和 OpenAI reasoning 路线。"},
+    {"name":"Lilian Weng","handle":"lilianweng","org":"OpenAI","region":"US","focus":"agents, alignment, research notes","tags":["agents","alignment","blog"],"blog_url":"https://lilianweng.github.io/","why_watch":"适合读高质量技术长文，尤其是 agent、RL、alignment 和 LLM 系统总结。"},
+    {"name":"Dario Amodei","handle":"","org":"Anthropic","region":"US","focus":"Claude, AI safety, scaling","tags":["company","frontier-lab","alignment","policy"],"blog_url":"https://www.anthropic.com/news","why_watch":"适合观察 Anthropic 的安全路线、Claude 发布和面向社会影响的长线观点。"},
+    {"name":"Daniela Amodei","handle":"","org":"Anthropic","region":"US","focus":"AI company building, safety culture","tags":["company","frontier-lab","strategy"],"blog_url":"https://www.anthropic.com/news","why_watch":"适合观察 Anthropic 组织、产品、安全文化和商业化节奏。"},
+    {"name":"Jan Leike","handle":"janleike","org":"Anthropic","region":"US","focus":"alignment, scalable oversight","tags":["alignment","frontier-lab","research"],"blog_url":"https://www.anthropic.com/research","why_watch":"适合关注 alignment、scalable oversight、模型监督和安全评估动向。"},
+    {"name":"Amanda Askell","handle":"AmandaAskell","org":"Anthropic","region":"US","focus":"Claude behavior, alignment, policy","tags":["alignment","product","policy"],"blog_url":"https://www.anthropic.com/research","why_watch":"适合观察 Claude 行为设计、AI 伦理、安全和模型人机交互观点。"},
+    {"name":"Demis Hassabis","handle":"demishassabis","org":"Google DeepMind","region":"UK","focus":"AGI, science, DeepMind strategy","tags":["company","frontier-lab","science","strategy"],"blog_url":"https://deepmind.google/discover/blog/","why_watch":"适合观察 DeepMind 的 AGI 战略、科学智能、Alpha 系列和 Gemini 方向。"},
+    {"name":"Oriol Vinyals","handle":"OriolVinyalsML","org":"Google DeepMind","region":"UK","focus":"Gemini, sequence models, RL","tags":["frontier-lab","llm","rl"],"blog_url":"https://deepmind.google/discover/blog/","why_watch":"适合关注 Gemini、序列建模、RL 和 DeepMind 研究发布。"},
+    {"name":"Pushmeet Kohli","handle":"","org":"Google DeepMind","region":"UK","focus":"AI for science, responsible AI","tags":["science","responsible-ai","frontier-lab"],"blog_url":"https://deepmind.google/discover/blog/","why_watch":"适合关注 AI for Science、负责任 AI、医学/科学应用和 DeepMind 研究组织方向。"},
+    {"name":"Shakir Mohamed","handle":"shakir_za","org":"Google DeepMind","region":"UK","focus":"responsible AI, ML research","tags":["responsible-ai","research","society"],"blog_url":"https://shakirm.com/","why_watch":"适合观察负责任 AI、社会影响、公平性和机器学习研究文化。"},
+    {"name":"Nando de Freitas","handle":"NandoDF","org":"Google DeepMind","region":"UK","focus":"deep learning, AGI, RL","tags":["frontier-lab","rl","agi"],"blog_url":"https://deepmind.google/discover/blog/","why_watch":"适合观察深度学习、AGI、RL 以及 DeepMind 研究观点。"},
+    {"name":"Max Tegmark","handle":"tegmark","org":"MIT","region":"US","focus":"AI safety, physics, policy","tags":["university","safety","policy"],"blog_url":"https://futureoflife.org/","why_watch":"适合关注 AI 安全、政策、长期风险和科学共同体讨论。"},
+    {"name":"Regina Barzilay","handle":"","org":"MIT","region":"US","focus":"AI for medicine, NLP","tags":["university","healthcare","nlp"],"blog_url":"https://people.csail.mit.edu/regina/","why_watch":"适合关注 AI 医疗、NLP、药物发现和 MIT 计算生物方向。"},
+    {"name":"Jacob Andreas","handle":"jacobandreas","org":"MIT","region":"US","focus":"language, grounding, agents","tags":["university","agents","nlp"],"blog_url":"https://www.mit.edu/~jda/","why_watch":"适合关注语言 grounding、agent、神经符号和 MIT NLP/AI 研究。"},
+    {"name":"Dylan Hadfield-Menell","handle":"","org":"MIT","region":"US","focus":"AI alignment, human-AI interaction","tags":["university","alignment","hci"],"blog_url":"https://people.csail.mit.edu/dhm/","why_watch":"适合关注 AI alignment、人类偏好、交互式学习和安全系统。"},
+    {"name":"Song Han","handle":"songhanMIT","org":"MIT","region":"US","focus":"efficient AI, edge AI, model compression","tags":["university","systems","efficient-ai"],"blog_url":"https://hanlab.mit.edu/","why_watch":"适合关注高效模型、压缩、边缘 AI、推理加速和硬件协同。"},
+    {"name":"Fei-Fei Li","handle":"drfeifei","org":"Stanford","region":"US","focus":"human-centered AI, vision","tags":["university","vision","human-centered-ai"],"blog_url":"https://profiles.stanford.edu/fei-fei-li","why_watch":"适合观察以人为中心的 AI、视觉、政策和 Stanford HAI 方向。"},
+    {"name":"Percy Liang","handle":"percyliang","org":"Stanford","region":"US","focus":"foundation models, evaluation","tags":["university","evaluation","foundation-models"],"blog_url":"https://crfm.stanford.edu/","why_watch":"适合关注基础模型评估、透明度、HELM/CRFM 和学术基准。"},
+    {"name":"Christopher Manning","handle":"chrmanning","org":"Stanford","region":"US","focus":"NLP, linguistics, foundation models","tags":["university","nlp","foundation-models"],"blog_url":"https://nlp.stanford.edu/~manning/","why_watch":"适合关注 NLP 基础研究、语言学和 Stanford NLP 动向。"},
+    {"name":"Chelsea Finn","handle":"chelseabfinn","org":"Stanford","region":"US","focus":"robot learning, meta-learning","tags":["university","robotics","learning"],"blog_url":"https://ai.stanford.edu/~cbfinn/","why_watch":"适合关注机器人学习、meta-learning、具身智能和强化学习。"},
+    {"name":"Jiajun Wu","handle":"","org":"Stanford","region":"US","focus":"vision, robotics, world models","tags":["university","vision","robotics","world-models"],"blog_url":"https://jiajunwu.com/","why_watch":"适合关注视觉、物理世界建模、机器人和可组合泛化。"},
+    {"name":"Andrew Ng","handle":"AndrewYNg","org":"Stanford / DeepLearning.AI","region":"US","focus":"AI education, agents, product","tags":["education","product","agents"],"blog_url":"https://www.deeplearning.ai/the-batch/","why_watch":"适合关注 AI 教育、agent 应用、产业落地和创业产品信号。"},
+    {"name":"Yann LeCun","handle":"ylecun","org":"Meta AI / NYU","region":"US","focus":"world models, objective-driven AI","tags":["company","university","world-models"],"blog_url":"https://yann.lecun.com/","why_watch":"适合观察世界模型、非自回归智能、Meta AI 研究路线和对主流 LLM 范式的批评。"},
+    {"name":"François Chollet","handle":"fchollet","org":"Independent / Keras","region":"US","focus":"reasoning, abstraction, Keras","tags":["reasoning","evaluation","blog"],"blog_url":"https://fchollet.com/","why_watch":"适合关注抽象推理、ARC、智能测评、Keras 生态和对纯规模化路线的反思。"},
+    {"name":"Andrej Karpathy","handle":"karpathy","org":"Independent / OpenAI alumni","region":"US","focus":"LLM, agents, AI education","tags":["llm","agents","education"],"blog_url":"https://karpathy.ai/","why_watch":"适合跟踪 LLM 训练直觉、agent 产品形态、AI 教育和工程化观点。"},
+    {"name":"Simon Willison","handle":"simonw","org":"Independent","region":"US","focus":"LLM tools, evals, web engineering","tags":["tools","evals","engineering"],"blog_url":"https://simonwillison.net/","why_watch":"适合跟踪 LLM 工具链、prompt/eval 实践、安全边界和开发者生态。"},
+    {"name":"Chip Huyen","handle":"chipro","org":"Independent","region":"US","focus":"AI engineering, ML systems","tags":["engineering","systems","evaluation"],"blog_url":"https://huyenchip.com/blog/","why_watch":"适合跟踪 AI 工程、生产系统、评估、数据和企业落地经验。"},
+    {"name":"Ethan Mollick","handle":"emollick","org":"Wharton","region":"US","focus":"AI adoption, product, education","tags":["education","product","adoption"],"blog_url":"https://www.oneusefulthing.org/","why_watch":"适合观察 AI 产品使用、组织采纳、教育场景和普通用户如何被模型改变。"},
+    {"name":"Kai-Fu Lee","handle":"kaifulee","org":"01.AI / Sinovation Ventures","region":"China","focus":"AI products, investment, China AI","tags":["china","company","investment","product"],"blog_url":"https://www.lingyiwanwu.com/","why_watch":"适合观察中国 AI 创业、开源/闭源模型竞争、产品化和投资趋势。"},
+    {"name":"Zhou Zhihua","handle":"","org":"Nanjing University / LAMDA","region":"China","focus":"machine learning, ensemble learning","tags":["china","university","ml"],"blog_url":"https://www.lamda.nju.edu.cn/zhouzh/","why_watch":"适合关注中国机器学习基础研究、集成学习、弱监督和学术人才动态。"},
+    {"name":"Tang Jie","handle":"","org":"Tsinghua University / Zhipu AI","region":"China","focus":"knowledge graph, LLM, GLM","tags":["china","university","company","llm"],"blog_url":"https://keg.cs.tsinghua.edu.cn/jietang/","why_watch":"适合观察清华 KEG、知识图谱、GLM/智谱路线和中文大模型生态。"},
+    {"name":"Liu Zhiyuan","handle":"","org":"Tsinghua University","region":"China","focus":"NLP, knowledge, LLM","tags":["china","university","nlp","llm"],"blog_url":"https://nlp.csai.tsinghua.edu.cn/~lzy/","why_watch":"适合关注中文 NLP、知识增强、预训练模型和清华 NLP 研究。"},
+    {"name":"Zhu Jun","handle":"","org":"Tsinghua University","region":"China","focus":"Bayesian ML, generative models, AI safety","tags":["china","university","generative-models","safety"],"blog_url":"https://ml.cs.tsinghua.edu.cn/~jun/","why_watch":"适合关注生成模型、贝叶斯机器学习、AI 安全和清华基础研究。"},
+    {"name":"Ma Yi","handle":"","org":"HKU / Shanghai AI Lab","region":"China","focus":"vision, representation, AI theory","tags":["china","university","vision","theory"],"blog_url":"https://www.eee.hku.hk/~yima/","why_watch":"适合关注视觉表征、智能理论、低维结构和上海 AI Lab 学术路线。"},
+    {"name":"Zhu Song-Chun","handle":"","org":"BIGAI / Peking University","region":"China","focus":"cognitive AI, vision, robotics","tags":["china","institute","cognitive-ai","robotics"],"blog_url":"https://www.bigai.ai/","why_watch":"适合观察通用人工智能、认知科学、机器人和北京通研院路线。"},
+    {"name":"Yao Qizhi","handle":"","org":"Tsinghua University / IIIS","region":"China","focus":"theoretical CS, quantum, AI foundations","tags":["china","university","theory"],"blog_url":"https://iiis.tsinghua.edu.cn/yao/","why_watch":"适合关注理论计算机、交叉基础科学和清华叉院长期研究方向。"},
+    {"name":"BAAI 智源研究院","handle":"","org":"BAAI","region":"China","focus":"Beijing AI research, WuDao, FlagOpen","tags":["china","institute","open-source","llm"],"blog_url":"https://www.baai.ac.cn/","why_watch":"适合跟踪智源大会、FlagOpen、悟道/大模型开放生态和北京 AI 研究网络。"},
+    {"name":"Shanghai AI Laboratory","handle":"","org":"Shanghai AI Lab","region":"China","focus":"OpenMMLab, InternLM, AI for science","tags":["china","institute","open-source","llm","vision"],"blog_url":"https://www.shlab.org.cn/","why_watch":"适合关注 InternLM、OpenMMLab、视觉大模型、AI4Science 和国内开源生态。"},
+    {"name":"DeepSeek","handle":"","org":"DeepSeek","region":"China","focus":"LLM, reasoning, coding models","tags":["china","company","llm","reasoning","coding"],"blog_url":"https://www.deepseek.com/","why_watch":"适合跟踪国产推理模型、代码模型、开源权重和高性价比训练路线。"},
+    {"name":"Zhipu AI","handle":"","org":"Zhipu AI","region":"China","focus":"GLM, agents, Chinese LLM products","tags":["china","company","llm","agents"],"blog_url":"https://www.zhipuai.cn/","why_watch":"适合观察 GLM 系列、中文 agent、模型 API 和企业落地。"},
+    {"name":"Moonshot AI","handle":"","org":"Moonshot AI","region":"China","focus":"long context, Kimi, AI product","tags":["china","company","llm","long-context","product"],"blog_url":"https://www.moonshot.cn/","why_watch":"适合关注长上下文、Kimi 产品、国产 C 端 AI 应用和模型体验。"},
+    {"name":"MiniMax","handle":"","org":"MiniMax","region":"China","focus":"multimodal, agents, consumer AI","tags":["china","company","multimodal","product"],"blog_url":"https://www.minimaxi.com/","why_watch":"适合观察多模态、语音/视频、角色智能体和国内 C 端产品化。"},
+    {"name":"Qwen Team","handle":"","org":"Alibaba Qwen","region":"China","focus":"open-source LLM, multimodal, coding","tags":["china","company","open-source","llm","multimodal"],"blog_url":"https://qwenlm.github.io/","why_watch":"适合跟踪通义千问开源模型、多模态、代码模型和中文开源生态。"},
+    {"name":"Tencent Hunyuan","handle":"","org":"Tencent","region":"China","focus":"Hunyuan, multimodal, industry AI","tags":["china","company","multimodal","industry"],"blog_url":"https://hunyuan.tencent.com/","why_watch":"适合观察腾讯混元、多模态、产业场景和微信/腾讯生态结合。"},
+    {"name":"Baidu ERNIE","handle":"","org":"Baidu","region":"China","focus":"ERNIE, search, AI native apps","tags":["china","company","llm","search","product"],"blog_url":"https://yiyan.baidu.com/","why_watch":"适合关注文心、搜索增强、AI 原生应用和百度产业落地。"},
+    {"name":"ByteDance Seed","handle":"","org":"ByteDance","region":"China","focus":"Seed models, multimodal, AI products","tags":["china","company","multimodal","product"],"blog_url":"https://team.doubao.com/","why_watch":"适合观察豆包/Seed 模型、多模态、推荐生态和大规模产品迭代。"}
   ],
   "x_max_posts_per_account": 3,
   "x_rsshub_base": "https://rsshub.app"
