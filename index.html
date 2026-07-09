@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily arXiv Paper Radar</title>
+    <meta name="description" content="Daily arXiv paper radar for diffusion language models and model architecture.">
+    <link rel="stylesheet" href="assets/app.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Daily arXiv Paper Radar</p>
+        <h1>论文雷达</h1>
+      </div>
+      <nav class="nav-actions" aria-label="Links">
+        <a href="reports/latest.md">Latest Markdown</a>
+        <a href="https://github.com/Biqing-Qi/arxiv-paper-radar">GitHub</a>
+      </nav>
+    </header>
+
+    <main class="app-shell">
+      <section class="control-band" aria-label="Controls">
+        <div class="metric">
+          <span class="metric-label">今日命中</span>
+          <strong id="metric-count">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">最高分</span>
+          <strong id="metric-score">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">更新时间</span>
+          <strong id="metric-updated">--</strong>
+        </div>
+
+        <label class="field">
+          <span>日期</span>
+          <select id="date-select"></select>
+        </label>
+
+        <label class="field search-field">
+          <span>搜索</span>
+          <input id="search-input" type="search" placeholder="标题、作者、关键词">
+        </label>
+      </section>
+
+      <section class="topic-strip" aria-label="Topic filters">
+        <button class="topic-button is-active" type="button" data-topic="all">全部</button>
+        <button class="topic-button" type="button" data-topic="Diffusion Language Models">扩散语言模型</button>
+        <button class="topic-button" type="button" data-topic="Model Architecture">模型架构</button>
+      </section>
+
+      <section class="content-grid">
+        <aside class="paper-list-panel" aria-label="Paper list">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Reading Queue</p>
+              <h2>推送列表</h2>
+            </div>
+            <span id="visible-count" class="count-pill">0</span>
+          </div>
+          <div id="paper-list" class="paper-list"></div>
+        </aside>
+
+        <section class="detail-panel" aria-label="Paper details">
+          <div id="empty-state" class="empty-state">
+            <p class="eyebrow">Select a paper</p>
+            <h2>选择一篇论文查看摘要和链接</h2>
+          </div>
+          <article id="paper-detail" class="paper-detail" hidden></article>
+        </section>
+      </section>
+    </main>
+
+    <template id="paper-card-template">
+      <button class="paper-card" type="button">
+        <span class="score-badge"></span>
+        <span class="paper-title"></span>
+        <span class="paper-meta"></span>
+        <span class="tag-row"></span>
+      </button>
+    </template>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

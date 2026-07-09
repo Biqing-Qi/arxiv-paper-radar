@@ -37,6 +37,7 @@ DATA_DIR = ROOT / "data"
 REPORTS_DIR = ROOT / "reports"
 SEEN_PATH = DATA_DIR / "seen.json"
 PAPERS_PATH = DATA_DIR / "papers.jsonl"
+SITE_DATA_PATH = DATA_DIR / "site.json"
 README_PATH = ROOT / "README.md"
 
 ATOM_NS = {"atom": "http://www.w3.org/2005/Atom"}
@@ -371,10 +372,14 @@ def send_email_if_configured(subject: str, markdown_text: str) -> bool:
     message.attach(email.mime.text.MIMEText(markdown_text, "plain", "utf-8"))
     message.attach(email.mime.text.MIMEText(markdown_to_email_html(markdown_text), "html", "utf-8"))
 
-    with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as server:
-        server.starttls()
-        server.login(smtp_user, smtp_password)
-        server.sendmail(smtp_user, mail_to, message.as_string())
+    try:
+        with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as server:
+            server.starttls()
+            server.login(smtp_user, smtp_password)
+            server.sendmail(smtp_user, mail_to, message.as_string())
+    except smtplib.SMTPException as exc:
+        print(f"Warning: email delivery failed: {exc}")
+        return False
     print(f"Email sent to {', '.join(mail_to)}.")
     return True
 
@@ -388,6 +393,48 @@ def append_papers_jsonl(papers: list[dict]) -> None:
             fh.write(json.dumps(paper, ensure_ascii=False, sort_keys=True) + "\n")
 
 
+def load_all_papers() -> list[dict]:
+    if not PAPERS_PATH.exists():
+        return []
+    papers = []
+    with PAPERS_PATH.open("r", encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if line:
+                papers.append(json.loads(line))
+    return papers
+
+
+def write_site_data(today: str, selected: list[dict], config: dict) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    by_id = {}
+    for paper in load_all_papers():
+        enriched = dict(paper)
+        enriched.setdefault("digest_date", today)
+        by_id[paper["arxiv_id"]] = enriched
+    for paper in selected:
+        enriched = dict(paper)
+        enriched["digest_date"] = today
+        by_id[paper["arxiv_id"]] = enriched
+
+    papers = sorted(
+        by_id.values(),
+        key=lambda item: (item.get("digest_date", ""), item.get("score", 0), item.get("published", "")),
+        reverse=True,
+    )
+    dates = sorted({paper.get("digest_date") or paper.get("published", "")[:10] for paper in papers}, reverse=True)
+    payload = {
+        "title": config["site_title"],
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "latest_date": today,
+        "dates": dates,
+        "papers": papers,
+    }
+    with SITE_DATA_PATH.open("w", encoding="utf-8") as fh:
+        json.dump(payload, fh, ensure_ascii=False, indent=2, sort_keys=True)
+        fh.write("\n")
+
+
 def update_readme(today: str, report: str) -> None:
     readme = textwrap.dedent(
         f"""\
@@ -395,6 +442,8 @@ def update_readme(today: str, report: str) -> None:
 
         This repository is maintained by a scheduled GitHub Actions workflow.
         It tracks arXiv papers related to diffusion language models and model architecture.
+
+        Web dashboard: [index.html](index.html)
 
         Latest digest: [reports/latest.md](reports/latest.md)
 
@@ -420,6 +469,7 @@ def write_outputs(today: str, report: str) -> None:
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--no-email", action="store_true", help="Do not send email even if SMTP env vars exist.")
+    parser.add_argument("--rebuild-site", action="store_true", help="Rebuild data/site.json from existing data/papers.jsonl.")
     parser.add_argument("--sample", action="store_true", help="Use built-in sample data instead of calling arXiv.")
     return parser.parse_args(argv)
 
@@ -444,12 +494,20 @@ def sample_papers() -> list[dict]:
 def main(argv: list[str]) -> int:
     args = parse_args(argv)
     config = load_config()
+    if args.rebuild_site:
+        tz = get_timezone(config["timezone"])
+        today = dt.datetime.now(tz).date().isoformat()
+        write_site_data(today, [], config)
+        print(f"Rebuilt site data for {today}.")
+        return 0
+
     seen = load_seen()
     papers = sample_papers() if args.sample else fetch_recent_papers(config)
     selected = filter_and_rank(papers, config, seen)
     today, report = build_report(selected, config)
     write_outputs(today, report)
     append_papers_jsonl(selected)
+    write_site_data(today, selected, config)
 
     for paper in selected:
         seen.add(paper["arxiv_id"])
