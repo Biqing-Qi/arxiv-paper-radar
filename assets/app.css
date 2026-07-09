@@ -212,31 +212,92 @@ select {
 }
 
 .social-accounts {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 2px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
 }
 
-.account-chip {
-  min-width: 210px;
+.person-card {
   display: grid;
-  gap: 3px;
-  padding: 10px 12px;
+  gap: 10px;
+  min-height: 178px;
+  padding: 13px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
-  text-decoration: none;
 }
 
-.account-chip span {
+.person-card-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.person-card h3 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.person-card p {
+  margin: 0;
+}
+
+.person-card-head p {
+  margin-top: 4px;
+  color: rgba(247, 251, 250, 0.68);
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.person-card-head span {
+  min-width: 28px;
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 12px;
   font-weight: 900;
 }
 
-.account-chip small {
-  color: rgba(247, 251, 250, 0.68);
-  line-height: 1.3;
+.person-note {
+  display: -webkit-box;
+  overflow: hidden;
+  color: rgba(247, 251, 250, 0.82);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-self: end;
+}
+
+.person-links a {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 9px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.person-links a:hover {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .social-feed {
@@ -564,6 +625,10 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .social-accounts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .paper-list {
     max-height: none;
   }
@@ -584,5 +649,9 @@ select {
 
   .detail-title {
     font-size: 32px;
+  }
+
+  .social-accounts {
+    grid-template-columns: 1fr;
   }
 }

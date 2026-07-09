@@ -192,16 +192,26 @@ function renderSocial() {
 
   els.socialStatus.textContent = posts.length
     ? `已汇总 ${posts.length} 条最新动态，覆盖 ${okAccounts}/${accounts.length} 个账号。`
-    : `暂时没有抓到动态。仍可直接打开 ${accounts.length} 个账号主页查看。`;
+    : `暂时没有抓到具体推文，已切换为 ${accounts.length} 位 AI 研究者/创业者观察清单。`;
 
   els.socialAccounts.innerHTML = "";
   accounts.forEach((account) => {
-    const card = document.createElement("a");
-    card.className = "account-chip";
-    card.href = account.profile_url;
+    const card = document.createElement("article");
+    card.className = "person-card";
     card.innerHTML = `
-      <span>${escapeHtml(account.name)}</span>
-      <small>@${escapeHtml(account.handle)} · ${escapeHtml(account.focus || "AI")}</small>
+      <div class="person-card-head">
+        <div>
+          <h3>${escapeHtml(account.name)}</h3>
+          <p>@${escapeHtml(account.handle)} · ${escapeHtml(account.focus || "AI")}</p>
+        </div>
+        <span>${account.post_count || 0}</span>
+      </div>
+      <p class="person-note">${escapeHtml(account.why_watch || "适合持续观察 AI 研究、产品和产业信号。")}</p>
+      <div class="person-links">
+        <a href="${escapeHtml(account.profile_url)}">X 主页</a>
+        <a href="${escapeHtml(account.search_url)}">最新搜索</a>
+        ${account.blog_url ? `<a href="${escapeHtml(account.blog_url)}">博客/主页</a>` : ""}
+      </div>
     `;
     els.socialAccounts.append(card);
   });
@@ -210,9 +220,9 @@ function renderSocial() {
   const feedItems = posts.length ? posts.slice(0, 12) : accounts.map((account) => ({
     account: account.name,
     handle: account.handle,
-    title: "打开 X 主页查看最新动态",
-    summary: account.status === "ok" ? "这个账号暂时没有返回新内容。" : account.status,
-    url: account.search_url,
+    title: `${account.name}：值得关注点`,
+    summary: account.why_watch || account.status || "这个账号暂时没有返回新内容。",
+    url: account.blog_url || account.search_url || account.profile_url,
     published: social.generated_at,
   }));
 

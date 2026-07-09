@@ -56,42 +56,114 @@
     {
       "name": "Andrej Karpathy",
       "handle": "karpathy",
-      "focus": "LLM, agents, AI education"
+      "focus": "LLM, agents, AI education",
+      "blog_url": "https://karpathy.ai/",
+      "why_watch": "适合跟踪 LLM 训练直觉、agent 产品形态、AI 教育和工程化观点。"
     },
     {
       "name": "Yann LeCun",
       "handle": "ylecun",
-      "focus": "AI research, world models"
+      "focus": "AI research, world models",
+      "blog_url": "https://yann.lecun.com/",
+      "why_watch": "适合观察世界模型、非自回归智能、Meta AI 研究路线和对主流 LLM 范式的批评。"
     },
     {
       "name": "François Chollet",
       "handle": "fchollet",
-      "focus": "reasoning, abstraction, Keras"
+      "focus": "reasoning, abstraction, Keras",
+      "blog_url": "https://fchollet.com/",
+      "why_watch": "适合关注抽象推理、ARC、智能测评、Keras 生态和对纯规模化路线的反思。"
     },
     {
       "name": "Jeremy Howard",
       "handle": "jeremyphoward",
-      "focus": "practical deep learning"
+      "focus": "practical deep learning",
+      "blog_url": "https://www.fast.ai/",
+      "why_watch": "适合跟踪实用深度学习、开源模型、训练技巧和面向开发者的 AI 工具。"
     },
     {
       "name": "Jim Fan",
       "handle": "DrJimFan",
-      "focus": "agents, robotics, embodied AI"
+      "focus": "agents, robotics, embodied AI",
+      "blog_url": "https://jimfan.me/",
+      "why_watch": "适合看 agent、机器人、具身智能、仿真环境和 NVIDIA 相关前沿应用。"
     },
     {
       "name": "Noam Brown",
       "handle": "polynoamial",
-      "focus": "reasoning, game AI, OpenAI"
+      "focus": "reasoning, game AI, OpenAI",
+      "blog_url": "https://www.noambrown.com/",
+      "why_watch": "适合关注推理模型、博弈 AI、搜索/规划和 OpenAI 研究方向。"
     },
     {
       "name": "Sebastian Ruder",
       "handle": "seb_ruder",
-      "focus": "NLP research"
+      "focus": "NLP research",
+      "blog_url": "https://ruder.io/",
+      "why_watch": "适合看 NLP 综述、语言模型趋势、多语言和迁移学习研究脉络。"
     },
     {
       "name": "Lilian Weng",
       "handle": "lilianweng",
-      "focus": "agents, alignment, research notes"
+      "focus": "agents, alignment, research notes",
+      "blog_url": "https://lilianweng.github.io/",
+      "why_watch": "适合读高质量技术长文，尤其是 agent、RL、alignment 和 LLM 系统总结。"
+    },
+    {
+      "name": "Chip Huyen",
+      "handle": "chipro",
+      "focus": "AI engineering, ML systems",
+      "blog_url": "https://huyenchip.com/blog/",
+      "why_watch": "适合跟踪 AI 工程、生产系统、评估、数据和企业落地经验。"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "focus": "AI adoption, product, education",
+      "blog_url": "https://www.oneusefulthing.org/",
+      "why_watch": "适合观察 AI 产品使用、组织采纳、教育场景和普通用户如何被模型改变。"
+    },
+    {
+      "name": "Simon Willison",
+      "handle": "simonw",
+      "focus": "LLM tools, evals, web engineering",
+      "blog_url": "https://simonwillison.net/",
+      "why_watch": "适合跟踪 LLM 工具链、prompt/eval 实践、安全边界和开发者生态。"
+    },
+    {
+      "name": "Clement Delangue",
+      "handle": "ClementDelangue",
+      "focus": "open-source AI, Hugging Face",
+      "blog_url": "https://huggingface.co/blog",
+      "why_watch": "适合观察开源模型、数据集、Hugging Face 生态和开放 AI 社区趋势。"
+    },
+    {
+      "name": "Percy Liang",
+      "handle": "percyliang",
+      "focus": "foundation models, evaluation",
+      "blog_url": "https://crfm.stanford.edu/",
+      "why_watch": "适合关注基础模型评估、透明度、学术基准和 Stanford CRFM 工作。"
+    },
+    {
+      "name": "Denny Zhou",
+      "handle": "denny_zhou",
+      "focus": "reasoning, prompting, LLM research",
+      "blog_url": "https://research.google/people/105690/",
+      "why_watch": "适合关注 chain-of-thought、推理、提示方法和 Google 研究动向。"
+    },
+    {
+      "name": "Aidan McLaughlin",
+      "handle": "aidan_mclau",
+      "focus": "Claude, product, AI systems",
+      "blog_url": "https://www.anthropic.com/news",
+      "why_watch": "适合观察 Claude 产品、Anthropic 系统能力和前沿模型发布信号。"
+    },
+    {
+      "name": "Nat Friedman",
+      "handle": "natfriedman",
+      "focus": "AI startups, tools, open source",
+      "blog_url": "https://www.nat.org/",
+      "why_watch": "适合观察 AI 创业、开发者工具、开源项目和产业机会。"
     }
   ],
   "x_max_posts_per_account": 3,
