@@ -21,6 +21,7 @@ import textwrap
 import time
 import urllib.parse
 import urllib.request
+import urllib.error
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -79,7 +80,7 @@ def parse_arxiv_datetime(value: str) -> dt.datetime:
     return parsed.astimezone(dt.timezone.utc)
 
 
-def fetch_category(category: str, max_results: int) -> list[dict]:
+def fetch_category(category: str, max_results: int, retries: int = 3) -> list[dict]:
     params = {
         "search_query": f"cat:{category}",
         "sortBy": "submittedDate",
@@ -92,8 +93,19 @@ def fetch_category(category: str, max_results: int) -> list[dict]:
         url,
         headers={"User-Agent": "daily-arxiv-paper-radar/1.0 (personal research digest)"},
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        raw = response.read()
+    last_error: Exception | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                raw = response.read()
+            break
+        except (TimeoutError, urllib.error.URLError, OSError) as exc:
+            last_error = exc
+            if attempt < retries:
+                time.sleep(5 * attempt)
+    else:
+        print(f"Warning: failed to fetch {category} after {retries} attempts: {last_error}")
+        return []
 
     root = ET.fromstring(raw)
     papers: list[dict] = []
