@@ -10,7 +10,7 @@
       "profile_url": "https://x.com/sama",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Asama&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "company",
         "frontier-lab",
@@ -29,7 +29,7 @@
       "profile_url": "https://x.com/gdb",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Agdb&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "company",
         "engineering",
@@ -47,7 +47,7 @@
       "profile_url": "https://x.com/ilyasut",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Ailyasut&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "frontier-lab",
         "alignment",
@@ -65,7 +65,7 @@
       "profile_url": "https://x.com/polynoamial",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Apolynoamial&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "reasoning",
         "search",
@@ -83,7 +83,7 @@
       "profile_url": "https://x.com/lilianweng",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Alilianweng&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "agents",
         "alignment",
@@ -138,7 +138,7 @@
       "profile_url": "https://x.com/janleike",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Ajanleike&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "alignment",
         "frontier-lab",
@@ -156,7 +156,7 @@
       "profile_url": "https://x.com/AmandaAskell",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3AAmandaAskell&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "alignment",
         "product",
@@ -174,7 +174,7 @@
       "profile_url": "https://x.com/demishassabis",
       "region": "UK",
       "search_url": "https://x.com/search?q=from%3Ademishassabis&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "company",
         "frontier-lab",
@@ -193,7 +193,7 @@
       "profile_url": "https://x.com/OriolVinyalsML",
       "region": "UK",
       "search_url": "https://x.com/search?q=from%3AOriolVinyalsML&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "frontier-lab",
         "llm",
@@ -229,7 +229,7 @@
       "profile_url": "https://x.com/shakir_za",
       "region": "UK",
       "search_url": "https://x.com/search?q=from%3Ashakir_za&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "responsible-ai",
         "research",
@@ -247,7 +247,7 @@
       "profile_url": "https://x.com/NandoDF",
       "region": "UK",
       "search_url": "https://x.com/search?q=from%3ANandoDF&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "frontier-lab",
         "rl",
@@ -265,7 +265,7 @@
       "profile_url": "https://x.com/tegmark",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Ategmark&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "university",
         "safety",
@@ -301,7 +301,7 @@
       "profile_url": "https://x.com/jacobandreas",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Ajacobandreas&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "university",
         "agents",
@@ -337,7 +337,7 @@
       "profile_url": "https://x.com/songhanMIT",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3AsonghanMIT&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "university",
         "systems",
@@ -355,7 +355,7 @@
       "profile_url": "https://x.com/drfeifei",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Adrfeifei&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "university",
         "vision",
@@ -373,7 +373,7 @@
       "profile_url": "https://x.com/percyliang",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Apercyliang&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "university",
         "evaluation",
@@ -391,7 +391,7 @@
       "profile_url": "https://x.com/chrmanning",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Achrmanning&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "university",
         "nlp",
@@ -409,7 +409,7 @@
       "profile_url": "https://x.com/chelseabfinn",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Achelseabfinn&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "university",
         "robotics",
@@ -446,7 +446,7 @@
       "profile_url": "https://x.com/AndrewYNg",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3AAndrewYNg&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "education",
         "product",
@@ -464,7 +464,7 @@
       "profile_url": "https://x.com/ylecun",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Aylecun&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "company",
         "university",
@@ -482,7 +482,7 @@
       "profile_url": "https://x.com/fchollet",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Afchollet&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "reasoning",
         "evaluation",
@@ -500,7 +500,7 @@
       "profile_url": "https://x.com/karpathy",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Akarpathy&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "llm",
         "agents",
@@ -518,7 +518,7 @@
       "profile_url": "https://x.com/simonw",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Asimonw&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "tools",
         "evals",
@@ -536,7 +536,7 @@
       "profile_url": "https://x.com/chipro",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Achipro&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "engineering",
         "systems",
@@ -554,7 +554,7 @@
       "profile_url": "https://x.com/emollick",
       "region": "US",
       "search_url": "https://x.com/search?q=from%3Aemollick&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "education",
         "product",
@@ -572,7 +572,7 @@
       "profile_url": "https://x.com/kaifulee",
       "region": "China",
       "search_url": "https://x.com/search?q=from%3Akaifulee&src=typed_query&f=live",
-      "status": "feed unavailable: HTTP Error 404: Not Found",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
       "tags": [
         "china",
         "company",
@@ -906,9 +906,856 @@
         "product"
       ],
       "why_watch": "适合观察豆包/Seed 模型、多模态、推荐生态和大规模产品迭代。"
+    },
+    {
+      "blog_url": "https://openai.com/research/",
+      "focus": "multimodal models, reasoning, research leadership",
+      "handle": "markchen90",
+      "name": "Mark Chen",
+      "org": "OpenAI",
+      "post_count": 0,
+      "profile_url": "https://x.com/markchen90",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Amarkchen90&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "frontier-lab",
+        "multimodal",
+        "reasoning",
+        "research"
+      ],
+      "why_watch": "适合关注 OpenAI 多模态、推理模型和研究组织方向。"
+    },
+    {
+      "blog_url": "https://openai.com/research/",
+      "focus": "frontier model training, scaling, research leadership",
+      "handle": "",
+      "name": "Jakub Pachocki",
+      "org": "OpenAI",
+      "post_count": 0,
+      "profile_url": "https://openai.com/research/",
+      "region": "US",
+      "search_url": "https://openai.com/research/",
+      "status": "no x handle configured",
+      "tags": [
+        "frontier-lab",
+        "training",
+        "scaling",
+        "research"
+      ],
+      "why_watch": "适合观察 OpenAI 训练体系、模型规模化和前沿研究路线。"
+    },
+    {
+      "blog_url": "https://openai.com/news/",
+      "focus": "robotics, AI systems, company building",
+      "handle": "woj_zaremba",
+      "name": "Wojciech Zaremba",
+      "org": "OpenAI",
+      "post_count": 0,
+      "profile_url": "https://x.com/woj_zaremba",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Awoj_zaremba&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "frontier-lab",
+        "robotics",
+        "systems",
+        "company"
+      ],
+      "why_watch": "适合关注 OpenAI 早期技术脉络、机器人和 AI 系统组织建设。"
+    },
+    {
+      "blog_url": "https://www.jasonwei.net/",
+      "focus": "chain-of-thought, reasoning, LLM capabilities",
+      "handle": "_jasonwei",
+      "name": "Jason Wei",
+      "org": "OpenAI",
+      "post_count": 0,
+      "profile_url": "https://x.com/_jasonwei",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3A_jasonwei&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "frontier-lab",
+        "reasoning",
+        "llm",
+        "evaluation"
+      ],
+      "why_watch": "适合跟踪思维链、推理能力、能力涌现和大模型评估。"
+    },
+    {
+      "blog_url": "https://www.anthropic.com/research",
+      "focus": "reinforcement learning, alignment, post-training",
+      "handle": "",
+      "name": "John Schulman",
+      "org": "Anthropic / OpenAI alumni",
+      "post_count": 0,
+      "profile_url": "https://www.anthropic.com/research",
+      "region": "US",
+      "search_url": "https://www.anthropic.com/research",
+      "status": "no x handle configured",
+      "tags": [
+        "frontier-lab",
+        "rl",
+        "alignment",
+        "post-training"
+      ],
+      "why_watch": "适合关注 RLHF、强化学习、后训练和 alignment 技术路线。"
+    },
+    {
+      "blog_url": "https://transformer-circuits.pub/",
+      "focus": "mechanistic interpretability, model internals",
+      "handle": "ch402",
+      "name": "Chris Olah",
+      "org": "Anthropic",
+      "post_count": 0,
+      "profile_url": "https://x.com/ch402",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Ach402&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "frontier-lab",
+        "interpretability",
+        "safety",
+        "research"
+      ],
+      "why_watch": "适合深入理解模型可解释性、神经元/电路分析和安全研究。"
+    },
+    {
+      "blog_url": "https://www.anthropic.com/research",
+      "focus": "scaling laws, Claude, frontier model research",
+      "handle": "",
+      "name": "Jared Kaplan",
+      "org": "Anthropic / Johns Hopkins",
+      "post_count": 0,
+      "profile_url": "https://www.anthropic.com/research",
+      "region": "US",
+      "search_url": "https://www.anthropic.com/research",
+      "status": "no x handle configured",
+      "tags": [
+        "frontier-lab",
+        "scaling",
+        "llm",
+        "research"
+      ],
+      "why_watch": "适合观察 scaling law、Claude 研究和 Anthropic 基础模型方向。"
+    },
+    {
+      "blog_url": "https://www.anthropic.com/research",
+      "focus": "alignment, evaluation, NLP",
+      "handle": "sleepinyourhat",
+      "name": "Sam Bowman",
+      "org": "Anthropic / NYU",
+      "post_count": 0,
+      "profile_url": "https://x.com/sleepinyourhat",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Asleepinyourhat&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "frontier-lab",
+        "alignment",
+        "evaluation",
+        "nlp"
+      ],
+      "why_watch": "适合关注模型评估、alignment、NLP 学术与前沿实验室交叉动态。"
+    },
+    {
+      "blog_url": "https://importai.substack.com/",
+      "focus": "AI policy, frontier lab strategy, newsletter",
+      "handle": "jackclarkSF",
+      "name": "Jack Clark",
+      "org": "Anthropic",
+      "post_count": 0,
+      "profile_url": "https://x.com/jackclarkSF",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3AjackclarkSF&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "frontier-lab",
+        "policy",
+        "strategy",
+        "newsletter"
+      ],
+      "why_watch": "适合通过高信号周报跟踪全球 AI 政策、公司和研究趋势。"
+    },
+    {
+      "blog_url": "https://deepmind.google/discover/blog/",
+      "focus": "reinforcement learning, AlphaZero, planning",
+      "handle": "",
+      "name": "David Silver",
+      "org": "Google DeepMind / UCL",
+      "post_count": 0,
+      "profile_url": "https://deepmind.google/discover/blog/",
+      "region": "UK",
+      "search_url": "https://deepmind.google/discover/blog/",
+      "status": "no x handle configured",
+      "tags": [
+        "frontier-lab",
+        "rl",
+        "planning",
+        "science"
+      ],
+      "why_watch": "适合关注强化学习、搜索规划、Alpha 系列和通用智能算法。"
+    },
+    {
+      "blog_url": "https://deepmind.google/discover/blog/",
+      "focus": "Gemini, deep learning systems, research leadership",
+      "handle": "",
+      "name": "Koray Kavukcuoglu",
+      "org": "Google DeepMind",
+      "post_count": 0,
+      "profile_url": "https://deepmind.google/discover/blog/",
+      "region": "UK",
+      "search_url": "https://deepmind.google/discover/blog/",
+      "status": "no x handle configured",
+      "tags": [
+        "frontier-lab",
+        "llm",
+        "systems",
+        "research"
+      ],
+      "why_watch": "适合观察 DeepMind 模型工程、Gemini 和研究管理路线。"
+    },
+    {
+      "blog_url": "https://deepmind.google/discover/blog/",
+      "focus": "robotics, continual learning, embodied AI",
+      "handle": "",
+      "name": "Raia Hadsell",
+      "org": "Google DeepMind",
+      "post_count": 0,
+      "profile_url": "https://deepmind.google/discover/blog/",
+      "region": "UK",
+      "search_url": "https://deepmind.google/discover/blog/",
+      "status": "no x handle configured",
+      "tags": [
+        "frontier-lab",
+        "robotics",
+        "embodied-ai",
+        "learning"
+      ],
+      "why_watch": "适合关注机器人、持续学习和具身智能研究。"
+    },
+    {
+      "blog_url": "https://petar-v.com/",
+      "focus": "graph neural networks, algorithms, neural reasoning",
+      "handle": "PetarV_93",
+      "name": "Petar Velickovic",
+      "org": "Google DeepMind / Cambridge",
+      "post_count": 0,
+      "profile_url": "https://x.com/PetarV_93",
+      "region": "UK",
+      "search_url": "https://x.com/search?q=from%3APetarV_93&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "frontier-lab",
+        "gnn",
+        "reasoning",
+        "algorithms"
+      ],
+      "why_watch": "适合关注图神经网络、算法推理和神经算法学习。"
+    },
+    {
+      "blog_url": "https://research.google/",
+      "focus": "AI systems, scaling, Google research",
+      "handle": "JeffDean",
+      "name": "Jeff Dean",
+      "org": "Google DeepMind / Google Research",
+      "post_count": 0,
+      "profile_url": "https://x.com/JeffDean",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3AJeffDean&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "company",
+        "systems",
+        "scaling",
+        "research"
+      ],
+      "why_watch": "适合观察 Google AI 系统、TPU/基础设施、大规模训练和研究发布。"
+    },
+    {
+      "blog_url": "https://research.google/",
+      "focus": "neural architecture search, LLM, Google models",
+      "handle": "quocleix",
+      "name": "Quoc Le",
+      "org": "Google DeepMind / Google Research",
+      "post_count": 0,
+      "profile_url": "https://x.com/quocleix",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Aquocleix&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "company",
+        "architecture",
+        "llm",
+        "research"
+      ],
+      "why_watch": "适合关注模型架构搜索、Google 大模型和高质量研究论文。"
+    },
+    {
+      "blog_url": "https://web.mit.edu/cocosci/josh.html",
+      "focus": "cognitive science, program induction, human-like AI",
+      "handle": "",
+      "name": "Josh Tenenbaum",
+      "org": "MIT",
+      "post_count": 0,
+      "profile_url": "https://web.mit.edu/cocosci/josh.html",
+      "region": "US",
+      "search_url": "https://web.mit.edu/cocosci/josh.html",
+      "status": "no x handle configured",
+      "tags": [
+        "university",
+        "cognitive-ai",
+        "reasoning",
+        "theory"
+      ],
+      "why_watch": "适合关注认知科学、程序归纳、世界模型和类人智能基础。"
+    },
+    {
+      "blog_url": "https://danielarus.csail.mit.edu/",
+      "focus": "robotics, AI systems, autonomy",
+      "handle": "danielarus",
+      "name": "Daniela Rus",
+      "org": "MIT",
+      "post_count": 0,
+      "profile_url": "https://x.com/danielarus",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Adanielarus&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "robotics",
+        "systems",
+        "embodied-ai"
+      ],
+      "why_watch": "适合观察机器人、自主系统和 MIT CSAIL AI 组织动态。"
+    },
+    {
+      "blog_url": "https://groups.csail.mit.edu/vision/torralbalab/",
+      "focus": "computer vision, scene understanding, generative visual models",
+      "handle": "",
+      "name": "Antonio Torralba",
+      "org": "MIT",
+      "post_count": 0,
+      "profile_url": "https://groups.csail.mit.edu/vision/torralbalab/",
+      "region": "US",
+      "search_url": "https://groups.csail.mit.edu/vision/torralbalab/",
+      "status": "no x handle configured",
+      "tags": [
+        "university",
+        "vision",
+        "generative-models"
+      ],
+      "why_watch": "适合关注视觉理解、生成式视觉模型和大规模视觉数据。"
+    },
+    {
+      "blog_url": "https://web.mit.edu/phillipi/",
+      "focus": "generative models, vision, representation learning",
+      "handle": "phillip_isola",
+      "name": "Phillip Isola",
+      "org": "MIT",
+      "post_count": 0,
+      "profile_url": "https://x.com/phillip_isola",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Aphillip_isola&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "vision",
+        "generative-models",
+        "representation"
+      ],
+      "why_watch": "适合关注图像生成、视觉表征和多模态基础研究。"
+    },
+    {
+      "blog_url": "https://people.csail.mit.edu/madry/",
+      "focus": "robustness, security, trustworthy ML",
+      "handle": "aleks_madry",
+      "name": "Aleksander Madry",
+      "org": "MIT",
+      "post_count": 0,
+      "profile_url": "https://x.com/aleks_madry",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Aaleks_madry&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "safety",
+        "robustness",
+        "security"
+      ],
+      "why_watch": "适合关注鲁棒性、安全性、可信机器学习和模型风险。"
+    },
+    {
+      "blog_url": "https://dorsa.fyi/",
+      "focus": "robot learning, human-AI interaction, safety",
+      "handle": "DorsaSadigh",
+      "name": "Dorsa Sadigh",
+      "org": "Stanford",
+      "post_count": 0,
+      "profile_url": "https://x.com/DorsaSadigh",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3ADorsaSadigh&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "robotics",
+        "hci",
+        "safety"
+      ],
+      "why_watch": "适合关注机器人学习、人机协作和安全交互。"
+    },
+    {
+      "blog_url": "https://ermongroup.github.io/",
+      "focus": "generative modeling, diffusion, AI for science",
+      "handle": "StefanoErmon",
+      "name": "Stefano Ermon",
+      "org": "Stanford",
+      "post_count": 0,
+      "profile_url": "https://x.com/StefanoErmon",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3AStefanoErmon&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "diffusion",
+        "generative-models",
+        "science"
+      ],
+      "why_watch": "适合关注扩散模型、生成建模和 AI for Science。"
+    },
+    {
+      "blog_url": "https://thashim.github.io/",
+      "focus": "LLM evaluation, data, robustness",
+      "handle": "tatsu_hashimoto",
+      "name": "Tatsunori Hashimoto",
+      "org": "Stanford",
+      "post_count": 0,
+      "profile_url": "https://x.com/tatsu_hashimoto",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Atatsu_hashimoto&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "llm",
+        "evaluation",
+        "data"
+      ],
+      "why_watch": "适合关注 LLM 数据、评估、鲁棒性和模型行为分析。"
+    },
+    {
+      "blog_url": "https://hazyresearch.stanford.edu/",
+      "focus": "AI systems, data-centric AI, Hazy Research",
+      "handle": "chrisre",
+      "name": "Chris Re",
+      "org": "Stanford",
+      "post_count": 0,
+      "profile_url": "https://x.com/chrisre",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Achrisre&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "systems",
+        "data",
+        "llm"
+      ],
+      "why_watch": "适合关注 AI 系统、数据中心方法、长上下文和高效训练。"
+    },
+    {
+      "blog_url": "https://www.james-zou.com/",
+      "focus": "AI for health, evaluation, responsible AI",
+      "handle": "james_y_zou",
+      "name": "James Zou",
+      "org": "Stanford",
+      "post_count": 0,
+      "profile_url": "https://x.com/james_y_zou",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Ajames_y_zou&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "healthcare",
+        "evaluation",
+        "responsible-ai"
+      ],
+      "why_watch": "适合关注医疗 AI、模型评估、负责任 AI 和真实世界部署。"
+    },
+    {
+      "blog_url": "https://web.stanford.edu/~jurafsky/",
+      "focus": "NLP, speech, computational linguistics",
+      "handle": "",
+      "name": "Dan Jurafsky",
+      "org": "Stanford",
+      "post_count": 0,
+      "profile_url": "https://web.stanford.edu/~jurafsky/",
+      "region": "US",
+      "search_url": "https://web.stanford.edu/~jurafsky/",
+      "status": "no x handle configured",
+      "tags": [
+        "university",
+        "nlp",
+        "speech",
+        "language"
+      ],
+      "why_watch": "适合关注 NLP、语音、计算语言学和语言模型基础。"
+    },
+    {
+      "blog_url": "https://cs.stanford.edu/people/jure/",
+      "focus": "graphs, networks, AI systems",
+      "handle": "jure",
+      "name": "Jure Leskovec",
+      "org": "Stanford",
+      "post_count": 0,
+      "profile_url": "https://x.com/jure",
+      "region": "US",
+      "search_url": "https://x.com/search?q=from%3Ajure&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "university",
+        "gnn",
+        "systems",
+        "data"
+      ],
+      "why_watch": "适合关注图学习、网络科学、大规模数据和应用 AI。"
+    },
+    {
+      "blog_url": "https://people.csail.mit.edu/kaiming/",
+      "focus": "computer vision, representation learning, architectures",
+      "handle": "",
+      "name": "Kaiming He",
+      "org": "MIT",
+      "post_count": 0,
+      "profile_url": "https://people.csail.mit.edu/kaiming/",
+      "region": "US",
+      "search_url": "https://people.csail.mit.edu/kaiming/",
+      "status": "no x handle configured",
+      "tags": [
+        "university",
+        "vision",
+        "architecture",
+        "representation"
+      ],
+      "why_watch": "适合关注视觉基础模型、网络架构、表征学习和高影响力论文。"
+    },
+    {
+      "blog_url": "https://www.msra.cn/people/hang-li",
+      "focus": "NLP, search, recommendation, LLM",
+      "handle": "",
+      "name": "Hang Li",
+      "org": "ByteDance AI Lab / Huawei Noah alumni",
+      "post_count": 0,
+      "profile_url": "https://www.msra.cn/people/hang-li",
+      "region": "China",
+      "search_url": "https://www.msra.cn/people/hang-li",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "nlp",
+        "search",
+        "llm"
+      ],
+      "why_watch": "适合关注中文 NLP、搜索推荐、大模型和产业研究结合。"
+    },
+    {
+      "blog_url": "http://nlp.csai.tsinghua.edu.cn/~sms/",
+      "focus": "Chinese NLP, knowledge, language models",
+      "handle": "",
+      "name": "Maosong Sun",
+      "org": "Tsinghua University",
+      "post_count": 0,
+      "profile_url": "http://nlp.csai.tsinghua.edu.cn/~sms/",
+      "region": "China",
+      "search_url": "http://nlp.csai.tsinghua.edu.cn/~sms/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "university",
+        "nlp",
+        "llm"
+      ],
+      "why_watch": "适合观察清华中文 NLP、知识工程和语言模型研究脉络。"
+    },
+    {
+      "blog_url": "https://www.baai.ac.cn/",
+      "focus": "AI infrastructure, open-source foundation models, vision",
+      "handle": "",
+      "name": "Huang Tiejun",
+      "org": "BAAI / Peking University",
+      "post_count": 0,
+      "profile_url": "https://www.baai.ac.cn/",
+      "region": "China",
+      "search_url": "https://www.baai.ac.cn/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "institute",
+        "university",
+        "open-source",
+        "vision"
+      ],
+      "why_watch": "适合关注智源组织、开源基础模型、视觉智能和国内 AI 基础设施。"
+    },
+    {
+      "blog_url": "https://www.ai.pku.edu.cn/",
+      "focus": "multimedia, video coding, AI infrastructure",
+      "handle": "",
+      "name": "Gao Wen",
+      "org": "Peking University / Peng Cheng Lab",
+      "post_count": 0,
+      "profile_url": "https://www.ai.pku.edu.cn/",
+      "region": "China",
+      "search_url": "https://www.ai.pku.edu.cn/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "university",
+        "institute",
+        "multimodal",
+        "systems"
+      ],
+      "why_watch": "适合关注多媒体智能、视频技术、鹏城实验室和北京大学 AI 布局。"
+    },
+    {
+      "blog_url": "https://www.idea.edu.cn/",
+      "focus": "AI research leadership, industry strategy",
+      "handle": "harryshum",
+      "name": "Harry Shum",
+      "org": "IDEA / Microsoft Research Asia alumni",
+      "post_count": 0,
+      "profile_url": "https://x.com/harryshum",
+      "region": "China",
+      "search_url": "https://x.com/search?q=from%3Aharryshum&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "china",
+        "institute",
+        "strategy",
+        "research"
+      ],
+      "why_watch": "适合观察粤港澳 AI 研究组织、产业连接和微软亚研院学术网络。"
+    },
+    {
+      "blog_url": "https://www.moonshot.cn/",
+      "focus": "long-context LLM, Kimi, pretraining",
+      "handle": "Zhilin_Yang",
+      "name": "Yang Zhilin",
+      "org": "Moonshot AI / CMU alumni",
+      "post_count": 0,
+      "profile_url": "https://x.com/Zhilin_Yang",
+      "region": "China",
+      "search_url": "https://x.com/search?q=from%3AZhilin_Yang&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "china",
+        "company",
+        "llm",
+        "long-context",
+        "training"
+      ],
+      "why_watch": "适合关注 Kimi、长上下文、预训练方法和国产大模型产品化。"
+    },
+    {
+      "blog_url": "https://www.deepseek.com/",
+      "focus": "reasoning models, efficient training, open-source LLM",
+      "handle": "",
+      "name": "Liang Wenfeng",
+      "org": "DeepSeek",
+      "post_count": 0,
+      "profile_url": "https://www.deepseek.com/",
+      "region": "China",
+      "search_url": "https://www.deepseek.com/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "reasoning",
+        "training",
+        "open-source"
+      ],
+      "why_watch": "适合观察 DeepSeek 推理模型、高效训练、开源权重和国产前沿模型路线。"
+    },
+    {
+      "blog_url": "https://www.shlab.org.cn/",
+      "focus": "computer vision, multimodal AI, research leadership",
+      "handle": "",
+      "name": "Xu Li",
+      "org": "SenseTime / Shanghai AI Lab",
+      "post_count": 0,
+      "profile_url": "https://www.shlab.org.cn/",
+      "region": "China",
+      "search_url": "https://www.shlab.org.cn/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "institute",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "适合关注商汤、上海 AI Lab、视觉大模型和多模态研究。"
+    },
+    {
+      "blog_url": "https://www.lepton.ai/",
+      "focus": "AI infrastructure, systems, deployment",
+      "handle": "jiayq",
+      "name": "Yangqing Jia",
+      "org": "Lepton AI / Alibaba alumni",
+      "post_count": 0,
+      "profile_url": "https://x.com/jiayq",
+      "region": "China",
+      "search_url": "https://x.com/search?q=from%3Ajiayq&src=typed_query&f=live",
+      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "tags": [
+        "china",
+        "company",
+        "systems",
+        "infrastructure",
+        "deployment"
+      ],
+      "why_watch": "适合关注 AI 基础设施、模型服务、工程系统和创业产品化。"
+    },
+    {
+      "blog_url": "https://yiyan.baidu.com/",
+      "focus": "ERNIE, AI native applications, search",
+      "handle": "",
+      "name": "Robin Li",
+      "org": "Baidu",
+      "post_count": 0,
+      "profile_url": "https://yiyan.baidu.com/",
+      "region": "China",
+      "search_url": "https://yiyan.baidu.com/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "llm",
+        "search",
+        "product"
+      ],
+      "why_watch": "适合观察百度文心、搜索增强、AI 原生应用和产业落地策略。"
+    },
+    {
+      "blog_url": "https://www.baichuan-ai.com/",
+      "focus": "Chinese LLM, AI product, search",
+      "handle": "",
+      "name": "Wang Xiaochuan",
+      "org": "Baichuan AI",
+      "post_count": 0,
+      "profile_url": "https://www.baichuan-ai.com/",
+      "region": "China",
+      "search_url": "https://www.baichuan-ai.com/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "llm",
+        "product",
+        "search"
+      ],
+      "why_watch": "适合关注百川模型、中文大模型、搜索产品和国内模型创业。"
+    },
+    {
+      "blog_url": "https://www.cambricon.com/",
+      "focus": "AI chips, accelerators, hardware systems",
+      "handle": "",
+      "name": "Chen Tianshi",
+      "org": "Cambricon / CAS",
+      "post_count": 0,
+      "profile_url": "https://www.cambricon.com/",
+      "region": "China",
+      "search_url": "https://www.cambricon.com/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "hardware",
+        "systems"
+      ],
+      "why_watch": "适合观察国产 AI 芯片、推理训练硬件和系统生态。"
+    },
+    {
+      "blog_url": "https://www.baichuan-ai.com/",
+      "focus": "Chinese LLM, model products, enterprise AI",
+      "handle": "",
+      "name": "Baichuan AI",
+      "org": "Baichuan AI",
+      "post_count": 0,
+      "profile_url": "https://www.baichuan-ai.com/",
+      "region": "China",
+      "search_url": "https://www.baichuan-ai.com/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "llm",
+        "product"
+      ],
+      "why_watch": "适合跟踪国产通用大模型、企业服务和模型产品发布。"
+    },
+    {
+      "blog_url": "https://www.stepfun.com/",
+      "focus": "multimodal foundation models, Chinese AI products",
+      "handle": "",
+      "name": "StepFun",
+      "org": "StepFun",
+      "post_count": 0,
+      "profile_url": "https://www.stepfun.com/",
+      "region": "China",
+      "search_url": "https://www.stepfun.com/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "multimodal",
+        "llm",
+        "product"
+      ],
+      "why_watch": "适合关注阶跃星辰、多模态模型、端到端模型能力和产品节奏。"
+    },
+    {
+      "blog_url": "https://ai.tencent.com/ailab/",
+      "focus": "LLM, healthcare AI, games AI, multimodal",
+      "handle": "",
+      "name": "Tencent AI Lab",
+      "org": "Tencent",
+      "post_count": 0,
+      "profile_url": "https://ai.tencent.com/ailab/",
+      "region": "China",
+      "search_url": "https://ai.tencent.com/ailab/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "llm",
+        "healthcare",
+        "multimodal"
+      ],
+      "why_watch": "适合观察腾讯 AI Lab、医疗 AI、游戏 AI 和多模态研究。"
+    },
+    {
+      "blog_url": "https://www.noahlab.com.hk/",
+      "focus": "foundation models, optimization, AI systems",
+      "handle": "",
+      "name": "Huawei Noah's Ark Lab",
+      "org": "Huawei",
+      "post_count": 0,
+      "profile_url": "https://www.noahlab.com.hk/",
+      "region": "China",
+      "search_url": "https://www.noahlab.com.hk/",
+      "status": "no x handle configured",
+      "tags": [
+        "china",
+        "company",
+        "llm",
+        "systems",
+        "optimization"
+      ],
+      "why_watch": "适合关注华为诺亚方舟、盘古生态、优化算法和 AI 系统研究。"
     }
   ],
-  "generated_at": "2026-07-09T14:24:07.023466+00:00",
+  "generated_at": "2026-07-09T14:36:43.931355+00:00",
   "posts": [],
   "source": "RSSHub best-effort X/Twitter feeds"
 }

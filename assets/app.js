@@ -22,7 +22,6 @@ const els = {
   metricUpdated: document.querySelector("#metric-updated"),
   socialStatus: document.querySelector("#social-status"),
   socialAccounts: document.querySelector("#social-accounts"),
-  socialFeed: document.querySelector("#social-feed"),
   orgFilter: document.querySelector("#org-filter"),
   regionFilter: document.querySelector("#region-filter"),
   tagFilter: document.querySelector("#tag-filter"),
@@ -234,14 +233,11 @@ function renderSocial() {
   const social = state.social || { accounts: [], posts: [] };
   const accounts = social.accounts || [];
   const visibleAccounts = filteredAccounts(accounts);
-  const visibleHandles = new Set(visibleAccounts.map((account) => account.handle));
-  const visibleNames = new Set(visibleAccounts.map((account) => account.name));
   const posts = social.posts || [];
-  const okAccounts = accounts.filter((account) => account.status === "ok").length;
 
   els.socialStatus.textContent = posts.length
-    ? `已汇总 ${posts.length} 条最新动态，当前显示 ${visibleAccounts.length}/${accounts.length} 个条目。`
-    : `暂时没有抓到具体推文，当前显示 ${visibleAccounts.length}/${accounts.length} 位 AI 研究者/机构观察卡。`;
+    ? `已汇总 ${posts.length} 条最新动态，当前显示 ${visibleAccounts.length}/${accounts.length} 位 AI 研究者/机构观察卡。`
+    : `当前显示 ${visibleAccounts.length}/${accounts.length} 位 AI 研究者/机构观察卡。`;
 
   els.socialAccounts.innerHTML = "";
   visibleAccounts.forEach((account) => {
@@ -266,35 +262,6 @@ function renderSocial() {
       </div>
     `;
     els.socialAccounts.append(card);
-  });
-
-  els.socialFeed.innerHTML = "";
-  const filteredPosts = posts.filter((post) => visibleHandles.has(post.handle) || visibleNames.has(post.account));
-  const feedItems = filteredPosts.length ? filteredPosts.slice(0, 12) : visibleAccounts.map((account) => ({
-    account: account.name,
-    handle: account.handle,
-    title: `${account.name}：值得关注点`,
-    summary: account.why_watch || account.status || "这个账号暂时没有返回新内容。",
-    url: account.blog_url || account.search_url || account.profile_url,
-    published: social.generated_at,
-  }));
-
-  feedItems.forEach((post) => {
-    const item = document.createElement("article");
-    item.className = "social-post";
-    const handle = post.handle ? `@${escapeHtml(post.handle)}` : escapeHtml(post.account);
-    item.innerHTML = `
-      <div>
-        <p class="social-author">${escapeHtml(post.account)} <span>${handle}</span></p>
-        <h3>${escapeHtml(post.title)}</h3>
-        <p>${escapeHtml(post.summary || "")}</p>
-      </div>
-      <div class="social-post-foot">
-        <span>${fmtDate(post.published)}</span>
-        <a href="${escapeHtml(post.url)}">查看原文</a>
-      </div>
-    `;
-    els.socialFeed.append(item);
   });
 }
 

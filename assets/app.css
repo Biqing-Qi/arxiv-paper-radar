@@ -253,7 +253,7 @@ select {
 
 .social-accounts {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -356,73 +356,6 @@ select {
 
 .person-links a:hover {
   background: rgba(255, 255, 255, 0.18);
-}
-
-.social-feed {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.social-post {
-  display: grid;
-  gap: 12px;
-  align-content: space-between;
-  min-height: 190px;
-  padding: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.94);
-  color: var(--ink);
-}
-
-.social-author {
-  margin: 0 0 8px;
-  color: var(--accent);
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.social-author span {
-  color: var(--muted);
-}
-
-.social-post h3 {
-  display: -webkit-box;
-  margin: 0;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 1.35;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
-.social-post p {
-  display: -webkit-box;
-  margin: 8px 0 0;
-  overflow: hidden;
-  color: #42515b;
-  font-size: 14px;
-  line-height: 1.48;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
-.social-post-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  border-top: 1px solid var(--line);
-  padding-top: 10px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.social-post-foot a {
-  color: var(--accent-3);
-  text-decoration: none;
 }
 
 .topic-button {
@@ -677,10 +610,6 @@ select {
 
   .social-summary p:last-child {
     text-align: left;
-  }
-
-  .social-feed {
-    grid-template-columns: 1fr;
   }
 
   .people-filters,
