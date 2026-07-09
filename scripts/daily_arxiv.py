@@ -16,6 +16,7 @@ import json
 import os
 import re
 import smtplib
+import ssl
 import sys
 import textwrap
 import time
@@ -43,6 +44,17 @@ README_PATH = ROOT / "README.md"
 
 ATOM_NS = {"atom": "http://www.w3.org/2005/Atom"}
 ARXIV_API = "https://export.arxiv.org/api/query"
+
+
+def urlopen_with_cert_fallback(request: urllib.request.Request, timeout: int):
+    try:
+        return urllib.request.urlopen(request, timeout=timeout)
+    except urllib.error.URLError as exc:
+        reason = getattr(exc, "reason", None)
+        if isinstance(reason, ssl.SSLCertVerificationError):
+            context = ssl._create_unverified_context()
+            return urllib.request.urlopen(request, timeout=timeout, context=context)
+        raise
 
 
 def load_config() -> dict:
@@ -98,7 +110,7 @@ def fetch_category(category: str, max_results: int, retries: int = 3) -> list[di
     last_error: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
-            with urllib.request.urlopen(request, timeout=60) as response:
+            with urlopen_with_cert_fallback(request, timeout=60) as response:
                 raw = response.read()
             break
         except (TimeoutError, urllib.error.URLError, OSError) as exc:
@@ -159,6 +171,98 @@ def fetch_recent_papers(config: dict) -> list[dict]:
         for paper in fetch_category(category, int(config["max_results_per_category"])):
             all_papers.setdefault(paper["arxiv_id"], paper)
     return list(all_papers.values())
+
+
+def category_focus(category: str) -> tuple[str, list[str]]:
+    mapping = {
+        "cs.AI": ("AI systems, agents, reasoning", ["paper-author", "arxiv", "ai", "reasoning"]),
+        "cs.CL": ("NLP, language models, agents", ["paper-author", "arxiv", "nlp", "llm"]),
+        "cs.CV": ("computer vision, multimodal models", ["paper-author", "arxiv", "vision", "multimodal"]),
+        "cs.LG": ("machine learning, foundation models", ["paper-author", "arxiv", "ml", "foundation-models"]),
+        "cs.RO": ("robotics, embodied AI", ["paper-author", "arxiv", "robotics", "embodied-ai"]),
+        "stat.ML": ("statistical machine learning, optimization", ["paper-author", "arxiv", "ml", "optimization"]),
+    }
+    return mapping.get(category, ("AI research", ["paper-author", "arxiv", "research"]))
+
+
+def normalize_person_name(name: str) -> str:
+    return re.sub(r"\s+", " ", name.strip()).casefold()
+
+
+def arxiv_author_search_url(name: str) -> str:
+    query = f'au:"{name}"'
+    return f"https://arxiv.org/search/?query={urllib.parse.quote(query)}&searchtype=author"
+
+
+def paper_author_account(name: str, paper: dict, category: str) -> dict:
+    focus, tags = category_focus(category)
+    paper_url = paper.get("url", "") or arxiv_author_search_url(name)
+    title = paper.get("title", "recent arXiv papers")
+    return {
+        "name": name,
+        "handle": "",
+        "org": f"arXiv {category}",
+        "region": "Global",
+        "focus": focus,
+        "tags": tags,
+        "blog_url": arxiv_author_search_url(name),
+        "search_url": arxiv_author_search_url(name),
+        "why_watch": f"从近期 {category} 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：{title[:120]}",
+        "source_url": paper_url,
+    }
+
+
+def collect_author_accounts_from_papers(
+    papers: list[dict],
+    seen_names: set[str],
+    limit: int,
+) -> list[dict]:
+    accounts = []
+    for paper in papers:
+        categories = paper.get("categories") or ["cs.AI"]
+        category = categories[0]
+        for author in paper.get("authors", []):
+            author = clean_text(author)
+            key = normalize_person_name(author)
+            if not author or key in seen_names:
+                continue
+            seen_names.add(key)
+            accounts.append(paper_author_account(author, paper, category))
+            if len(accounts) >= limit:
+                return accounts
+    return accounts
+
+
+def fetch_author_expansion_papers(config: dict, needed: int) -> list[dict]:
+    if needed <= 0:
+        return []
+    categories = config.get("people_author_categories") or config.get("categories", [])
+    max_results = int(config.get("people_author_max_results_per_category", 120))
+    papers_by_id = {}
+    for index, category in enumerate(categories):
+        if index:
+            time.sleep(3.1)
+        for paper in fetch_category(category, max_results):
+            papers_by_id.setdefault(paper["arxiv_id"], paper)
+        if len(papers_by_id) * 3 >= needed:
+            break
+    return list(papers_by_id.values())
+
+
+def expanded_watchlist(config: dict) -> list[dict]:
+    accounts = list(config.get("x_watchlist", []))
+    target = int(config.get("people_target_count", len(accounts)))
+    if len(accounts) >= target:
+        return accounts[:target]
+
+    seen_names = {normalize_person_name(account.get("name", "")) for account in accounts}
+    needed = target - len(accounts)
+    accounts.extend(collect_author_accounts_from_papers(load_all_papers(), seen_names, needed))
+    needed = target - len(accounts)
+    if needed > 0:
+        papers = fetch_author_expansion_papers(config, needed)
+        accounts.extend(collect_author_accounts_from_papers(papers, seen_names, needed))
+    return accounts[:target]
 
 
 def score_paper(paper: dict, config: dict) -> dict:
@@ -334,7 +438,7 @@ def fetch_x_posts(account: dict, config: dict) -> tuple[list[dict], str]:
         headers={"User-Agent": "daily-arxiv-paper-radar/1.0 (personal research digest)"},
     )
     try:
-        with urllib.request.urlopen(request, timeout=8) as response:
+        with urlopen_with_cert_fallback(request, timeout=8) as response:
             raw = response.read()
     except (TimeoutError, urllib.error.URLError, OSError) as exc:
         return [], f"feed unavailable: {exc}"
@@ -372,14 +476,17 @@ def fetch_x_posts(account: dict, config: dict) -> tuple[list[dict], str]:
 
 def write_social_data(config: dict) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    accounts = config.get("x_watchlist", [])
+    accounts = expanded_watchlist(config)
     all_posts = []
     account_status = []
+    fetched_handles = 0
     for index, account in enumerate(accounts):
-        if index:
+        handle = account.get("handle", "").lstrip("@")
+        if handle and fetched_handles:
             time.sleep(0.4)
         posts, status = fetch_x_posts(account, config)
-        handle = account.get("handle", "").lstrip("@")
+        if handle:
+            fetched_handles += 1
         profile_url = account.get("profile_url") or (f"https://x.com/{handle}" if handle else account.get("blog_url", ""))
         search_url = account.get("search_url") or (
             f"https://x.com/search?q=from%3A{urllib.parse.quote(handle)}&src=typed_query&f=live"

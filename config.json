@@ -147,6 +147,16 @@
     {"name":"Tencent AI Lab","handle":"","org":"Tencent","region":"China","focus":"LLM, healthcare AI, games AI, multimodal","tags":["china","company","llm","healthcare","multimodal"],"blog_url":"https://ai.tencent.com/ailab/","why_watch":"适合观察腾讯 AI Lab、医疗 AI、游戏 AI 和多模态研究。"},
     {"name":"Huawei Noah's Ark Lab","handle":"","org":"Huawei","region":"China","focus":"foundation models, optimization, AI systems","tags":["china","company","llm","systems","optimization"],"blog_url":"https://www.noahlab.com.hk/","why_watch":"适合关注华为诺亚方舟、盘古生态、优化算法和 AI 系统研究。"}
   ],
+  "people_target_count": 500,
+  "people_author_categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.CV",
+    "cs.LG",
+    "cs.RO",
+    "stat.ML"
+  ],
+  "people_author_max_results_per_category": 120,
   "x_max_posts_per_account": 3,
   "x_rsshub_base": "https://rsshub.app"
 }
