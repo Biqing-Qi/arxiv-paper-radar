@@ -1,0 +1,55 @@
+{
+  "site_title": "Daily arXiv Paper Radar",
+  "timezone": "Asia/Shanghai",
+  "lookback_days": 2,
+  "max_results_per_category": 80,
+  "min_score": 3,
+  "max_papers_in_report": 20,
+  "categories": [
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+  ],
+  "topics": {
+    "diffusion_language_models": {
+      "label": "Diffusion Language Models",
+      "keywords": {
+        "diffusion language model": 6,
+        "diffusion llm": 6,
+        "text diffusion": 5,
+        "discrete diffusion": 5,
+        "masked diffusion": 4,
+        "score-based language": 4,
+        "denoising language": 4,
+        "non-autoregressive generation": 3,
+        "language diffusion": 5
+      }
+    },
+    "model_architecture": {
+      "label": "Model Architecture",
+      "keywords": {
+        "state space model": 5,
+        "mamba": 5,
+        "linear attention": 4,
+        "mixture of experts": 4,
+        "moe": 3,
+        "transformer alternative": 5,
+        "hybrid architecture": 4,
+        "recurrent architecture": 4,
+        "long context": 3,
+        "efficient attention": 3,
+        "sparse attention": 3,
+        "architecture": 2
+      }
+    }
+  },
+  "boost_keywords": {
+    "large language model": 2,
+    "llm": 2,
+    "reasoning": 2,
+    "pretraining": 1,
+    "scaling": 1,
+    "inference": 1
+  }
+}

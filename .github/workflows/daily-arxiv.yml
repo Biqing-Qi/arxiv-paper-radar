@@ -1,0 +1,39 @@
+name: Daily arXiv Paper Radar
+
+on:
+  schedule:
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build digest
+        run: python scripts/daily_arxiv.py
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+
+      - name: Commit generated digest
+        run: |
+          git config user.name "paper-radar-bot"
+          git config user.email "paper-radar-bot@users.noreply.github.com"
+          git add README.md reports data
+          git diff --cached --quiet || git commit -m "Update daily arXiv paper radar"
+          git push
