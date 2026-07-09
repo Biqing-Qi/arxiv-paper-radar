@@ -8,7 +8,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/karpathy",
       "search_url": "https://x.com/search?q=from%3Akarpathy&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合跟踪 LLM 训练直觉、agent 产品形态、AI 教育和工程化观点。"
     },
     {
@@ -19,7 +19,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/ylecun",
       "search_url": "https://x.com/search?q=from%3Aylecun&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合观察世界模型、非自回归智能、Meta AI 研究路线和对主流 LLM 范式的批评。"
     },
     {
@@ -30,7 +30,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/fchollet",
       "search_url": "https://x.com/search?q=from%3Afchollet&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合关注抽象推理、ARC、智能测评、Keras 生态和对纯规模化路线的反思。"
     },
     {
@@ -41,7 +41,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/jeremyphoward",
       "search_url": "https://x.com/search?q=from%3Ajeremyphoward&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合跟踪实用深度学习、开源模型、训练技巧和面向开发者的 AI 工具。"
     },
     {
@@ -52,7 +52,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/DrJimFan",
       "search_url": "https://x.com/search?q=from%3ADrJimFan&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合看 agent、机器人、具身智能、仿真环境和 NVIDIA 相关前沿应用。"
     },
     {
@@ -63,7 +63,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/polynoamial",
       "search_url": "https://x.com/search?q=from%3Apolynoamial&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合关注推理模型、博弈 AI、搜索/规划和 OpenAI 研究方向。"
     },
     {
@@ -74,7 +74,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/seb_ruder",
       "search_url": "https://x.com/search?q=from%3Aseb_ruder&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合看 NLP 综述、语言模型趋势、多语言和迁移学习研究脉络。"
     },
     {
@@ -85,7 +85,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/lilianweng",
       "search_url": "https://x.com/search?q=from%3Alilianweng&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合读高质量技术长文，尤其是 agent、RL、alignment 和 LLM 系统总结。"
     },
     {
@@ -96,7 +96,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/chipro",
       "search_url": "https://x.com/search?q=from%3Achipro&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合跟踪 AI 工程、生产系统、评估、数据和企业落地经验。"
     },
     {
@@ -107,7 +107,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/emollick",
       "search_url": "https://x.com/search?q=from%3Aemollick&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合观察 AI 产品使用、组织采纳、教育场景和普通用户如何被模型改变。"
     },
     {
@@ -118,7 +118,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/simonw",
       "search_url": "https://x.com/search?q=from%3Asimonw&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合跟踪 LLM 工具链、prompt/eval 实践、安全边界和开发者生态。"
     },
     {
@@ -129,7 +129,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/ClementDelangue",
       "search_url": "https://x.com/search?q=from%3AClementDelangue&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合观察开源模型、数据集、Hugging Face 生态和开放 AI 社区趋势。"
     },
     {
@@ -140,7 +140,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/percyliang",
       "search_url": "https://x.com/search?q=from%3Apercyliang&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合关注基础模型评估、透明度、学术基准和 Stanford CRFM 工作。"
     },
     {
@@ -151,7 +151,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/denny_zhou",
       "search_url": "https://x.com/search?q=from%3Adenny_zhou&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合关注 chain-of-thought、推理、提示方法和 Google 研究动向。"
     },
     {
@@ -162,7 +162,7 @@
       "post_count": 0,
       "profile_url": "https://x.com/aidan_mclau",
       "search_url": "https://x.com/search?q=from%3Aaidan_mclau&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合观察 Claude 产品、Anthropic 系统能力和前沿模型发布信号。"
     },
     {
@@ -173,11 +173,11 @@
       "post_count": 0,
       "profile_url": "https://x.com/natfriedman",
       "search_url": "https://x.com/search?q=from%3Anatfriedman&src=typed_query&f=live",
-      "status": "feed unavailable: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>",
+      "status": "feed unavailable: HTTP Error 404: Not Found",
       "why_watch": "适合观察 AI 创业、开发者工具、开源项目和产业机会。"
     }
   ],
-  "generated_at": "2026-07-09T13:59:17.592114+00:00",
+  "generated_at": "2026-07-09T14:01:10.048844+00:00",
   "posts": [],
   "source": "RSSHub best-effort X/Twitter feeds"
 }
