@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daily arXiv Paper Radar</title>
     <meta name="description" content="Daily arXiv paper radar for diffusion language models and model architecture.">
-    <link rel="stylesheet" href="assets/app.css?v=20260710-db-table">
+    <link rel="stylesheet" href="assets/app.css?v=20260710-db-only">
   </head>
   <body class="auth-locked">
     <section id="auth-gate" class="auth-gate" aria-label="Password gate">
@@ -78,6 +78,13 @@
             <a id="database-download" class="download-link" href="data/papers.csv">下载 CSV</a>
           </div>
         </div>
+        <div class="database-filterbar" aria-label="Database filters">
+          <label>
+            <span>关键词筛选</span>
+            <select id="database-keyword-filter"></select>
+          </label>
+          <div id="database-keyword-chips" class="database-keyword-chips"></div>
+        </div>
         <div class="database-table-wrap">
           <table class="database-table">
             <thead id="database-head">
@@ -93,65 +100,8 @@
           </table>
         </div>
       </section>
-
-      <section class="social-dashboard support-section" aria-label="X overview">
-        <div class="social-summary">
-          <p class="eyebrow">X / Twitter Watch</p>
-          <h2>AI 大佬动态总览</h2>
-          <p id="social-status">正在加载 X 动态...</p>
-        </div>
-        <div class="people-filters" aria-label="People filters">
-          <label>
-            <span>机构</span>
-            <select id="org-filter"></select>
-          </label>
-          <label>
-            <span>地区</span>
-            <select id="region-filter"></select>
-          </label>
-          <label>
-            <span>标签</span>
-            <select id="tag-filter"></select>
-          </label>
-          <label>
-            <span>人物搜索</span>
-            <input id="people-search" type="search" placeholder="姓名、机构、方向">
-          </label>
-        </div>
-        <div id="social-accounts" class="social-accounts"></div>
-      </section>
-
-      <section class="content-grid support-section">
-        <aside class="paper-list-panel" aria-label="Paper list">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Reading Queue</p>
-              <h2>推送列表</h2>
-            </div>
-            <span id="visible-count" class="count-pill">0</span>
-          </div>
-          <div id="paper-list" class="paper-list"></div>
-        </aside>
-
-        <section class="detail-panel" aria-label="Paper details">
-          <div id="empty-state" class="empty-state">
-            <p class="eyebrow">Select a paper</p>
-            <h2>选择一篇论文查看摘要和链接</h2>
-          </div>
-          <article id="paper-detail" class="paper-detail" hidden></article>
-        </section>
-      </section>
     </main>
 
-    <template id="paper-card-template">
-      <button class="paper-card" type="button">
-        <span class="score-badge"></span>
-        <span class="paper-title"></span>
-        <span class="paper-meta"></span>
-        <span class="tag-row"></span>
-      </button>
-    </template>
-
-    <script src="assets/app.js?v=20260710-db-table" defer></script>
+    <script src="assets/app.js?v=20260710-db-only" defer></script>
   </body>
 </html>

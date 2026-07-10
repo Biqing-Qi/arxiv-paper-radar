@@ -10,6 +10,7 @@ const state = {
   selectedRegion: "all",
   selectedPeopleTag: "all",
   databaseView: "papers",
+  selectedDatabaseKeyword: "all",
   peopleQuery: "",
   query: "",
   selectedId: null,
@@ -23,24 +24,15 @@ const els = {
   dateSelect: document.querySelector("#date-select"),
   searchInput: document.querySelector("#search-input"),
   topicButtons: Array.from(document.querySelectorAll(".topic-button")),
-  paperList: document.querySelector("#paper-list"),
-  visibleCount: document.querySelector("#visible-count"),
   metricCount: document.querySelector("#metric-count"),
   metricScore: document.querySelector("#metric-score"),
   metricUpdated: document.querySelector("#metric-updated"),
-  socialStatus: document.querySelector("#social-status"),
-  socialAccounts: document.querySelector("#social-accounts"),
-  orgFilter: document.querySelector("#org-filter"),
-  regionFilter: document.querySelector("#region-filter"),
-  tagFilter: document.querySelector("#tag-filter"),
-  peopleSearch: document.querySelector("#people-search"),
   databaseTabs: Array.from(document.querySelectorAll(".view-tab")),
   databaseDownload: document.querySelector("#database-download"),
+  databaseKeywordFilter: document.querySelector("#database-keyword-filter"),
+  databaseKeywordChips: document.querySelector("#database-keyword-chips"),
   databaseHead: document.querySelector("#database-head"),
   databaseBody: document.querySelector("#database-body"),
-  emptyState: document.querySelector("#empty-state"),
-  detail: document.querySelector("#paper-detail"),
-  template: document.querySelector("#paper-card-template"),
 };
 
 async function sha256Hex(value) {
@@ -121,6 +113,10 @@ function filteredPapers() {
       ].join(" ").toLowerCase();
       return haystack.includes(query);
     })
+    .filter((paper) => {
+      if (state.selectedDatabaseKeyword === "all") return true;
+      return paperTagValues(paper).includes(state.selectedDatabaseKeyword);
+    })
     .sort((a, b) => (b.score || 0) - (a.score || 0));
 }
 
@@ -138,7 +134,13 @@ function renderMetrics(papers) {
   els.metricCount.textContent = String(allForDay.length);
   els.metricScore.textContent = String(topScore);
   els.metricUpdated.textContent = fmtDate(state.site?.generated_at);
-  els.visibleCount.textContent = String(papers.length);
+}
+
+function chipHtml(values) {
+  return unique(values)
+    .slice(0, 10)
+    .map((item) => `<span class="db-chip">${escapeHtml(item)}</span>`)
+    .join("");
 }
 
 function tag(label, className = "tag") {
@@ -240,12 +242,11 @@ function renderPeopleFilters(accounts) {
 }
 
 function filteredAccounts(accounts) {
-  const query = state.peopleQuery.trim().toLowerCase();
+  const query = state.query.trim().toLowerCase();
   return accounts.filter((account) => {
     if (state.selectedOrg !== "all" && account.org !== state.selectedOrg) return false;
     if (state.selectedRegion !== "all" && account.region !== state.selectedRegion) return false;
     if (state.selectedPeopleTag !== "all" && !(account.tags || []).includes(state.selectedPeopleTag)) return false;
-    if (!query) return true;
     const text = [
       account.name,
       account.handle,
@@ -255,7 +256,9 @@ function filteredAccounts(accounts) {
       account.why_watch,
       ...(account.tags || []),
     ].join(" ").toLowerCase();
-    return text.includes(query);
+    if (query && !text.includes(query)) return false;
+    if (state.selectedDatabaseKeyword === "all") return true;
+    return accountTagValues(account).includes(state.selectedDatabaseKeyword);
   });
 }
 
@@ -303,6 +306,54 @@ function keywordText(paper) {
   return unique((paper.topics || []).flatMap((topic) => topic.keywords || [])).join(", ");
 }
 
+function paperTagValues(paper) {
+  return unique([
+    ...(paper.topics || []).map((topic) => topic.label),
+    ...(paper.topics || []).flatMap((topic) => topic.keywords || []),
+    ...(paper.categories || []),
+    ...(paper.boost_hits || []),
+    paper.recommendation,
+  ]);
+}
+
+function accountTagValues(account) {
+  return unique([
+    ...(account.tags || []),
+    account.org,
+    account.region,
+    account.focus,
+  ]);
+}
+
+function databaseKeywordValues() {
+  const values = state.databaseView === "people"
+    ? (state.social?.accounts || []).flatMap(accountTagValues)
+    : papersForDate().flatMap(paperTagValues);
+  return unique(values).sort((a, b) => a.localeCompare(b));
+}
+
+function renderDatabaseKeywordFilter() {
+  const values = databaseKeywordValues();
+  if (state.selectedDatabaseKeyword !== "all" && !values.includes(state.selectedDatabaseKeyword)) {
+    state.selectedDatabaseKeyword = "all";
+  }
+  els.databaseKeywordFilter.innerHTML = optionList(values, "全部关键词 / 标签");
+  els.databaseKeywordFilter.value = state.selectedDatabaseKeyword;
+  els.databaseKeywordChips.innerHTML = values
+    .slice(0, 24)
+    .map((value) => {
+      const active = value === state.selectedDatabaseKeyword ? " is-active" : "";
+      return `<button class="keyword-chip${active}" type="button" data-keyword="${escapeHtml(value)}">${escapeHtml(value)}</button>`;
+    })
+    .join("");
+  els.databaseKeywordChips.querySelectorAll(".keyword-chip").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.selectedDatabaseKeyword = button.dataset.keyword;
+      renderDatabase();
+    });
+  });
+}
+
 function renderDatabaseTable() {
   const isPeople = state.databaseView === "people";
   const rows = isPeople ? filteredAccounts(state.social?.accounts || []) : filteredPapers();
@@ -315,7 +366,7 @@ function renderDatabaseTable() {
         ["机构", (item) => item.org],
         ["地区", (item) => item.region],
         ["方向", (item) => item.focus],
-        ["标签", (item) => (item.tags || []).join(", ")],
+        ["多 Tags", (item) => chipHtml(accountTagValues(item))],
         ["值得关注", (item) => item.why_watch],
         ["链接", (item) => item.blog_url || item.search_url || item.profile_url],
       ]
@@ -324,7 +375,7 @@ function renderDatabaseTable() {
         ["分数", (item) => item.score || 0],
         ["推荐", (item) => item.recommendation || ""],
         ["主题", topicText],
-        ["关键词", keywordText],
+        ["多 Tags / 关键词", (item) => chipHtml(paperTagValues(item))],
         ["作者", (item) => authorsText(item)],
         ["日期", (item) => dateBucket(item)],
         ["分类", (item) => (item.categories || []).join(", ")],
@@ -338,19 +389,23 @@ function renderDatabaseTable() {
       const cells = columns.map(([label, getter]) => {
         const value = getter(row) || "";
         const isLink = label === "链接" && value;
-        return `<td>${isLink ? `<a href="${escapeHtml(value)}">${escapeHtml(value)}</a>` : escapeHtml(value)}</td>`;
+        const isHtml = label.includes("Tags");
+        return `<td>${isLink ? `<a href="${escapeHtml(value)}">${escapeHtml(value)}</a>` : isHtml ? value : escapeHtml(value)}</td>`;
       });
       return `<tr>${cells.join("")}</tr>`;
     })
     .join("");
 }
 
+function renderDatabase() {
+  renderDatabaseKeywordFilter();
+  renderDatabaseTable();
+}
+
 function render() {
   const papers = filteredPapers();
   renderMetrics(papers);
-  renderList(papers);
-  renderDetail(papers.find((paper) => paper.arxiv_id === state.selectedId));
-  renderDatabaseTable();
+  renderDatabase();
 }
 
 async function loadApp() {
@@ -401,37 +456,20 @@ async function loadApp() {
     });
   });
 
-  renderPeopleFilters(state.social.accounts || []);
-  els.orgFilter.addEventListener("change", (event) => {
-    state.selectedOrg = event.target.value;
-    renderSocial();
-    renderDatabaseTable();
-  });
-  els.regionFilter.addEventListener("change", (event) => {
-    state.selectedRegion = event.target.value;
-    renderSocial();
-    renderDatabaseTable();
-  });
-  els.tagFilter.addEventListener("change", (event) => {
-    state.selectedPeopleTag = event.target.value;
-    renderSocial();
-    renderDatabaseTable();
-  });
-  els.peopleSearch.addEventListener("input", (event) => {
-    state.peopleQuery = event.target.value;
-    renderSocial();
-    renderDatabaseTable();
+  els.databaseKeywordFilter.addEventListener("change", (event) => {
+    state.selectedDatabaseKeyword = event.target.value;
+    renderDatabase();
   });
 
   els.databaseTabs.forEach((button) => {
     button.addEventListener("click", () => {
       state.databaseView = button.dataset.dbView;
+      state.selectedDatabaseKeyword = "all";
       els.databaseTabs.forEach((item) => item.classList.toggle("is-active", item === button));
-      renderDatabaseTable();
+      renderDatabase();
     });
   });
 
-  renderSocial();
   render();
 }
 

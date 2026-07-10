@@ -501,6 +501,75 @@ select {
   gap: 10px;
 }
 
+.database-filterbar {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.database-filterbar label {
+  display: grid;
+  gap: 6px;
+  min-height: 58px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.database-filterbar span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 760;
+}
+
+.database-filterbar select {
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 760;
+}
+
+.database-keyword-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 58px;
+  align-content: center;
+}
+
+.keyword-chip,
+.db-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  border: 0;
+  border-radius: 4px;
+  background: #efefed;
+  color: #4f4d49;
+  font-size: 13px;
+  font-weight: 720;
+}
+
+.keyword-chip {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.keyword-chip.is-active {
+  background: #dfe8e7;
+  color: #0f6f72;
+}
+
+.db-chip {
+  margin: 0 5px 5px 0;
+  padding: 0 7px;
+}
+
 .view-tabs {
   display: inline-flex;
   gap: 2px;
