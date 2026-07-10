@@ -671,6 +671,55 @@ select {
   word-break: break-all;
 }
 
+.person-name-cell {
+  display: grid;
+  gap: 4px;
+}
+
+.person-name-cell strong {
+  color: var(--ink);
+  font-weight: 820;
+}
+
+.person-name-cell span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.person-photo {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.person-photo-fallback {
+  background: #e7eceb;
+  color: #466160;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.editable-tags {
+  min-width: 220px;
+  min-height: 34px;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: #f5f5f3;
+  color: #4f4d49;
+  line-height: 1.45;
+  outline: 0;
+}
+
+.editable-tags:focus {
+  border-color: #b8d5d3;
+  background: #fff;
+}
+
 .support-section {
   margin-top: 24px;
 }

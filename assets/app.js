@@ -1,5 +1,6 @@
 const AUTH_HASH = "c295e0f7ac253cd568a92ea64490b139e70110f1d5864fc12782f1214a92675c";
 const AUTH_STORAGE_KEY = "paper-radar-auth-v1";
+const TAG_EDITS_STORAGE_KEY = "paper-radar-tag-edits-v1";
 
 const state = {
   site: null,
@@ -10,10 +11,11 @@ const state = {
   selectedRegion: "all",
   selectedPeopleTag: "all",
   databaseView: "papers",
-  selectedDatabaseKeyword: "all",
+  selectedDatabaseSource: "all",
   peopleQuery: "",
   query: "",
   selectedId: null,
+  tagEdits: {},
 };
 
 const els = {
@@ -78,6 +80,81 @@ function unique(values) {
   return Array.from(new Set(values.filter(Boolean)));
 }
 
+function slug(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function loadTagEdits() {
+  try {
+    state.tagEdits = JSON.parse(localStorage.getItem(TAG_EDITS_STORAGE_KEY) || "{}");
+  } catch {
+    state.tagEdits = {};
+  }
+}
+
+function saveTagEdits() {
+  localStorage.setItem(TAG_EDITS_STORAGE_KEY, JSON.stringify(state.tagEdits));
+}
+
+function personKey(account) {
+  return slug(`${account.name}-${account.org}-${account.handle || ""}`);
+}
+
+function editedTags(account) {
+  return state.tagEdits[personKey(account)] || account.tags || [];
+}
+
+function canonicalOrg(org) {
+  const raw = String(org || "").trim();
+  const text = raw.toLowerCase();
+  if (!raw) return "Unknown";
+  if (text.includes("tsinghua")) return "Tsinghua University";
+  if (text.includes("peking university") || text.includes("pku")) return "Peking University";
+  if (text.includes("stanford")) return "Stanford";
+  if (text.includes("mit")) return "MIT";
+  if (text.includes("openai")) return "OpenAI";
+  if (text.includes("anthropic")) return "Anthropic";
+  if (text.includes("deepmind") || text.includes("google")) return "Google DeepMind / Google";
+  if (text.includes("baai") || text.includes("智源")) return "BAAI";
+  if (text.includes("shanghai ai")) return "Shanghai AI Lab";
+  if (text.includes("deepseek")) return "DeepSeek";
+  if (text.includes("moonshot")) return "Moonshot AI";
+  if (text.includes("alibaba") || text.includes("qwen")) return "Alibaba / Qwen";
+  if (text.includes("tencent")) return "Tencent";
+  if (text.includes("baidu")) return "Baidu";
+  if (text.includes("huawei")) return "Huawei";
+  if (text.includes("bytedance")) return "ByteDance";
+  if (text.includes("arxiv")) return raw;
+  return raw.split("/")[0].trim();
+}
+
+function orgDistinction(org) {
+  const raw = String(org || "").trim();
+  const canonical = canonicalOrg(raw);
+  return raw && raw !== canonical ? raw : "";
+}
+
+function initials(name) {
+  const parts = String(name || "?").trim().split(/\s+/).filter(Boolean);
+  if (!parts.length) return "?";
+  if (/[\u4e00-\u9fa5]/.test(parts[0])) return parts[0].slice(0, 2);
+  return parts.slice(0, 2).map((part) => part[0]).join("").toUpperCase();
+}
+
+function avatarHtml(account) {
+  if (account.photo_url) {
+    return `<img class="person-photo" src="${escapeHtml(account.photo_url)}" alt="${escapeHtml(account.name)}">`;
+  }
+  return `<span class="person-photo person-photo-fallback">${escapeHtml(initials(account.name))}</span>`;
+}
+
+function scholarUrl(name) {
+  return `https://scholar.google.com/scholar?q=${encodeURIComponent(name)}`;
+}
+
 function authorsText(paper) {
   const authors = paper.authors || [];
   if (authors.length <= 3) return authors.join(", ") || "Unknown authors";
@@ -114,8 +191,8 @@ function filteredPapers() {
       return haystack.includes(query);
     })
     .filter((paper) => {
-      if (state.selectedDatabaseKeyword === "all") return true;
-      return paperTagValues(paper).includes(state.selectedDatabaseKeyword);
+      if (state.selectedDatabaseSource === "all") return true;
+      return paperSourceValues(paper).includes(state.selectedDatabaseSource);
     })
     .sort((a, b) => (b.score || 0) - (a.score || 0));
 }
@@ -254,11 +331,11 @@ function filteredAccounts(accounts) {
       account.region,
       account.focus,
       account.why_watch,
-      ...(account.tags || []),
+      ...editedTags(account),
     ].join(" ").toLowerCase();
     if (query && !text.includes(query)) return false;
-    if (state.selectedDatabaseKeyword === "all") return true;
-    return accountTagValues(account).includes(state.selectedDatabaseKeyword);
+    if (state.selectedDatabaseSource === "all") return true;
+    return accountSourceValues(account).includes(state.selectedDatabaseSource);
   });
 }
 
@@ -318,38 +395,84 @@ function paperTagValues(paper) {
 
 function accountTagValues(account) {
   return unique([
-    ...(account.tags || []),
-    account.org,
-    account.region,
+    ...editedTags(account),
     account.focus,
   ]);
 }
 
+function paperSourceValues(paper) {
+  return unique([...(paper.categories || [])]);
+}
+
+function accountSourceValues(account) {
+  return unique([canonicalOrg(account.org)]);
+}
+
 function databaseKeywordValues() {
   const values = state.databaseView === "people"
-    ? (state.social?.accounts || []).flatMap(accountTagValues)
-    : papersForDate().flatMap(paperTagValues);
+    ? (state.social?.accounts || []).flatMap(accountSourceValues)
+    : papersForDate().flatMap(paperSourceValues);
   return unique(values).sort((a, b) => a.localeCompare(b));
 }
 
 function renderDatabaseKeywordFilter() {
   const values = databaseKeywordValues();
-  if (state.selectedDatabaseKeyword !== "all" && !values.includes(state.selectedDatabaseKeyword)) {
-    state.selectedDatabaseKeyword = "all";
+  if (state.selectedDatabaseSource !== "all" && !values.includes(state.selectedDatabaseSource)) {
+    state.selectedDatabaseSource = "all";
   }
-  els.databaseKeywordFilter.innerHTML = optionList(values, "全部关键词 / 标签");
-  els.databaseKeywordFilter.value = state.selectedDatabaseKeyword;
+  els.databaseKeywordFilter.innerHTML = optionList(values, state.databaseView === "people" ? "全部高校 / 机构" : "全部论文来源");
+  els.databaseKeywordFilter.value = state.selectedDatabaseSource;
   els.databaseKeywordChips.innerHTML = values
     .slice(0, 24)
     .map((value) => {
-      const active = value === state.selectedDatabaseKeyword ? " is-active" : "";
+      const active = value === state.selectedDatabaseSource ? " is-active" : "";
       return `<button class="keyword-chip${active}" type="button" data-keyword="${escapeHtml(value)}">${escapeHtml(value)}</button>`;
     })
     .join("");
   els.databaseKeywordChips.querySelectorAll(".keyword-chip").forEach((button) => {
     button.addEventListener("click", () => {
-      state.selectedDatabaseKeyword = button.dataset.keyword;
+      state.selectedDatabaseSource = button.dataset.keyword;
       renderDatabase();
+    });
+  });
+}
+
+function personNameHtml(account) {
+  const detail = orgDistinction(account.org);
+  return `
+    <div class="person-name-cell">
+      <strong>${escapeHtml(account.name)}</strong>
+      ${detail ? `<span>${escapeHtml(detail)}</span>` : ""}
+    </div>
+  `;
+}
+
+function editableTagsHtml(account) {
+  return `
+    <div class="editable-tags" contenteditable="true" data-person-key="${escapeHtml(personKey(account))}" spellcheck="false">
+      ${escapeHtml(editedTags(account).join(", "))}
+    </div>
+  `;
+}
+
+function linkCell(url, label) {
+  return url ? `<a href="${escapeHtml(url)}">${escapeHtml(label)}</a>` : "";
+}
+
+function bindEditableTags() {
+  els.databaseBody.querySelectorAll(".editable-tags").forEach((node) => {
+    node.addEventListener("blur", () => {
+      const key = node.dataset.personKey;
+      const tags = unique(node.textContent.split(/[,，]/).map((item) => item.trim()));
+      state.tagEdits[key] = tags;
+      saveTagEdits();
+      renderDatabaseKeywordFilter();
+    });
+    node.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        node.blur();
+      }
     });
   });
 }
@@ -362,13 +485,16 @@ function renderDatabaseTable() {
 
   const columns = isPeople
     ? [
-        ["Aa 姓名", (item) => item.name],
-        ["机构", (item) => item.org],
+        ["Aa 姓名", personNameHtml],
+        ["照片", avatarHtml],
+        ["机构", (item) => canonicalOrg(item.org)],
         ["地区", (item) => item.region],
         ["方向", (item) => item.focus],
-        ["多 Tags", (item) => chipHtml(accountTagValues(item))],
-        ["值得关注", (item) => item.why_watch],
-        ["链接", (item) => item.blog_url || item.search_url || item.profile_url],
+        ["多 Tags", editableTagsHtml],
+        ["Google Scholar", (item) => linkCell(scholarUrl(item.name), "Scholar")],
+        ["X", (item) => linkCell(item.profile_url, item.handle ? `@${item.handle}` : "")],
+        ["最新动态总结", (item) => item.why_watch || item.status || ""],
+        ["主页", (item) => linkCell(item.blog_url || item.search_url, "打开")],
       ]
     : [
         ["Aa 标题", (item) => item.title],
@@ -389,12 +515,13 @@ function renderDatabaseTable() {
       const cells = columns.map(([label, getter]) => {
         const value = getter(row) || "";
         const isLink = label === "链接" && value;
-        const isHtml = label.includes("Tags");
+        const isHtml = ["Aa 姓名", "照片", "多 Tags", "Google Scholar", "X", "主页"].includes(label) || label.includes("Tags");
         return `<td>${isLink ? `<a href="${escapeHtml(value)}">${escapeHtml(value)}</a>` : isHtml ? value : escapeHtml(value)}</td>`;
       });
       return `<tr>${cells.join("")}</tr>`;
     })
     .join("");
+  if (isPeople) bindEditableTags();
 }
 
 function renderDatabase() {
@@ -409,6 +536,7 @@ function render() {
 }
 
 async function loadApp() {
+  loadTagEdits();
   try {
     const response = await fetch("data/site.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -457,14 +585,14 @@ async function loadApp() {
   });
 
   els.databaseKeywordFilter.addEventListener("change", (event) => {
-    state.selectedDatabaseKeyword = event.target.value;
+    state.selectedDatabaseSource = event.target.value;
     renderDatabase();
   });
 
   els.databaseTabs.forEach((button) => {
     button.addEventListener("click", () => {
       state.databaseView = button.dataset.dbView;
-      state.selectedDatabaseKeyword = "all";
+      state.selectedDatabaseSource = "all";
       els.databaseTabs.forEach((item) => item.classList.toggle("is-active", item === button));
       renderDatabase();
     });
