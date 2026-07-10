@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daily arXiv Paper Radar</title>
     <meta name="description" content="Daily arXiv paper radar for diffusion language models and model architecture.">
-    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/app.css?v=20260710-db-table">
   </head>
   <body class="auth-locked">
     <section id="auth-gate" class="auth-gate" aria-label="Password gate">
@@ -64,11 +64,11 @@
         <button class="topic-button" type="button" data-topic="Model Architecture">模型架构</button>
       </section>
 
-      <section class="database-panel" aria-label="Database views">
+      <section class="database-panel database-primary" aria-label="Database views">
         <div class="database-head">
           <div>
             <p class="eyebrow">Database</p>
-            <h2>多维数据库</h2>
+            <h2>论文雷达数据库</h2>
           </div>
           <div class="database-actions">
             <div class="view-tabs" role="tablist" aria-label="Database views">
@@ -80,13 +80,21 @@
         </div>
         <div class="database-table-wrap">
           <table class="database-table">
-            <thead id="database-head"></thead>
-            <tbody id="database-body"></tbody>
+            <thead id="database-head">
+              <tr>
+                <th>数据库</th>
+              </tr>
+            </thead>
+            <tbody id="database-body">
+              <tr>
+                <td>正在加载数据库...</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </section>
 
-      <section class="social-dashboard" aria-label="X overview">
+      <section class="social-dashboard support-section" aria-label="X overview">
         <div class="social-summary">
           <p class="eyebrow">X / Twitter Watch</p>
           <h2>AI 大佬动态总览</h2>
@@ -113,7 +121,7 @@
         <div id="social-accounts" class="social-accounts"></div>
       </section>
 
-      <section class="content-grid">
+      <section class="content-grid support-section">
         <aside class="paper-list-panel" aria-label="Paper list">
           <div class="panel-head">
             <div>
@@ -144,6 +152,6 @@
       </button>
     </template>
 
-    <script src="assets/app.js" defer></script>
+    <script src="assets/app.js?v=20260710-db-table" defer></script>
   </body>
 </html>

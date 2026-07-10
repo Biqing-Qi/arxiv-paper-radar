@@ -311,7 +311,7 @@ function renderDatabaseTable() {
 
   const columns = isPeople
     ? [
-        ["姓名", (item) => item.name],
+        ["Aa 姓名", (item) => item.name],
         ["机构", (item) => item.org],
         ["地区", (item) => item.region],
         ["方向", (item) => item.focus],
@@ -320,7 +320,7 @@ function renderDatabaseTable() {
         ["链接", (item) => item.blog_url || item.search_url || item.profile_url],
       ]
     : [
-        ["标题", (item) => item.title],
+        ["Aa 标题", (item) => item.title],
         ["分数", (item) => item.score || 0],
         ["推荐", (item) => item.recommendation || ""],
         ["主题", topicText],

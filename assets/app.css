@@ -1,12 +1,12 @@
 :root {
   color-scheme: light;
-  --bg: #f6f7f9;
-  --bg-soft: #edf1ee;
+  --bg: #fbfbfa;
+  --bg-soft: #f1f1ef;
   --surface: #ffffff;
-  --surface-2: #eef3f5;
-  --ink: #172026;
-  --muted: #64727d;
-  --line: #d9e0e4;
+  --surface-2: #f1f1ef;
+  --ink: #202020;
+  --muted: #787774;
+  --line: #e6e4df;
   --accent: #0f7b7e;
   --accent-2: #b24a3b;
   --accent-3: #425a9c;
@@ -21,7 +21,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(180deg, #edf3f1 0, var(--bg) 360px),
+    linear-gradient(180deg, #f5f5f3 0, var(--bg) 360px),
     var(--bg);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -467,12 +467,16 @@ select {
 }
 
 .database-panel {
-  margin-bottom: 18px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  margin-bottom: 22px;
+  border: 1px solid #dedbd5;
+  border-radius: 0;
   background: var(--surface);
-  box-shadow: var(--shadow);
+  box-shadow: none;
   overflow: hidden;
+}
+
+.database-primary {
+  min-height: calc(100vh - 250px);
 }
 
 .database-head {
@@ -480,13 +484,13 @@ select {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px 18px;
+  padding: 18px 0 8px;
   border-bottom: 1px solid var(--line);
 }
 
 .database-head h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: clamp(32px, 4vw, 46px);
   letter-spacing: 0;
 }
 
@@ -499,11 +503,11 @@ select {
 
 .view-tabs {
   display: inline-flex;
-  gap: 4px;
-  padding: 4px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface-2);
+  gap: 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .view-tab,
@@ -512,51 +516,53 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
-  font-weight: 850;
+  border-radius: 999px;
+  font-weight: 760;
   text-decoration: none;
 }
 
 .view-tab {
   border: 0;
-  padding: 0 12px;
+  padding: 0 14px;
   background: transparent;
   color: var(--muted);
   cursor: pointer;
 }
 
 .view-tab.is-active {
-  background: var(--surface);
+  background: var(--surface-2);
   color: var(--ink);
-  box-shadow: 0 3px 12px rgba(23, 32, 38, 0.08);
+  box-shadow: none;
 }
 
 .download-link {
   padding: 0 12px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: var(--accent-3);
+  border: 0;
+  background: transparent;
+  color: var(--muted);
 }
 
 .database-table-wrap {
-  max-height: 460px;
+  max-height: calc(100vh - 320px);
+  min-height: 520px;
   overflow: auto;
+  background: #fff;
 }
 
 .database-table {
   width: 100%;
-  min-width: 1180px;
+  min-width: 1440px;
   border-collapse: separate;
   border-spacing: 0;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .database-table th,
 .database-table td {
-  max-width: 340px;
+  max-width: 360px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  padding: 10px 12px;
+  padding: 12px 14px;
   text-align: left;
   vertical-align: top;
 }
@@ -567,12 +573,12 @@ select {
   z-index: 1;
   background: #f7faf9;
   color: var(--muted);
-  font-size: 12px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: 650;
 }
 
 .database-table td {
-  color: #33404a;
+  color: #2f2f2f;
   line-height: 1.45;
 }
 
@@ -582,8 +588,8 @@ select {
   left: 0;
   z-index: 2;
   background: #fff;
-  min-width: 260px;
-  font-weight: 850;
+  min-width: 360px;
+  font-weight: 760;
 }
 
 .database-table th:first-child {
@@ -594,6 +600,10 @@ select {
 .database-table a {
   color: var(--accent-3);
   word-break: break-all;
+}
+
+.support-section {
+  margin-top: 24px;
 }
 
 .content-grid {
