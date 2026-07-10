@@ -1,4 +1,4 @@
-const AUTH_HASH = "3a9601fd16020b93aa17906be1396049259cf9da527937c8c1cb37383a1b9817";
+const AUTH_HASH = "c295e0f7ac253cd568a92ea64490b139e70110f1d5864fc12782f1214a92675c";
 const AUTH_STORAGE_KEY = "paper-radar-auth-v1";
 
 const state = {
