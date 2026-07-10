@@ -64,6 +64,28 @@
         <button class="topic-button" type="button" data-topic="Model Architecture">模型架构</button>
       </section>
 
+      <section class="database-panel" aria-label="Database views">
+        <div class="database-head">
+          <div>
+            <p class="eyebrow">Database</p>
+            <h2>多维数据库</h2>
+          </div>
+          <div class="database-actions">
+            <div class="view-tabs" role="tablist" aria-label="Database views">
+              <button class="view-tab is-active" type="button" data-db-view="papers">论文库</button>
+              <button class="view-tab" type="button" data-db-view="people">人物库</button>
+            </div>
+            <a id="database-download" class="download-link" href="data/papers.csv">下载 CSV</a>
+          </div>
+        </div>
+        <div class="database-table-wrap">
+          <table class="database-table">
+            <thead id="database-head"></thead>
+            <tbody id="database-body"></tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="social-dashboard" aria-label="X overview">
         <div class="social-summary">
           <p class="eyebrow">X / Twitter Watch</p>

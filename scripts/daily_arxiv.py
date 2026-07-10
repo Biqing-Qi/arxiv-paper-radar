@@ -8,6 +8,7 @@ GitHub Actions without dependency installation.
 from __future__ import annotations
 
 import argparse
+import csv
 import datetime as dt
 import email.mime.multipart
 import email.mime.text
@@ -40,6 +41,8 @@ SEEN_PATH = DATA_DIR / "seen.json"
 PAPERS_PATH = DATA_DIR / "papers.jsonl"
 SITE_DATA_PATH = DATA_DIR / "site.json"
 SOCIAL_DATA_PATH = DATA_DIR / "social.json"
+PAPERS_CSV_PATH = DATA_DIR / "papers.csv"
+PEOPLE_CSV_PATH = DATA_DIR / "people.csv"
 README_PATH = ROOT / "README.md"
 
 ATOM_NS = {"atom": "http://www.w3.org/2005/Atom"}
@@ -306,6 +309,16 @@ def short_authors(authors: list[str], limit: int = 4) -> str:
     return f"{', '.join(authors[:limit])}, et al."
 
 
+def csv_text(value) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, list):
+        return ", ".join(csv_text(item) for item in value if csv_text(item))
+    if isinstance(value, dict):
+        return json.dumps(value, ensure_ascii=False, sort_keys=True)
+    return clean_text(str(value))
+
+
 def make_summary(paper: dict, scoring: dict) -> str:
     abstract = paper["abstract"]
     first_sentence = abstract.split(". ")[0].strip()
@@ -521,6 +534,29 @@ def write_social_data(config: dict) -> None:
     with SOCIAL_DATA_PATH.open("w", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2, sort_keys=True)
         fh.write("\n")
+    write_people_csv(account_status)
+
+
+def write_people_csv(accounts: list[dict]) -> None:
+    fields = [
+        "name",
+        "handle",
+        "org",
+        "region",
+        "focus",
+        "tags",
+        "why_watch",
+        "blog_url",
+        "profile_url",
+        "search_url",
+        "status",
+        "post_count",
+    ]
+    with PEOPLE_CSV_PATH.open("w", encoding="utf-8-sig", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fields)
+        writer.writeheader()
+        for account in accounts:
+            writer.writerow({field: csv_text(account.get(field, "")) for field in fields})
 
 
 def get_timezone(name: str) -> dt.tzinfo:
@@ -651,6 +687,50 @@ def write_site_data(today: str, selected: list[dict], config: dict) -> None:
     with SITE_DATA_PATH.open("w", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2, sort_keys=True)
         fh.write("\n")
+    write_papers_csv(papers)
+
+
+def write_papers_csv(papers: list[dict]) -> None:
+    fields = [
+        "digest_date",
+        "arxiv_id",
+        "title",
+        "score",
+        "recommendation",
+        "topics",
+        "keywords",
+        "authors",
+        "published",
+        "updated",
+        "categories",
+        "summary",
+        "abstract",
+        "url",
+        "pdf_url",
+    ]
+    with PAPERS_CSV_PATH.open("w", encoding="utf-8-sig", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fields)
+        writer.writeheader()
+        for paper in papers:
+            topics = paper.get("topics", [])
+            row = {
+                "digest_date": paper.get("digest_date", ""),
+                "arxiv_id": paper.get("arxiv_id", ""),
+                "title": paper.get("title", ""),
+                "score": paper.get("score", ""),
+                "recommendation": paper.get("recommendation", ""),
+                "topics": [topic.get("label", "") for topic in topics],
+                "keywords": sorted({kw for topic in topics for kw in topic.get("keywords", [])}),
+                "authors": paper.get("authors", []),
+                "published": paper.get("published", ""),
+                "updated": paper.get("updated", ""),
+                "categories": paper.get("categories", []),
+                "summary": paper.get("summary", ""),
+                "abstract": paper.get("abstract", ""),
+                "url": paper.get("url", ""),
+                "pdf_url": paper.get("pdf_url", ""),
+            }
+            writer.writerow({field: csv_text(row.get(field, "")) for field in fields})
 
 
 def update_readme(today: str, report: str) -> None:

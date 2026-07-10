@@ -9,6 +9,7 @@ const state = {
   selectedOrg: "all",
   selectedRegion: "all",
   selectedPeopleTag: "all",
+  databaseView: "papers",
   peopleQuery: "",
   query: "",
   selectedId: null,
@@ -33,6 +34,10 @@ const els = {
   regionFilter: document.querySelector("#region-filter"),
   tagFilter: document.querySelector("#tag-filter"),
   peopleSearch: document.querySelector("#people-search"),
+  databaseTabs: Array.from(document.querySelectorAll(".view-tab")),
+  databaseDownload: document.querySelector("#database-download"),
+  databaseHead: document.querySelector("#database-head"),
+  databaseBody: document.querySelector("#database-body"),
   emptyState: document.querySelector("#empty-state"),
   detail: document.querySelector("#paper-detail"),
   template: document.querySelector("#paper-card-template"),
@@ -290,11 +295,62 @@ function renderSocial() {
   });
 }
 
+function topicText(paper) {
+  return unique((paper.topics || []).map((topic) => topic.label)).join(", ");
+}
+
+function keywordText(paper) {
+  return unique((paper.topics || []).flatMap((topic) => topic.keywords || [])).join(", ");
+}
+
+function renderDatabaseTable() {
+  const isPeople = state.databaseView === "people";
+  const rows = isPeople ? filteredAccounts(state.social?.accounts || []) : filteredPapers();
+  els.databaseDownload.href = isPeople ? "data/people.csv" : "data/papers.csv";
+  els.databaseDownload.textContent = isPeople ? "下载人物 CSV" : "下载论文 CSV";
+
+  const columns = isPeople
+    ? [
+        ["姓名", (item) => item.name],
+        ["机构", (item) => item.org],
+        ["地区", (item) => item.region],
+        ["方向", (item) => item.focus],
+        ["标签", (item) => (item.tags || []).join(", ")],
+        ["值得关注", (item) => item.why_watch],
+        ["链接", (item) => item.blog_url || item.search_url || item.profile_url],
+      ]
+    : [
+        ["标题", (item) => item.title],
+        ["分数", (item) => item.score || 0],
+        ["推荐", (item) => item.recommendation || ""],
+        ["主题", topicText],
+        ["关键词", keywordText],
+        ["作者", (item) => authorsText(item)],
+        ["日期", (item) => dateBucket(item)],
+        ["分类", (item) => (item.categories || []).join(", ")],
+        ["摘要", (item) => item.summary || item.abstract],
+        ["链接", (item) => item.url],
+      ];
+
+  els.databaseHead.innerHTML = `<tr>${columns.map(([label]) => `<th>${escapeHtml(label)}</th>`).join("")}</tr>`;
+  els.databaseBody.innerHTML = rows
+    .map((row) => {
+      const cells = columns.map(([label, getter]) => {
+        const value = getter(row) || "";
+        const isLink = label === "链接" && value;
+        return `<td>${isLink ? `<a href="${escapeHtml(value)}">${escapeHtml(value)}</a>` : escapeHtml(value)}</td>`;
+      });
+      return `<tr>${cells.join("")}</tr>`;
+    })
+    .join("");
+}
+
 function render() {
   const papers = filteredPapers();
   renderMetrics(papers);
   renderList(papers);
   renderDetail(papers.find((paper) => paper.arxiv_id === state.selectedId));
+  renderDatabaseTable();
 }
 
 async function loadApp() {
@@ -349,18 +405,30 @@ async function loadApp() {
   els.orgFilter.addEventListener("change", (event) => {
     state.selectedOrg = event.target.value;
     renderSocial();
+    renderDatabaseTable();
   });
   els.regionFilter.addEventListener("change", (event) => {
     state.selectedRegion = event.target.value;
     renderSocial();
+    renderDatabaseTable();
   });
   els.tagFilter.addEventListener("change", (event) => {
     state.selectedPeopleTag = event.target.value;
     renderSocial();
+    renderDatabaseTable();
   });
   els.peopleSearch.addEventListener("input", (event) => {
     state.peopleQuery = event.target.value;
     renderSocial();
+    renderDatabaseTable();
+  });
+
+  els.databaseTabs.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.databaseView = button.dataset.dbView;
+      els.databaseTabs.forEach((item) => item.classList.toggle("is-active", item === button));
+      renderDatabaseTable();
+    });
   });
 
   renderSocial();

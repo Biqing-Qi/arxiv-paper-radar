@@ -466,6 +466,136 @@ select {
   color: #fff;
 }
 
+.database-panel {
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.database-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.database-head h2 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.database-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.view-tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.view-tab,
+.download-link {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.view-tab {
+  border: 0;
+  padding: 0 12px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.view-tab.is-active {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 3px 12px rgba(23, 32, 38, 0.08);
+}
+
+.download-link {
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--accent-3);
+}
+
+.database-table-wrap {
+  max-height: 460px;
+  overflow: auto;
+}
+
+.database-table {
+  width: 100%;
+  min-width: 1180px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+}
+
+.database-table th,
+.database-table td {
+  max-width: 340px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.database-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f7faf9;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.database-table td {
+  color: #33404a;
+  line-height: 1.45;
+}
+
+.database-table td:first-child,
+.database-table th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #fff;
+  min-width: 260px;
+  font-weight: 850;
+}
+
+.database-table th:first-child {
+  z-index: 3;
+  background: #f7faf9;
+}
+
+.database-table a {
+  color: var(--accent-3);
+  word-break: break-all;
+}
+
 .content-grid {
   display: grid;
   grid-template-columns: minmax(330px, 0.8fr) minmax(0, 1.45fr);
@@ -700,6 +830,11 @@ select {
 
   .social-summary p:last-child {
     text-align: left;
+  }
+
+  .database-head {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .people-filters,
