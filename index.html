@@ -7,7 +7,20 @@
     <meta name="description" content="Daily arXiv paper radar for diffusion language models and model architecture.">
     <link rel="stylesheet" href="assets/app.css">
   </head>
-  <body>
+  <body class="auth-locked">
+    <section id="auth-gate" class="auth-gate" aria-label="Password gate">
+      <form id="auth-form" class="auth-card">
+        <p class="eyebrow">Private Radar</p>
+        <h1>论文雷达</h1>
+        <label class="auth-field">
+          <span>访问密码</span>
+          <input id="auth-password" type="password" autocomplete="current-password" autofocus>
+        </label>
+        <button type="submit">进入</button>
+        <p id="auth-message" class="auth-message" aria-live="polite"></p>
+      </form>
+    </section>
+
     <header class="topbar">
       <div>
         <p class="eyebrow">Daily arXiv Paper Radar</p>

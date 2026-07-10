@@ -1,3 +1,6 @@
+const AUTH_HASH = "3a9601fd16020b93aa17906be1396049259cf9da527937c8c1cb37383a1b9817";
+const AUTH_STORAGE_KEY = "paper-radar-auth-v1";
+
 const state = {
   site: null,
   social: null,
@@ -12,6 +15,10 @@ const state = {
 };
 
 const els = {
+  authGate: document.querySelector("#auth-gate"),
+  authForm: document.querySelector("#auth-form"),
+  authPassword: document.querySelector("#auth-password"),
+  authMessage: document.querySelector("#auth-message"),
   dateSelect: document.querySelector("#date-select"),
   searchInput: document.querySelector("#search-input"),
   topicButtons: Array.from(document.querySelectorAll(".topic-button")),
@@ -30,6 +37,24 @@ const els = {
   detail: document.querySelector("#paper-detail"),
   template: document.querySelector("#paper-card-template"),
 };
+
+async function sha256Hex(value) {
+  const bytes = new TextEncoder().encode(value);
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(digest))
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function unlockApp() {
+  document.body.classList.remove("auth-locked");
+  document.body.classList.add("auth-unlocked");
+  els.authGate.hidden = true;
+}
+
+function setAuthMessage(message) {
+  els.authMessage.textContent = message;
+}
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -272,7 +297,7 @@ function render() {
   renderDetail(papers.find((paper) => paper.arxiv_id === state.selectedId));
 }
 
-async function init() {
+async function loadApp() {
   try {
     const response = await fetch("data/site.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -342,4 +367,37 @@ async function init() {
   render();
 }
 
-init();
+function initAuth() {
+  if (localStorage.getItem(AUTH_STORAGE_KEY) === AUTH_HASH) {
+    unlockApp();
+    loadApp();
+    return;
+  }
+
+  els.authForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const password = els.authPassword.value;
+    if (!password) {
+      setAuthMessage("请输入访问密码。");
+      return;
+    }
+
+    try {
+      const hash = await sha256Hex(password);
+      if (hash !== AUTH_HASH) {
+        els.authPassword.value = "";
+        els.authPassword.focus();
+        setAuthMessage("密码不正确。");
+        return;
+      }
+      localStorage.setItem(AUTH_STORAGE_KEY, AUTH_HASH);
+      unlockApp();
+      await loadApp();
+    } catch (error) {
+      console.error(error);
+      setAuthMessage("当前浏览器不支持本地密码校验。");
+    }
+  });
+}
+
+initAuth();
