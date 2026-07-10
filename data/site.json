@@ -1,9 +1,9 @@
 {
   "dates": [
-    "2026-07-09"
+    "2026-07-10"
   ],
-  "generated_at": "2026-07-09T14:44:15.704498+00:00",
-  "latest_date": "2026-07-09",
+  "generated_at": "2026-07-10T00:08:33.168933+00:00",
+  "latest_date": "2026-07-10",
   "papers": [
     {
       "abstract": "Linear attention models allow a fixed state size and a fixed amount of compute per token. However, due to their limited state size, linear attention models fall behind in long-context recall compared to softmax-attention-based transformer architectures. Increasing the state size of linear attention improves recall performance but at the cost of higher FLOPs. In this work, we introduce Sparse Delta Memory (SDM), an architecture that scales the hidden state of gated linear RNNs to orders of magnitude higher capacity using a sparse addressing scheme. SDM extends the Gated DeltaNet architecture by replacing the dense key-value outer product with sparse reads and writes to a large explicit memory. We show that, under an isoFLOP constraint and with an identical number of parameters, a higher state memory capacity significantly improves performance on in-context learning and long-context retrieval tasks. Moreover, by learning the initial state of the SDM memory and therefore using it as a parametric memory, we show that the model further improves on a wide range of common-knowledge and reasoning tasks.",
@@ -26,7 +26,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07386v1",
       "published": "2026-07-08T13:17:19+00:00",
       "recommendation": "Worth scanning",
@@ -68,7 +68,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.06452v1",
       "published": "2026-07-07T16:12:51+00:00",
       "recommendation": "Worth scanning",
@@ -110,7 +110,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07467v1",
       "published": "2026-07-08T14:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -145,7 +145,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07258v1",
       "published": "2026-07-08T10:46:02+00:00",
       "recommendation": "Worth scanning",
@@ -181,7 +181,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.06269v1",
       "published": "2026-07-07T13:34:27+00:00",
       "recommendation": "Worth scanning",
@@ -219,7 +219,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.06327v1",
       "published": "2026-07-07T14:25:09+00:00",
       "recommendation": "Worth scanning",
@@ -280,7 +280,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
       "published": "2026-07-08T17:26:49+00:00",
       "recommendation": "Maybe relevant",
@@ -315,7 +315,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
       "published": "2026-07-08T15:46:48+00:00",
       "recommendation": "Maybe relevant",
@@ -350,7 +350,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07077v1",
       "published": "2026-07-08T07:08:50+00:00",
       "recommendation": "Maybe relevant",
@@ -384,7 +384,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07557v1",
       "published": "2026-07-08T15:51:57+00:00",
       "recommendation": "Maybe relevant",
@@ -423,7 +423,7 @@
         "cs.CR",
         "cs.MA"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07097v1",
       "published": "2026-07-08T07:31:37+00:00",
       "recommendation": "Maybe relevant",
@@ -459,7 +459,7 @@
         "cs.CL",
         "cs.CR"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.06364v1",
       "published": "2026-07-07T15:00:46+00:00",
       "recommendation": "Maybe relevant",
@@ -495,7 +495,7 @@
         "q-bio.QM",
         "cs.LG"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07425v1",
       "published": "2026-07-08T13:52:50+00:00",
       "recommendation": "Maybe relevant",
@@ -534,7 +534,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07219v1",
       "published": "2026-07-08T10:01:33+00:00",
       "recommendation": "Maybe relevant",
@@ -577,7 +577,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07179v1",
       "published": "2026-07-08T09:13:59+00:00",
       "recommendation": "Maybe relevant",
@@ -611,7 +611,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-09",
+      "digest_date": "2026-07-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07033v1",
       "published": "2026-07-08T06:07:06+00:00",
       "recommendation": "Maybe relevant",
