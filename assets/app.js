@@ -1,21 +1,18 @@
 const AUTH_HASH = "c295e0f7ac253cd568a92ea64490b139e70110f1d5864fc12782f1214a92675c";
 const AUTH_STORAGE_KEY = "paper-radar-auth-v1";
 const TAG_EDITS_STORAGE_KEY = "paper-radar-tag-edits-v1";
+const COLUMN_ORDER_STORAGE_KEY = "paper-radar-column-order-v1";
 
 const state = {
   site: null,
   social: null,
-  selectedDate: null,
-  selectedTopic: "all",
-  selectedOrg: "all",
-  selectedRegion: "all",
-  selectedPeopleTag: "all",
-  databaseView: "papers",
-  selectedDatabaseSource: "all",
+  paperDate: null,
+  paperDirection: "all",
+  peopleOrg: "all",
   peopleQuery: "",
-  query: "",
-  selectedId: null,
+  globalQuery: "",
   tagEdits: {},
+  columnOrder: {},
 };
 
 const els = {
@@ -25,24 +22,25 @@ const els = {
   authMessage: document.querySelector("#auth-message"),
   dateSelect: document.querySelector("#date-select"),
   searchInput: document.querySelector("#search-input"),
-  topicButtons: Array.from(document.querySelectorAll(".topic-button")),
   metricCount: document.querySelector("#metric-count"),
   metricScore: document.querySelector("#metric-score"),
   metricUpdated: document.querySelector("#metric-updated"),
-  databaseTabs: Array.from(document.querySelectorAll(".view-tab")),
-  databaseDownload: document.querySelector("#database-download"),
-  databaseKeywordFilter: document.querySelector("#database-keyword-filter"),
-  databaseKeywordChips: document.querySelector("#database-keyword-chips"),
-  databaseHead: document.querySelector("#database-head"),
-  databaseBody: document.querySelector("#database-body"),
+  paperDateFilter: document.querySelector("#paper-date-filter"),
+  paperDirectionFilter: document.querySelector("#paper-direction-filter"),
+  paperDirectionChips: document.querySelector("#paper-direction-chips"),
+  paperHead: document.querySelector("#paper-database-head"),
+  paperBody: document.querySelector("#paper-database-body"),
+  peopleOrgFilter: document.querySelector("#people-org-filter"),
+  peopleSearch: document.querySelector("#people-search"),
+  peopleOrgChips: document.querySelector("#people-org-chips"),
+  peopleHead: document.querySelector("#people-database-head"),
+  peopleBody: document.querySelector("#people-database-body"),
 };
 
 async function sha256Hex(value) {
   const bytes = new TextEncoder().encode(value);
   const digest = await crypto.subtle.digest("SHA-256", bytes);
-  return Array.from(new Uint8Array(digest))
-    .map((byte) => byte.toString(16).padStart(2, "0"))
-    .join("");
+  return Array.from(new Uint8Array(digest)).map((byte) => byte.toString(16).padStart(2, "0")).join("");
 }
 
 function unlockApp() {
@@ -64,6 +62,10 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function unique(values) {
+  return Array.from(new Set(values.filter(Boolean)));
+}
+
 function fmtDate(value) {
   if (!value) return "--";
   const date = new Date(value);
@@ -76,27 +78,39 @@ function fmtDate(value) {
   }).format(date);
 }
 
-function unique(values) {
-  return Array.from(new Set(values.filter(Boolean)));
-}
-
 function slug(value) {
-  return String(value || "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
+  return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
-function loadTagEdits() {
+function loadLocalState() {
   try {
     state.tagEdits = JSON.parse(localStorage.getItem(TAG_EDITS_STORAGE_KEY) || "{}");
   } catch {
     state.tagEdits = {};
   }
+  try {
+    state.columnOrder = JSON.parse(localStorage.getItem(COLUMN_ORDER_STORAGE_KEY) || "{}");
+  } catch {
+    state.columnOrder = {};
+  }
+}
+
+function saveColumnOrder() {
+  localStorage.setItem(COLUMN_ORDER_STORAGE_KEY, JSON.stringify(state.columnOrder));
 }
 
 function saveTagEdits() {
   localStorage.setItem(TAG_EDITS_STORAGE_KEY, JSON.stringify(state.tagEdits));
+}
+
+function dateBucket(paper) {
+  return paper.digest_date || (paper.published || "").slice(0, 10);
+}
+
+function authorsText(paper) {
+  const authors = paper.authors || [];
+  if (authors.length <= 3) return authors.join(", ") || "Unknown authors";
+  return `${authors.slice(0, 3).join(", ")}, et al.`;
 }
 
 function personKey(account) {
@@ -155,62 +169,8 @@ function scholarUrl(name) {
   return `https://scholar.google.com/scholar?q=${encodeURIComponent(name)}`;
 }
 
-function authorsText(paper) {
-  const authors = paper.authors || [];
-  if (authors.length <= 3) return authors.join(", ") || "Unknown authors";
-  return `${authors.slice(0, 3).join(", ")}, et al.`;
-}
-
-function dateBucket(paper) {
-  return paper.digest_date || (paper.published || "").slice(0, 10);
-}
-
-function papersForDate() {
-  const papers = state.site?.papers || [];
-  return papers.filter((paper) => dateBucket(paper) === state.selectedDate);
-}
-
-function filteredPapers() {
-  const query = state.query.trim().toLowerCase();
-  return papersForDate()
-    .filter((paper) => {
-      if (state.selectedTopic === "all") return true;
-      return (paper.topics || []).some((topic) => topic.label === state.selectedTopic);
-    })
-    .filter((paper) => {
-      if (!query) return true;
-      const haystack = [
-        paper.title,
-        paper.summary,
-        paper.abstract,
-        ...(paper.authors || []),
-        ...(paper.categories || []),
-        ...(paper.boost_hits || []),
-        ...(paper.topics || []).flatMap((topic) => [topic.label, ...(topic.keywords || [])]),
-      ].join(" ").toLowerCase();
-      return haystack.includes(query);
-    })
-    .filter((paper) => {
-      if (state.selectedDatabaseSource === "all") return true;
-      return paperSourceValues(paper).includes(state.selectedDatabaseSource);
-    })
-    .sort((a, b) => (b.score || 0) - (a.score || 0));
-}
-
-function renderDateOptions() {
-  const dates = state.site?.dates || [];
-  els.dateSelect.innerHTML = dates
-    .map((date) => `<option value="${date}">${date}</option>`)
-    .join("");
-  els.dateSelect.value = state.selectedDate;
-}
-
-function renderMetrics(papers) {
-  const allForDay = papersForDate();
-  const topScore = allForDay.reduce((max, paper) => Math.max(max, paper.score || 0), 0);
-  els.metricCount.textContent = String(allForDay.length);
-  els.metricScore.textContent = String(topScore);
-  els.metricUpdated.textContent = fmtDate(state.site?.generated_at);
+function linkCell(url, label) {
+  return url ? `<a href="${escapeHtml(url)}">${escapeHtml(label)}</a>` : "";
 }
 
 function chipHtml(values) {
@@ -220,84 +180,65 @@ function chipHtml(values) {
     .join("");
 }
 
-function tag(label, className = "tag") {
-  const span = document.createElement("span");
-  span.className = className;
-  span.textContent = label;
-  return span;
+function textOfPaper(paper) {
+  return [
+    paper.title,
+    paper.summary,
+    paper.abstract,
+    ...(paper.authors || []),
+    ...(paper.categories || []),
+    ...(paper.boost_hits || []),
+    ...paperResearchDirections(paper),
+  ].join(" ").toLowerCase();
 }
 
-function renderList(papers) {
-  els.paperList.innerHTML = "";
-  if (!papers.length) {
-    const empty = document.createElement("div");
-    empty.className = "empty-state";
-    empty.innerHTML = "<p class=\"eyebrow\">No results</p><h2>没有符合当前筛选的论文</h2>";
-    els.paperList.append(empty);
-    renderDetail(null);
-    return;
-  }
+function paperResearchDirections(paper) {
+  const text = `${paper.title || ""} ${paper.abstract || ""} ${paper.summary || ""} ${(paper.boost_hits || []).join(" ")} ${(paper.categories || []).join(" ")}`.toLowerCase();
+  const topicLabels = (paper.topics || []).map((topic) => topic.label);
+  const tags = [];
+  if (topicLabels.includes("Model Architecture") || /architecture|mamba|linear attention|state space|moe|mixture of experts|sparse attention/.test(text)) tags.push("模型架构");
+  if (topicLabels.includes("Diffusion Language Models") || /diffusion|denoising|score-based|masked diffusion/.test(text)) tags.push("扩散语言模型");
+  if (/agent|multi-agent|tool use|workflow|planning/.test(text)) tags.push("智能体");
+  if (/reinforcement learning|\brl\b|reward|policy optimization|rlhf/.test(text)) tags.push("强化学习");
+  if (/reasoning|chain-of-thought|search|verif|planning/.test(text)) tags.push("推理与搜索");
+  if (/multimodal|vision|image|video|audio|speech/.test(text)) tags.push("多模态");
+  if (/efficient|compression|distillation|inference|serving|memory|long context/.test(text)) tags.push("高效模型与系统");
+  if (/evaluation|benchmark|eval|leaderboard/.test(text)) tags.push("评测与基准");
+  if (/biology|biomedical|medical|protein|science|chemistry/.test(text)) tags.push("AI for Science");
+  if (/pretrain|training|data|synthetic|dataset/.test(text)) tags.push("训练与数据");
+  return unique(tags.length ? tags : ["其他"]);
+}
 
-  if (!papers.some((paper) => paper.arxiv_id === state.selectedId)) {
-    state.selectedId = papers[0].arxiv_id;
-  }
+function papersForSelectedDate() {
+  return (state.site?.papers || []).filter((paper) => dateBucket(paper) === state.paperDate);
+}
 
-  for (const paper of papers) {
-    const node = els.template.content.firstElementChild.cloneNode(true);
-    node.dataset.id = paper.arxiv_id;
-    node.classList.toggle("is-active", paper.arxiv_id === state.selectedId);
-    node.querySelector(".score-badge").textContent = `${paper.recommendation || "Paper"} · ${paper.score || 0}`;
-    node.querySelector(".paper-title").textContent = paper.title;
-    node.querySelector(".paper-meta").textContent = `${authorsText(paper)} · ${fmtDate(paper.published)}`;
-    const row = node.querySelector(".tag-row");
-    unique((paper.topics || []).map((topic) => topic.label)).forEach((label) => row.append(tag(label)));
-    node.addEventListener("click", () => {
-      state.selectedId = paper.arxiv_id;
-      render();
+function filteredPapers() {
+  const query = state.globalQuery.trim().toLowerCase();
+  return papersForSelectedDate()
+    .filter((paper) => state.paperDirection === "all" || paperResearchDirections(paper).includes(state.paperDirection))
+    .filter((paper) => !query || textOfPaper(paper).includes(query))
+    .sort((a, b) => (b.score || 0) - (a.score || 0));
+}
+
+function filteredPeople() {
+  const globalQuery = state.globalQuery.trim().toLowerCase();
+  const peopleQuery = state.peopleQuery.trim().toLowerCase();
+  return (state.social?.accounts || [])
+    .filter((account) => state.peopleOrg === "all" || canonicalOrg(account.org) === state.peopleOrg)
+    .filter((account) => {
+      const text = [
+        account.name,
+        account.handle,
+        account.org,
+        canonicalOrg(account.org),
+        account.region,
+        account.focus,
+        account.why_watch,
+        ...editedTags(account),
+      ].join(" ").toLowerCase();
+      return (!globalQuery || text.includes(globalQuery)) && (!peopleQuery || text.includes(peopleQuery));
     });
-    els.paperList.append(node);
-  }
-}
-
-function renderDetail(paper) {
-  if (!paper) {
-    els.detail.hidden = true;
-    els.emptyState.hidden = false;
-    return;
-  }
-
-  els.emptyState.hidden = true;
-  els.detail.hidden = false;
-
-  const keywords = unique((paper.topics || []).flatMap((topic) => topic.keywords || []));
-  const topics = unique((paper.topics || []).map((topic) => topic.label));
-  const pdfLink = paper.pdf_url ? `<a href="${escapeHtml(paper.pdf_url)}">PDF</a>` : "";
-
-  els.detail.innerHTML = `
-    <div class="detail-top">
-      <p class="eyebrow">${escapeHtml(paper.recommendation || "Recommendation")}</p>
-      <h2 class="detail-title">${escapeHtml(paper.title)}</h2>
-      <p class="detail-summary">${escapeHtml(paper.summary || "")}</p>
-      <div class="detail-tags">
-        ${topics.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}
-        ${keywords.slice(0, 10).map((item) => `<span class="keyword">${escapeHtml(item)}</span>`).join("")}
-      </div>
-    </div>
-
-    <div class="detail-meta-grid">
-      <div class="detail-meta"><span>Score</span><strong>${paper.score || 0}</strong></div>
-      <div class="detail-meta"><span>Published</span><strong>${fmtDate(paper.published)}</strong></div>
-      <div class="detail-meta"><span>Authors</span><strong>${escapeHtml(authorsText(paper))}</strong></div>
-      <div class="detail-meta"><span>Categories</span><strong>${escapeHtml((paper.categories || []).join(", ") || "--")}</strong></div>
-    </div>
-
-    <div class="detail-links">
-      <a href="${escapeHtml(paper.url)}">arXiv</a>
-      ${pdfLink}
-    </div>
-
-    <div class="abstract-box">${escapeHtml(paper.abstract || "No abstract available.")}</div>
-  `;
 }
 
 function optionList(values, allLabel) {
@@ -306,167 +247,147 @@ function optionList(values, allLabel) {
     .join("");
 }
 
-function renderPeopleFilters(accounts) {
-  const orgs = unique(accounts.map((account) => account.org)).sort();
-  const regions = unique(accounts.map((account) => account.region)).sort();
-  const tags = unique(accounts.flatMap((account) => account.tags || [])).sort();
-  els.orgFilter.innerHTML = optionList(orgs, "全部机构");
-  els.regionFilter.innerHTML = optionList(regions, "全部地区");
-  els.tagFilter.innerHTML = optionList(tags, "全部标签");
-  els.orgFilter.value = state.selectedOrg;
-  els.regionFilter.value = state.selectedRegion;
-  els.tagFilter.value = state.selectedPeopleTag;
+function renderMetrics() {
+  const papers = papersForSelectedDate();
+  const topScore = papers.reduce((max, paper) => Math.max(max, paper.score || 0), 0);
+  els.metricCount.textContent = String(papers.length);
+  els.metricScore.textContent = String(topScore);
+  els.metricUpdated.textContent = fmtDate(state.site?.generated_at);
 }
 
-function filteredAccounts(accounts) {
-  const query = state.query.trim().toLowerCase();
-  return accounts.filter((account) => {
-    if (state.selectedOrg !== "all" && account.org !== state.selectedOrg) return false;
-    if (state.selectedRegion !== "all" && account.region !== state.selectedRegion) return false;
-    if (state.selectedPeopleTag !== "all" && !(account.tags || []).includes(state.selectedPeopleTag)) return false;
-    const text = [
-      account.name,
-      account.handle,
-      account.org,
-      account.region,
-      account.focus,
-      account.why_watch,
-      ...editedTags(account),
-    ].join(" ").toLowerCase();
-    if (query && !text.includes(query)) return false;
-    if (state.selectedDatabaseSource === "all") return true;
-    return accountSourceValues(account).includes(state.selectedDatabaseSource);
-  });
-}
+function renderPaperFilters() {
+  const dates = state.site?.dates || [];
+  els.dateSelect.innerHTML = dates.map((date) => `<option value="${date}">${date}</option>`).join("");
+  els.paperDateFilter.innerHTML = dates.map((date) => `<option value="${date}">${date}</option>`).join("");
+  els.dateSelect.value = state.paperDate;
+  els.paperDateFilter.value = state.paperDate;
 
-function renderSocial() {
-  const social = state.social || { accounts: [], posts: [] };
-  const accounts = social.accounts || [];
-  const visibleAccounts = filteredAccounts(accounts);
-  const posts = social.posts || [];
-
-  els.socialStatus.textContent = posts.length
-    ? `已汇总 ${posts.length} 条最新动态，当前显示 ${visibleAccounts.length}/${accounts.length} 位 AI 研究者/机构观察卡。`
-    : `当前显示 ${visibleAccounts.length}/${accounts.length} 位 AI 研究者/机构观察卡。`;
-
-  els.socialAccounts.innerHTML = "";
-  visibleAccounts.forEach((account) => {
-    const card = document.createElement("article");
-    card.className = "person-card";
-    const handleLine = account.handle ? `@${escapeHtml(account.handle)} · ` : "";
-    const tags = (account.tags || []).slice(0, 5).map((item) => `<span>${escapeHtml(item)}</span>`).join("");
-    card.innerHTML = `
-      <div class="person-card-head">
-        <div>
-          <h3>${escapeHtml(account.name)}</h3>
-          <p>${handleLine}${escapeHtml(account.org || "Unknown")} · ${escapeHtml(account.focus || "AI")}</p>
-        </div>
-        <span>${account.post_count || 0}</span>
-      </div>
-      <p class="person-note">${escapeHtml(account.why_watch || "适合持续观察 AI 研究、产品和产业信号。")}</p>
-      <div class="person-tags">${tags}</div>
-      <div class="person-links">
-        ${account.profile_url ? `<a href="${escapeHtml(account.profile_url)}">X 主页</a>` : ""}
-        ${account.search_url ? `<a href="${escapeHtml(account.search_url)}">最新搜索</a>` : ""}
-        ${account.blog_url ? `<a href="${escapeHtml(account.blog_url)}">博客/主页</a>` : ""}
-      </div>
-    `;
-    els.socialAccounts.append(card);
-  });
-}
-
-function topicText(paper) {
-  return unique((paper.topics || []).map((topic) => topic.label)).join(", ");
-}
-
-function keywordText(paper) {
-  return unique((paper.topics || []).flatMap((topic) => topic.keywords || [])).join(", ");
-}
-
-function paperTagValues(paper) {
-  return unique([
-    ...(paper.topics || []).map((topic) => topic.label),
-    ...(paper.topics || []).flatMap((topic) => topic.keywords || []),
-    ...(paper.categories || []),
-    ...(paper.boost_hits || []),
-    paper.recommendation,
-  ]);
-}
-
-function accountTagValues(account) {
-  return unique([
-    ...editedTags(account),
-    account.focus,
-  ]);
-}
-
-function paperSourceValues(paper) {
-  return unique([...(paper.categories || [])]);
-}
-
-function accountSourceValues(account) {
-  return unique([canonicalOrg(account.org)]);
-}
-
-function databaseKeywordValues() {
-  const values = state.databaseView === "people"
-    ? (state.social?.accounts || []).flatMap(accountSourceValues)
-    : papersForDate().flatMap(paperSourceValues);
-  return unique(values).sort((a, b) => a.localeCompare(b));
-}
-
-function renderDatabaseKeywordFilter() {
-  const values = databaseKeywordValues();
-  if (state.selectedDatabaseSource !== "all" && !values.includes(state.selectedDatabaseSource)) {
-    state.selectedDatabaseSource = "all";
-  }
-  els.databaseKeywordFilter.innerHTML = optionList(values, state.databaseView === "people" ? "全部高校 / 机构" : "全部论文来源");
-  els.databaseKeywordFilter.value = state.selectedDatabaseSource;
-  els.databaseKeywordChips.innerHTML = values
-    .slice(0, 24)
-    .map((value) => {
-      const active = value === state.selectedDatabaseSource ? " is-active" : "";
-      return `<button class="keyword-chip${active}" type="button" data-keyword="${escapeHtml(value)}">${escapeHtml(value)}</button>`;
+  const directions = unique(papersForSelectedDate().flatMap(paperResearchDirections)).sort((a, b) => a.localeCompare(b));
+  if (state.paperDirection !== "all" && !directions.includes(state.paperDirection)) state.paperDirection = "all";
+  els.paperDirectionFilter.innerHTML = optionList(directions, "全部研究方向");
+  els.paperDirectionFilter.value = state.paperDirection;
+  els.paperDirectionChips.innerHTML = directions
+    .map((direction) => {
+      const active = direction === state.paperDirection ? " is-active" : "";
+      return `<button class="keyword-chip${active}" type="button" data-direction="${escapeHtml(direction)}">${escapeHtml(direction)}</button>`;
     })
     .join("");
-  els.databaseKeywordChips.querySelectorAll(".keyword-chip").forEach((button) => {
+  els.paperDirectionChips.querySelectorAll(".keyword-chip").forEach((button) => {
     button.addEventListener("click", () => {
-      state.selectedDatabaseSource = button.dataset.keyword;
-      renderDatabase();
+      state.paperDirection = button.dataset.direction;
+      renderPapers();
     });
   });
 }
 
+function renderPeopleFilters() {
+  const orgs = unique((state.social?.accounts || []).map((account) => canonicalOrg(account.org))).sort((a, b) => a.localeCompare(b));
+  if (state.peopleOrg !== "all" && !orgs.includes(state.peopleOrg)) state.peopleOrg = "all";
+  els.peopleOrgFilter.innerHTML = optionList(orgs, "全部高校 / 机构");
+  els.peopleOrgFilter.value = state.peopleOrg;
+  els.peopleOrgChips.innerHTML = orgs
+    .slice(0, 28)
+    .map((org) => {
+      const active = org === state.peopleOrg ? " is-active" : "";
+      return `<button class="keyword-chip${active}" type="button" data-org="${escapeHtml(org)}">${escapeHtml(org)}</button>`;
+    })
+    .join("");
+  els.peopleOrgChips.querySelectorAll(".keyword-chip").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.peopleOrg = button.dataset.org;
+      renderPeople();
+    });
+  });
+}
+
+function orderedColumns(key, columns) {
+  const saved = state.columnOrder[key] || columns.map((column) => column.id);
+  const byId = Object.fromEntries(columns.map((column) => [column.id, column]));
+  return saved.filter((id) => byId[id]).map((id) => byId[id]).concat(columns.filter((column) => !saved.includes(column.id)));
+}
+
+function renderHeader(key, columns, headEl, renderFn) {
+  const ordered = orderedColumns(key, columns);
+  headEl.innerHTML = `<tr>${ordered.map((column) => `<th draggable="true" data-col="${column.id}">${escapeHtml(column.label)}</th>`).join("")}</tr>`;
+  headEl.querySelectorAll("th").forEach((th) => {
+    th.addEventListener("dragstart", (event) => {
+      event.dataTransfer.setData("text/plain", th.dataset.col);
+    });
+    th.addEventListener("dragover", (event) => event.preventDefault());
+    th.addEventListener("drop", (event) => {
+      event.preventDefault();
+      const from = event.dataTransfer.getData("text/plain");
+      const to = th.dataset.col;
+      const ids = orderedColumns(key, columns).map((column) => column.id);
+      const fromIndex = ids.indexOf(from);
+      const toIndex = ids.indexOf(to);
+      if (fromIndex < 0 || toIndex < 0 || fromIndex === toIndex) return;
+      ids.splice(toIndex, 0, ids.splice(fromIndex, 1)[0]);
+      state.columnOrder[key] = ids;
+      saveColumnOrder();
+      renderFn();
+    });
+  });
+  return ordered;
+}
+
+function paperColumns() {
+  return [
+    { id: "title", label: "Aa 标题", get: (paper) => paper.title },
+    { id: "directions", label: "研究方向", html: true, get: (paper) => chipHtml(paperResearchDirections(paper)) },
+    { id: "score", label: "分数", get: (paper) => paper.score || 0 },
+    { id: "recommendation", label: "推荐", get: (paper) => paper.recommendation || "" },
+    { id: "authors", label: "作者", get: authorsText },
+    { id: "date", label: "时间", get: (paper) => dateBucket(paper) },
+    { id: "categories", label: "来源分类", get: (paper) => (paper.categories || []).join(", ") },
+    { id: "summary", label: "总结", get: (paper) => paper.summary || paper.abstract },
+    { id: "url", label: "链接", html: true, get: (paper) => linkCell(paper.url, "arXiv") },
+    { id: "pdf", label: "PDF", html: true, get: (paper) => linkCell(paper.pdf_url, "PDF") },
+  ];
+}
+
 function personNameHtml(account) {
   const detail = orgDistinction(account.org);
-  return `
-    <div class="person-name-cell">
-      <strong>${escapeHtml(account.name)}</strong>
-      ${detail ? `<span>${escapeHtml(detail)}</span>` : ""}
-    </div>
-  `;
+  return `<div class="person-name-cell"><strong>${escapeHtml(account.name)}</strong>${detail ? `<span>${escapeHtml(detail)}</span>` : ""}</div>`;
 }
 
 function editableTagsHtml(account) {
-  return `
-    <div class="editable-tags" contenteditable="true" data-person-key="${escapeHtml(personKey(account))}" spellcheck="false">
-      ${escapeHtml(editedTags(account).join(", "))}
-    </div>
-  `;
+  return `<div class="editable-tags" contenteditable="true" data-person-key="${escapeHtml(personKey(account))}" spellcheck="false">${escapeHtml(editedTags(account).join(", "))}</div>`;
 }
 
-function linkCell(url, label) {
-  return url ? `<a href="${escapeHtml(url)}">${escapeHtml(label)}</a>` : "";
+function peopleColumns() {
+  return [
+    { id: "name", label: "Aa 姓名", html: true, get: personNameHtml },
+    { id: "photo", label: "照片", html: true, get: avatarHtml },
+    { id: "org", label: "高校 / 机构", get: (account) => canonicalOrg(account.org) },
+    { id: "region", label: "地区", get: (account) => account.region },
+    { id: "focus", label: "方向", get: (account) => account.focus },
+    { id: "tags", label: "多 Tags", html: true, get: editableTagsHtml },
+    { id: "scholar", label: "Google Scholar", html: true, get: (account) => linkCell(scholarUrl(account.name), "Scholar") },
+    { id: "x", label: "X", html: true, get: (account) => linkCell(account.profile_url, account.handle ? `@${account.handle}` : "") },
+    { id: "summary", label: "最新动态总结", get: (account) => account.why_watch || account.status || "" },
+    { id: "home", label: "主页", html: true, get: (account) => linkCell(account.blog_url || account.search_url, "打开") },
+  ];
+}
+
+function renderRows(rows, columns, bodyEl) {
+  bodyEl.innerHTML = rows
+    .map((row) => {
+      const cells = columns.map((column) => {
+        const value = column.get(row) || "";
+        return `<td>${column.html ? value : escapeHtml(value)}</td>`;
+      });
+      return `<tr>${cells.join("")}</tr>`;
+    })
+    .join("");
 }
 
 function bindEditableTags() {
-  els.databaseBody.querySelectorAll(".editable-tags").forEach((node) => {
+  els.peopleBody.querySelectorAll(".editable-tags").forEach((node) => {
     node.addEventListener("blur", () => {
       const key = node.dataset.personKey;
-      const tags = unique(node.textContent.split(/[,，]/).map((item) => item.trim()));
-      state.tagEdits[key] = tags;
+      state.tagEdits[key] = unique(node.textContent.split(/[,，]/).map((item) => item.trim()));
       saveTagEdits();
-      renderDatabaseKeywordFilter();
     });
     node.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
@@ -477,79 +398,35 @@ function bindEditableTags() {
   });
 }
 
-function renderDatabaseTable() {
-  const isPeople = state.databaseView === "people";
-  const rows = isPeople ? filteredAccounts(state.social?.accounts || []) : filteredPapers();
-  els.databaseDownload.href = isPeople ? "data/people.csv" : "data/papers.csv";
-  els.databaseDownload.textContent = isPeople ? "下载人物 CSV" : "下载论文 CSV";
-
-  const columns = isPeople
-    ? [
-        ["Aa 姓名", personNameHtml],
-        ["照片", avatarHtml],
-        ["机构", (item) => canonicalOrg(item.org)],
-        ["地区", (item) => item.region],
-        ["方向", (item) => item.focus],
-        ["多 Tags", editableTagsHtml],
-        ["Google Scholar", (item) => linkCell(scholarUrl(item.name), "Scholar")],
-        ["X", (item) => linkCell(item.profile_url, item.handle ? `@${item.handle}` : "")],
-        ["最新动态总结", (item) => item.why_watch || item.status || ""],
-        ["主页", (item) => linkCell(item.blog_url || item.search_url, "打开")],
-      ]
-    : [
-        ["Aa 标题", (item) => item.title],
-        ["分数", (item) => item.score || 0],
-        ["推荐", (item) => item.recommendation || ""],
-        ["主题", topicText],
-        ["多 Tags / 关键词", (item) => chipHtml(paperTagValues(item))],
-        ["作者", (item) => authorsText(item)],
-        ["日期", (item) => dateBucket(item)],
-        ["分类", (item) => (item.categories || []).join(", ")],
-        ["摘要", (item) => item.summary || item.abstract],
-        ["链接", (item) => item.url],
-      ];
-
-  els.databaseHead.innerHTML = `<tr>${columns.map(([label]) => `<th>${escapeHtml(label)}</th>`).join("")}</tr>`;
-  els.databaseBody.innerHTML = rows
-    .map((row) => {
-      const cells = columns.map(([label, getter]) => {
-        const value = getter(row) || "";
-        const isLink = label === "链接" && value;
-        const isHtml = ["Aa 姓名", "照片", "多 Tags", "Google Scholar", "X", "主页"].includes(label) || label.includes("Tags");
-        return `<td>${isLink ? `<a href="${escapeHtml(value)}">${escapeHtml(value)}</a>` : isHtml ? value : escapeHtml(value)}</td>`;
-      });
-      return `<tr>${cells.join("")}</tr>`;
-    })
-    .join("");
-  if (isPeople) bindEditableTags();
+function renderPapers() {
+  renderPaperFilters();
+  renderMetrics();
+  const columns = renderHeader("papers", paperColumns(), els.paperHead, renderPapers);
+  renderRows(filteredPapers(), columns, els.paperBody);
 }
 
-function renderDatabase() {
-  renderDatabaseKeywordFilter();
-  renderDatabaseTable();
+function renderPeople() {
+  renderPeopleFilters();
+  const columns = renderHeader("people", peopleColumns(), els.peopleHead, renderPeople);
+  renderRows(filteredPeople(), columns, els.peopleBody);
+  bindEditableTags();
 }
 
-function render() {
-  const papers = filteredPapers();
-  renderMetrics(papers);
-  renderDatabase();
+function renderAll() {
+  renderPapers();
+  renderPeople();
 }
 
 async function loadApp() {
-  loadTagEdits();
+  loadLocalState();
   try {
     const response = await fetch("data/site.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.site = await response.json();
   } catch (error) {
-    state.site = {
-      generated_at: null,
-      dates: [],
-      papers: [],
-    };
+    state.site = { generated_at: null, dates: [], papers: [] };
     console.error(error);
   }
-
   try {
     const response = await fetch("data/social.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -560,45 +437,34 @@ async function loadApp() {
   }
 
   const dates = state.site.dates || [];
-  state.selectedDate = dates.includes(state.site.latest_date) ? state.site.latest_date : dates[0] || null;
-  renderDateOptions();
+  state.paperDate = dates.includes(state.site.latest_date) ? state.site.latest_date : dates[0] || null;
 
   els.dateSelect.addEventListener("change", (event) => {
-    state.selectedDate = event.target.value;
-    state.selectedId = null;
-    render();
+    state.paperDate = event.target.value;
+    renderPapers();
   });
-
+  els.paperDateFilter.addEventListener("change", (event) => {
+    state.paperDate = event.target.value;
+    renderPapers();
+  });
+  els.paperDirectionFilter.addEventListener("change", (event) => {
+    state.paperDirection = event.target.value;
+    renderPapers();
+  });
   els.searchInput.addEventListener("input", (event) => {
-    state.query = event.target.value;
-    state.selectedId = null;
-    render();
+    state.globalQuery = event.target.value;
+    renderAll();
+  });
+  els.peopleOrgFilter.addEventListener("change", (event) => {
+    state.peopleOrg = event.target.value;
+    renderPeople();
+  });
+  els.peopleSearch.addEventListener("input", (event) => {
+    state.peopleQuery = event.target.value;
+    renderPeople();
   });
 
-  els.topicButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      state.selectedTopic = button.dataset.topic;
-      state.selectedId = null;
-      els.topicButtons.forEach((item) => item.classList.toggle("is-active", item === button));
-      render();
-    });
-  });
-
-  els.databaseKeywordFilter.addEventListener("change", (event) => {
-    state.selectedDatabaseSource = event.target.value;
-    renderDatabase();
-  });
-
-  els.databaseTabs.forEach((button) => {
-    button.addEventListener("click", () => {
-      state.databaseView = button.dataset.dbView;
-      state.selectedDatabaseSource = "all";
-      els.databaseTabs.forEach((item) => item.classList.toggle("is-active", item === button));
-      renderDatabase();
-    });
-  });
-
-  render();
+  renderAll();
 }
 
 function initAuth() {
@@ -607,7 +473,6 @@ function initAuth() {
     loadApp();
     return;
   }
-
   els.authForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     const password = els.authPassword.value;
@@ -615,7 +480,6 @@ function initAuth() {
       setAuthMessage("请输入访问密码。");
       return;
     }
-
     try {
       const hash = await sha256Hex(password);
       if (hash !== AUTH_HASH) {

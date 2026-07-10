@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daily arXiv Paper Radar</title>
     <meta name="description" content="Daily arXiv paper radar for diffusion language models and model architecture.">
-    <link rel="stylesheet" href="assets/app.css?v=20260710-people-db">
+    <link rel="stylesheet" href="assets/app.css?v=20260710-split-db">
   </head>
   <body class="auth-locked">
     <section id="auth-gate" class="auth-gate" aria-label="Password gate">
@@ -48,53 +48,84 @@
         </div>
 
         <label class="field">
-          <span>日期</span>
+          <span>全局日期</span>
           <select id="date-select"></select>
         </label>
 
         <label class="field search-field">
-          <span>搜索</span>
-          <input id="search-input" type="search" placeholder="标题、作者、关键词">
+          <span>全局搜索</span>
+          <input id="search-input" type="search" placeholder="论文、作者、机构、方向">
         </label>
       </section>
 
-      <section class="topic-strip" aria-label="Topic filters">
-        <button class="topic-button is-active" type="button" data-topic="all">全部</button>
-        <button class="topic-button" type="button" data-topic="Diffusion Language Models">扩散语言模型</button>
-        <button class="topic-button" type="button" data-topic="Model Architecture">模型架构</button>
-      </section>
-
-      <section class="database-panel database-primary" aria-label="Database views">
+      <section class="database-panel database-primary" aria-label="Paper database">
         <div class="database-head">
           <div>
-            <p class="eyebrow">Database</p>
-            <h2>论文雷达数据库</h2>
+            <p class="eyebrow">Paper Database</p>
+            <h2>论文库</h2>
           </div>
           <div class="database-actions">
-            <div class="view-tabs" role="tablist" aria-label="Database views">
-              <button class="view-tab is-active" type="button" data-db-view="papers">论文库</button>
-              <button class="view-tab" type="button" data-db-view="people">人物库</button>
-            </div>
-            <a id="database-download" class="download-link" href="data/papers.csv">下载 CSV</a>
+            <a class="download-link" href="data/papers.csv">下载论文 CSV</a>
           </div>
         </div>
         <div class="database-filterbar" aria-label="Database filters">
           <label>
-            <span>机构 / 来源筛选</span>
-            <select id="database-keyword-filter"></select>
+            <span>时间</span>
+            <select id="paper-date-filter"></select>
           </label>
-          <div id="database-keyword-chips" class="database-keyword-chips"></div>
+          <label>
+            <span>研究方向</span>
+            <select id="paper-direction-filter"></select>
+          </label>
+          <div id="paper-direction-chips" class="database-keyword-chips"></div>
         </div>
         <div class="database-table-wrap">
           <table class="database-table">
-            <thead id="database-head">
+            <thead id="paper-database-head">
               <tr>
-                <th>数据库</th>
+                <th>论文库</th>
               </tr>
             </thead>
-            <tbody id="database-body">
+            <tbody id="paper-database-body">
               <tr>
-                <td>正在加载数据库...</td>
+                <td>正在加载论文库...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="database-panel" aria-label="People database">
+        <div class="database-head">
+          <div>
+            <p class="eyebrow">People Database</p>
+            <h2>人物库</h2>
+          </div>
+          <div class="database-actions">
+            <a class="download-link" href="data/people.csv">下载人物 CSV</a>
+          </div>
+        </div>
+        <div class="database-filterbar people-filterbar" aria-label="People filters">
+          <label>
+            <span>高校 / 机构</span>
+            <select id="people-org-filter"></select>
+          </label>
+          <label>
+            <span>人物搜索</span>
+            <input id="people-search" type="search" placeholder="姓名、机构、方向、tags">
+          </label>
+          <div id="people-org-chips" class="database-keyword-chips"></div>
+        </div>
+        <div class="database-table-wrap">
+          <table class="database-table people-table">
+            <thead id="people-database-head">
+              <tr>
+                <th>人物库</th>
+              </tr>
+            </thead>
+            <tbody id="people-database-body">
+              <tr>
+                <td>正在加载人物库...</td>
               </tr>
             </tbody>
           </table>
@@ -102,6 +133,6 @@
       </section>
     </main>
 
-    <script src="assets/app.js?v=20260710-people-db" defer></script>
+    <script src="assets/app.js?v=20260710-split-db" defer></script>
   </body>
 </html>

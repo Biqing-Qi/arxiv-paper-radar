@@ -476,7 +476,7 @@ select {
 }
 
 .database-primary {
-  min-height: calc(100vh - 250px);
+  min-height: 520px;
 }
 
 .database-head {
@@ -503,7 +503,7 @@ select {
 
 .database-filterbar {
   display: grid;
-  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(220px, 300px)) minmax(0, 1fr);
   gap: 12px;
   align-items: start;
   padding: 12px 0;
@@ -526,12 +526,27 @@ select {
 }
 
 .database-filterbar select {
+  width: 100%;
   min-width: 0;
   border: 0;
   outline: 0;
   background: transparent;
   color: var(--ink);
   font-weight: 760;
+}
+
+.database-filterbar input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 760;
+}
+
+.people-filterbar {
+  grid-template-columns: minmax(220px, 300px) minmax(260px, 360px) minmax(0, 1fr);
 }
 
 .database-keyword-chips {
@@ -642,8 +657,14 @@ select {
   z-index: 1;
   background: #f7faf9;
   color: var(--muted);
+  cursor: grab;
   font-size: 16px;
   font-weight: 650;
+  user-select: none;
+}
+
+.database-table th:active {
+  cursor: grabbing;
 }
 
 .database-table td {
@@ -659,6 +680,10 @@ select {
   background: #fff;
   min-width: 360px;
   font-weight: 760;
+}
+
+.people-table {
+  min-width: 1580px;
 }
 
 .database-table th:first-child {
