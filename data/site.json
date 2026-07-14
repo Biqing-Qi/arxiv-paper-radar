@@ -1,9 +1,9 @@
 {
   "dates": [
-    "2026-07-14"
+    "2026-07-15"
   ],
-  "generated_at": "2026-07-13T23:55:50.363542+00:00",
-  "latest_date": "2026-07-14",
+  "generated_at": "2026-07-14T23:54:46.729385+00:00",
+  "latest_date": "2026-07-15",
   "papers": [
     {
       "abstract": "Diffusion Language Models (DLMs) have recently achieved substantial progress in natural language generation tasks. Recent research demonstrates that adaptive token generation ordering can significantly improve performance in mathematical reasoning and code synthesis applications. In this work, we investigate the optimization of generation order for both text-to-image synthesis and multimodal understanding. We first establish that, unlike structured problems in language generation such as Sudoku puzzles, model logits alone are insufficient for determining optimal generation sequences in text-to-image generation and multimodal understanding. To address this challenge, we introduce a learnable control module trained via Group Relative Policy Optimization (GRPO) to determine the generation order. Our results demonstrate that learning this control block substantially improves both text-to-image alignment and multimodal understanding in DLMs. In particular, it enhances the model's ability to capture fine-grained spatial relationships in generated images while also strengthening performance on multimodal reasoning and comprehension tasks. We evaluate our framework on GenEval, an object-focused benchmark for text-to-image alignment, where it achieves 4.08% relative improvements. In addition, experiments on VLMEvalKit confirm 4.85% relative improvements in multimodal understanding, highlighting the broad effectiveness of our approach.",
@@ -22,7 +22,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08056v1",
       "published": "2026-07-09T02:07:30+00:00",
       "recommendation": "Read closely",
@@ -44,6 +44,43 @@
       "url": "http://arxiv.org/abs/2607.08056v1"
     },
     {
+      "abstract": "Mixture-of-Experts (MoE) models scale capacity without proportional compute cost and have become a key architecture for frontier large language models (LLMs). Yet domain-specific post-training inherits an expert pool shaped by mixed-domain pre-training: a substantial subset of experts contributes little on the target domain, and standard supervised fine-tuning (SFT) leaves the composition of this pool unchanged. We propose a simple, budget-preserving pipeline that realigns the expert pool to the target domain before fine-tuning. Given a target domain, we (1) prune the experts with lowest domain-aligned saliency, (2) regrow the expert pool to its original size through perturbation-based expert expansion, and (3) apply standard SFT. The resulting model preserves the original expert count, parameter count, and inference cost. With a single frozen recipe and no per-domain hyperparameter tuning, UMoE consistently improves over direct sft across two MoE architectures (Qwen3-30B-A3B and Qwen3.5-35B-A3B), five domains (math, code, science, tool-use, and agentic coding), and 12 benchmarks. Representative improvements are 3.4 points in math average accuracy, 6.0 points on SWE-bench Verified. On a strong in-house math corpus, direct sft already surpasses Qwen3-30B-A3B-Thinking (82.81 vs.\\ 81.06), yet UMoE further raises the average to 84.17, an additional 1.36 points, demonstrating robustness to a substantially stronger SFT regime. Data-scaling experiments further show that the gain persists as training data grows. Analysis reveals that the direct-SFT model allocates substantial routed-expert compute to a low-saliency subset that can be removed post hoc with little average degradation; UMoE turns this redundant capacity into useful domain capacity and achieves lower training loss, with gains spanning all difficulty levels in downstream evaluation.",
+      "arxiv_id": "2607.11444v1",
+      "authors": [
+        "Xuefeng Li",
+        "Pengfei Liu"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "scaling",
+        "inference"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
+      "published": "2026-07-13T11:52:42+00:00",
+      "recommendation": "Read closely",
+      "score": 11,
+      "summary": "Likely relevant to Model Architecture. Mixture-of-Experts (MoE) models scale capacity without proportional compute cost and have become a key architecture for frontier large language models (LLMs).",
+      "title": "UMoE:Unlocking Every Expert in Domain-Specific Training",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-07-13T11:52:42+00:00",
+      "url": "http://arxiv.org/abs/2607.11444v1"
+    },
+    {
       "abstract": "Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
       "arxiv_id": "2607.08284v1",
       "authors": [
@@ -58,7 +95,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08284v1",
       "published": "2026-07-09T09:28:06+00:00",
       "recommendation": "Worth scanning",
@@ -140,7 +177,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08186v1",
       "published": "2026-07-09T07:37:59+00:00",
       "recommendation": "Worth scanning",
@@ -181,7 +218,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07386v1",
       "published": "2026-07-08T13:17:19+00:00",
       "recommendation": "Worth scanning",
@@ -223,7 +260,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.06452v1",
       "published": "2026-07-07T16:12:51+00:00",
       "recommendation": "Worth scanning",
@@ -242,6 +279,75 @@
       ],
       "updated": "2026-07-07T16:12:51+00:00",
       "url": "http://arxiv.org/abs/2607.06452v1"
+    },
+    {
+      "abstract": "Mixture-of-Experts (MoE) large language models (LLM) activate only a small number of experts during inference, but token routing introduces persistent expert hotness skew: a small set of hot experts continuously receives most tokens, while the remaining experts are lightly loaded. On 3.5D multi-chiplet systems, this skew not only causes compute imbalance but also amplifies pressure on communication, memory bandwidth, I/O, and execution queues. Therefore, the core problem is not simply to reduce token movement, but to dynamically place and reuse hot expert replicas across different memory tiers. This paper proposes HCRMap, a hot expert residency mapping framework for pressure-aware expert replica management in 3.5D MoE inference. Based on expert hotness, weight loading cost, migration overhead, and runtime resource pressure, HCRMap dynamically determines which experts should be promoted, retained, demoted, or evicted. It then maps routed token groups to suitable resident replicas, thereby jointly mitigating communication, memory, and queue bottlenecks. Experimental results show that HCRMap reduces end-to-end latency by 43.6% and 43.0% over Hydra in the prefill and decode stages, respectively; by 34.5% and 33.1% over MoEntwine; and by 46.7% and 46.0% over PIMoE.",
+      "arxiv_id": "2607.11586v1",
+      "authors": [
+        "Yongqin Zhang"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "inference"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
+      "published": "2026-07-13T14:05:55+00:00",
+      "recommendation": "Worth scanning",
+      "score": 8,
+      "summary": "Likely relevant to Model Architecture. Mixture-of-Experts (MoE) large language models (LLM) activate only a small number of experts during inference, but token routing introduces persistent expert hotness skew: a small set of hot experts continuously receives most tokens, while the remaining experts are lightly loaded.",
+      "title": "HCRMap: Pressure-Aware Hot-Expert Residency Mapping for 3.5D MoE Chiplet Inference",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-07-13T14:05:55+00:00",
+      "url": "http://arxiv.org/abs/2607.11586v1"
+    },
+    {
+      "abstract": "Discrete diffusion models offer a powerful framework for solving complex reasoning tasks, particularly through compositional generation, which combines multiple pre-trained experts to generalize beyond their individual training data. Recent theoretical corrections introduce time-dependent mixing weights to better align composed diffusion dynamics with the intended target. However, these methods are fundamentally limited by working on a per-sample basis, treating each generated state monolithically and ignoring the potential spatial or functional specializations of different experts. In this work, we address this limitation by proposing FactorDiff - a factor-wise composition framework for diffusion models. We posit that samples can be further decomposed into smaller factors, and propose a sampling process that dynamically routes each factor to the most relevant expert. We instantiate this framework with spatial/pixel-level compositions and validate it on the ARC-AGI benchmark, demonstrating that simple factor-specific routing consistently outperforms complex global scalar weighting schemes on tasks that require logical consistency and spatial disentanglement.",
+      "arxiv_id": "2607.11758v1",
+      "authors": [
+        "Haozhe Huang",
+        "Yudong Xu",
+        "Abhijoy Mandal",
+        "Alán Aspuru-Guzik"
+      ],
+      "boost_hits": [
+        "reasoning"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11758v1",
+      "published": "2026-07-13T16:22:01+00:00",
+      "recommendation": "Worth scanning",
+      "score": 7,
+      "summary": "Likely relevant to Diffusion Language Models. Discrete diffusion models offer a powerful framework for solving complex reasoning tasks, particularly through compositional generation, which combines multiple pre-trained experts to generalize beyond their individual training data.",
+      "title": "From Global to Factor-Wise Expert Composition in Discrete Diffusion Models",
+      "topics": [
+        {
+          "id": "diffusion_language_models",
+          "keywords": [
+            "discrete diffusion"
+          ],
+          "label": "Diffusion Language Models",
+          "score": 5
+        }
+      ],
+      "updated": "2026-07-13T16:22:01+00:00",
+      "url": "http://arxiv.org/abs/2607.11758v1"
     },
     {
       "abstract": "Spatial and Single-cell transcriptomics are transformative in deciphering cellular dynamics. As the fundamental paradigm for reconstructing cell developmental paths, trajectory inference (TI) is critical. However, existing methods require extensive manual intervention and proficiency in heterogeneous tools, posing a significant barrier to efficient TI analysis. To bridge this gap, we propose SpaCellAgent, an autonomous large language model (LLM) multi-agent framework that automates end-to-end spatiotemporal analysis and narrative generation. SpaCellAgent utilizes a multi-agent architecture for strategic workflow planning, a dynamic tool-orchestration engine for adaptive algorithm selection, and a self-evolution module that iteratively refines performance through feedback. We evaluate SpaCellAgent on six heterogeneous datasets encompassing complex temporal developmental trajectories, diverse sequencing platforms, and spatially-resolved tissue architectures. SpaCellAgent consistently demonstrates over 40\\% improvement in analytical efficiency while maintaining expert-aligned performance. By converting natural language specifications into optimized analytical workflows and fully automating the pipeline, SpaCellAgent democratizes advanced spatiotemporal modeling and establishes a scalable, agent-driven paradigm for computational biology. The code and materials are available at https://github.com/LittleXH-shw/SpaCellAgent.",
@@ -265,7 +371,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07467v1",
       "published": "2026-07-08T14:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -300,7 +406,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07258v1",
       "published": "2026-07-08T10:46:02+00:00",
       "recommendation": "Worth scanning",
@@ -336,7 +442,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.06269v1",
       "published": "2026-07-07T13:34:27+00:00",
       "recommendation": "Worth scanning",
@@ -357,6 +463,156 @@
       "url": "http://arxiv.org/abs/2607.06269v1"
     },
     {
+      "abstract": "The asymmetry between language production and perception has been well-documented in psycholinguistics. Whether large language models (LLMs) exhibit a functionally analogous distinction remains an open question, particularly given that LLMs rely on the same underlying mechanism (next-token prediction) for both input and output processing. In this exploratory study, we operationalize the production-perception distinction through direct token probability measurements rather than metalinguistic prompting. Using the base Llama-3.1-8B model, we generated poems under a production prompt and re-scored the same tokens under both rephrased production prompts and perception-oriented prompts. Across an extended experiment with four production and three perception prompts, production-perception distances consistently and substantially exceeded production-production distances, with non-overlapping ranges across conditions and an overall average ratio of approximately 1.8. Near-ceiling correlations in the production-production control confirm that the effect is specific to communicative framing rather than prompt surface variation, and we show the effect replicates across five open-weight models (Llama-3.1-8B, EuroLLM-9B, gemma-2-9b-it, Mistral-7B-Instruct-v0.3, and Qwen2.5-7B-Instruct), spanning both base and instruction-tuned variants. Temporal analysis revealed that the perception prompt exerts its strongest influence at the beginning of the sequence, with divergence decaying as generated context accumulates, though the specific shape of this decay varies across prompt pairs. These findings suggest that prompt framing alone induces a production-perception distinction in LLM probability distributions, even within a decoder-only architecture.",
+      "arxiv_id": "2607.11703v1",
+      "authors": [
+        "Anna Marklová",
+        "Jiří Milička",
+        "Martina Vokáčová",
+        "Rudolf Rosa"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11703v1",
+      "published": "2026-07-13T15:33:45+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. The asymmetry between language production and perception has been well-documented in psycholinguistics.",
+      "title": "Production and Perception in LLMs: A Token Probability Approach",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-13T15:33:45+00:00",
+      "url": "http://arxiv.org/abs/2607.11703v1"
+    },
+    {
+      "abstract": "Legal information processing spans retrieval, entailment and judgment prediction problems, requiring text matching, reasoning and robust generalisation with limited supervision. We report Team DU's participation in all five tasks of COLIEE 2026, using open-weight systems for legal case retrieval, case entailment, statute retrieval and entailment, and legal judgment prediction. For Tasks 3 and 4, all models predate the 15 July 2025 cutoff required by the rules. For Task 4 (statute entailment), a cross-architecture ensemble of nine models from three families achieves 96.3% accuracy, placing first among 33 submissions from 11 teams. For the Pilot Task (tort prediction and rationale extraction), a multi-view system combining five claim-level models and refining the verdict using features derived from the claim predictions achieves 73.1% TP accuracy and 68.2% RE F1 as an unofficial submission, scoring above all official entries on TP and matching the highest on RE. For Task 2 (legal case entailment), changing only the prompt from single- to multi-selection raises F1 from 0.343 to 0.555 in post-competition evaluation on released gold labels, exceeding the best official submission (F1 = 0.490). For Task 3 (statute retrieval and entailment), replacing the entailment model with Qwen3-235B and a structured legal reasoning prompt raises accuracy from 79.3% to 91.5% in post-competition analysis. For Task 1 (legal case retrieval), a learning-to-rank system combining lexical and semantic retrieval with structural, citation authority, and temporal features (34 in total) achieves F1 = 0.314 (rank 11 of 54 submissions from 22 teams). Overall, legal information processing benefits from different inductive biases across tasks, with cross-architecture ensembling, feature-based reranking and retrieval-augmented prompting each proving most effective in different settings.",
+      "arxiv_id": "2607.11400v1",
+      "authors": [
+        "Amal Saad Alshehri",
+        "Nelly Bencomo",
+        "Amir Atapour-Abarghouei"
+      ],
+      "boost_hits": [
+        "llm",
+        "reasoning"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11400v1",
+      "published": "2026-07-13T11:07:57+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. Legal information processing spans retrieval, entailment and judgment prediction problems, requiring text matching, reasoning and robust generalisation with limited supervision.",
+      "title": "Cross-Architecture LLM Ensembles, Feature-Based Reranking and Retrieval-Augmented Prompting for Legal Information Processing",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-13T11:07:57+00:00",
+      "url": "http://arxiv.org/abs/2607.11400v1"
+    },
+    {
+      "abstract": "The widespread adoption of social media platforms has transformed online communication by enabling users to exchange information and opinions instantly. However, these platforms have also facilitated the dissemination of abusive and hateful content, posing major social, psychological, and ethical challenges. Hate speech can incite discrimination, harassment, and violence against individuals or communities based on attributes such as ethnicity, religion, gender, nationality, or political affiliation. Consequently, automatic hate speech detection has become a major research topic in natural language processing (NLP) and an essential component of content moderation systems. This paper investigates automatic hate speech detection in the Algerian Arabic dialect (Darija) on social media. This task remains challenging because of the dialect's linguistic diversity, characterized by the coexistence of Arabic, French, and Arabizi (Arabic written using the Latin alphabet). We compare four categories of text classification approaches: (1) traditional machine learning models using TF-IDF features, (2) deep learning models based on recurrent neural networks, (3) Transformer-based language models, including DziriBERT and multilingual BERT, and (4) a novel hybrid architecture, FAD-SA-GRU, which combines semantic representations from DZ FastText, DZ AraVec, and DziriBERT through multi-embedding fusion, followed by a self-attention-enhanced GRU encoder. Experiments on an annotated dataset of Algerian Darija social media comments for binary hate speech classification show that FAD-SA-GRU outperforms all baselines, achieving 93.2% accuracy, 93.4% precision, 91.0% recall, 92.1% F1-score, and 97.0% ROC-AUC. Results demonstrate the effectiveness of combining complementary embedding representations with attention-based sequence modeling for robust hate speech detection in low-resource dialectal Arabic.",
+      "arxiv_id": "2607.11279v1",
+      "authors": [
+        "Sara Yakoubi",
+        "Ikram Khalfallah",
+        "Kenza Khelkhal",
+        "Dihia Lanasri"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11279v1",
+      "published": "2026-07-13T08:59:47+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. The widespread adoption of social media platforms has transformed online communication by enabling users to exchange information and opinions instantly.",
+      "title": "FAD-SA-GRU: Enhancing Hate Speech Detection in Algerian Dialect Through Feature-Augmented Self-Attention GRU Networks",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "hybrid architecture",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 6
+        }
+      ],
+      "updated": "2026-07-13T08:59:47+00:00",
+      "url": "http://arxiv.org/abs/2607.11279v1"
+    },
+    {
+      "abstract": "The rapid expansion of capabilities in Large Language Model (LLM) agents has exposed a critical architectural bottleneck: when agents are given access to a flat, monolithic registry of tools, the model must evaluate hundreds or thousands of options simultaneously. This leads to decision-space explosion, context window saturation, and degraded routing accuracy. To address these limitations, this paper presents a hierarchical, skill-based architecture for agentic orchestration. Capabilities are organized as a rooted tree where internal nodes make routing decisions and leaf nodes execute deterministic tasks. The runtime enforces a single-step execution loop governed by a Last-In-First-Out (LIFO) stack, giving the agent a form of memory akin to a Pushdown Automaton, therefore enabling it to track nested execution contexts and resume deterministically from any depth. Capability discovery follows a manifest-driven, lazy-loading protocol: only the immediate children of the active node are loaded, so memory and prompt costs scale with the explored path rather than the global registry. By replacing global memory with localized stack frames, the architecture prevents outputs from one execution branch from leaking into another, establishing the isolation guarantees required for deployment in regulated enterprise environments. We also discuss UPI Help, an AI-powered digital payments support product, as a motivating production deployment context. We provide a mathematical formalization of the orchestration state, detailed algorithmic analysis of the execution loop, and controlled benchmarks comparing flat and hierarchical routing under increasing tool catalogs, multi-step workflow pressure, and visible schema-token exposure per LLM call.",
+      "arxiv_id": "2607.11138v1",
+      "authors": [
+        "Prashant Devadiga",
+        "Abhishek",
+        "Adithya Mishra",
+        "Alok Singh",
+        "Amisha Sinha",
+        "Asit Desai",
+        "Gaurang Dahad",
+        "Harshit Bhushan",
+        "Mandati Pramod Reddy",
+        "Prakhar Gupta",
+        "Rupesh Patil",
+        "Siddhi Behere"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11138v1",
+      "published": "2026-07-13T06:15:51+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. The rapid expansion of capabilities in Large Language Model (LLM) agents has exposed a critical architectural bottleneck: when agents are given access to a flat, monolithic registry of tools, the model must evaluate hundreds or thousands of options simultaneously.",
+      "title": "A Formal Hierarchical Architecture for Agentic Orchestration with Stack-Based Execution and Lazy Discovery",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-13T06:15:51+00:00",
+      "url": "http://arxiv.org/abs/2607.11138v1"
+    },
+    {
       "abstract": "Sparsely-activated Mixture-of-Experts (MoE) language models achieve remarkable inference efficiency by activating only a small fraction of parameters per token, yet their full expert banks reside in memory at all times, creating a prohibitive deployment bottleneck. Existing structured pruning methods, largely designed for dense transformers, assess expert importance using locally derived heuristics that are blind to the interdependent nature of MoE routing. We introduce MAESTRO (Markov-chain Approximated Expert Sparsification via Transition-based ROuting), a structured pruning framework designed for MoE architectures that models autoregressive expert activation trajectories as Ergodic Markov chains whose stationary distributions encode cross-layer dependencies, yielding a globally aware importance heuristic. Evaluated across five diverse domains including Safety, Bias, and Ethics, MAESTRO outperforms state-of-the-art baselines by up to 10.61% in average performance retention under a strict 50% compression regime, while exhibiting substantially lower cross-task variance, indicating that global, routing-congruent pruning produces models that generalize more consistently across heterogeneous tasks.",
       "arxiv_id": "2607.08601v1",
       "authors": [
@@ -370,7 +626,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08601v1",
       "published": "2026-07-09T15:32:54+00:00",
       "recommendation": "Worth scanning",
@@ -413,7 +669,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
       "published": "2026-07-09T13:55:55+00:00",
       "recommendation": "Worth scanning",
@@ -455,7 +711,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08403v1",
       "published": "2026-07-09T12:28:39+00:00",
       "recommendation": "Worth scanning",
@@ -494,7 +750,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08357v1",
       "published": "2026-07-09T11:08:39+00:00",
       "recommendation": "Worth scanning",
@@ -529,7 +785,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08288v1",
       "published": "2026-07-09T09:32:03+00:00",
       "recommendation": "Worth scanning",
@@ -566,7 +822,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08282v1",
       "published": "2026-07-09T09:23:13+00:00",
       "recommendation": "Worth scanning",
@@ -602,7 +858,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08028v1",
       "published": "2026-07-09T01:08:33+00:00",
       "recommendation": "Worth scanning",
@@ -640,7 +896,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.06327v1",
       "published": "2026-07-07T14:25:09+00:00",
       "recommendation": "Worth scanning",
@@ -661,6 +917,70 @@
       "url": "http://arxiv.org/abs/2607.06327v1"
     },
     {
+      "abstract": "Selective state-space models such as Mamba route information through a bank of first-order modes whose input coupling is set by a learned selection mechanism. We give an exact instrument for measuring how a trained model uses these modes. Because the state matrix is diagonal, each channel's output decomposes exactly into per-mode contributions, and a per-(layer, channel, window) Gram tensor yields the exact output error of dropping any subset of modes, offline, at any budget. Validated against the reference implementation to a relative error of $2.3\\times10^{-7}$ on the Mamba-1 family where it is exact, the instrument predicts a layer's deployed pruning error to a median relative deviation of $5\\times10^{-7}$ over $4{,}464$ configurations, its floor set by the reconstruction. Applying the instrument across the Mamba-1 family (130M--2.8B), the deployed 7B Falcon-Mamba, and Mamba-2, we find that trained models re-allocate their state space with the input: which modes carry the signal migrates across contexts, and at the most affected layers a per-input oracle roughly halves the output error of a fixed mode set. Frozen-signal counterfactuals attribute the migration primarily to the input-dependent write map $B_t$; the timestep usually identified with selectivity carries almost none of it. Input-scheduled mode pruning on this measurement outperforms static, Hankel-based, and layer-adaptive rankings at every scale from 130M to the deployed 7B Falcon-Mamba, and at half the state budget it matches the unpruned model. Because the scheduler reads each window's mode usage from a first pass, this demonstrates realizable headroom; we claim no deployed compute or memory saving.",
+      "arxiv_id": "2607.11796v1",
+      "authors": [
+        "Raktim Bhattacharya"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11796v1",
+      "published": "2026-07-13T16:48:03+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. Selective state-space models such as Mamba route information through a bank of first-order modes whose input coupling is set by a learned selection mechanism.",
+      "title": "An Exact Instrument for State Usage in Selective State-Space Models, and the Input-Driven Migration It Reveals",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "mamba"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-07-13T16:48:03+00:00",
+      "url": "http://arxiv.org/abs/2607.11796v1"
+    },
+    {
+      "abstract": "Long-form article generation remains difficult for large language models because it combines long context, long instructions, and long outputs. Existing multi-agent pipelines such as STORM improve information coverage by simulating role-specialized agents, but their capabilities are often entangled in prompts and fixed procedures, making them hard to inspect, reuse, or iteratively improve. This paper presents GEIS (Generation-Evaluation-Improvement loop of agent Skills), a loop of named and declarative skills for Wikipedia-style long-form article generation. Implemented and evaluated in Tasi Harness, GEIS composes skills for article writing, browser-based evidence and image collection, diagram rendering, PDF-aware pairwise evaluation, and rule-level skill improvement. Its core writing skill follows Request, Plan, Draft, Audit, Refine, and Deliver; the pairwise evaluation skill produces structured quality reports; and the improvement skill maps recurrent findings into permanent patches to the writing skill in our 20-topic experiment. We evaluate GEIS on 20 Wikipedia Featured Article topics. Under the same generation backend, GEIS improves over the Tasi Harness default writer by 8.0 points on a 100-point PDF quality rubric and outperforms STORM on the two comparable writing dimensions, structural quality and content quality. In the 20-topic improvement experiment, the patched writing skill raises the average score from 82.90 to 86.95, with 17 out of 20 topics improved and the gain mainly coming from content quality. These results show that long-form generation can be reframed from a fixed workflow into an inspectable, modular, and evaluation-guided improvement loop.",
+      "arxiv_id": "2607.11503v1",
+      "authors": [
+        "Jiale Zhang",
+        "Juntao Hu",
+        "Zhijian Ou"
+      ],
+      "boost_hits": [
+        "large language model"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
+      "published": "2026-07-13T12:54:47+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. Long-form article generation remains difficult for large language models because it combines long context, long instructions, and long outputs.",
+      "title": "GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "long context"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-07-13T12:54:47+00:00",
+      "url": "http://arxiv.org/abs/2607.11503v1"
+    },
+    {
       "abstract": "Low-rank factorization is widely used to compress neural networks, but modern models are often not naturally amenable to aggressive factorization without significant accuracy loss. Existing training-time low-rank regularizers can improve compressibility, but they often require SVDs of large weight matrices, modify the model architecture (introducing additional trainable parameters), or rely on stateful cached quantities. To address these limitations, we introduce SLORR, a simple, stateless, and architecture-preserving framework for in-training low-rank regularization, instantiated with two main variants based on the Hoyer sparsity metric and the nuclear norm. SLORR directly regularizes the original weight matrices using GPU-friendly approximations for the forward and backward passes of the regularizers, for which we provide approximation guarantees. We first evaluate SLORR on ImageNet-1K across short-horizon continued training of ResNet-50, ViT-B/16, and ViT-L/16, and pretraining of ResNet-18, where SLORR induces compressibility while introducing less than 8% training overhead. We further evaluate SLORR-Hoyer in LLM pretraining at 135M and 560M scales: SLORR-trained compressed models preserve performance substantially better than unregularized models while adding less than 1% average training overhead.",
       "arxiv_id": "2607.08754v1",
       "authors": [
@@ -675,7 +995,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08754v1",
       "published": "2026-07-09T17:51:50+00:00",
       "recommendation": "Maybe relevant",
@@ -715,7 +1035,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08359v1",
       "published": "2026-07-09T11:17:04+00:00",
       "recommendation": "Maybe relevant",
@@ -756,7 +1076,7 @@
         "cs.LG",
         "cs.SE"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08010v1",
       "published": "2026-07-09T00:27:13+00:00",
       "recommendation": "Maybe relevant",
@@ -817,7 +1137,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
       "published": "2026-07-08T17:26:49+00:00",
       "recommendation": "Maybe relevant",
@@ -852,7 +1172,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
       "published": "2026-07-08T15:46:48+00:00",
       "recommendation": "Maybe relevant",
@@ -887,7 +1207,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07077v1",
       "published": "2026-07-08T07:08:50+00:00",
       "recommendation": "Maybe relevant",
@@ -908,6 +1228,124 @@
       "url": "http://arxiv.org/abs/2607.07077v1"
     },
     {
+      "abstract": "Causal discovery, the process of recovering underlying causal structures from observational data, is a fundamental pursuit across scientific disciplines. Over the past decades, numerous algorithms have been developed to tackle this challenge through workflows tailored to the specific causal mechanisms underlying each type of dataset, demonstrating effectiveness across a wide range of applications. However, as the volume and heterogeneity of real-world data continue to grow, this dataset-specific approach inevitably leads to a fragmented, test-driven paradigm that struggles to scale to the demands of modern scientific discovery. To address this, we formulate the Causal Discovery Foundation Model (CDFM) as a unified, general-purpose framework for zero-shot structural inference. To ensure reliable generalization across unknown domains, we first investigate the theoretical boundaries of causal identifiability, revealing the indispensable role of causal prior mechanisms in this process. Building on these insights, we formulate a principled variational framework that treats unknown causal mechanisms as latent variables and mathematically decomposes the intractable marginal likelihood into distinct, tractable learning modules. The variational decomposition provides a conceptual design principle for the architecture design of CDFM, while comprehensive causal knowledge guides the large-scale synthesis of our pretraining data. By pretraining on a massive, highly diverse space of synthetic structural causal models, CDFM successfully internalizes complex statistical asymmetries. Extensive experiments demonstrate that CDFM consistently outperforms traditional algorithms, driving a paradigm shift toward a general-purpose causal discovery foundation model.",
+      "arxiv_id": "2607.11508v1",
+      "authors": [
+        "Jie Qiao",
+        "Ruichu Cai",
+        "Zijian Li",
+        "Weilin Chen",
+        "Pengfei Hua",
+        "Boyan Xu",
+        "Zhengming Chen",
+        "Zhifeng Hao",
+        "Peng Cui"
+      ],
+      "boost_hits": [
+        "pretraining",
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
+      "published": "2026-07-13T12:58:28+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. Causal discovery, the process of recovering underlying causal structures from observational data, is a fundamental pursuit across scientific disciplines.",
+      "title": "CDFM: Towards a General-Purpose Causal Discovery Foundation Model",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-13T12:58:28+00:00",
+      "url": "http://arxiv.org/abs/2607.11508v1"
+    },
+    {
+      "abstract": "Long-term physical coexistence with intelligent robots requires more than capable robot policies. A persistent robotic assistant must support diverse user-facing interfaces, maintain long-horizon memory of people and preferences, coordinate across robot embodiments, and translate human intent into safe physical execution. We introduce PHILIA, a multi-robot agent built around a robot gateway abstraction. PHILIA retains the rich interaction and tool ecosystem of OpenClaw while exposing robot-local runtimes, onboard perception, navigation, speaker, and robot policies through a unified capability interface. This design decouples low-frequency, high-semantic agent reasoning from high-frequency, low-level robot execution, enabling plug-and-play integration of user interfaces, robot embodiments, and policy backends. As a result, the user experience becomes compositional: advances in user interfaces, robot embodiments, robot policies, navigation, or interaction algorithms can improve the overall experience without redesigning the system. We validate the architecture on Astribot S1 robots while designing the robot gateway contract to support future heterogeneous robot platforms through a shared capability interface for observation, task execution, navigation, speech playback, status monitoring, and task cancellation. We present representative use cases in which agent memory and scene understanding are grounded in robot actions. These span interactive household scenarios, ranging from simple organization to challenging long-horizon and dexterous service tasks, such as packing a backpack and lifting a garbage bag. We highlight the human-robot interaction flow, where contextual understanding of user intent and preferences, together with human-in-the-loop confirmation or adjustment during execution, is essential for effective assistance.",
+      "arxiv_id": "2607.11377v1",
+      "authors": [
+        "Weiqi Jin",
+        "Peijun Tang",
+        "Kuncheng Luo",
+        "Baifu Huang",
+        "Binyan Sun",
+        "Haotian Yang",
+        "Shangjin Xie",
+        "Jianan Wang"
+      ],
+      "boost_hits": [
+        "reasoning"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11377v1",
+      "published": "2026-07-13T10:40:32+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. Long-term physical coexistence with intelligent robots requires more than capable robot policies.",
+      "title": "A Glimpse into Long-term Physical Coexistence with Intelligent Robots",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-13T10:40:32+00:00",
+      "url": "http://arxiv.org/abs/2607.11377v1"
+    },
+    {
+      "abstract": "We introduce the Self-Evolving Agentic Operating System (SE-AOS): a new class of AI agent that treats exploit capability as a mutable, versioned kernel it extends at runtime, observing its own failures, synthesising new capabilities, proving them against a live target, and hot-loading them back into itself. Mako is the first SE-AOS instance for security research and the autonomous web exploitation engine developed within LaunchSafe. LaunchSafe builds autonomous security agents for continuous offensive testing and agent-driven security research; Mako is the core engine behind that platform. On the public XBOW validation-benchmarks, 104 containerised, CTF-style web applications spanning 26 vulnerability classes across three difficulty tiers, Mako achieves full-suite coverage: it drives every one of the 104 targets to emit a cryptographically fresh, per-build flag, under a verification regime that makes fabricated or memorised results impossible. Our central result is a law of autonomous exploitation: once a capability exists and is discoverable, difficulty collapses; capability, not reasoning, is what is scarce, together with an architecture and formalism that turn that law into a self-improving system. Mako further runs a gated self-evolution loop that proposes, sandboxes, and commits improvements to its own agents and rules when fitness does not regress. We deliberately withhold the operational results, payloads, exploit chains, and tool source, because a system that reduces full-spectrum web exploitation to a repeatable, machine-speed pipeline is dual-use research of concern. We publish the science; we withhold the weapon.",
+      "arxiv_id": "2607.11288v1",
+      "authors": [
+        "Praneeth Narisetty",
+        "Shiva Nagendra Babu Kore"
+      ],
+      "boost_hits": [
+        "reasoning"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11288v1",
+      "published": "2026-07-13T09:07:30+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. We introduce the Self-Evolving Agentic Operating System (SE-AOS): a new class of AI agent that treats exploit capability as a mutable, versioned kernel it extends at runtime, observing its own failures, synthesising new capabilities, proving them against a live target, and hot-loading them back into itself.",
+      "title": "Mako: A Self-Evolving Agentic Operating System (SE-AOS) for Autonomous Web Exploitation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-13T09:07:30+00:00",
+      "url": "http://arxiv.org/abs/2607.11288v1"
+    },
+    {
       "abstract": "How should language interface with a world model's discrete symbol system? The dominant paradigm -- end-to-end injection of LLM/VLM features into robot world models (RT-2, Octo, PaLM-E) -- implicitly assumes that language gradients can directly shape physical symbol representations. We ask whether this assumption is safe, find that it is not, and characterize the minimal architectural constraint that prevents the failure. Any language gradient entering a Gumbel-softmax-based discrete symbol bottleneck forces a structural trade-off: the vanilla estimator collapses to 2.2/64 symbols (4/5 seeds), while five anti-collapse strategies maintain diversity but fail to learn semantic labels (all <= 9.2% accuracy). No tested GumbelBottleneck variant achieves both objectives simultaneously. Within this family of discrete bottlenecks, the failure is structural rather than a matter of optimization. We characterize a sufficient set of three constraints that prevent the failure: (1) cut the gradient chain (z.detach()), preventing language signals from reaching the symbol bottleneck; (2) provide a gradient-free semantic channel -- a non-parametric Memory Table (Dict[symbol -> Counter[label]], zero parameters, zero gradients) where co-occurrence counting replaces gradient-based binding; (3) handle symbol collisions via DP-Means streaming clustering for automatic sub-cluster splitting. All three layers together achieve 97.2% grounding accuracy vs. 22.2% without Layer 3. Across two experiments spanning 74 independent runs, we demonstrate zero symbol collapse in all 32 seeds, with the blackboard achieving 79-100% semantic binding across three encoder architectures (CNN, V-JEPA 300M, CLIP ViT-L), two environments, and three texture conditions. The fix trains fewer than 2M parameters and requires no LLM fine-tuning.",
       "arxiv_id": "2607.08312v1",
       "authors": [
@@ -919,7 +1357,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08312v1",
       "published": "2026-07-09T09:55:17+00:00",
       "recommendation": "Maybe relevant",
@@ -957,7 +1395,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
       "published": "2026-07-09T07:28:21+00:00",
       "recommendation": "Maybe relevant",
@@ -991,7 +1429,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07557v1",
       "published": "2026-07-08T15:51:57+00:00",
       "recommendation": "Maybe relevant",
@@ -1030,7 +1468,7 @@
         "cs.CR",
         "cs.MA"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07097v1",
       "published": "2026-07-08T07:31:37+00:00",
       "recommendation": "Maybe relevant",
@@ -1066,7 +1504,7 @@
         "cs.CL",
         "cs.CR"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.06364v1",
       "published": "2026-07-07T15:00:46+00:00",
       "recommendation": "Maybe relevant",
@@ -1085,6 +1523,44 @@
       ],
       "updated": "2026-07-07T15:00:46+00:00",
       "url": "http://arxiv.org/abs/2607.06364v1"
+    },
+    {
+      "abstract": "Causal discovery from observational tabular data remains fundamentally challenging, primarily due to the heterogeneity of underlying causal mechanisms and the high-dimensional combinatorial search space of Directed Acyclic Graphs (DAGs). In this paper, we propose \\textbf{DAG-FM}, a novel foundation model architecture that amortizes causal discovery. Unlike direct matrix prediction, DAG-FM decomposes the causal discovery process into two auto-regressive stages using two specialized Transformer-based sub-modules: a leaf-node predictor and a parent-node predictor. To effectively model complex row-column interactions, we adopt a robust tabular interaction block to output feature-wise representations. Crucially, to handle diverse and unknown Functional Causal Model (FCM) assumptions in real-world scenarios, we introduce Mixture-of-Leaf-Experts (MoLE), allowing the model to dynamically route and adapt to identifiable mechanism families. Through an iterative inference algorithm, DAG-FM seamlessly extracts causal orderings and constructs valid DAGs. Extensive experiments demonstrate that DAG-FM achieves state-of-the-art performance on both synthetic benchmarks and complex real-world datasets, significantly outperforming traditional classical algorithms and recent foundation models in both accuracy and scalability.",
+      "arxiv_id": "2607.11510v1",
+      "authors": [
+        "Yikang Chen",
+        "Zhengkang Guan",
+        "Haoyuan Qian",
+        "Peng Cui",
+        "Yi Yang",
+        "Kun Kuang"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "digest_date": "2026-07-15",
+      "pdf_url": "https://arxiv.org/pdf/2607.11510v1",
+      "published": "2026-07-13T13:00:06+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Causal discovery from observational tabular data remains fundamentally challenging, primarily due to the heterogeneity of underlying causal mechanisms and the high-dimensional combinatorial search space of Directed Acyclic Graphs (DAGs).",
+      "title": "DAG-FM: A Foundation Model for Causal Discovery under Heterogeneous Causal Mechanisms",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-13T13:00:06+00:00",
+      "url": "http://arxiv.org/abs/2607.11510v1"
     },
     {
       "abstract": "Achieving nanosecond-scale inference latency for deep neural networks (DNNs) has become a primary architectural concern for latency-critical applications. While Field-Programmable Gate Arrays (FPGAs) offer a promising substrate for low-latency inference, conventional FPGA accelerators remain arithmetic-centric, using LUTs primarily as building blocks for numerical operators and peripheral logic. In contrast, recent LUT-native neural networks treat LUTs as learnable neurons, revealing promising theoretical potential to exploit their intrinsic logic expressivity. However, existing methods are largely confined to algorithmic optimizations, failing to translate this theoretical potential into high-performance FPGA accelerators. Specifically, their differentiable formulations do not faithfully match FPGA LUT primitives, their physically-unaware topologies compromise routability and timing closure, and their lack of automated optimization flow hinders systematic design space exploration (DSE) and efficient hardware implementation. In this paper, we propose FPGN, an end-to-end physically-aware framework that closes the gap between LUT-native learning and latency-optimized FPGA implementation. FPGN addresses these challenges through (i) a hardware-aligned differentiable formulation for training FPGA-native LUT neurons, (ii) a structured LUT-native topology with a streaming hardware architecture to improve routing locality and timing closure, and (iii) a latency-driven compiler that leverages high-fidelity analytical Quality of Results models to automate DSE and hardware generation. Experiments show that FPGN achieves up to 205$\\times$ latency reduction compared to representative FPGA-based BNN accelerators and up to 30$\\times$ higher LUT efficiency than prior differentiable LUT-native networks, while maintaining competitive inference accuracy.",
@@ -1108,7 +1584,7 @@
         "cs.AR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08427v1",
       "published": "2026-07-09T12:49:24+00:00",
       "recommendation": "Maybe relevant",
@@ -1142,7 +1618,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.08234v1",
       "published": "2026-07-09T08:29:38+00:00",
       "recommendation": "Maybe relevant",
@@ -1178,7 +1654,7 @@
         "q-bio.QM",
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07425v1",
       "published": "2026-07-08T13:52:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1217,7 +1693,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07219v1",
       "published": "2026-07-08T10:01:33+00:00",
       "recommendation": "Maybe relevant",
@@ -1260,7 +1736,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07179v1",
       "published": "2026-07-08T09:13:59+00:00",
       "recommendation": "Maybe relevant",
@@ -1294,7 +1770,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-14",
+      "digest_date": "2026-07-15",
       "pdf_url": "https://arxiv.org/pdf/2607.07033v1",
       "published": "2026-07-08T06:07:06+00:00",
       "recommendation": "Maybe relevant",
