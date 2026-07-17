@@ -7861,186 +7861,15 @@
       "why_watch": "从近期 cs.IR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MESH: Scaling Up Retrieval with Heterogeneous Content Unification"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Junjie%20Yin%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Junjie Yin",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Junjie%20Yin%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Junjie%20Yin%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xinyu%20Feng%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Xinyu Feng",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xinyu%20Feng%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Xinyu%20Feng%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zhouchonghao%20Wu%22&searchtype=author",
-      "focus": "machine learning, foundation models",
-      "handle": "",
-      "name": "Zhouchonghao Wu",
-      "org": "arXiv cs.LG",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zhouchonghao%20Wu%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Zhouchonghao%20Wu%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ml",
-        "foundation-models"
-      ],
-      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Akshay%20Rangesh%22&searchtype=author",
-      "focus": "machine learning, foundation models",
-      "handle": "",
-      "name": "Akshay Rangesh",
-      "org": "arXiv cs.LG",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Akshay%20Rangesh%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Akshay%20Rangesh%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ml",
-        "foundation-models"
-      ],
-      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Weixin%20Li%22&searchtype=author",
-      "focus": "machine learning, foundation models",
-      "handle": "",
-      "name": "Weixin Li",
-      "org": "arXiv cs.LG",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Weixin%20Li%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Weixin%20Li%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ml",
-        "foundation-models"
-      ],
-      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Wei-Jer%20Chang%22&searchtype=author",
-      "focus": "machine learning, foundation models",
-      "handle": "",
-      "name": "Wei-Jer Chang",
-      "org": "arXiv cs.LG",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Wei-Jer%20Chang%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Wei-Jer%20Chang%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ml",
-        "foundation-models"
-      ],
-      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zachary%20Lee%22&searchtype=author",
-      "focus": "machine learning, foundation models",
-      "handle": "",
-      "name": "Zachary Lee",
-      "org": "arXiv cs.LG",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zachary%20Lee%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Zachary%20Lee%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ml",
-        "foundation-models"
-      ],
-      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Tim%20Wang%22&searchtype=author",
-      "focus": "machine learning, foundation models",
-      "handle": "",
-      "name": "Tim Wang",
-      "org": "arXiv cs.LG",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Tim%20Wang%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Tim%20Wang%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ml",
-        "foundation-models"
-      ],
-      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Wei%20Zhan%22&searchtype=author",
-      "focus": "machine learning, foundation models",
-      "handle": "",
-      "name": "Wei Zhan",
-      "org": "arXiv cs.LG",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Wei%20Zhan%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Wei%20Zhan%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ml",
-        "foundation-models"
-      ],
-      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Hongru%20Cai%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xiaodong%20Liu%22&searchtype=author",
       "focus": "NLP, language models, agents",
       "handle": "",
-      "name": "Hongru Cai",
+      "name": "Xiaodong Liu",
       "org": "arXiv cs.CL",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Hongru%20Cai%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xiaodong%20Liu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Hongru%20Cai%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Xiaodong%20Liu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
@@ -8048,18 +7877,18 @@
         "nlp",
         "llm"
       ],
-      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：PalmClaw: A Native On-Device Agent Framework for Mobile Phones"
+      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：GFlowRL: Scaling Distribution-Matching RL to Large Language Models"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yongqi%20Li%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Michael%20Xu%22&searchtype=author",
       "focus": "NLP, language models, agents",
       "handle": "",
-      "name": "Yongqi Li",
+      "name": "Michael Xu",
       "org": "arXiv cs.CL",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yongqi%20Li%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Michael%20Xu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Yongqi%20Li%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Michael%20Xu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
@@ -8067,18 +7896,18 @@
         "nlp",
         "llm"
       ],
-      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：PalmClaw: A Native On-Device Agent Framework for Mobile Phones"
+      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：GFlowRL: Scaling Distribution-Matching RL to Large Language Models"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ran%20Wei%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jack%20W.%20Stokes%22&searchtype=author",
       "focus": "NLP, language models, agents",
       "handle": "",
-      "name": "Ran Wei",
+      "name": "Jack W. Stokes",
       "org": "arXiv cs.CL",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ran%20Wei%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jack%20W.%20Stokes%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Ran%20Wei%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jack%20W.%20Stokes%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
@@ -8086,18 +7915,18 @@
         "nlp",
         "llm"
       ],
-      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：PalmClaw: A Native On-Device Agent Framework for Mobile Phones"
+      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：GFlowRL: Scaling Distribution-Matching RL to Large Language Models"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Wenjie%20Li%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Paul%20Smolensky%22&searchtype=author",
       "focus": "NLP, language models, agents",
       "handle": "",
-      "name": "Wenjie Li",
+      "name": "Paul Smolensky",
       "org": "arXiv cs.CL",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Wenjie%20Li%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Paul%20Smolensky%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Wenjie%20Li%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Paul%20Smolensky%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
@@ -8105,1350 +7934,1518 @@
         "nlp",
         "llm"
       ],
-      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：PalmClaw: A Native On-Device Agent Framework for Mobile Phones"
+      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：GFlowRL: Scaling Distribution-Matching RL to Large Language Models"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jakub%20Kowalski%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Doug%20Burger%22&searchtype=author",
+      "focus": "NLP, language models, agents",
       "handle": "",
-      "name": "Jakub Kowalski",
-      "org": "arXiv cs.AI",
+      "name": "Doug Burger",
+      "org": "arXiv cs.CL",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jakub%20Kowalski%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Doug%20Burger%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Jakub%20Kowalski%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Doug%20Burger%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "nlp",
+        "llm"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Dynamic Resource Allocation for Ensemble Determinization MCTS"
+      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：GFlowRL: Scaling Distribution-Matching RL to Large Language Models"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Adam%20Ci%C4%99%C5%BCkowski%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jianfeng%20Gao%22&searchtype=author",
+      "focus": "NLP, language models, agents",
       "handle": "",
-      "name": "Adam Ciężkowski",
-      "org": "arXiv cs.AI",
+      "name": "Jianfeng Gao",
+      "org": "arXiv cs.CL",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Adam%20Ci%C4%99%C5%BCkowski%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jianfeng%20Gao%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Adam%20Ci%C4%99%C5%BCkowski%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jianfeng%20Gao%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "nlp",
+        "llm"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Dynamic Resource Allocation for Ensemble Determinization MCTS"
+      "why_watch": "从近期 cs.CL 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：GFlowRL: Scaling Distribution-Matching RL to Large Language Models"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Artur%20Krzy%C5%BCy%C5%84ski%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ye%20Yuan%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Artur Krzyżyński",
-      "org": "arXiv cs.AI",
+      "name": "Ye Yuan",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Artur%20Krzy%C5%BCy%C5%84ski%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ye%20Yuan%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Artur%20Krzy%C5%BCy%C5%84ski%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Ye%20Yuan%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Dynamic Resource Allocation for Ensemble Determinization MCTS"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Mark%20H.%20M.%20Winands%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Weien%20Li%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Mark H. M. Winands",
-      "org": "arXiv cs.AI",
+      "name": "Weien Li",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Mark%20H.%20M.%20Winands%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Weien%20Li%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Mark%20H.%20M.%20Winands%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Weien%20Li%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Dynamic Resource Allocation for Ensemble Determinization MCTS"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Aleh%20Manchuliantsau%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Rui%20Song%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Aleh Manchuliantsau",
-      "org": "arXiv cs.AI",
+      "name": "Rui Song",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Aleh%20Manchuliantsau%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Rui%20Song%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Aleh%20Manchuliantsau%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Rui%20Song%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Win by Silence: Deletion Non-Monotonicity, Autonomous Exploitation, and Typed-State Gating in LLM Plan Evaluation"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Sen%20Yang%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zeyu%20Li%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Sen Yang",
-      "org": "arXiv cs.AI",
+      "name": "Zeyu Li",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Sen%20Yang%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zeyu%20Li%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Sen%20Yang%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zeyu%20Li%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Resist and Update: Counterfactual Report Coordinates for Incentive-Compatible LLMs"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yuen-Hei%20Yeung%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Haochen%20Liu%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Yuen-Hei Yeung",
-      "org": "arXiv cs.AI",
+      "name": "Haochen Liu",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yuen-Hei%20Yeung%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Haochen%20Liu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Yuen-Hei%20Yeung%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Haochen%20Liu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Resist and Update: Counterfactual Report Coordinates for Incentive-Compatible LLMs"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ruoran%20Xu%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xiangyu%20Kong%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Ruoran Xu",
-      "org": "arXiv cs.AI",
+      "name": "Xiangyu Kong",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ruoran%20Xu%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xiangyu%20Kong%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Ruoran%20Xu%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Xiangyu%20Kong%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Wending%20Gao%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zixuan%20Dong%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Wending Gao",
-      "org": "arXiv cs.AI",
+      "name": "Zixuan Dong",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Wending%20Gao%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zixuan%20Dong%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Wending%20Gao%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zixuan%20Dong%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Qiufeng%20Wang%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zipeng%20Sun%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Qiufeng Wang",
-      "org": "arXiv cs.AI",
+      "name": "Zipeng Sun",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Qiufeng%20Wang%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zipeng%20Sun%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Qiufeng%20Wang%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zipeng%20Sun%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Mehmet%20Iscan%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Weixu%20Zhang%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Weixu Zhang",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Weixu%20Zhang%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Weixu%20Zhang%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jiaxin%20Huang%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Jiaxin Huang",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jiaxin%20Huang%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jiaxin%20Huang%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Changjiang%20Han%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Changjiang Han",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Changjiang%20Han%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Changjiang%20Han%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yonghan%20Yang%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Yonghan Yang",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yonghan%20Yang%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yonghan%20Yang%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zichen%20Zhao%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Zichen Zhao",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zichen%20Zhao%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zichen%20Zhao%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xiuyuan%20Hu%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Xiuyuan Hu",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xiuyuan%20Hu%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Xiuyuan%20Hu%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Haolun%20Wu%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Haolun Wu",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Haolun%20Wu%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Haolun%20Wu%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yankai%20Chen%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Yankai Chen",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yankai%20Chen%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yankai%20Chen%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Fengran%20Mo%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Fengran Mo",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Fengran%20Mo%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Fengran%20Mo%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jikun%20Kang%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Jikun Kang",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jikun%20Kang%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jikun%20Kang%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Bowei%20He%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Bowei He",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Bowei%20He%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Bowei%20He%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Philip%20S.%20Yu%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Philip S. Yu",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Philip%20S.%20Yu%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Philip%20S.%20Yu%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xue%20Liu%22&searchtype=author",
+      "focus": "machine learning, foundation models",
+      "handle": "",
+      "name": "Xue Liu",
+      "org": "arXiv cs.LG",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xue%20Liu%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Xue%20Liu%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "ml",
+        "foundation-models"
+      ],
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Discrete Diffusion Models: A Unified Framework from Tokenization to Generation"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Wenxuan%20Miao%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Mehmet Iscan",
-      "org": "arXiv cs.SE",
+      "name": "Wenxuan Miao",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Mehmet%20Iscan%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Wenxuan%20Miao%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Mehmet%20Iscan%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Wenxuan%20Miao%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.SE 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Form, Not Content? A Preregistered, Placebo-Controlled Evaluation of Learned Error-Conditioned Self-Repair Through Promp"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Minh%20Hoang%20Nguyen%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Haosong%20Liu%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Minh Hoang Nguyen",
-      "org": "arXiv cs.IR",
+      "name": "Haosong Liu",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Minh%20Hoang%20Nguyen%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Haosong%20Liu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Minh%20Hoang%20Nguyen%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Haosong%20Liu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.IR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：ViHoRec: A Quality-Controlled Vietnamese Hotel Recommendation Dataset and Cold-Start Benchmark"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jonas%20Ehrhardt%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Jonas Ehrhardt",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jonas%20Ehrhardt%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Jonas%20Ehrhardt%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Knowledge- and Gradient-Guided Reinforcement Learning for Parametrized Action Markov Decision Processes"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ren%C3%A9%20Heesch%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "René Heesch",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ren%C3%A9%20Heesch%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Ren%C3%A9%20Heesch%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Knowledge- and Gradient-Guided Reinforcement Learning for Parametrized Action Markov Decision Processes"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Oliver%20Niggemann%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Oliver Niggemann",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Oliver%20Niggemann%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Oliver%20Niggemann%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Knowledge- and Gradient-Guided Reinforcement Learning for Parametrized Action Markov Decision Processes"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xixuan%20Hao%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Xixuan Hao",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xixuan%20Hao%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Xixuan%20Hao%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zeyu%20Zhang%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Zeyu Zhang",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zeyu%20Zhang%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Zeyu%20Zhang%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zehao%20Lin%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Zehao Lin",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zehao%20Lin%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Zehao%20Lin%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yihang%20Sun%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Yihang Sun",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yihang%20Sun%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Yihang%20Sun%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ziliang%20Guo%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Ziliang Guo",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ziliang%20Guo%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Ziliang%20Guo%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xichong%20Zhang%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Xichong Zhang",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xichong%20Zhang%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Xichong%20Zhang%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yuxuan%20Liang%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Yuxuan Liang",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yuxuan%20Liang%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Yuxuan%20Liang%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Feiyu%20Xiong%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Feiyu Xiong",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Feiyu%20Xiong%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Feiyu%20Xiong%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zhiyu%20Li%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Zhiyu Li",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zhiyu%20Li%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Zhiyu%20Li%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Lirui%20Zhao%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Lirui Zhao",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Lirui%20Zhao%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Lirui%20Zhao%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：UR-VC: Unsupervised Robotic Value Correction for Time-Derived Progress Proxies"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Modi%20Shi%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Modi Shi",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Modi%20Shi%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Modi%20Shi%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：UR-VC: Unsupervised Robotic Value Correction for Time-Derived Progress Proxies"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Li%20Chen%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Li Chen",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Li%20Chen%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Li%20Chen%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：UR-VC: Unsupervised Robotic Value Correction for Time-Derived Progress Proxies"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Qi%20Liu%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Qi Liu",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Qi%20Liu%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Qi%20Liu%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：UR-VC: Unsupervised Robotic Value Correction for Time-Derived Progress Proxies"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ping%20Luo%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Ping Luo",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ping%20Luo%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Ping%20Luo%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：UR-VC: Unsupervised Robotic Value Correction for Time-Derived Progress Proxies"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Hongyang%20Li%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Hongyang Li",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Hongyang%20Li%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Hongyang%20Li%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：UR-VC: Unsupervised Robotic Value Correction for Time-Derived Progress Proxies"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Cameron%20Cagan%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Cameron Cagan",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Cameron%20Cagan%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Cameron%20Cagan%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：A Multi-Agent System for Autonomous, Fine-Tuning-Free Clinical Symptom Detection: Development and Validation Study"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Pedram%20Fard%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Pedram Fard",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Pedram%20Fard%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Pedram%20Fard%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：A Multi-Agent System for Autonomous, Fine-Tuning-Free Clinical Symptom Detection: Development and Validation Study"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jiazi%20Tian%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Jiazi Tian",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jiazi%20Tian%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Jiazi%20Tian%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：A Multi-Agent System for Autonomous, Fine-Tuning-Free Clinical Symptom Detection: Development and Validation Study"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jingya%20Cheng%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Jingya Cheng",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jingya%20Cheng%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Jingya%20Cheng%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：A Multi-Agent System for Autonomous, Fine-Tuning-Free Clinical Symptom Detection: Development and Validation Study"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Shawn%20N.%20Murphy%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Shawn N. Murphy",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Shawn%20N.%20Murphy%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Shawn%20N.%20Murphy%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：A Multi-Agent System for Autonomous, Fine-Tuning-Free Clinical Symptom Detection: Development and Validation Study"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Hossein%20Estiri%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
-      "handle": "",
-      "name": "Hossein Estiri",
-      "org": "arXiv cs.AI",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Hossein%20Estiri%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Hossein%20Estiri%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "ai",
-        "reasoning"
-      ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：A Multi-Agent System for Autonomous, Fine-Tuning-Free Clinical Symptom Detection: Development and Validation Study"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yize%20Mi%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Yize Mi",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yize%20Mi%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Yize%20Mi%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Unveiling Complex Collective Behaviors from Simple Rewards"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jianan%20Li%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Jianan Li",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jianan%20Li%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Jianan%20Li%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Unveiling Complex Collective Behaviors from Simple Rewards"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Liang%20Li%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Liang Li",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Liang%20Li%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Liang%20Li%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Unveiling Complex Collective Behaviors from Simple Rewards"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Shiyu%20Zhao%22&searchtype=author",
-      "focus": "robotics, embodied AI",
-      "handle": "",
-      "name": "Shiyu Zhao",
-      "org": "arXiv cs.RO",
-      "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Shiyu%20Zhao%22&searchtype=author",
-      "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Shiyu%20Zhao%22&searchtype=author",
-      "status": "no x handle configured",
-      "tags": [
-        "paper-author",
-        "arxiv",
-        "robotics",
-        "embodied-ai"
-      ],
-      "why_watch": "从近期 cs.RO 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Unveiling Complex Collective Behaviors from Simple Rewards"
-    },
-    {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jhen-Ke%20Lin%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Weiming%20Hu%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Jhen-Ke Lin",
-      "org": "arXiv cs.SD",
+      "name": "Weiming Hu",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jhen-Ke%20Lin%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Weiming%20Hu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Jhen-Ke%20Lin%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Weiming%20Hu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.SD 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：ChartGenEval: Corruption-Tested Multi-Dimensional Feedback for Rhythm-Game Chart Generation"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zhengfei%20Chen%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zihan%20Liu%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Zhengfei Chen",
-      "org": "arXiv cs.ET",
+      "name": "Zihan Liu",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zhengfei%20Chen%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zihan%20Liu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Zhengfei%20Chen%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zihan%20Liu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.ET 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Reproducible Reservoir Computing with Thermally Driven Superparamagnets: Controlling Temperature Sensitivity"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Alex%20Welbourne%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Aiyue%20Chen%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Alex Welbourne",
-      "org": "arXiv cs.ET",
+      "name": "Aiyue Chen",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Alex%20Welbourne%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Aiyue%20Chen%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Alex%20Welbourne%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Aiyue%20Chen%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.ET 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Reproducible Reservoir Computing with Thermally Driven Superparamagnets: Controlling Temperature Sensitivity"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Matthew%20O.%20A.%20Ellis%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jianlin%20Yu%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Matthew O. A. Ellis",
-      "org": "arXiv cs.ET",
+      "name": "Jianlin Yu",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Matthew%20O.%20A.%20Ellis%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jianlin%20Yu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Matthew%20O.%20A.%20Ellis%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jianlin%20Yu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.ET 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Reproducible Reservoir Computing with Thermally Driven Superparamagnets: Controlling Temperature Sensitivity"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Dan%20A.%20Allwood%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yiwu%20Yao%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Dan A. Allwood",
-      "org": "arXiv cs.ET",
+      "name": "Yiwu Yao",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Dan%20A.%20Allwood%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yiwu%20Yao%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Dan%20A.%20Allwood%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yiwu%20Yao%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.ET 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Reproducible Reservoir Computing with Thermally Driven Superparamagnets: Controlling Temperature Sensitivity"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Eleni%20Vasilaki%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yiming%20Gan%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Eleni Vasilaki",
-      "org": "arXiv cs.ET",
+      "name": "Yiming Gan",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Eleni%20Vasilaki%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yiming%20Gan%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Eleni%20Vasilaki%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yiming%20Gan%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.ET 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Reproducible Reservoir Computing with Thermally Driven Superparamagnets: Controlling Temperature Sensitivity"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Thomas%20J.%20Hayward%22&searchtype=author",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jieru%20Zhao%22&searchtype=author",
       "focus": "AI research",
       "handle": "",
-      "name": "Thomas J. Hayward",
-      "org": "arXiv cs.ET",
+      "name": "Jieru Zhao",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Thomas%20J.%20Hayward%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jieru%20Zhao%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Thomas%20J.%20Hayward%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jieru%20Zhao%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
         "research"
       ],
-      "why_watch": "从近期 cs.ET 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Reproducible Reservoir Computing with Thermally Driven Superparamagnets: Controlling Temperature Sensitivity"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Evgenii%20Vityaev%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jingwen%20Leng%22&searchtype=author",
+      "focus": "AI research",
       "handle": "",
-      "name": "Evgenii Vityaev",
-      "org": "arXiv cs.AI",
+      "name": "Jingwen Leng",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Evgenii%20Vityaev%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jingwen%20Leng%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Evgenii%20Vityaev%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jingwen%20Leng%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "research"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Solution of the Hempel's statistical ambiguity problem and Causal AI"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Eranga%20Bandara%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Minyi%20Guo%22&searchtype=author",
+      "focus": "AI research",
       "handle": "",
-      "name": "Eranga Bandara",
-      "org": "arXiv cs.AI",
+      "name": "Minyi Guo",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Eranga%20Bandara%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Minyi%20Guo%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Eranga%20Bandara%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Minyi%20Guo%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "research"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ross%20Gore%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yu%20Feng%22&searchtype=author",
+      "focus": "AI research",
       "handle": "",
-      "name": "Ross Gore",
-      "org": "arXiv cs.AI",
+      "name": "Yu Feng",
+      "org": "arXiv cs.AR",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ross%20Gore%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yu%20Feng%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Ross%20Gore%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yu%20Feng%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "research"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.AR 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Asanga%20Gunaratna%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Katie%20Everett%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Asanga Gunaratna",
-      "org": "arXiv cs.AI",
+      "name": "Katie Everett",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Asanga%20Gunaratna%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Katie%20Everett%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Asanga%20Gunaratna%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Katie%20Everett%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Transforming Rank: How Architecture Navigates the Spectral Pathologies of Depth"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ravi%20Mukkamala%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yiming%20Ma%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Ravi Mukkamala",
-      "org": "arXiv cs.AI",
+      "name": "Yiming Ma",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ravi%20Mukkamala%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yiming%20Ma%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Ravi%20Mukkamala%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yiming%20Ma%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：VAIOM: Continuous-Input, Discrete-Output Decoder-Only Financial Sequence Modeling"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Nihal%20Siriwardanagea%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Fabio%20Arnez%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Nihal Siriwardanagea",
-      "org": "arXiv cs.AI",
+      "name": "Fabio Arnez",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Nihal%20Siriwardanagea%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Fabio%20Arnez%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Nihal%20Siriwardanagea%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Fabio%20Arnez%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：The SIGReg Objective as Variational Free Energy: A Theoretical Active-Inference Account of JEPA World Models"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Gihan%20Siriwardanagea%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Alexandra%20Gomez-Villa%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Gihan Siriwardanagea",
-      "org": "arXiv cs.AI",
+      "name": "Alexandra Gomez-Villa",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Gihan%20Siriwardanagea%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Alexandra%20Gomez-Villa%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Gihan%20Siriwardanagea%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Alexandra%20Gomez-Villa%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：The SIGReg Objective as Variational Free Energy: A Theoretical Active-Inference Account of JEPA World Models"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Sachini%20Rajapakse%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Shuzhen%20Li%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Sachini Rajapakse",
-      "org": "arXiv cs.AI",
+      "name": "Shuzhen Li",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Sachini%20Rajapakse%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Shuzhen%20Li%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Sachini%20Rajapakse%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Shuzhen%20Li%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：DeepLoop: Depth Scaling for Looped Transformers"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Isurunima%20Kularathna%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yifan%20Zhang%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Isurunima Kularathna",
-      "org": "arXiv cs.AI",
+      "name": "Yifan Zhang",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Isurunima%20Kularathna%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yifan%20Zhang%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Isurunima%20Kularathna%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yifan%20Zhang%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：DeepLoop: Depth Scaling for Looped Transformers"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Pramoda%20Karunarathna%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jiacheng%20Guo%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Pramoda Karunarathna",
-      "org": "arXiv cs.AI",
+      "name": "Jiacheng Guo",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Pramoda%20Karunarathna%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jiacheng%20Guo%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Pramoda%20Karunarathna%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jiacheng%20Guo%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：DeepLoop: Depth Scaling for Looped Transformers"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Chalani%20Rajapakse%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Quanquan%20Gu%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Chalani Rajapakse",
-      "org": "arXiv cs.AI",
+      "name": "Quanquan Gu",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Chalani%20Rajapakse%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Quanquan%20Gu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Chalani%20Rajapakse%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Quanquan%20Gu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：DeepLoop: Depth Scaling for Looped Transformers"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Sachin%20Shetty%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Mengdi%20Wang%22&searchtype=author",
+      "focus": "machine learning, foundation models",
       "handle": "",
-      "name": "Sachin Shetty",
-      "org": "arXiv cs.AI",
+      "name": "Mengdi Wang",
+      "org": "arXiv cs.LG",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Sachin%20Shetty%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Mengdi%20Wang%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Sachin%20Shetty%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Mengdi%20Wang%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "ml",
+        "foundation-models"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.LG 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：DeepLoop: Depth Scaling for Looped Transformers"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Christopher%20K.%20Rhea%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zhihao%20Xie%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Christopher K. Rhea",
-      "org": "arXiv cs.AI",
+      "name": "Zhihao Xie",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Christopher%20K.%20Rhea%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zhihao%20Xie%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Christopher%20K.%20Rhea%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zhihao%20Xie%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ng%20Wee%20Keong%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Junfeng%20Wu%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Ng Wee Keong",
-      "org": "arXiv cs.AI",
+      "name": "Junfeng Wu",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ng%20Wee%20Keong%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Junfeng%20Wu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Ng%20Wee%20Keong%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Junfeng%20Wu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Kasun%20De%20Zoysa%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xinting%20Hu%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Kasun De Zoysa",
-      "org": "arXiv cs.AI",
+      "name": "Xinting Hu",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Kasun%20De%20Zoysa%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xinting%20Hu%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Kasun%20De%20Zoysa%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Xinting%20Hu%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Amin%20Hass%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Junchao%20Huang%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Amin Hass",
-      "org": "arXiv cs.AI",
+      "name": "Junchao Huang",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Amin%20Hass%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Junchao%20Huang%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Amin%20Hass%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Junchao%20Huang%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Shaifali%20Kaushik%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Li%20Jiang%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Shaifali Kaushik",
-      "org": "arXiv cs.AI",
+      "name": "Li Jiang",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Shaifali%20Kaushik%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Li%20Jiang%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Shaifali%20Kaushik%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Li%20Jiang%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Wathsala%20Herath%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zhen%20Li%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Wathsala Herath",
-      "org": "arXiv cs.AI",
+      "name": "Zhen Li",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Wathsala%20Herath%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zhen%20Li%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Wathsala%20Herath%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zhen%20Li%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：From Pixels to States: Rethinking Interactive World Models as Game Engines"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Preston%20Samuel%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zian%20Meng%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Preston Samuel",
-      "org": "arXiv cs.AI",
+      "name": "Zian Meng",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Preston%20Samuel%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zian%20Meng%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Preston%20Samuel%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zian%20Meng%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：From Pixels to States: Rethinking Interactive World Models as Game Engines"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Anita%20H.%20Clayton%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Shuwei%20Shi%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Anita H. Clayton",
-      "org": "arXiv cs.AI",
+      "name": "Shuwei Shi",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Anita%20H.%20Clayton%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Shuwei%20Shi%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Anita%20H.%20Clayton%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Shuwei%20Shi%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：From Pixels to States: Rethinking Interactive World Models as Game Engines"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Atmaram%20Yarlagadd%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Mingliang%20Zhai%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Atmaram Yarlagadd",
-      "org": "arXiv cs.AI",
+      "name": "Mingliang Zhai",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Atmaram%20Yarlagadd%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Mingliang%20Zhai%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Atmaram%20Yarlagadd%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Mingliang%20Zhai%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Human-AI Agent Interaction as a Neuroplastic Training Environment"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：From Pixels to States: Rethinking Interactive World Models as Game Engines"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Hiroto%20Osaka%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jiaming%20Tan%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Hiroto Osaka",
-      "org": "arXiv cs.AI",
+      "name": "Jiaming Tan",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Hiroto%20Osaka%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jiaming%20Tan%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Hiroto%20Osaka%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jiaming%20Tan%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Visual Access Boundaries in Vision-Language Model Reasoning"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：From Pixels to States: Rethinking Interactive World Models as Game Engines"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Shohei%20Taniguchi%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Chuanhao%20Li%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Shohei Taniguchi",
-      "org": "arXiv cs.AI",
+      "name": "Chuanhao Li",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Shohei%20Taniguchi%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Chuanhao%20Li%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Shohei%20Taniguchi%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Chuanhao%20Li%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Visual Access Boundaries in Vision-Language Model Reasoning"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：From Pixels to States: Rethinking Interactive World Models as Game Engines"
     },
     {
-      "blog_url": "https://arxiv.org/search/?query=au%3A%22Gouki%20Minegishi%22&searchtype=author",
-      "focus": "AI systems, agents, reasoning",
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Kaipeng%20Zhang%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
       "handle": "",
-      "name": "Gouki Minegishi",
-      "org": "arXiv cs.AI",
+      "name": "Kaipeng Zhang",
+      "org": "arXiv cs.CV",
       "post_count": 0,
-      "profile_url": "https://arxiv.org/search/?query=au%3A%22Gouki%20Minegishi%22&searchtype=author",
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Kaipeng%20Zhang%22&searchtype=author",
       "region": "Global",
-      "search_url": "https://arxiv.org/search/?query=au%3A%22Gouki%20Minegishi%22&searchtype=author",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Kaipeng%20Zhang%22&searchtype=author",
       "status": "no x handle configured",
       "tags": [
         "paper-author",
         "arxiv",
-        "ai",
-        "reasoning"
+        "vision",
+        "multimodal"
       ],
-      "why_watch": "从近期 cs.AI 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Visual Access Boundaries in Vision-Language Model Reasoning"
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：From Pixels to States: Rethinking Interactive World Models as Game Engines"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zhan%20Chen%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Zhan Chen",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zhan%20Chen%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zhan%20Chen%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jiqiao%20Ma%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Jiqiao Ma",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jiqiao%20Ma%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jiqiao%20Ma%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Chih-wen%20Kuo%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Chih-wen Kuo",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Chih-wen%20Kuo%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Chih-wen%20Kuo%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Ke%20Cheng%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Ke Cheng",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Ke%20Cheng%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Ke%20Cheng%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Hanqiao%20Ye%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Hanqiao Ye",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Hanqiao%20Ye%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Hanqiao%20Ye%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Lei%20Shi%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Lei Shi",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Lei%20Shi%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Lei%20Shi%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yahui%20Liu%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Yahui Liu",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yahui%20Liu%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yahui%20Liu%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yunhan%20Shen%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Yunhan Shen",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yunhan%20Shen%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yunhan%20Shen%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jingtao%20Dong%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Jingtao Dong",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jingtao%20Dong%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jingtao%20Dong%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zhenke%20Wang%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Zhenke Wang",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zhenke%20Wang%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zhenke%20Wang%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Wenxuan%20Ao%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Wenxuan Ao",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Wenxuan%20Ao%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Wenxuan%20Ao%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Weixiang%20Xu%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Weixiang Xu",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Weixiang%20Xu%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Weixiang%20Xu%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Kaining%20Huang%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Kaining Huang",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Kaining%20Huang%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Kaining%20Huang%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Shuhan%20Shen%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Shuhan Shen",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Shuhan%20Shen%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Shuhan%20Shen%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Strea"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Jiajun%20Sun%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Jiajun Sun",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Jiajun%20Sun%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Jiajun%20Sun%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Task-Specific Feature Fusion Method for Multi-Task Affective Behavior Analysis"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Zhe%20Gao%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Zhe Gao",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Zhe%20Gao%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Zhe%20Gao%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Task-Specific Feature Fusion Method for Multi-Task Affective Behavior Analysis"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Shunya%20Shimomura%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Shunya Shimomura",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Shunya%20Shimomura%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Shunya%20Shimomura%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Screening Is Effective for Visual Recognition"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Kazuhiro%20Hotta%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Kazuhiro Hotta",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Kazuhiro%20Hotta%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Kazuhiro%20Hotta%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Screening Is Effective for Visual Recognition"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xinhao%20Cai%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Xinhao Cai",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xinhao%20Cai%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Xinhao%20Cai%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Music-to-Dance Generation via Atomic Movements"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Yixuan%20Sun%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Yixuan Sun",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Yixuan%20Sun%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Yixuan%20Sun%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Music-to-Dance Generation via Atomic Movements"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Minghang%20Zheng%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Minghang Zheng",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Minghang%20Zheng%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Minghang%20Zheng%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Music-to-Dance Generation via Atomic Movements"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Qingchao%20Chen%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Qingchao Chen",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Qingchao%20Chen%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Qingchao%20Chen%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Music-to-Dance Generation via Atomic Movements"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Xin%20Jin%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Xin Jin",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Xin%20Jin%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Xin%20Jin%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Music-to-Dance Generation via Atomic Movements"
+    },
+    {
+      "blog_url": "https://arxiv.org/search/?query=au%3A%22Song-chun%20Zhu%22&searchtype=author",
+      "focus": "computer vision, multimodal models",
+      "handle": "",
+      "name": "Song-chun Zhu",
+      "org": "arXiv cs.CV",
+      "post_count": 0,
+      "profile_url": "https://arxiv.org/search/?query=au%3A%22Song-chun%20Zhu%22&searchtype=author",
+      "region": "Global",
+      "search_url": "https://arxiv.org/search/?query=au%3A%22Song-chun%20Zhu%22&searchtype=author",
+      "status": "no x handle configured",
+      "tags": [
+        "paper-author",
+        "arxiv",
+        "vision",
+        "multimodal"
+      ],
+      "why_watch": "从近期 cs.CV 论文作者中自动补充，代表近期活跃研究者；可从其 arXiv 作者页继续追踪相关论文。代表论文：Music-to-Dance Generation via Atomic Movements"
     }
   ],
-  "generated_at": "2026-07-16T00:01:01.160252+00:00",
+  "generated_at": "2026-07-17T00:06:43.278343+00:00",
   "posts": [],
   "source": "RSSHub best-effort X/Twitter feeds"
 }

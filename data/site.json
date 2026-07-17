@@ -1,9 +1,9 @@
 {
   "dates": [
-    "2026-07-16"
+    "2026-07-17"
   ],
-  "generated_at": "2026-07-16T00:00:17.308253+00:00",
-  "latest_date": "2026-07-16",
+  "generated_at": "2026-07-17T00:01:04.462045+00:00",
+  "latest_date": "2026-07-17",
   "papers": [
     {
       "abstract": "Diffusion large language models (dLLMs) offer a theoretical advantage in parallel generation over standard autoregressive models. However, parallel generation alone does not guarantee practical speedups. Realizing this efficiency requires specialized inference mechanisms, such as diffusion-aware caching and reuse. Consequently, as inference efficiency becomes a prerequisite for practical deployment, recent research has actively explored acceleration techniques across algorithms, architectures, and systems. However, rigorous comparisons remain difficult, as end-to-end latency stems from intricate trade-offs between algorithmic, architectural, and system-level factors that are often conflated in existing benchmarks. In this survey, we introduce a unified latency decomposition framework for dLLMs to disentangle these factors and analyze their impact on inference speed in real deployments. Guided by this framework, we categorize acceleration techniques along three axes covering algorithmic innovations, architectural and system optimizations, and inference-time scaling. Finally, we provide guidelines for reproducible benchmarking and highlight open challenges for realizing the full potential of parallel generation.",
@@ -25,7 +25,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.12829v1",
       "published": "2026-07-14T14:48:06+00:00",
       "recommendation": "Read closely",
@@ -70,7 +70,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08056v1",
       "published": "2026-07-09T02:07:30+00:00",
       "recommendation": "Read closely",
@@ -105,7 +105,7 @@
         "cs.AI",
         "cs.SD"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.13013v1",
       "published": "2026-07-14T17:53:22+00:00",
       "recommendation": "Read closely",
@@ -150,7 +150,7 @@
         "cs.AI",
         "cs.DC"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.12696v1",
       "published": "2026-07-14T12:22:55+00:00",
       "recommendation": "Read closely",
@@ -186,7 +186,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
       "published": "2026-07-13T11:52:42+00:00",
       "recommendation": "Read closely",
@@ -208,6 +208,47 @@
       "url": "http://arxiv.org/abs/2607.11444v1"
     },
     {
+      "abstract": "Generative Flow Networks (GFlowNets) offer a promising alternative to reward-maximizing reinforcement learning (RL) for large reasoning models, encouraging diverse reasoning paths by matching reward distributions rather than collapsing to dominant modes. Recent work shows promise on math and code, but scaling GFlowNet-style RL to modern post-training pipelines remains difficult: as model size, rollout horizon, reward noise, and distributed-systems complexity grow together, a learned prompt-conditional partition function becomes a source of gradient instability and engineering overhead rather than a useful normalizer. Through systematic analysis, we find that the learned partition function, previously treated as essential, can be replaced by an in-batch Monte Carlo estimate computed from the rollout group already required for training. We propose GFlowRL, a streamlined GFlowNet-style RL algorithm that removes the auxiliary partition network entirely while preserving the reward-distribution-matching objective, completed by two stabilizers: importance-sampling correction for rollout/trainer drift and asymmetric flow-gap clipping for outlier residuals. GFlowRL exceeds all counterparts on math, code, and adversarial red-teaming benchmarks, reaching a Codeforces rating of 2048 at the 14B scale (within 25 Elo of o3-mini) and attaining the highest average ASR@1 on AdvBench and HarmBench, outperforming the previous SOTA multi-turn attacker in a regime where FlowRL, a prior GFlowNet-style method, diverges. The same recipe transfers to all evaluated MoE configurations up to 235B parameters, where FlowRL again fails to converge. To our knowledge, GFlowRL is the first GFlowNet-style RL algorithm to scale stably across both dense and sparse architectures. Code will be at: https://github.com/microsoft/gflowrl",
+      "arxiv_id": "2607.13394v1",
+      "authors": [
+        "Xiaodong Liu",
+        "Michael Xu",
+        "Jack W. Stokes",
+        "Paul Smolensky",
+        "Doug Burger",
+        "Jianfeng Gao"
+      ],
+      "boost_hits": [
+        "large language model",
+        "reasoning",
+        "scaling"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-17",
+      "pdf_url": "https://arxiv.org/pdf/2607.13394v1",
+      "published": "2026-07-15T02:43:16+00:00",
+      "recommendation": "Read closely",
+      "score": 10,
+      "summary": "Likely relevant to Model Architecture. Generative Flow Networks (GFlowNets) offer a promising alternative to reward-maximizing reinforcement learning (RL) for large reasoning models, encouraging diverse reasoning paths by matching reward distributions rather than collapsing to dominant modes.",
+      "title": "GFlowRL: Scaling Distribution-Matching RL to Large Language Models",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-07-15T02:43:16+00:00",
+      "url": "http://arxiv.org/abs/2607.13394v1"
+    },
+    {
       "abstract": "Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
       "arxiv_id": "2607.08284v1",
       "authors": [
@@ -222,7 +263,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08284v1",
       "published": "2026-07-09T09:28:06+00:00",
       "recommendation": "Worth scanning",
@@ -304,7 +345,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08186v1",
       "published": "2026-07-09T07:37:59+00:00",
       "recommendation": "Worth scanning",
@@ -345,7 +386,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07386v1",
       "published": "2026-07-08T13:17:19+00:00",
       "recommendation": "Worth scanning",
@@ -387,7 +428,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.06452v1",
       "published": "2026-07-07T16:12:51+00:00",
       "recommendation": "Worth scanning",
@@ -423,7 +464,7 @@
         "cs.CL",
         "math.OC"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.12550v1",
       "published": "2026-07-14T09:23:20+00:00",
       "recommendation": "Worth scanning",
@@ -458,7 +499,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
       "published": "2026-07-13T14:05:55+00:00",
       "recommendation": "Worth scanning",
@@ -479,6 +520,62 @@
       "url": "http://arxiv.org/abs/2607.11586v1"
     },
     {
+      "abstract": "Discrete denoising diffusion models (DDMs) have recently emerged as a compelling alternative to autoregressive (AR) modeling for discrete data, offering parallel generation and iterative global refinement capabilities. Unlike continuous diffusion, where the state space is fixed, DDMs are fundamentally shaped by how the discrete state space is constructed: the tokenization scheme, the vocabulary topology, and domain-specific structural alphabets. This work introduces a unified conceptual framework that views discrete diffusion models through the construction of the underlying discrete state space. Within this framework, existing formulations, including transition-matrix, masking/absorbing-state, and score/ratio-based approaches, emerge as different instantiations of a common design space. The framework further exposes common design trade-offs across training objectives, inference algorithms, scaling behavior, systems optimization, and evaluation protocols, suggesting several promising directions for future research.",
+      "arxiv_id": "2607.13431v1",
+      "authors": [
+        "Ye Yuan",
+        "Weien Li",
+        "Rui Song",
+        "Zeyu Li",
+        "Haochen Liu",
+        "Xiangyu Kong",
+        "Zixuan Dong",
+        "Linfeng Du",
+        "Zipeng Sun",
+        "Weixu Zhang",
+        "Jiaxin Huang",
+        "Changjiang Han",
+        "Yonghan Yang",
+        "Zichen Zhao",
+        "Xiuyuan Hu",
+        "Haolun Wu",
+        "Yankai Chen",
+        "Fengran Mo",
+        "Jikun Kang",
+        "Bowei He",
+        "Philip S. Yu",
+        "Xue Liu"
+      ],
+      "boost_hits": [
+        "scaling",
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-17",
+      "pdf_url": "https://arxiv.org/pdf/2607.13431v1",
+      "published": "2026-07-15T04:23:22+00:00",
+      "recommendation": "Worth scanning",
+      "score": 7,
+      "summary": "Likely relevant to Diffusion Language Models. Discrete denoising diffusion models (DDMs) have recently emerged as a compelling alternative to autoregressive (AR) modeling for discrete data, offering parallel generation and iterative global refinement capabilities.",
+      "title": "Discrete Diffusion Models: A Unified Framework from Tokenization to Generation",
+      "topics": [
+        {
+          "id": "diffusion_language_models",
+          "keywords": [
+            "discrete diffusion"
+          ],
+          "label": "Diffusion Language Models",
+          "score": 5
+        }
+      ],
+      "updated": "2026-07-15T04:23:22+00:00",
+      "url": "http://arxiv.org/abs/2607.13431v1"
+    },
+    {
       "abstract": "Tool access alone does not make LLM empirical reasoning governable: accepted outputs need not descend from attested evidence, and accepted deductions need not hold up under formal scrutiny. We present EG-VAR (Evidence-Grounded Verified Agentic Reasoning), a Lean 4-based tool-calling architecture in which the Lean kernel is the sole minter of Verified claims via tool-attestation axioms and declared source lifts. Every verified output structurally descends from an attested tool call (Thm. 3.1) and a kernel-checked chain of valid inference (Thm. 3.2); residual outputs are honest Abstain with a replayable audit trail. On a subcollection of TableBench numerical reasoning (n=120), EG-VAR attains 120/120 versus a 95% same-tool baseline; on counterfactual stress tests (5 domains x 2 models), EG-VAR stays 100% source-faithful while same-tool drops to 80-90% (no-tool 50-80%). With the LLM as deployment-time formalizer, residual semantic-formalization error is 3.3% on Sonnet and 1.7% on Opus. We position EG-VAR as a technical-governance interface for high-stakes empirical claims: a formal sidecar makes the target proposition, source scope, evidence boundary, proof obligation, and abstention condition auditable, eliminating unsupported Verified outputs today while turning formalization errors, lift and source-authority disputes, ambiguities, and abstentions into explicit audit targets. Over time, typed sidecars in datasets, APIs, public records, and AI-generated documents can amortize this formalization burden into reusable infrastructure.",
       "arxiv_id": "2607.12650v1",
       "authors": [
@@ -495,7 +592,7 @@
         "cs.CY",
         "cs.SE"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.12650v1",
       "published": "2026-07-14T11:33:44+00:00",
       "recommendation": "Worth scanning",
@@ -530,7 +627,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11758v1",
       "published": "2026-07-13T16:22:01+00:00",
       "recommendation": "Worth scanning",
@@ -572,7 +669,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07467v1",
       "published": "2026-07-08T14:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -607,7 +704,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07258v1",
       "published": "2026-07-08T10:46:02+00:00",
       "recommendation": "Worth scanning",
@@ -643,7 +740,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.06269v1",
       "published": "2026-07-07T13:34:27+00:00",
       "recommendation": "Worth scanning",
@@ -678,7 +775,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.12634v1",
       "published": "2026-07-14T11:11:00+00:00",
       "recommendation": "Worth scanning",
@@ -714,7 +811,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11703v1",
       "published": "2026-07-13T15:33:45+00:00",
       "recommendation": "Worth scanning",
@@ -749,7 +846,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11400v1",
       "published": "2026-07-13T11:07:57+00:00",
       "recommendation": "Worth scanning",
@@ -782,7 +879,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11279v1",
       "published": "2026-07-13T08:59:47+00:00",
       "recommendation": "Worth scanning",
@@ -828,7 +925,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11138v1",
       "published": "2026-07-13T06:15:51+00:00",
       "recommendation": "Worth scanning",
@@ -862,7 +959,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08601v1",
       "published": "2026-07-09T15:32:54+00:00",
       "recommendation": "Worth scanning",
@@ -905,7 +1002,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
       "published": "2026-07-09T13:55:55+00:00",
       "recommendation": "Worth scanning",
@@ -947,7 +1044,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08403v1",
       "published": "2026-07-09T12:28:39+00:00",
       "recommendation": "Worth scanning",
@@ -986,7 +1083,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08357v1",
       "published": "2026-07-09T11:08:39+00:00",
       "recommendation": "Worth scanning",
@@ -1021,7 +1118,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08288v1",
       "published": "2026-07-09T09:32:03+00:00",
       "recommendation": "Worth scanning",
@@ -1058,7 +1155,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08282v1",
       "published": "2026-07-09T09:23:13+00:00",
       "recommendation": "Worth scanning",
@@ -1094,7 +1191,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08028v1",
       "published": "2026-07-09T01:08:33+00:00",
       "recommendation": "Worth scanning",
@@ -1132,7 +1229,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.06327v1",
       "published": "2026-07-07T14:25:09+00:00",
       "recommendation": "Worth scanning",
@@ -1153,6 +1250,50 @@
       "url": "http://arxiv.org/abs/2607.06327v1"
     },
     {
+      "abstract": "Video diffusion transformers (vDiTs) generate high quality video but introduce extremely high compute cost due to the long diffusion timesteps and self attention computation. As diffusion timesteps are reduced, the computation cost of self attention becomes the dominant bottleneck. Existing acceleration approaches largely inherit sparse attention techniques from large language models, which fail to consider the unique spatiotemporal correlation of video data. This paper presents Kaleido, an algorithm hardware codesign that accelerates all operations in vDiTs by exploiting channel-wise spatiotemporal correlations in latent space. Based on this insight, we propose a lightweight channelwise reuse algorithm that skips redundant computations by reusing partial results while preserving higher generative quality than prior methods (>17 dB). To efficiently support this algorithm, we design a systolic array like accelerator with reconfigurable processing elements and a lightweight data dispatcher to mitigate irregular sparsity and data access patterns introduced by our reuse algorithm. Evaluations across three mainstream vDiT models show that Kaleido achieves up to 5.9x speedup and 16.0x energy savings over state of the art accelerators.",
+      "arxiv_id": "2607.13770v1",
+      "authors": [
+        "Wenxuan Miao",
+        "Haosong Liu",
+        "Weiming Hu",
+        "Zihan Liu",
+        "Aiyue Chen",
+        "Jianlin Yu",
+        "Yiwu Yao",
+        "Yiming Gan",
+        "Jieru Zhao",
+        "Jingwen Leng",
+        "Minyi Guo",
+        "Yu Feng"
+      ],
+      "boost_hits": [
+        "large language model"
+      ],
+      "categories": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-17",
+      "pdf_url": "https://arxiv.org/pdf/2607.13770v1",
+      "published": "2026-07-15T12:31:19+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. Video diffusion transformers (vDiTs) generate high quality video but introduce extremely high compute cost due to the long diffusion timesteps and self attention computation.",
+      "title": "Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "sparse attention"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-07-15T12:31:19+00:00",
+      "url": "http://arxiv.org/abs/2607.13770v1"
+    },
+    {
       "abstract": "Selective state-space models such as Mamba route information through a bank of first-order modes whose input coupling is set by a learned selection mechanism. We give an exact instrument for measuring how a trained model uses these modes. Because the state matrix is diagonal, each channel's output decomposes exactly into per-mode contributions, and a per-(layer, channel, window) Gram tensor yields the exact output error of dropping any subset of modes, offline, at any budget. Validated against the reference implementation to a relative error of $2.3\\times10^{-7}$ on the Mamba-1 family where it is exact, the instrument predicts a layer's deployed pruning error to a median relative deviation of $5\\times10^{-7}$ over $4{,}464$ configurations, its floor set by the reconstruction. Applying the instrument across the Mamba-1 family (130M--2.8B), the deployed 7B Falcon-Mamba, and Mamba-2, we find that trained models re-allocate their state space with the input: which modes carry the signal migrates across contexts, and at the most affected layers a per-input oracle roughly halves the output error of a fixed mode set. Frozen-signal counterfactuals attribute the migration primarily to the input-dependent write map $B_t$; the timestep usually identified with selectivity carries almost none of it. Input-scheduled mode pruning on this measurement outperforms static, Hankel-based, and layer-adaptive rankings at every scale from 130M to the deployed 7B Falcon-Mamba, and at half the state budget it matches the unpruned model. Because the scheduler reads each window's mode usage from a first pass, this demonstrates realizable headroom; we claim no deployed compute or memory saving.",
       "arxiv_id": "2607.11796v1",
       "authors": [
@@ -1162,7 +1303,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11796v1",
       "published": "2026-07-13T16:48:03+00:00",
       "recommendation": "Maybe relevant",
@@ -1196,7 +1337,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
       "published": "2026-07-13T12:54:47+00:00",
       "recommendation": "Maybe relevant",
@@ -1231,7 +1372,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08754v1",
       "published": "2026-07-09T17:51:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1271,7 +1412,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08359v1",
       "published": "2026-07-09T11:17:04+00:00",
       "recommendation": "Maybe relevant",
@@ -1312,7 +1453,7 @@
         "cs.LG",
         "cs.SE"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08010v1",
       "published": "2026-07-09T00:27:13+00:00",
       "recommendation": "Maybe relevant",
@@ -1373,7 +1514,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
       "published": "2026-07-08T17:26:49+00:00",
       "recommendation": "Maybe relevant",
@@ -1408,7 +1549,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
       "published": "2026-07-08T15:46:48+00:00",
       "recommendation": "Maybe relevant",
@@ -1443,7 +1584,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07077v1",
       "published": "2026-07-08T07:08:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1483,7 +1624,7 @@
         "cs.CL",
         "cs.MA"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.12790v1",
       "published": "2026-07-14T14:02:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1526,7 +1667,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
       "published": "2026-07-13T12:58:28+00:00",
       "recommendation": "Maybe relevant",
@@ -1566,7 +1707,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11377v1",
       "published": "2026-07-13T10:40:32+00:00",
       "recommendation": "Maybe relevant",
@@ -1601,7 +1742,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11288v1",
       "published": "2026-07-13T09:07:30+00:00",
       "recommendation": "Maybe relevant",
@@ -1633,7 +1774,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08312v1",
       "published": "2026-07-09T09:55:17+00:00",
       "recommendation": "Maybe relevant",
@@ -1671,7 +1812,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
       "published": "2026-07-09T07:28:21+00:00",
       "recommendation": "Maybe relevant",
@@ -1705,7 +1846,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07557v1",
       "published": "2026-07-08T15:51:57+00:00",
       "recommendation": "Maybe relevant",
@@ -1744,7 +1885,7 @@
         "cs.CR",
         "cs.MA"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07097v1",
       "published": "2026-07-08T07:31:37+00:00",
       "recommendation": "Maybe relevant",
@@ -1780,7 +1921,7 @@
         "cs.CL",
         "cs.CR"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.06364v1",
       "published": "2026-07-07T15:00:46+00:00",
       "recommendation": "Maybe relevant",
@@ -1801,6 +1942,144 @@
       "url": "http://arxiv.org/abs/2607.06364v1"
     },
     {
+      "abstract": "We investigate how each component of the Transformer feedforward block architecture design determines how much rank survives across depth at initialization. We reinterpret skip connections and normalization, long understood as controlling magnitude, as mechanisms for preserving gradient rank across depth, since the very matrix multiplications and nonlinear activations that make the network expressive also reduce the rank. We show that skip connections trade off rank collapse against ensemble-like behavior, controlled by the relative scales of the branch and the skip: skip connections route the gradient around the residual branch, where rank is lost, rather than along the long gradient paths that encourage the layers to compose. The placement of the normalization layer controls this same tradeoff by setting the branch-to-skip ratio across depth, unifying much of the normalization placement and depth scaling literature, in particular why rank collapses for Post-Norm but plateaus for Pre-Norm. Other aspects of the architecture, like the two-matrix structure that expands and contracts the width, use additional parameters to preserve the representation or branch Jacobian rank. The second matrix decorrelates a coherent mean spike that would grow across blocks with a single matrix and uncentered activation, preventing the residual representation from collapsing. The width expansion between the two matrices keeps the branch Jacobian full rank: applying the rank-reducing activation in this expanded space leaves enough directions to span the original, at a width that follows a Marchenko--Pastur law. The initialization rank of the input--output Jacobian predicts which networks train on CIFAR-10. Taken together, we recast architecture design for deep networks as navigating an intrinsic tradeoff among rank collapse, ensemble-like behavior, and parameter count.",
+      "arxiv_id": "2607.14018v1",
+      "authors": [
+        "Katie Everett"
+      ],
+      "boost_hits": [
+        "scaling"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-17",
+      "pdf_url": "https://arxiv.org/pdf/2607.14018v1",
+      "published": "2026-07-15T16:50:43+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. We investigate how each component of the Transformer feedforward block architecture design determines how much rank survives across depth at initialization.",
+      "title": "Transforming Rank: How Architecture Navigates the Spectral Pathologies of Depth",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-15T16:50:43+00:00",
+      "url": "http://arxiv.org/abs/2607.14018v1"
+    },
+    {
+      "abstract": "Financial observations are continuous, heterogeneous, and noisy, whereas decoder-only next-token models are usually built around discrete symbolic inputs. We introduce Vector-Input Autoregressive Inference for Ordinal-Return Modeling (VAIOM), a decoder-only Transformer for probabilistic next-return modeling on one-hour foreign-exchange bars. VAIOM separates input representation from output likelihood: continuous multivariate financial-event vectors preserve numerical structure at the input, while a categorical distribution over the next volatility-normalized return bucket supports cross-entropy training and likelihood evaluation. The selected 0.9M Hybrid Continuous Input model combines continuous event features with categorical asset metadata, a Mixture-of-Market-States return head, Gap, volatility-regime, and Ordinal auxiliary objectives, and full-sequence supervision. Models and preprocessing are fit using pre-2024 Train data; models are selected on 2024H2 Validation and evaluated without refitting on two 2025 Test periods. Across three independent training seeds, every model outperforms fixed single-bar LightGBM baseline in both Test halves. For the canonical checkpoint, paired gains over LightGBM are 0.029 and 0.043 bits per event. Validation experiments show that continuous input improves over discrete-token input under the same categorical return objective, full-sequence supervision improves over last-position training, and auxiliary representation shaping together with a mixture-structured return head improves return likelihood in controlled comparisons. A supporting capacity study finds that the smallest evaluated complete architecture rung achieves the strongest Validation likelihood on the present corpus.",
+      "arxiv_id": "2607.13929v1",
+      "authors": [
+        "Yiming Ma",
+        "Xinyu Chen"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-fin.CP"
+      ],
+      "digest_date": "2026-07-17",
+      "pdf_url": "https://arxiv.org/pdf/2607.13929v1",
+      "published": "2026-07-15T15:10:10+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Financial observations are continuous, heterogeneous, and noisy, whereas decoder-only next-token models are usually built around discrete symbolic inputs.",
+      "title": "VAIOM: Continuous-Input, Discrete-Output Decoder-Only Financial Sequence Modeling",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-15T15:10:10+00:00",
+      "url": "http://arxiv.org/abs/2607.13929v1"
+    },
+    {
+      "abstract": "Joint-Embedding Predictive Architectures (JEPAs) are the dominant design for latent world models, yet they are usually justified by empirical performance rather than a normative principle. We show that the choice of anti-collapse regulariser determines whether a JEPA's training objective, a prediction loss plus a weighted embedding regulariser, is a valid Active Inference (AIF) variational free energy. We organise four non-contrastive regularisers (VICReg, LogDet, PairDist, and SIGReg) into an entropy-estimator hierarchy indexed by a prior-miscalibration gap, and show that the gap's sign, whether the estimator bounds the latent entropy from above or below, decides whether the AIF surprise bound survives: VICReg and LogDet are unsafe upper bounds, PairDist a safe lower bound, and SIGReg eliminates the gap. We then prove a correspondence theorem: under the standard constant-noise encoder model and successful SIGReg enforcement (isotropic-Gaussian embeddings), the gap vanishes, the objective becomes an exact information bottleneck, the surprise bound is preserved, and the latent goal cost becomes an exact proxy for AIF pragmatic value, whereas VICReg leaves an irreducible second-order anisotropy term. We extend the correspondence to multi-step expected free energy, ensemble epistemic value, and a learned-policy regime, and we identify the one AIF term no current JEPA world model computes: the state-epistemic value, a future-state coverage signal. The predictions differ in kind, not degree, and are stated here as theoretical consequences left for empirical test in separate work; full proofs are in Appendix A, and the algebraic core of every result is machine-verified in Lean 4 (Appendix D).",
+      "arxiv_id": "2607.13612v1",
+      "authors": [
+        "Fabio Arnez",
+        "Alexandra Gomez-Villa"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-17",
+      "pdf_url": "https://arxiv.org/pdf/2607.13612v1",
+      "published": "2026-07-15T08:59:36+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Joint-Embedding Predictive Architectures (JEPAs) are the dominant design for latent world models, yet they are usually justified by empirical performance rather than a normative principle.",
+      "title": "The SIGReg Objective as Variational Free Energy: A Theoretical Active-Inference Account of JEPA World Models",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-15T08:59:36+00:00",
+      "url": "http://arxiv.org/abs/2607.13612v1"
+    },
+    {
+      "abstract": "Looped Transformers scale sequential computation by applying a compact stack of physical blocks for multiple rounds, increasing unrolled depth without increasing stored parameters. This reuse changes the residual-scaling problem: in an untied Transformer, each residual branch receives and applies its own parameter update, whereas in a looped Transformer one shared update aggregates gradients from repeated visits and is read back by those same visits in the next linearized forward pass. We formalize this tied-depth effect through a first-order perturbation bound controlled by a visit-alignment coefficient $κ_R$. The bound recovers the DeepNorm exponent when visits decorrelate, but in the conservative aligned regime it requires the exponent to increase from $1/4$ to $1/2$ as loop count grows at fixed physical depth. The resulting method, \\textbf{DeepLoop}, keeps the Post-LN DeepNorm architecture and sets $α=(2N)^{1/2}$ and $β=(8N)^{-1/2}$ for unrolled depth $N$. On GPT-style looped language models at GPT-2 small and GPT-2 medium scale, DeepLoop is neutral when no physical block is revisited and improves validation loss and downstream accuracy once recurrent depth is activated. These results show that stable recurrent depth requires residual scaling rules that account for parameter visits, not only nominal layer count.",
+      "arxiv_id": "2607.13491v1",
+      "authors": [
+        "Shuzhen Li",
+        "Yifan Zhang",
+        "Jiacheng Guo",
+        "Quanquan Gu",
+        "Mengdi Wang"
+      ],
+      "boost_hits": [
+        "scaling"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-17",
+      "pdf_url": "https://arxiv.org/pdf/2607.13491v1",
+      "published": "2026-07-15T06:37:05+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Looped Transformers scale sequential computation by applying a compact stack of physical blocks for multiple rounds, increasing unrolled depth without increasing stored parameters.",
+      "title": "DeepLoop: Depth Scaling for Looped Transformers",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-15T06:37:05+00:00",
+      "url": "http://arxiv.org/abs/2607.13491v1"
+    },
+    {
       "abstract": "Falling detection is vital for elderly care and intelligent surveillance; however, prevailing vision-based approaches predominantly frame it as static pose classification or discrete temporal pattern matching, fundamentally overlooking the instability dynamics of the human support system. This paper proposes a physics-informed falling detection framework that recasts falling as a stability-loss event in a coupled dynamical system. We introduce a novel dual-LTC architecture comprising a Center-of-Mass (CoM) subsystem and a Base-of-Support (BoS) subsystem, both instantiated as Liquid Time-Constant (LTC) neural networks to continuously model inertial trajectory evolution and ground-contact adjustment through adaptive time constants, Physical interpretability of falling motion. A learnable coupling module emulates physical interaction between the two subsystems, while a Stability Manifold classifier operates in the joint latent space to detect boundary crossing via Lyapunov-inspired stability metrics. Complementary counterfactual trajectory projection and Time-to-Collision (TTC) estimation further enable irreversibility assessment and early warning. The architecture is designed to support a three-state prediction paradigm (Normal, Falling, Fallen); in this preliminary study, we validate the core stability discrimination capability on a two-class dataset (Normal vs. Falling), leaving the full three-state temporal transition to future work. Unlike conventional CNN--RNN pipelines, the proposed formulation encodes continuous-time mechanical inertia, yielding a sub-50K-parameter network capable of real-time inference on resource-constrained edge devices. Extensive experiments demonstrate competitive accuracy with superior physical interpretability, validating its efficacy for low-compute visual fall detection.",
       "arxiv_id": "2607.12909v1",
       "authors": [
@@ -1817,7 +2096,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.12909v1",
       "published": "2026-07-14T15:43:41+00:00",
       "recommendation": "Maybe relevant",
@@ -1856,7 +2135,7 @@
         "cs.IR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.12392v1",
       "published": "2026-07-14T06:12:26+00:00",
       "recommendation": "Maybe relevant",
@@ -1894,7 +2173,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.11510v1",
       "published": "2026-07-13T13:00:06+00:00",
       "recommendation": "Maybe relevant",
@@ -1936,7 +2215,7 @@
         "cs.AR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08427v1",
       "published": "2026-07-09T12:49:24+00:00",
       "recommendation": "Maybe relevant",
@@ -1970,7 +2249,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.08234v1",
       "published": "2026-07-09T08:29:38+00:00",
       "recommendation": "Maybe relevant",
@@ -2006,7 +2285,7 @@
         "q-bio.QM",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07425v1",
       "published": "2026-07-08T13:52:50+00:00",
       "recommendation": "Maybe relevant",
@@ -2045,7 +2324,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07219v1",
       "published": "2026-07-08T10:01:33+00:00",
       "recommendation": "Maybe relevant",
@@ -2088,7 +2367,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07179v1",
       "published": "2026-07-08T09:13:59+00:00",
       "recommendation": "Maybe relevant",
@@ -2122,7 +2401,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-16",
+      "digest_date": "2026-07-17",
       "pdf_url": "https://arxiv.org/pdf/2607.07033v1",
       "published": "2026-07-08T06:07:06+00:00",
       "recommendation": "Maybe relevant",
