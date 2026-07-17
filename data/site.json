@@ -1,10 +1,87 @@
 {
   "dates": [
-    "2026-07-17"
+    "2026-07-18"
   ],
-  "generated_at": "2026-07-17T00:01:04.462045+00:00",
-  "latest_date": "2026-07-17",
+  "generated_at": "2026-07-17T23:54:17.907313+00:00",
+  "latest_date": "2026-07-18",
   "papers": [
+    {
+      "abstract": "We formulate reinforcement learning (RL) in continuous time with discrete state spaces and possibly arbitrary action spaces via a stochastic control approach, where the state dynamics are modeled as a controlled continuous-time Markov chain (CTMC). We consider policy optimization problems and derive the corresponding policy gradient methods, leading to continuous-time variants of proximal policy optimization (PPO) and group relative policy optimization (GRPO). As a primary application, we develop a complete continuous-time RL framework for fine-tuning score-based discrete diffusion models. The proposed framework enables reward-driven optimization without requiring differentiability on the reward signals. In contrast to the existing GRPO-based approaches that only rely on terminal rewards, our formulation allows intermediate reward or advantage signals to be incorporated throughout the denoising trajectory. Importantly, when specialized to masked diffusion models (MDMs), our framework encompasses a rich class of policy parameterizations over the vocabulary simplex with analytically tractable probability ratios, providing a unified perspective on exploration and policy optimization in MDMs. For masked diffusion large language models (dLLMs), we further propose trajectory subsampling techniques to efficiently estimate computationally prohibitive trajectory likelihoods, reducing the computational cost of computing per-position probability ratios. We showcase the effectiveness of our methods on both low-dimensional entropy-regularized optimization problems and RL post-training of dLLMs on mathematical reasoning and coding tasks.",
+      "arxiv_id": "2607.14522v1",
+      "authors": [
+        "Zikun Zhang",
+        "Jiayuan Sheng",
+        "David D. Yao",
+        "Wenpin Tang"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "reasoning"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14522v1",
+      "published": "2026-07-16T03:19:53+00:00",
+      "recommendation": "Read closely",
+      "score": 15,
+      "summary": "Likely relevant to Diffusion Language Models. We formulate reinforcement learning (RL) in continuous time with discrete state spaces and possibly arbitrary action spaces via a stochastic control approach, where the state dynamics are modeled as a controlled continuous-time Markov chain (CTMC).",
+      "title": "A Continuous-Time Reinforcement Learning Framework for Fine-Tuning Discrete Diffusion Models",
+      "topics": [
+        {
+          "id": "diffusion_language_models",
+          "keywords": [
+            "discrete diffusion",
+            "masked diffusion"
+          ],
+          "label": "Diffusion Language Models",
+          "score": 9
+        }
+      ],
+      "updated": "2026-07-16T03:19:53+00:00",
+      "url": "http://arxiv.org/abs/2607.14522v1"
+    },
+    {
+      "abstract": "Reinforcement learning has proven effective for improving reasoning in large language models, but extending it to Masked Diffusion Language Models (MDLMs) remains challenging due to the intractability of the log-likelihood estimation. Existing approaches approximate this log-likelihood by modeling only the token predictions, ignoring the order in which positions are unmasked during generation. We observe that MDLM generation involves two decisions at each step: what tokens to place at each masked position and which positions to remask. We formalize this as a two-stage action MDP, showing that the policy gradient naturally decomposes into a token term and a masking term. Combining optimization of both terms leads to state-of-the-art outcomes on mathematical reasoning and coding benchmarks, with scores of 87.1% on GSM8K and 53.4% on MBPP.",
+      "arxiv_id": "2607.15200v1",
+      "authors": [
+        "Haran Raajesh",
+        "Kulin Shah",
+        "Adam Klivans",
+        "Philipp Krähenbühl"
+      ],
+      "boost_hits": [
+        "large language model",
+        "reasoning"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.15200v1",
+      "published": "2026-07-16T16:57:34+00:00",
+      "recommendation": "Read closely",
+      "score": 14,
+      "summary": "Likely relevant to Diffusion Language Models. Reinforcement learning has proven effective for improving reasoning in large language models, but extending it to Masked Diffusion Language Models (MDLMs) remains challenging due to the intractability of the log-likelihood estimation.",
+      "title": "Mask-Aware Policy Gradients for Diffusion Language Models",
+      "topics": [
+        {
+          "id": "diffusion_language_models",
+          "keywords": [
+            "diffusion language model",
+            "masked diffusion"
+          ],
+          "label": "Diffusion Language Models",
+          "score": 10
+        }
+      ],
+      "updated": "2026-07-16T16:57:34+00:00",
+      "url": "http://arxiv.org/abs/2607.15200v1"
+    },
     {
       "abstract": "Diffusion large language models (dLLMs) offer a theoretical advantage in parallel generation over standard autoregressive models. However, parallel generation alone does not guarantee practical speedups. Realizing this efficiency requires specialized inference mechanisms, such as diffusion-aware caching and reuse. Consequently, as inference efficiency becomes a prerequisite for practical deployment, recent research has actively explored acceleration techniques across algorithms, architectures, and systems. However, rigorous comparisons remain difficult, as end-to-end latency stems from intricate trade-offs between algorithmic, architectural, and system-level factors that are often conflated in existing benchmarks. In this survey, we introduce a unified latency decomposition framework for dLLMs to disentangle these factors and analyze their impact on inference speed in real deployments. Guided by this framework, we categorize acceleration techniques along three axes covering algorithmic innovations, architectural and system optimizations, and inference-time scaling. Finally, we provide guidelines for reproducible benchmarking and highlight open challenges for realizing the full potential of parallel generation.",
       "arxiv_id": "2607.12829v1",
@@ -25,7 +102,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.12829v1",
       "published": "2026-07-14T14:48:06+00:00",
       "recommendation": "Read closely",
@@ -70,7 +147,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08056v1",
       "published": "2026-07-09T02:07:30+00:00",
       "recommendation": "Read closely",
@@ -105,7 +182,7 @@
         "cs.AI",
         "cs.SD"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.13013v1",
       "published": "2026-07-14T17:53:22+00:00",
       "recommendation": "Read closely",
@@ -150,7 +227,7 @@
         "cs.AI",
         "cs.DC"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.12696v1",
       "published": "2026-07-14T12:22:55+00:00",
       "recommendation": "Read closely",
@@ -186,7 +263,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
       "published": "2026-07-13T11:52:42+00:00",
       "recommendation": "Read closely",
@@ -208,6 +285,88 @@
       "url": "http://arxiv.org/abs/2607.11444v1"
     },
     {
+      "abstract": "Speculative decoding accelerates large language model (LLM) inference without compromising output quality. Recent parallel drafting methods further improve single-request performance by decoupling draft length from drafting latency, enabling longer drafts and higher mean accepted tokens (MAT). However, under high request concurrency, long drafts waste substantial computation on rejected tokens, increasing verification cost and potentially making speculative decoding slower than autoregressive decoding. We present D-Cut, an adaptive pruning method that selects draft tokens jointly across the batch and concentrates the verification budget on tokens most likely to be accepted. D-Cut is motivated by two observations. First, acceptance lengths vary considerably across concurrent requests; D-Cut therefore performs cross-request pruning, allocating the verification budget adaptively according to draft confidence. Second, verification cost depends strongly on the deployment environment, including GPU architecture and parallelism strategy; D-Cut incorporates a runtime cost model to adapt its pruning depth to the target environment. Experiments on dense and mixture-of-experts (MoE) models show that, under high concurrency, D-Cut improves the average speedup from \\(1.26\\times\\) to \\(1.65\\times\\), restores acceleration in dense-model configurations where long-draft baselines are slower than autoregressive decoding, and achieves up to \\(3.0\\times\\) speedup over autoregressive decoding on MoE models.",
+      "arxiv_id": "2607.14647v1",
+      "authors": [
+        "Tianyu Liu",
+        "Yuhao Shen",
+        "Rui Cen",
+        "Junhan Shi",
+        "Jiebin Zhang",
+        "Guangshuo Qin",
+        "Hong Liu",
+        "Song Liu",
+        "Guanghua Yu",
+        "Jianchen Zhu"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "inference"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14647v1",
+      "published": "2026-07-16T07:18:05+00:00",
+      "recommendation": "Read closely",
+      "score": 10,
+      "summary": "Likely relevant to Model Architecture. Speculative decoding accelerates large language model (LLM) inference without compromising output quality.",
+      "title": "D-cut: Adaptive Verification Depth Pruning for Batched Speculative Decoding",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-07-16T07:18:05+00:00",
+      "url": "http://arxiv.org/abs/2607.14647v1"
+    },
+    {
+      "abstract": "We propose \\emph{the sublinear-growth principle} for deep residual architectures -- a sharp stability threshold on the input-magnitude exponent of every residual block's velocity field: $$\\|v(x, t)\\| \\leq c\\,\\|x\\|^q + b, \\qquad q \\in [0, 1].$$ The threshold $q = 1$ is established via two independent arguments. Classical ODE theory gives a global forward flow on $[0, T]$ at $q \\le 1$ and exhibits divergent velocity fields at any $q > 1$. The optimal-control analysis, via the Hamilton-Jacobi-Bellman equation, sharpens this to a selection statement: the training optimum is bang-bang on the boundary of the admissible class, so the optimum at $q > 1$ blows up while the optimum at $q \\le 1$ is safe by construction. The exponent criterion $q \\le 1$ is thereby a necessary and sufficient condition for stable training. It clarifies architectural placements that ensure the stability of training and inference, explaining, for instance, the stabilizing role of layer normalization. The sublinear-growth velocity fields form \\emph{the right function space} on which forward dynamics, adjoint sensitivity, and architectural composition are all well-controlled. An arithmetic of input-magnitude exponents under the five operations that build residual blocks enables efficient certification of $q_k \\le 1$ at the level of architectural primitives, in place of ad hoc trial and error in the search for stable neural architectural designs. A parameter-free modification reduces the supercritical Mamba block from $q = 5$ to $q = 1$ without layer normalization, demonstrating this point. Experiments on Mamba and PatchTST confirm that the $q \\le 1$ variants train stably: the criterion is the input-magnitude exponent, not the presence of a normalization layer.",
+      "arxiv_id": "2607.14576v1",
+      "authors": [
+        "Hyemin Gu",
+        "Michael Tyrrell",
+        "Tuhin Sahai",
+        "Markos A. Katsoulakis"
+      ],
+      "boost_hits": [
+        "llm",
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14576v1",
+      "published": "2026-07-16T05:13:44+00:00",
+      "recommendation": "Read closely",
+      "score": 10,
+      "summary": "Likely relevant to Model Architecture. We propose \\emph{the sublinear-growth principle} for deep residual architectures -- a sharp stability threshold on the input-magnitude exponent of every residual block's velocity field: $$\\|v(x, t)\\| \\leq c\\,\\|x\\|^q + b, \\qquad q \\in [0, 1].$$ The threshold $q = 1$ is established via two independent arguments.",
+      "title": "Sharp Stability Threshold and Certification for Designing Stable Residual Architectures",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "mamba",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 7
+        }
+      ],
+      "updated": "2026-07-16T05:13:44+00:00",
+      "url": "http://arxiv.org/abs/2607.14576v1"
+    },
+    {
       "abstract": "Generative Flow Networks (GFlowNets) offer a promising alternative to reward-maximizing reinforcement learning (RL) for large reasoning models, encouraging diverse reasoning paths by matching reward distributions rather than collapsing to dominant modes. Recent work shows promise on math and code, but scaling GFlowNet-style RL to modern post-training pipelines remains difficult: as model size, rollout horizon, reward noise, and distributed-systems complexity grow together, a learned prompt-conditional partition function becomes a source of gradient instability and engineering overhead rather than a useful normalizer. Through systematic analysis, we find that the learned partition function, previously treated as essential, can be replaced by an in-batch Monte Carlo estimate computed from the rollout group already required for training. We propose GFlowRL, a streamlined GFlowNet-style RL algorithm that removes the auxiliary partition network entirely while preserving the reward-distribution-matching objective, completed by two stabilizers: importance-sampling correction for rollout/trainer drift and asymmetric flow-gap clipping for outlier residuals. GFlowRL exceeds all counterparts on math, code, and adversarial red-teaming benchmarks, reaching a Codeforces rating of 2048 at the 14B scale (within 25 Elo of o3-mini) and attaining the highest average ASR@1 on AdvBench and HarmBench, outperforming the previous SOTA multi-turn attacker in a regime where FlowRL, a prior GFlowNet-style method, diverges. The same recipe transfers to all evaluated MoE configurations up to 235B parameters, where FlowRL again fails to converge. To our knowledge, GFlowRL is the first GFlowNet-style RL algorithm to scale stably across both dense and sparse architectures. Code will be at: https://github.com/microsoft/gflowrl",
       "arxiv_id": "2607.13394v1",
       "authors": [
@@ -227,7 +386,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.13394v1",
       "published": "2026-07-15T02:43:16+00:00",
       "recommendation": "Read closely",
@@ -263,7 +422,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08284v1",
       "published": "2026-07-09T09:28:06+00:00",
       "recommendation": "Worth scanning",
@@ -345,7 +504,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08186v1",
       "published": "2026-07-09T07:37:59+00:00",
       "recommendation": "Worth scanning",
@@ -386,7 +545,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07386v1",
       "published": "2026-07-08T13:17:19+00:00",
       "recommendation": "Worth scanning",
@@ -428,7 +587,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.06452v1",
       "published": "2026-07-07T16:12:51+00:00",
       "recommendation": "Worth scanning",
@@ -449,6 +608,96 @@
       "url": "http://arxiv.org/abs/2607.06452v1"
     },
     {
+      "abstract": "Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-level justification, or traceable alignment with the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR), limiting both transparency and downstream model interpretability. We propose a self-evolving, expert-in-the-loop annotation framework for Major Depressive Disorder (MDD) that combines large language model (LLM)-assisted labeling with expert verification. The framework is intended to support the construction of explainable, DSM-5-TR-aligned datasets rather than to perform clinical diagnosis. It operates in three stages: candidate evidence selection from textual records, criterion-level DSM-5-TR analysis, and case-level synthesis that produces label-level diagnostic and severity annotations. A dual-memory architecture, composed of Example Memory and Reflection Memory, is designed to internalize expert feedback and iteratively improve future annotations without retraining. We describe this mechanism and leave its evaluation across multiple feedback cycles to future work. In addition to final labels, the framework exports clinical evidence, reasoning traces, and edit histories, enabling comprehensive auditability. In a pilot study using expert-reviewed samples, the proposed approach improves annotation consistency and explainability while reducing manual revision effort.",
+      "arxiv_id": "2607.15202v1",
+      "authors": [
+        "Hoang-Loc Cao",
+        "Van Pham",
+        "Truong Thanh Hung Nguyen",
+        "Phuc Truong Loc Nguyen",
+        "Phuc Ho",
+        "Veronica Whitford",
+        "Hung Cao"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "reasoning"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.MA",
+        "cs.MM"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.15202v1",
+      "published": "2026-07-16T16:59:54+00:00",
+      "recommendation": "Worth scanning",
+      "score": 8,
+      "summary": "Likely relevant to Model Architecture. Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research.",
+      "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T16:59:54+00:00",
+      "url": "http://arxiv.org/abs/2607.15202v1"
+    },
+    {
+      "abstract": "Hyper-Connections (HC) expand the residual stream of Transformers into $N$ parallel streams, providing a form of memory scaling beyond model width and depth. Manifold-Constrained HC (mHC) stabilizes this formulation at scale. The large gains from $N{=}1$ to $N{=}4$ suggest residual-stream expansion as a promising scaling axis. However, existing HC-family methods typically stop at $N{=}4$. Our experiments reveal why: scaling mHC beyond this point yields diminishing performance gains and rapidly increasing training cost. We attribute this limitation to two bottlenecks: insufficient write-back information for an expanding number of streams and residual-mixing generation whose cost scales cubically with $N$. To address both bottlenecks, we propose xHC (Expanded Hyper-Connections), the first HC-family method to achieve meaningful expansion beyond $N{=}4$. xHC combines temporal feature augmentation for richer write-back with a sparse residual-stream architecture that updates only $k=4$ of the $N=16$ streams while retaining dense access to the full residual state. Across 18B and 28B MoE models, xHC delivers strong and consistent downstream improvements. On an 18B MoE model, xHC improves the average downstream score by 4.0 points over mHC, while adding only modest training FLOPs over the vanilla baseline. Scaling-law experiments show that the vanilla and mHC require $1.50\\times$ and $1.19\\times$ the compute of xHC, respectively, to reach the same loss. Practical large-$N$ training also requires controlling memory traffic from the expanded residual state. We therefore introduce xHC-Flash, which reduces the per-sublayer memory traffic from $73.5C$ to $40C$, comparable to the $34C$ required by mHC at $N{=}4$, while retaining the gains of full xHC. Together, xHC and xHC-Flash make large-$N$ residual-stream expansion effective and practical for LLM pre-training.",
+      "arxiv_id": "2607.14530v1",
+      "authors": [
+        "Xiangdong Zhang",
+        "Xiaohan Qin",
+        "Sunan Zou",
+        "Tuo Dai",
+        "Xiaoming Shi",
+        "Huaijin Wu",
+        "Yebin Yang",
+        "Zhuo Xia",
+        "Shaofeng Zhang",
+        "Lin Yao",
+        "Yuliang Liu",
+        "Yu Cheng",
+        "Junchi Yan"
+      ],
+      "boost_hits": [
+        "llm",
+        "scaling"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14530v1",
+      "published": "2026-07-16T03:31:03+00:00",
+      "recommendation": "Worth scanning",
+      "score": 8,
+      "summary": "Likely relevant to Model Architecture. Hyper-Connections (HC) expand the residual stream of Transformers into $N$ parallel streams, providing a form of memory scaling beyond model width and depth.",
+      "title": "xHC: Expanded Hyper-Connections",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-07-16T03:31:03+00:00",
+      "url": "http://arxiv.org/abs/2607.14530v1"
+    },
+    {
       "abstract": "The key-value (KV) cache has become the dominant memory cost of transformer inference. It grows with batch size, context length, and depth, and at long context it, rather than the model weights, sets the ceiling on throughput. Two families of methods reduce it. Low-rank methods factor two-dimensional slices of the cache, either per-head matrices or cross-layer feature blocks, and quantization methods lower the bit-width of every entry. Neither family exploits the fact that the cache at a layer is naturally a third-order tensor whose three axes, the heads, the tokens, and the features, carry very different amounts of redundancy. We take this tensor view directly. Our method, JoLT, applies a partial Tucker decomposition that compresses only the token and feature axes while leaving the head and layer axes intact, and then restores the energy that truncation discards with a Johnson-Lindenstrauss (JL) rotated low-bit residual. A single Lagrangian dual allocates the Tucker ranks and the residual bit-widths together, per layer group and separately for keys and values, under one byte budget. The result is a near-lossless 2-3x compression: perplexity, GSM8K accuracy, and RULER needle-in-a-haystack retrieval all stay at or within statistical noise of the uncompressed baseline on both a grouped-query-attention model (Mistral-7B-v0.3) and a multi-head-attention model (LLaMA-2-13B). At 2x, JoLT reconstructs the cache to relative Frobenius error 0.009 (K) and 0.006 (V) on both architectures, roughly an order of magnitude below cross-layer SVD and 4-bit quantization. A randomized-SVD variant, FlashJoLT, delivers a 5-13x compression-time speedup at matched quality.",
       "arxiv_id": "2607.12550v1",
       "authors": [
@@ -464,7 +713,7 @@
         "cs.CL",
         "math.OC"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.12550v1",
       "published": "2026-07-14T09:23:20+00:00",
       "recommendation": "Worth scanning",
@@ -499,7 +748,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
       "published": "2026-07-13T14:05:55+00:00",
       "recommendation": "Worth scanning",
@@ -518,6 +767,43 @@
       ],
       "updated": "2026-07-13T14:05:55+00:00",
       "url": "http://arxiv.org/abs/2607.11586v1"
+    },
+    {
+      "abstract": "We present for video understanding (classification) a split space-time attention model, VideoSEMA, consisting of a scalable and efficient Mamba-like attention (SEMA) block in space and a softmax temporal attention in time. In each frame, SEMA attention applies a local window attention in parallel with a global averaging in a Mamba macro-architecture, which is called Mamba-like. Under certain rank conditions, we prove that the computationally cheaper split space-time attention is equivalent to full space-time attention. On benchmark K400 data sets, VideoSEMA out-performs heavier vision transformer and Mamba models. On benchmark SSv2 data, VideoSEMA leads in top-1 accuracy among models of similar parameter sizes. As image resolution scales up from standard $224^2$ to $1024^2$ on K400 and without fine-tuning, VideoSEMA degrades much more gracefully than VideoMamba in accuracy. It is promising to extend VideoSEMA to longer videos with a dilated/sparse temporal attention.",
+      "arxiv_id": "2607.14711v1",
+      "authors": [
+        "Nhat Thanh Tran",
+        "Fanghui Xue andShuai Zhang",
+        "Jiancheng Lyu",
+        "Yunling Zheng",
+        "Yingyong Qi",
+        "Jack Xin"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14711v1",
+      "published": "2026-07-16T08:22:08+00:00",
+      "recommendation": "Worth scanning",
+      "score": 7,
+      "summary": "Likely relevant to Model Architecture. We present for video understanding (classification) a split space-time attention model, VideoSEMA, consisting of a scalable and efficient Mamba-like attention (SEMA) block in space and a softmax temporal attention in time.",
+      "title": "VideoSEMA: a scalable and efficient Mamba-like attention for video understanding",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "mamba",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 7
+        }
+      ],
+      "updated": "2026-07-16T08:22:08+00:00",
+      "url": "http://arxiv.org/abs/2607.14711v1"
     },
     {
       "abstract": "Discrete denoising diffusion models (DDMs) have recently emerged as a compelling alternative to autoregressive (AR) modeling for discrete data, offering parallel generation and iterative global refinement capabilities. Unlike continuous diffusion, where the state space is fixed, DDMs are fundamentally shaped by how the discrete state space is constructed: the tokenization scheme, the vocabulary topology, and domain-specific structural alphabets. This work introduces a unified conceptual framework that views discrete diffusion models through the construction of the underlying discrete state space. Within this framework, existing formulations, including transition-matrix, masking/absorbing-state, and score/ratio-based approaches, emerge as different instantiations of a common design space. The framework further exposes common design trade-offs across training objectives, inference algorithms, scaling behavior, systems optimization, and evaluation protocols, suggesting several promising directions for future research.",
@@ -555,7 +841,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.13431v1",
       "published": "2026-07-15T04:23:22+00:00",
       "recommendation": "Worth scanning",
@@ -592,7 +878,7 @@
         "cs.CY",
         "cs.SE"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.12650v1",
       "published": "2026-07-14T11:33:44+00:00",
       "recommendation": "Worth scanning",
@@ -627,7 +913,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11758v1",
       "published": "2026-07-13T16:22:01+00:00",
       "recommendation": "Worth scanning",
@@ -669,7 +955,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07467v1",
       "published": "2026-07-08T14:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -704,7 +990,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07258v1",
       "published": "2026-07-08T10:46:02+00:00",
       "recommendation": "Worth scanning",
@@ -740,7 +1026,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.06269v1",
       "published": "2026-07-07T13:34:27+00:00",
       "recommendation": "Worth scanning",
@@ -761,6 +1047,80 @@
       "url": "http://arxiv.org/abs/2607.06269v1"
     },
     {
+      "abstract": "Transformer reasoning is limited by autoregressive decoding, which repeat edly compresses rich hidden computation through token space and makes it difficult for intermediate reasoning states to persist across time. We in troduce Transformers with Temporal Middle-Layer Recurrence (T2MLR), a transformers-based latent reasoning architecture that fuses a cached middle layer representation from the previous token directly into an earlier layer of the current token position, enabling abstract intermediate computation to persist across decoding steps with little inference overhead. Across natural-language pretraining and multi-hop reasoning finetuning, T2MLR consistently outperforms data- and parameter-matched Transformer base lines. Moreover, applying recurrence to only a localized middle-layer block (as little as 20% of the network) often outperforms full-layer recurrence. Im portantly, T2MLR does not require pretraining from scratch: retrofitting the recurrent pathway into an existing pretrained 1.7B Transformer and briefly finetuning substantially improves math reasoning, lowering the barrier to practical adoption. These results suggest that effective latent reasoning in Transformers does not require looping over all layers as in previous works, but can instead emerge more strongly from targeted middle-layer recurrence.",
+      "arxiv_id": "2607.15178v1",
+      "authors": [
+        "Ziyang Cai",
+        "Xingyu Zhu",
+        "Yihe Dong",
+        "Yinghui He",
+        "Sanjeev Arora"
+      ],
+      "boost_hits": [
+        "reasoning",
+        "pretraining",
+        "inference"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.15178v1",
+      "published": "2026-07-16T16:33:59+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. Transformer reasoning is limited by autoregressive decoding, which repeat edly compresses rich hidden computation through token space and makes it difficult for intermediate reasoning states to persist across time.",
+      "title": "T^2MLR: Transformer with Temporal Middle-Layer Recurrence",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T16:33:59+00:00",
+      "url": "http://arxiv.org/abs/2607.15178v1"
+    },
+    {
+      "abstract": "Mild Cognitive Impairment is a critical early stage of cognitive decline that frequently precedes Alzheimer's disease, yet its automated detection from neuropsychological drawing tests remains fundamentally constrained by data scarcity, class imbalance, and diagnostic ambiguity near clinical boundaries. Existing methodologies attempt to bypass these constraints using computationally expensive, fully fine-tuned hybrid architectures that relegate spatial explainability to a post-hoc approximation rather than an intrinsic model property. We propose a parameter-efficient framework utilizing frozen DINOv2-Small model adapted via three modality-specific learnable prompt tokens while Operating with 1.19 million trainable parameters, each token serves as a query in a shared cross-attention layer over the source image patch tokens. Crucially, spatial explainability is achieved directly through these attention maps; as a structural consequence of the architecture. Then task-conditioned embeddings fused via an attention module to quantify modality-level importance per subject. To handle boundary ambiguity, a MoCA-adapted focal loss introduced that integrates continuous cognitive scores into the training target, loss modulation, and adaptive sample weighting, strictly generalizing standard soft-label approaches. Under stratified five-fold cross-validation, the proposed architecture yields an MCI-class F1 of 0.641 and an AUC of 0.795, outperforming the computationally heavier ResViT baseline by 0.110 in MCI-class F1.",
+      "arxiv_id": "2607.15047v1",
+      "authors": [
+        "Javad Khoramdel",
+        "Farhad Hoseyni",
+        "Amirhossein Nikoofard"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.15047v1",
+      "published": "2026-07-16T14:26:22+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. Mild Cognitive Impairment is a critical early stage of cognitive decline that frequently precedes Alzheimer's disease, yet its automated detection from neuropsychological drawing tests remains fundamentally constrained by data scarcity, class imbalance, and diagnostic ambiguity near clinical boundaries.",
+      "title": "Parameter-efficient Prompt Tuning of Vision Foundation Model With Adaptive Focal Loss for Interpretable MCI Screening",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "hybrid architecture",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 6
+        }
+      ],
+      "updated": "2026-07-16T14:26:22+00:00",
+      "url": "http://arxiv.org/abs/2607.15047v1"
+    },
+    {
       "abstract": "This paper proposes a theoretical framework for understanding intelligence as a process of atomic compression and compositional reuse. We argue that cognitive, biological, computational, and organizational systems achieve scalable intelligence by decomposing complex phenomena into reusable atomic units that can be recombined into higher-order structures. Drawing on evidence from cognitive science, information theory, evolutionary biology, software engineering, medicine, legal reasoning, education, music, and artificial intelligence, the paper develops the concept of atomic units as fundamental compression layers that support efficiency, transfer, interpretability, and evolvability. The central contribution is the Compression Calculus, a formal framework for comparing surface-level representations with atomic representations and for describing how compression gains compound across abstraction layers. We introduce the Compounding Cascade thesis, according to which each additional layer of abstraction multiplicatively increases representational efficiency rather than merely adding incremental savings. The paper further argues that contemporary AI systems often operate at suboptimal levels of representation, relying on token-level processing or document-level retrieval rather than stable, concept-level atomic structures. In this view, large language models are best understood not as complete knowledge architectures, but as dynamic fusion engines capable of navigating, sequencing, and recombining atomic units. The framework provides a foundation for designing self-evolving knowledge systems that can discover, refine, and compose new primitives over time. By reframing intelligence as compression through compositional abstraction, the paper offers a unifying perspective on expertise, knowledge representation, explainable AI, and the future architecture of adaptive intelligent systems.",
       "arxiv_id": "2607.12634v1",
       "authors": [
@@ -775,7 +1135,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.12634v1",
       "published": "2026-07-14T11:11:00+00:00",
       "recommendation": "Worth scanning",
@@ -811,7 +1171,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11703v1",
       "published": "2026-07-13T15:33:45+00:00",
       "recommendation": "Worth scanning",
@@ -846,7 +1206,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11400v1",
       "published": "2026-07-13T11:07:57+00:00",
       "recommendation": "Worth scanning",
@@ -879,7 +1239,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11279v1",
       "published": "2026-07-13T08:59:47+00:00",
       "recommendation": "Worth scanning",
@@ -925,7 +1285,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11138v1",
       "published": "2026-07-13T06:15:51+00:00",
       "recommendation": "Worth scanning",
@@ -959,7 +1319,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08601v1",
       "published": "2026-07-09T15:32:54+00:00",
       "recommendation": "Worth scanning",
@@ -1002,7 +1362,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
       "published": "2026-07-09T13:55:55+00:00",
       "recommendation": "Worth scanning",
@@ -1044,7 +1404,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08403v1",
       "published": "2026-07-09T12:28:39+00:00",
       "recommendation": "Worth scanning",
@@ -1083,7 +1443,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08357v1",
       "published": "2026-07-09T11:08:39+00:00",
       "recommendation": "Worth scanning",
@@ -1118,7 +1478,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08288v1",
       "published": "2026-07-09T09:32:03+00:00",
       "recommendation": "Worth scanning",
@@ -1155,7 +1515,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08282v1",
       "published": "2026-07-09T09:23:13+00:00",
       "recommendation": "Worth scanning",
@@ -1191,7 +1551,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08028v1",
       "published": "2026-07-09T01:08:33+00:00",
       "recommendation": "Worth scanning",
@@ -1229,7 +1589,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.06327v1",
       "published": "2026-07-07T14:25:09+00:00",
       "recommendation": "Worth scanning",
@@ -1273,7 +1633,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.13770v1",
       "published": "2026-07-15T12:31:19+00:00",
       "recommendation": "Maybe relevant",
@@ -1303,7 +1663,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11796v1",
       "published": "2026-07-13T16:48:03+00:00",
       "recommendation": "Maybe relevant",
@@ -1337,7 +1697,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
       "published": "2026-07-13T12:54:47+00:00",
       "recommendation": "Maybe relevant",
@@ -1372,7 +1732,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08754v1",
       "published": "2026-07-09T17:51:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1412,7 +1772,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08359v1",
       "published": "2026-07-09T11:17:04+00:00",
       "recommendation": "Maybe relevant",
@@ -1453,7 +1813,7 @@
         "cs.LG",
         "cs.SE"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08010v1",
       "published": "2026-07-09T00:27:13+00:00",
       "recommendation": "Maybe relevant",
@@ -1514,7 +1874,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
       "published": "2026-07-08T17:26:49+00:00",
       "recommendation": "Maybe relevant",
@@ -1549,7 +1909,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
       "published": "2026-07-08T15:46:48+00:00",
       "recommendation": "Maybe relevant",
@@ -1584,7 +1944,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07077v1",
       "published": "2026-07-08T07:08:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1603,6 +1963,41 @@
       ],
       "updated": "2026-07-08T07:08:50+00:00",
       "url": "http://arxiv.org/abs/2607.07077v1"
+    },
+    {
+      "abstract": "LLM evaluators (trained reward models and prompted LLM-as-a-Judge) are routinely validated via pairwise accuracy. In a multilingual setting, this operates under the premise that high pairwise accuracy implies reliable, language-neutral scoring. We show that this assumption does not hold. We conduct experiments with semantically identical instruction-response pairs across 23 languages, and find that multilingual evaluators assign significantly different scores to different evaluation languages. The bias is statistically significant and consistent across eight open-weight evaluators of different architectures and training paradigms, persists in frontier judges, and is strongly correlated with language resource level: lower-resource languages are scored more generously. Meanwhile, these biases are invisible to pairwise accuracy: evaluators achieve above 90% pairwise accuracy, yet have up to 43% difference in acceptance rate across languages under a global decision threshold, meaning, for instance, that harmful content in lower-resource languages is more likely to pass safety filters. Per-language thresholds would require language identification, which can be defeated by code-switched prompts. We then investigate why lower-resource languages receive higher rather than lower scores, and we find that model uncertainty is linked with the effect: models tend to give higher scores when less confident, both under negative log-likelihood and under token-free uncertainty measures; however, language identity remains a significant predictor after controlling for uncertainty, and the bias cannot be explained away by content difficulty alone, but is a structural, language-level misalignment.",
+      "arxiv_id": "2607.14480v1",
+      "authors": [
+        "Ej Zhou",
+        "Lucas Resck",
+        "Zheng Hui",
+        "Anna Korhonen"
+      ],
+      "boost_hits": [
+        "llm"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14480v1",
+      "published": "2026-07-16T01:53:09+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. LLM evaluators (trained reward models and prompted LLM-as-a-Judge) are routinely validated via pairwise accuracy.",
+      "title": "LLM Evaluators are Biased across Languages",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T01:53:09+00:00",
+      "url": "http://arxiv.org/abs/2607.14480v1"
     },
     {
       "abstract": "Self-evolving agent systems improve by creating, revising, and retiring their own skills, but every such loop rests on a hidden assumption: a reliable evaluation metric already exists. In many real applications it does not. We make three claims. First, metrics can be \\emph{evolved}: our metric loop searches compositions of small drawback detectors under a full evolutionary lifecycle, trained to agree with a ten-item anchored reference set, regularized by consensus over unlabeled outputs, and audited against a held-out anchor it never reads, yielding a transparent, inspectable metric rather than an opaque judge. Second, since no metric exists to beat, the yardstick is recovering what an accurate metric would have enabled, and \\emph{Double Ratchet}, our co-evolution of the metric with a lifecycle-managed skill loop, does so: across code generation (MBPP+), enterprise text-to-SQL (Spider~2.0-Snow), and reference-free report generation, it retains 88--110\\% of the held-out lift achieved by the same skill loop driven by ground truth or the best available rubric. Third, safety comes from anchor discipline plus outer audits: removing anchor guards collapses the metric into a vacuous detector while removing the lifecycle does not; and when evolved skills gamed the report rubric, an independent judge caught it, one detector repaired it, and a task-aware judge then preferred the evolved outputs over the pre-evolution baseline in 77\\% of decided pairs. We argue this failure-expecting architecture is the right default wherever no reliable automatic verifier exists.",
@@ -1624,7 +2019,7 @@
         "cs.CL",
         "cs.MA"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.12790v1",
       "published": "2026-07-14T14:02:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1667,7 +2062,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
       "published": "2026-07-13T12:58:28+00:00",
       "recommendation": "Maybe relevant",
@@ -1707,7 +2102,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11377v1",
       "published": "2026-07-13T10:40:32+00:00",
       "recommendation": "Maybe relevant",
@@ -1742,7 +2137,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11288v1",
       "published": "2026-07-13T09:07:30+00:00",
       "recommendation": "Maybe relevant",
@@ -1774,7 +2169,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08312v1",
       "published": "2026-07-09T09:55:17+00:00",
       "recommendation": "Maybe relevant",
@@ -1812,7 +2207,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
       "published": "2026-07-09T07:28:21+00:00",
       "recommendation": "Maybe relevant",
@@ -1846,7 +2241,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07557v1",
       "published": "2026-07-08T15:51:57+00:00",
       "recommendation": "Maybe relevant",
@@ -1885,7 +2280,7 @@
         "cs.CR",
         "cs.MA"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07097v1",
       "published": "2026-07-08T07:31:37+00:00",
       "recommendation": "Maybe relevant",
@@ -1921,7 +2316,7 @@
         "cs.CL",
         "cs.CR"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.06364v1",
       "published": "2026-07-07T15:00:46+00:00",
       "recommendation": "Maybe relevant",
@@ -1942,6 +2337,402 @@
       "url": "http://arxiv.org/abs/2607.06364v1"
     },
     {
+      "abstract": "Online novel view synthesis from multi-view streaming videos faces a fundamental trade-off: maintaining a persistent, long-horizon memory to reconstruct temporarily occluded regions while operating under strict real-time constraints. While Test-Time Training (TTT) offers a powerful memory mechanism, standard models mandate gradient-based memory updates at every frame to adapt to the changing motion in dynamic scenes. The computational cost of heavy memory updates precludes real-time application and can lead to instability over long contexts. Given that memory updates are more demanding than memory application and video content is largely redundant, we propose to decouple the frequencies of these two processes. Our approach performs periodic memory updates while applying the memory on a per-frame basis, using cross-view attention to manage deformations between the prior memory state and the current frame. To lock in the historical context, we introduce two critical mechanisms: an auxiliary Memory Loss that forces persistent internalization of the scene, and a Memory Caching strategy that regularizes active weights against catastrophic drift. Our method demonstrates real-time, state-of-the-art performance on scenes with dynamic human motion as well as minute-scale online memorization.",
+      "arxiv_id": "2607.15271v1",
+      "authors": [
+        "Baback Elmieh",
+        "Lynn Tsai",
+        "Zeman Li",
+        "Srinivas Kaza",
+        "Tiancheng Sun",
+        "Gabor Csapo",
+        "Ali Behrouz",
+        "Yuan Deng",
+        "Stephen Lombardi",
+        "Steven M. Seitz",
+        "Xuan Luo"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.15271v1",
+      "published": "2026-07-16T17:58:18+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Online novel view synthesis from multi-view streaming videos faces a fundamental trade-off: maintaining a persistent, long-horizon memory to reconstruct temporarily occluded regions while operating under strict real-time constraints.",
+      "title": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "long context"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-07-16T17:58:18+00:00",
+      "url": "http://arxiv.org/abs/2607.15271v1"
+    },
+    {
+      "abstract": "Humanoid control requires natural whole-body coordination, precise real-time responses to control signals, and robust generalization across diverse environmental contexts, making it a cornerstone for generalist embodied agents. Behavior Foundation Models (BFMs) have recently emerged as a promising solution to address these challenges by leveraging large-scale behavioral data to achieve superior expressiveness, versatility and generalization. However, despite growing interest in scaling BFMs to further improve their capabilities, it remains unclear how key factors, including the learning paradigm, behavioral data and model architecture should be coordinated to enable effective scaling. In this work, we revisit the scaling recipe for BFMs and demonstrate that substantial performance gains can be achieved through the coordination of three core components: 1) the learning paradigm of motion tracking that reformulates diverse humanoid control problems as the reproduction of integrated whole-body behaviors in the global frame; 2) the strategic synergy between on-policy rollout quantity and reference motion diversity; and 3) the expressive and scalable model architecture termed Humanoid Transformer that facilitates the natural emergence of structured behavioral representations. Through extensive experiments in both simulation and real-world deployment, we demonstrate that our approach yields significant improvements in control fidelity and task generalization, reducing Mean Per-Keypoint Position Error (MPKPE) on the test set by over 10% in local mode and 82% in global mode compared with existing humanoid controllers. These results establish BFM as a principled and effective foundation for scalable and general-purpose humanoid control.",
+      "arxiv_id": "2607.15163v1",
+      "authors": [
+        "Weishuai Zeng",
+        "Kangning Yin",
+        "Xiaojie Niu",
+        "Shunlin Lu",
+        "Weixiang Zhong",
+        "Jiahe Chen",
+        "Feiyu Jia",
+        "Xiao Chen",
+        "Zirui Wang",
+        "Furui Xu",
+        "Ming Zhou",
+        "Kailin Li",
+        "Weinan Zhang",
+        "He Wang",
+        "Li Yi",
+        "Dahua Lin",
+        "Jiangmiao Pang",
+        "Jingbo Wang"
+      ],
+      "boost_hits": [
+        "scaling"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.15163v1",
+      "published": "2026-07-16T16:08:27+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Humanoid control requires natural whole-body coordination, precise real-time responses to control signals, and robust generalization across diverse environmental contexts, making it a cornerstone for generalist embodied agents.",
+      "title": "Scaling Behavior Foundation Model for Humanoid Robots",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T16:08:27+00:00",
+      "url": "http://arxiv.org/abs/2607.15163v1"
+    },
+    {
+      "abstract": "Recent FPGAs have improved deep learning (DL) inference efficiency through dedicated tensor blocks and in-BRAM computation. ReRAM-based analog in-memory computing (IMC) pushes efficiency further, offering an order-of-magnitude improvement in compute density and energy efficiency over conventional digital logic by performing vector-matrix multiplication (VMM) directly within the ReRAM crossbar; prior work has integrated such IMC blocks into FPGAs for DL inference. However, conventional IMC designs support only static-weight VMM, leaving nonlinear operations and dynamic matrix-matrix multiplication (DIMM) to the FPGA fabric. As a result, the benefits of IMC are largely confined to static-weight models, whereas Transformer-based models, which rely on frequent nonlinear and DIMM operations, gain only limited improvement. Moreover, the ADCs within each IMC block consume more than 70% of its area and power, further limiting system efficiency and scalability. To address these limitations, we propose a novel FPGA architecture that integrates an ADC-free IMC block, replacing the conventional ADC with analog content-addressable memories (ACAMs) that natively perform nonlinear operations inside the block. To fully exploit this block, we conduct an FPGA-aware design-space exploration that determines optimal crossbar dimensions while balancing FPGA area, flexibility, and DL performance, and we develop an efficient mapping that leverages ACAMs to carry out DIMM operations, extending the applicability of IMC to attention computation. On CNN and Transformer-based benchmarks, the proposed architecture achieves up to 40x and 1.9x higher energy efficiency and 4.1x and 2.5x higher area efficiency, respectively. Overall, it significantly improves FPGA DL inference efficiency and sustains robust gains on Transformer-based workloads across long input sequences, advancing domain-specialized FPGA design.",
+      "arxiv_id": "2607.15123v1",
+      "authors": [
+        "Jiajun Hu",
+        "Ruthwik Reddy Sunketa",
+        "Lei Zhao",
+        "Archit Gajjar",
+        "Luca Buonanno",
+        "Aman Arora"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.15123v1",
+      "published": "2026-07-16T15:32:44+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Recent FPGAs have improved deep learning (DL) inference efficiency through dedicated tensor blocks and in-BRAM computation.",
+      "title": "NIFA: Nonlinear IMC enhanced FPGA for efficient ML inference",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T15:32:44+00:00",
+      "url": "http://arxiv.org/abs/2607.15123v1"
+    },
+    {
+      "abstract": "Multimodal models such as CLIP learn a shared embedding space for cross-modal retrieval, but continual adaptation to sequentially arriving data can disrupt the cross-modal alignment acquired from earlier phases. Conventional continual-learning methods return a single checkpoint, which commits every retrieval direction to the same stability-plasticity trade-off. We propose AlphaWiSE, a post-hoc weight-space interpolation method that composes two frozen source checkpoints. For each aligned parameter tensor identified by its checkpoint key, AlphaWiSE fits one scalar interpolation coefficient shared by all tensor entries. The coefficients are fitted on a smaller exemplar memory and used to materialize one interpolated checkpoint. The deployed model has the same architecture and parameter count as either source checkpoint, which does not require additional inference time. Extensive experiments on audio-image-text retrieval show consistent improvements over strong continual-learning baselines across multiple retrieval directions and evaluation metrics.",
+      "arxiv_id": "2607.15094v1",
+      "authors": [
+        "Sarthak Jain",
+        "Qiran Hu",
+        "Zhen Zhu",
+        "Yaoyao Liu"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.15094v1",
+      "published": "2026-07-16T15:07:23+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Multimodal models such as CLIP learn a shared embedding space for cross-modal retrieval, but continual adaptation to sequentially arriving data can disrupt the cross-modal alignment acquired from earlier phases.",
+      "title": "AlphaWiSE: Adaptive Weight Interpolation for Continual Multimodal Representation Learning",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T15:07:23+00:00",
+      "url": "http://arxiv.org/abs/2607.15094v1"
+    },
+    {
+      "abstract": "A growing gap separates inference context lengths from RL post-training: inference systems are approaching million-token contexts, while post-training workloads often remain at 256K tokens or below and rely on length generalization at deployment. The gap is especially important for AI agents, whose observations, tool outputs, documents, and prior decisions accumulate over long trajectories. LongStraw is an architecture-aware execution stack for million-token RL post-training under a fixed GPU budget, instantiated with Group Relative Policy Optimization (GRPO). It evaluates the shared prompt without autograd, retains only model-specific state needed by later tokens, and replays short response branches one at a time, reducing the live training graph at the cost of additional replay time. We implement it for the hybrid recurrent and full-attention Qwen3.6-27B and the compressed-attention mixture-of-experts GLM-5.2. On eight H20 GPUs, LongStraw completes grouped Qwen scoring and response backward at 2.1M positions for groups of 2 and 8; increasing the group size adds only 0.21 GB of peak allocated memory, while a separate stress test reaches 4.46M positions. On 32 H20 GPUs, we validate the end-to-end LongStraw execution path for a 2.1M-token prompt across all 78 layers of GLM-5.2. These experiments establish execution capacity rather than complete training correctness because the captured prompt state is detached and some distributed forward and gradient composition paths remain incomplete.",
+      "arxiv_id": "2607.14952v1",
+      "authors": [
+        "Changhai Zhou",
+        "Kieran Liu",
+        "Yuhua Zhou",
+        "Qian Qiao",
+        "Jun Gao",
+        "Harry Zhang",
+        "Irvine Lu",
+        "Nolan Ho",
+        "Lucian Li",
+        "Andrew Lei",
+        "Cleon Cheng",
+        "Steven Chiang",
+        "Yihang Zeng",
+        "Di Zhang",
+        "Rio Yang",
+        "Kaijie Chen",
+        "Andrew Chen",
+        "Pony Ma",
+        "Weizhong Zhang",
+        "Cheng Jin"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14952v1",
+      "published": "2026-07-16T13:00:32+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. A growing gap separates inference context lengths from RL post-training: inference systems are approaching million-token contexts, while post-training workloads often remain at 256K tokens or below and rely on length generalization at deployment.",
+      "title": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T13:00:32+00:00",
+      "url": "http://arxiv.org/abs/2607.14952v1"
+    },
+    {
+      "abstract": "Real-time video generation demands fast decoding as much as fast denoising, yet current latent video diffusion models rely on 3D convolutional decoders that are slow and memory-intensive at high resolutions or for long video. We introduce FlashDecoder, a fast, memory-efficient pure-Transformer video decoder that decodes latents to pixels frame by frame. At each step, the current frame attends only to a fixed-size window of past frames through a rolling KV cache. The fixed temporal window keeps decoding fast and memory bounded regardless of video length, enabling constant-latency streaming. Because frames are processed sequentially, temporal causality is enforced without explicit attention masks, enabling training at resolutions up to 1080p and matching the reconstruction quality of convolutional decoders. On the Wan2.1 and Wan2.2 latent spaces, FlashDecoder matches each convolutional decoder in reconstruction quality (e.g., 41.55dB vs. 41.49dB PSNR at 1080p) while decoding 3.6x-4.7x faster with up to 11x less memory on a single H100 GPU. With architecture-aware inference optimizations, the speedup widens to 12x.",
+      "arxiv_id": "2607.14898v1",
+      "authors": [
+        "Minguk Kang",
+        "Suha Kwak"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14898v1",
+      "published": "2026-07-16T12:16:12+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Real-time video generation demands fast decoding as much as fast denoising, yet current latent video diffusion models rely on 3D convolutional decoders that are slow and memory-intensive at high resolutions or for long video.",
+      "title": "FlashDecoder: Real-Time Latent-to-Pixel Streaming Decoder with Transformers",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T12:16:12+00:00",
+      "url": "http://arxiv.org/abs/2607.14898v1"
+    },
+    {
+      "abstract": "Multiple instance learning (MIL) has become the main paradigm for whole-slide image (WSI) analysis in computational pathology. However, existing MIL aggregators are still typically trained from scratch for each downstream task, relying on limited slide-level labels to learn both aggregation mechanisms and downstream discriminative representations simultaneously. As a result, they often suffer from unstable optimization, overfitting, and limited transferability. Similar to pretrained ResNet and Vision Transformer models in natural image learning, MIL also requires reusable pretrained initialization. However, high-quality slide-level pretraining data remain scarce, and MIL models are usually lightweight and weakly supervised, making large-scale pretraining difficult in practice. To address this challenge, we propose a distillation-based pretraining framework for MIL, which leverages two slide-level foundation models, TITAN and CARE, as teachers to transfer their representational knowledge into a diverse set of MIL architectures. To effectively balance supervision from different teachers, we further introduce an angular dispersion normalized distillation loss. The distilled weights are then used as initialization for downstream adaptation. We conduct systematic evaluations on 15 benchmark datasets under both linear probing and full-parameter fine-tuning, and further validate its advantages in few-shot scenarios. Experimental results show that pretraining generally improves MIL aggregators over from scratch training, especially in linear-probing and few-shot settings, while maintaining the computational efficiency of lightweight MIL models. Code is available at https://github.com/fu0201/MIL_Pretrained.",
+      "arxiv_id": "2607.14703v1",
+      "authors": [
+        "Mingxi Fu",
+        "Jiawen Li",
+        "Renao Yan",
+        "Jiali Hu",
+        "Qiehe Sun",
+        "Tian Guan",
+        "Yonghong He"
+      ],
+      "boost_hits": [
+        "pretraining"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14703v1",
+      "published": "2026-07-16T08:04:25+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Multiple instance learning (MIL) has become the main paradigm for whole-slide image (WSI) analysis in computational pathology.",
+      "title": "Pretraining Multiple Instance Learning Networks with Multi-Teacher Distillation from Pathology Slide Foundation Models",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T08:04:25+00:00",
+      "url": "http://arxiv.org/abs/2607.14703v1"
+    },
+    {
+      "abstract": "Machine learning (ML) models deployed in sensitive domains such as healthcare, law enforcement, and finance must satisfy not only utility requirements but also fairness and privacy guarantees. While prior work has largely examined how privacy-preserving techniques affect fairness, the inverse question-how fairness-enhancing algorithms influence privacy leakage-remains underexplored. We present the first comprehensive study of how fairness interventions affect membership inference privacy risks at the subpopulation level. By adapting the Likelihood Ratio Attack (LiRA) for subgroup auditing, we uncover privacy disparities that aggregate evaluations obscure. We further analyze how Differential Privacy (DP) interacts with fairness-enhancing methods across different categories, showing that DP's privacy benefits and utility costs are unevenly distributed across subpopulations. Our results demonstrate that fairness interventions do not uniformly increase privacy risk; their impact depends on model architecture, subgroup size, and mitigation strategy. These findings reveal that fairness, privacy, and utility must be jointly evaluated at the subpopulation level, and we introduce the first unified empirical framework to support such auditing in practice.",
+      "arxiv_id": "2607.14607v1",
+      "authors": [
+        "Umid Suleymanov",
+        "Ilhama Novruzova",
+        "Khalid Mammadov",
+        "Natavan Hasanova",
+        "Murat Kantarcioglu"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14607v1",
+      "published": "2026-07-16T06:10:42+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Machine learning (ML) models deployed in sensitive domains such as healthcare, law enforcement, and finance must satisfy not only utility requirements but also fairness and privacy guarantees.",
+      "title": "Auditing Fairness-Privacy Trade-offs: Subpopulation-Level Effects of Fairness-Enhancing Algorithms",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T06:10:42+00:00",
+      "url": "http://arxiv.org/abs/2607.14607v1"
+    },
+    {
+      "abstract": "Qubes OS is a revealing case for security measurement because its architecture makes component boundaries security-relevant. We present a protocol-driven longitudinal analysis of 109 public Qubes Security Bulletins (QSBs, 2011--2025), the official Qubes-maintained Xen Security Advisory (XSA) tracker, and a secondary vulnerability-event sensitivity series. The study measures the public advisory record rather than latent vulnerability incidence or realized compromise. The methodology combines audited deterministic component attribution, change-point analysis, overdispersion checks, severity-proxy weighting, censoring sensitivity, documentary latency lower bounds, and baseline-aware evaluation of vulnerability discovery models (VDMs). The results show persistent upstream dependence in that public record. On the official tracker, 113 of 464 XSAs affect Qubes; under primary labeling, 87 of 109 QSBs (79.8\\%) are attributable to Xen, CPU/microarchitectural, or other upstream components rather than Qubes-core logic, with similar results under weighted views. Change-point analyses identify 2015Q1 as the dominant break in the quarterly advisory series, while post-2018 annual disclosure rates are statistically flat. Poisson inferences are stable under dispersion diagnostics and negative-binomial sensitivity checks. The attribution codebook performs well in a stratified 30-QSB audit, and S-shaped VDMs fit descriptively but do not significantly outperform a rolling-mean baseline in short-horizon forecasts. Overall, the Qubes public advisory record appears stable, but not quiet: disclosure activity plateaus at a higher level than in the earliest years, while the observed burden remains concentrated in upstream trust anchors.",
+      "arxiv_id": "2607.14587v1",
+      "authors": [
+        "Alfonso De Gregorio"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14587v1",
+      "published": "2026-07-16T05:33:55+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Qubes OS is a revealing case for security measurement because its architecture makes component boundaries security-relevant.",
+      "title": "Qubes OS Security in the Public Record",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-16T05:33:55+00:00",
+      "url": "http://arxiv.org/abs/2607.14587v1"
+    },
+    {
+      "abstract": "We report a way to make a frozen small language model both more capable and dramatically cheaper at once, without changing any weights. Verified knowledge is deposited once as a byte-exact key-value (KV) state artifact and later restored, by graft, into a fresh inference context. The restore is bit-exact: under a pinned deterministic configuration, the grafted logits are byte-for-byte identical to a fresh computation (SHA-256 equality), with zero KL divergence and 100% argmax agreement over fifty samples. We show that own-position graft is the unique numerically exact operating point on a model with floating-point rotary encoding, and we verify byte-exactness on two model scales (12B, 31B) and two GPU targets, one through a pre-registered replay. On AIME 2025, a frozen Gemma-4-12B moves from 80.0% to 93.3% once a verified solution library is grafted, above its own 77.5% and its 31B sibling's 89.2% published anchors. On the recurring case, eight problems the base model never solves within a 401,026-token budget are answered from cached verified solutions in 61 total decode tokens, a factor of 6,574 fewer tokens and about 8,700x less energy; the capability claim proper rests on held-out transfer (7 of 7 at 31B). The same byte-exact store widens usable context from 32,768 to 2,854,766 tokens at zero extra accelerator memory, and moves byte-identical between machines of the same architecture. We describe the system at the behavior level; the engine is proprietary, and every reported number is backed by committed input and output hashes so the scoring can be re-checked without it.",
+      "arxiv_id": "2607.14431v1",
+      "authors": [
+        "Sietse Schelpe"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "digest_date": "2026-07-18",
+      "pdf_url": "https://arxiv.org/pdf/2607.14431v1",
+      "published": "2026-07-15T23:55:48+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. We report a way to make a frozen small language model both more capable and dramatically cheaper at once, without changing any weights.",
+      "title": "Smarter and Cheaper at Once: Byte-Exact KV-Cache Grafting Turns a Frozen Small Model into a Verified-Knowledge Flywheel",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-15T23:55:48+00:00",
+      "url": "http://arxiv.org/abs/2607.14431v1"
+    },
+    {
       "abstract": "We investigate how each component of the Transformer feedforward block architecture design determines how much rank survives across depth at initialization. We reinterpret skip connections and normalization, long understood as controlling magnitude, as mechanisms for preserving gradient rank across depth, since the very matrix multiplications and nonlinear activations that make the network expressive also reduce the rank. We show that skip connections trade off rank collapse against ensemble-like behavior, controlled by the relative scales of the branch and the skip: skip connections route the gradient around the residual branch, where rank is lost, rather than along the long gradient paths that encourage the layers to compose. The placement of the normalization layer controls this same tradeoff by setting the branch-to-skip ratio across depth, unifying much of the normalization placement and depth scaling literature, in particular why rank collapses for Post-Norm but plateaus for Pre-Norm. Other aspects of the architecture, like the two-matrix structure that expands and contracts the width, use additional parameters to preserve the representation or branch Jacobian rank. The second matrix decorrelates a coherent mean spike that would grow across blocks with a single matrix and uncentered activation, preventing the residual representation from collapsing. The width expansion between the two matrices keeps the branch Jacobian full rank: applying the rank-reducing activation in this expanded space leaves enough directions to span the original, at a width that follows a Marchenko--Pastur law. The initialization rank of the input--output Jacobian predicts which networks train on CIFAR-10. Taken together, we recast architecture design for deep networks as navigating an intrinsic tradeoff among rank collapse, ensemble-like behavior, and parameter count.",
       "arxiv_id": "2607.14018v1",
       "authors": [
@@ -1954,7 +2745,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.14018v1",
       "published": "2026-07-15T16:50:43+00:00",
       "recommendation": "Maybe relevant",
@@ -1988,7 +2779,7 @@
         "cs.LG",
         "q-fin.CP"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.13929v1",
       "published": "2026-07-15T15:10:10+00:00",
       "recommendation": "Maybe relevant",
@@ -2022,7 +2813,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.13612v1",
       "published": "2026-07-15T08:59:36+00:00",
       "recommendation": "Maybe relevant",
@@ -2059,7 +2850,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.13491v1",
       "published": "2026-07-15T06:37:05+00:00",
       "recommendation": "Maybe relevant",
@@ -2096,7 +2887,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.12909v1",
       "published": "2026-07-14T15:43:41+00:00",
       "recommendation": "Maybe relevant",
@@ -2135,7 +2926,7 @@
         "cs.IR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.12392v1",
       "published": "2026-07-14T06:12:26+00:00",
       "recommendation": "Maybe relevant",
@@ -2173,7 +2964,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.11510v1",
       "published": "2026-07-13T13:00:06+00:00",
       "recommendation": "Maybe relevant",
@@ -2215,7 +3006,7 @@
         "cs.AR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08427v1",
       "published": "2026-07-09T12:49:24+00:00",
       "recommendation": "Maybe relevant",
@@ -2249,7 +3040,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.08234v1",
       "published": "2026-07-09T08:29:38+00:00",
       "recommendation": "Maybe relevant",
@@ -2285,7 +3076,7 @@
         "q-bio.QM",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07425v1",
       "published": "2026-07-08T13:52:50+00:00",
       "recommendation": "Maybe relevant",
@@ -2324,7 +3115,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07219v1",
       "published": "2026-07-08T10:01:33+00:00",
       "recommendation": "Maybe relevant",
@@ -2367,7 +3158,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07179v1",
       "published": "2026-07-08T09:13:59+00:00",
       "recommendation": "Maybe relevant",
@@ -2401,7 +3192,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-17",
+      "digest_date": "2026-07-18",
       "pdf_url": "https://arxiv.org/pdf/2607.07033v1",
       "published": "2026-07-08T06:07:06+00:00",
       "recommendation": "Maybe relevant",
