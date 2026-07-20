@@ -7,10 +7,10 @@ Web dashboard: [index.html](index.html)
 
 Latest digest: [reports/latest.md](reports/latest.md)
 
-Latest run: 2026-07-20
+Latest run: 2026-07-21
 
 ## Preview
 
-# Daily arXiv Paper Radar - 2026-07-20
+# Daily arXiv Paper Radar - 2026-07-21
 
-See the full report in [reports/2026-07-20.md](reports/2026-07-20.md).
+See the full report in [reports/2026-07-21.md](reports/2026-07-21.md).
