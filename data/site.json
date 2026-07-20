@@ -1,9 +1,9 @@
 {
   "dates": [
-    "2026-07-19"
+    "2026-07-20"
   ],
-  "generated_at": "2026-07-18T23:55:50.118531+00:00",
-  "latest_date": "2026-07-19",
+  "generated_at": "2026-07-20T00:02:24.245421+00:00",
+  "latest_date": "2026-07-20",
   "papers": [
     {
       "abstract": "We formulate reinforcement learning (RL) in continuous time with discrete state spaces and possibly arbitrary action spaces via a stochastic control approach, where the state dynamics are modeled as a controlled continuous-time Markov chain (CTMC). We consider policy optimization problems and derive the corresponding policy gradient methods, leading to continuous-time variants of proximal policy optimization (PPO) and group relative policy optimization (GRPO). As a primary application, we develop a complete continuous-time RL framework for fine-tuning score-based discrete diffusion models. The proposed framework enables reward-driven optimization without requiring differentiability on the reward signals. In contrast to the existing GRPO-based approaches that only rely on terminal rewards, our formulation allows intermediate reward or advantage signals to be incorporated throughout the denoising trajectory. Importantly, when specialized to masked diffusion models (MDMs), our framework encompasses a rich class of policy parameterizations over the vocabulary simplex with analytically tractable probability ratios, providing a unified perspective on exploration and policy optimization in MDMs. For masked diffusion large language models (dLLMs), we further propose trajectory subsampling techniques to efficiently estimate computationally prohibitive trajectory likelihoods, reducing the computational cost of computing per-position probability ratios. We showcase the effectiveness of our methods on both low-dimensional entropy-regularized optimization problems and RL post-training of dLLMs on mathematical reasoning and coding tasks.",
@@ -22,7 +22,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14522v1",
       "published": "2026-07-16T03:19:53+00:00",
       "recommendation": "Read closely",
@@ -61,7 +61,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.15200v1",
       "published": "2026-07-16T16:57:34+00:00",
       "recommendation": "Read closely",
@@ -102,7 +102,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.12829v1",
       "published": "2026-07-14T14:48:06+00:00",
       "recommendation": "Read closely",
@@ -147,7 +147,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08056v1",
       "published": "2026-07-09T02:07:30+00:00",
       "recommendation": "Read closely",
@@ -182,7 +182,7 @@
         "cs.AI",
         "cs.SD"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.13013v1",
       "published": "2026-07-14T17:53:22+00:00",
       "recommendation": "Read closely",
@@ -227,7 +227,7 @@
         "cs.AI",
         "cs.DC"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.12696v1",
       "published": "2026-07-14T12:22:55+00:00",
       "recommendation": "Read closely",
@@ -263,7 +263,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
       "published": "2026-07-13T11:52:42+00:00",
       "recommendation": "Read closely",
@@ -307,7 +307,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14647v1",
       "published": "2026-07-16T07:18:05+00:00",
       "recommendation": "Read closely",
@@ -345,7 +345,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14576v1",
       "published": "2026-07-16T05:13:44+00:00",
       "recommendation": "Read closely",
@@ -386,7 +386,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.13394v1",
       "published": "2026-07-15T02:43:16+00:00",
       "recommendation": "Read closely",
@@ -422,7 +422,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08284v1",
       "published": "2026-07-09T09:28:06+00:00",
       "recommendation": "Worth scanning",
@@ -504,7 +504,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08186v1",
       "published": "2026-07-09T07:37:59+00:00",
       "recommendation": "Worth scanning",
@@ -545,7 +545,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07386v1",
       "published": "2026-07-08T13:17:19+00:00",
       "recommendation": "Worth scanning",
@@ -587,7 +587,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.06452v1",
       "published": "2026-07-07T16:12:51+00:00",
       "recommendation": "Worth scanning",
@@ -630,7 +630,7 @@
         "cs.MA",
         "cs.MM"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.15202v1",
       "published": "2026-07-16T16:59:54+00:00",
       "recommendation": "Worth scanning",
@@ -676,7 +676,7 @@
         "cs.LG",
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14530v1",
       "published": "2026-07-16T03:31:03+00:00",
       "recommendation": "Worth scanning",
@@ -713,7 +713,7 @@
         "cs.CL",
         "math.OC"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.12550v1",
       "published": "2026-07-14T09:23:20+00:00",
       "recommendation": "Worth scanning",
@@ -748,7 +748,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
       "published": "2026-07-13T14:05:55+00:00",
       "recommendation": "Worth scanning",
@@ -784,7 +784,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14711v1",
       "published": "2026-07-16T08:22:08+00:00",
       "recommendation": "Worth scanning",
@@ -841,7 +841,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.13431v1",
       "published": "2026-07-15T04:23:22+00:00",
       "recommendation": "Worth scanning",
@@ -878,7 +878,7 @@
         "cs.CY",
         "cs.SE"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.12650v1",
       "published": "2026-07-14T11:33:44+00:00",
       "recommendation": "Worth scanning",
@@ -913,7 +913,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11758v1",
       "published": "2026-07-13T16:22:01+00:00",
       "recommendation": "Worth scanning",
@@ -955,7 +955,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07467v1",
       "published": "2026-07-08T14:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -990,7 +990,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07258v1",
       "published": "2026-07-08T10:46:02+00:00",
       "recommendation": "Worth scanning",
@@ -1026,7 +1026,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.06269v1",
       "published": "2026-07-07T13:34:27+00:00",
       "recommendation": "Worth scanning",
@@ -1065,7 +1065,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.15178v1",
       "published": "2026-07-16T16:33:59+00:00",
       "recommendation": "Worth scanning",
@@ -1099,7 +1099,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.15047v1",
       "published": "2026-07-16T14:26:22+00:00",
       "recommendation": "Worth scanning",
@@ -1135,7 +1135,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.12634v1",
       "published": "2026-07-14T11:11:00+00:00",
       "recommendation": "Worth scanning",
@@ -1171,7 +1171,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11703v1",
       "published": "2026-07-13T15:33:45+00:00",
       "recommendation": "Worth scanning",
@@ -1206,7 +1206,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11400v1",
       "published": "2026-07-13T11:07:57+00:00",
       "recommendation": "Worth scanning",
@@ -1239,7 +1239,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11279v1",
       "published": "2026-07-13T08:59:47+00:00",
       "recommendation": "Worth scanning",
@@ -1285,7 +1285,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11138v1",
       "published": "2026-07-13T06:15:51+00:00",
       "recommendation": "Worth scanning",
@@ -1319,7 +1319,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08601v1",
       "published": "2026-07-09T15:32:54+00:00",
       "recommendation": "Worth scanning",
@@ -1362,7 +1362,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
       "published": "2026-07-09T13:55:55+00:00",
       "recommendation": "Worth scanning",
@@ -1404,7 +1404,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08403v1",
       "published": "2026-07-09T12:28:39+00:00",
       "recommendation": "Worth scanning",
@@ -1443,7 +1443,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08357v1",
       "published": "2026-07-09T11:08:39+00:00",
       "recommendation": "Worth scanning",
@@ -1478,7 +1478,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08288v1",
       "published": "2026-07-09T09:32:03+00:00",
       "recommendation": "Worth scanning",
@@ -1515,7 +1515,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08282v1",
       "published": "2026-07-09T09:23:13+00:00",
       "recommendation": "Worth scanning",
@@ -1551,7 +1551,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08028v1",
       "published": "2026-07-09T01:08:33+00:00",
       "recommendation": "Worth scanning",
@@ -1589,7 +1589,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.06327v1",
       "published": "2026-07-07T14:25:09+00:00",
       "recommendation": "Worth scanning",
@@ -1633,7 +1633,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.13770v1",
       "published": "2026-07-15T12:31:19+00:00",
       "recommendation": "Maybe relevant",
@@ -1663,7 +1663,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11796v1",
       "published": "2026-07-13T16:48:03+00:00",
       "recommendation": "Maybe relevant",
@@ -1697,7 +1697,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
       "published": "2026-07-13T12:54:47+00:00",
       "recommendation": "Maybe relevant",
@@ -1732,7 +1732,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08754v1",
       "published": "2026-07-09T17:51:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1772,7 +1772,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08359v1",
       "published": "2026-07-09T11:17:04+00:00",
       "recommendation": "Maybe relevant",
@@ -1813,7 +1813,7 @@
         "cs.LG",
         "cs.SE"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08010v1",
       "published": "2026-07-09T00:27:13+00:00",
       "recommendation": "Maybe relevant",
@@ -1874,7 +1874,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
       "published": "2026-07-08T17:26:49+00:00",
       "recommendation": "Maybe relevant",
@@ -1909,7 +1909,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
       "published": "2026-07-08T15:46:48+00:00",
       "recommendation": "Maybe relevant",
@@ -1944,7 +1944,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07077v1",
       "published": "2026-07-08T07:08:50+00:00",
       "recommendation": "Maybe relevant",
@@ -1979,7 +1979,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14480v1",
       "published": "2026-07-16T01:53:09+00:00",
       "recommendation": "Maybe relevant",
@@ -2019,7 +2019,7 @@
         "cs.CL",
         "cs.MA"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.12790v1",
       "published": "2026-07-14T14:02:50+00:00",
       "recommendation": "Maybe relevant",
@@ -2062,7 +2062,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
       "published": "2026-07-13T12:58:28+00:00",
       "recommendation": "Maybe relevant",
@@ -2102,7 +2102,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11377v1",
       "published": "2026-07-13T10:40:32+00:00",
       "recommendation": "Maybe relevant",
@@ -2137,7 +2137,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11288v1",
       "published": "2026-07-13T09:07:30+00:00",
       "recommendation": "Maybe relevant",
@@ -2169,7 +2169,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08312v1",
       "published": "2026-07-09T09:55:17+00:00",
       "recommendation": "Maybe relevant",
@@ -2207,7 +2207,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
       "published": "2026-07-09T07:28:21+00:00",
       "recommendation": "Maybe relevant",
@@ -2241,7 +2241,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07557v1",
       "published": "2026-07-08T15:51:57+00:00",
       "recommendation": "Maybe relevant",
@@ -2280,7 +2280,7 @@
         "cs.CR",
         "cs.MA"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07097v1",
       "published": "2026-07-08T07:31:37+00:00",
       "recommendation": "Maybe relevant",
@@ -2316,7 +2316,7 @@
         "cs.CL",
         "cs.CR"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.06364v1",
       "published": "2026-07-07T15:00:46+00:00",
       "recommendation": "Maybe relevant",
@@ -2358,7 +2358,7 @@
         "cs.GR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.15271v1",
       "published": "2026-07-16T17:58:18+00:00",
       "recommendation": "Maybe relevant",
@@ -2408,7 +2408,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.15163v1",
       "published": "2026-07-16T16:08:27+00:00",
       "recommendation": "Maybe relevant",
@@ -2446,7 +2446,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.15123v1",
       "published": "2026-07-16T15:32:44+00:00",
       "recommendation": "Maybe relevant",
@@ -2482,7 +2482,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.15094v1",
       "published": "2026-07-16T15:07:23+00:00",
       "recommendation": "Maybe relevant",
@@ -2534,7 +2534,7 @@
         "cs.LG",
         "cs.DC"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14952v1",
       "published": "2026-07-16T13:00:32+00:00",
       "recommendation": "Maybe relevant",
@@ -2568,7 +2568,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14898v1",
       "published": "2026-07-16T12:16:12+00:00",
       "recommendation": "Maybe relevant",
@@ -2607,7 +2607,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14703v1",
       "published": "2026-07-16T08:04:25+00:00",
       "recommendation": "Maybe relevant",
@@ -2644,7 +2644,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14607v1",
       "published": "2026-07-16T06:10:42+00:00",
       "recommendation": "Maybe relevant",
@@ -2677,7 +2677,7 @@
         "cs.CR",
         "cs.CL"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14587v1",
       "published": "2026-07-16T05:33:55+00:00",
       "recommendation": "Maybe relevant",
@@ -2712,7 +2712,7 @@
         "cs.LG",
         "cs.PF"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14431v1",
       "published": "2026-07-15T23:55:48+00:00",
       "recommendation": "Maybe relevant",
@@ -2745,7 +2745,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.14018v1",
       "published": "2026-07-15T16:50:43+00:00",
       "recommendation": "Maybe relevant",
@@ -2779,7 +2779,7 @@
         "cs.LG",
         "q-fin.CP"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.13929v1",
       "published": "2026-07-15T15:10:10+00:00",
       "recommendation": "Maybe relevant",
@@ -2813,7 +2813,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.13612v1",
       "published": "2026-07-15T08:59:36+00:00",
       "recommendation": "Maybe relevant",
@@ -2850,7 +2850,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.13491v1",
       "published": "2026-07-15T06:37:05+00:00",
       "recommendation": "Maybe relevant",
@@ -2887,7 +2887,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.12909v1",
       "published": "2026-07-14T15:43:41+00:00",
       "recommendation": "Maybe relevant",
@@ -2926,7 +2926,7 @@
         "cs.IR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.12392v1",
       "published": "2026-07-14T06:12:26+00:00",
       "recommendation": "Maybe relevant",
@@ -2964,7 +2964,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.11510v1",
       "published": "2026-07-13T13:00:06+00:00",
       "recommendation": "Maybe relevant",
@@ -3006,7 +3006,7 @@
         "cs.AR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08427v1",
       "published": "2026-07-09T12:49:24+00:00",
       "recommendation": "Maybe relevant",
@@ -3040,7 +3040,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.08234v1",
       "published": "2026-07-09T08:29:38+00:00",
       "recommendation": "Maybe relevant",
@@ -3076,7 +3076,7 @@
         "q-bio.QM",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07425v1",
       "published": "2026-07-08T13:52:50+00:00",
       "recommendation": "Maybe relevant",
@@ -3115,7 +3115,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07219v1",
       "published": "2026-07-08T10:01:33+00:00",
       "recommendation": "Maybe relevant",
@@ -3158,7 +3158,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07179v1",
       "published": "2026-07-08T09:13:59+00:00",
       "recommendation": "Maybe relevant",
@@ -3192,7 +3192,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-19",
+      "digest_date": "2026-07-20",
       "pdf_url": "https://arxiv.org/pdf/2607.07033v1",
       "published": "2026-07-08T06:07:06+00:00",
       "recommendation": "Maybe relevant",
