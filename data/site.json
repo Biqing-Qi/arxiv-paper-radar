@@ -1,9 +1,9 @@
 {
   "dates": [
-    "2026-07-30"
+    "2026-07-31"
   ],
-  "generated_at": "2026-07-30T00:06:28.791102+00:00",
-  "latest_date": "2026-07-30",
+  "generated_at": "2026-07-31T00:10:09.810311+00:00",
+  "latest_date": "2026-07-31",
   "papers": [
     {
       "abstract": "We formulate reinforcement learning (RL) in continuous time with discrete state spaces and possibly arbitrary action spaces via a stochastic control approach, where the state dynamics are modeled as a controlled continuous-time Markov chain (CTMC). We consider policy optimization problems and derive the corresponding policy gradient methods, leading to continuous-time variants of proximal policy optimization (PPO) and group relative policy optimization (GRPO). As a primary application, we develop a complete continuous-time RL framework for fine-tuning score-based discrete diffusion models. The proposed framework enables reward-driven optimization without requiring differentiability on the reward signals. In contrast to the existing GRPO-based approaches that only rely on terminal rewards, our formulation allows intermediate reward or advantage signals to be incorporated throughout the denoising trajectory. Importantly, when specialized to masked diffusion models (MDMs), our framework encompasses a rich class of policy parameterizations over the vocabulary simplex with analytically tractable probability ratios, providing a unified perspective on exploration and policy optimization in MDMs. For masked diffusion large language models (dLLMs), we further propose trajectory subsampling techniques to efficiently estimate computationally prohibitive trajectory likelihoods, reducing the computational cost of computing per-position probability ratios. We showcase the effectiveness of our methods on both low-dimensional entropy-regularized optimization problems and RL post-training of dLLMs on mathematical reasoning and coding tasks.",
@@ -22,7 +22,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14522v1",
       "published": "2026-07-16T03:19:53+00:00",
       "recommendation": "Read closely",
@@ -61,7 +61,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.15200v1",
       "published": "2026-07-16T16:57:34+00:00",
       "recommendation": "Read closely",
@@ -96,7 +96,7 @@
         "cs.CL",
         "cs.PF"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.21535v1",
       "published": "2026-07-23T17:21:44+00:00",
       "recommendation": "Read closely",
@@ -135,7 +135,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.20216v1",
       "published": "2026-07-22T14:36:10+00:00",
       "recommendation": "Read closely",
@@ -176,7 +176,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.12829v1",
       "published": "2026-07-14T14:48:06+00:00",
       "recommendation": "Read closely",
@@ -221,7 +221,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08056v1",
       "published": "2026-07-09T02:07:30+00:00",
       "recommendation": "Read closely",
@@ -243,6 +243,50 @@
       "url": "http://arxiv.org/abs/2607.08056v1"
     },
     {
+      "abstract": "Traditional search systems are optimized to retrieve items that strictly match a query, often prioritizing precision over recall. In e-commerce marketplaces and particularly grocery, this paradigm is limiting, as user satisfaction and commercial outcomes depend heavily on the discoverability of substitute, complementary, and thematically related items. In this paper, we present a scalable system for discovery-augmented search that leverages intent-conditioned recall expansion. Our approach generates implicit user intents to expand candidate recall while maintaining relevance. The system addresses the cost-quality tradeoff of generative retrieval through a two-stage hybrid architecture. First, we leverage closed-weight large language models (LLMs) to maximize discoverability for head queries. To extend these benefits to tail queries, we then introduce a finetuned small language model (SLM), trained via LoRA adapters and teacher-student distillation. We evaluate the system using a rigorous dual framework: (a) LLM-as-a-judge metrics validated against human preferences for semantic quality, and (b) end-to-end session-level purchase analysis. Results demonstrate that our approach improves both intent generation quality and downstream retrieval effectiveness, extending discovery coverage from approximately 60% to 80% of query traffic at roughly 30% of the teacher model's inference cost, offering a viable path for deployment in large-scale marketplaces. Beyond relevance gains, discovery-augmented search may serve as a marketplace-balancing mechanism, giving long-tail and emerging supply an opportunity for query-conditioned exposure.",
+      "arxiv_id": "2607.27172v1",
+      "authors": [
+        "Ji Xin",
+        "Xiao Xiao",
+        "Ishan Bhatt",
+        "Vinesh Gudla",
+        "Trace Levinson",
+        "Raochuan Fan",
+        "Shishir Kumar Prasad",
+        "Prakash Putta",
+        "Tejaswi Tenneti"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "inference"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-31",
+      "pdf_url": "https://arxiv.org/pdf/2607.27172v1",
+      "published": "2026-07-29T17:46:35+00:00",
+      "recommendation": "Read closely",
+      "score": 11,
+      "summary": "Likely relevant to Model Architecture. Traditional search systems are optimized to retrieve items that strictly match a query, often prioritizing precision over recall.",
+      "title": "Improving Item Discoverability in e-Commerce Search via Related Intent Generation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "hybrid architecture",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 6
+        }
+      ],
+      "updated": "2026-07-29T17:46:35+00:00",
+      "url": "http://arxiv.org/abs/2607.27172v1"
+    },
+    {
       "abstract": "Automatic speech recognition is dominated by autoregressive decoders that emit one token at a time. We ask whether a discrete diffusion language model can transcribe speech instead, refining a whole transcript in parallel over a small number of denoising steps. We train an audio-native interface for DiffusionGemma, a 26B mixture-of-experts model that generates text by uniform, random-token discrete diffusion rather than the absorbing-mask scheme common to recent diffusion language models. A frozen Whisper encoder supplies acoustic features, a lightweight projector maps them into the model embedding space, and low-rank adapters let the frozen backbone attend to the new modality. About 42M parameters are trained, which is 0.16 percent of the backbone. We find that the natural training objectives fail to ground the audio because their gradient reaches the projector only through attention that has already dismissed it. A connectionist temporal classification loss applied through the frozen output head breaks this deadlock. The resulting model reaches 6.6 percent word error rate on LibriSpeech test-clean, transcribes in roughly eight parallel steps regardless of utterance length, and uses a single adapter trained on six languages, which we evaluate here on English, Hindi, and Mandarin.",
       "arxiv_id": "2607.13013v1",
       "authors": [
@@ -256,7 +300,7 @@
         "cs.AI",
         "cs.SD"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.13013v1",
       "published": "2026-07-14T17:53:22+00:00",
       "recommendation": "Read closely",
@@ -301,7 +345,7 @@
         "cs.AI",
         "cs.DC"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.12696v1",
       "published": "2026-07-14T12:22:55+00:00",
       "recommendation": "Read closely",
@@ -337,7 +381,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
       "published": "2026-07-13T11:52:42+00:00",
       "recommendation": "Read closely",
@@ -369,7 +413,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24306v1",
       "published": "2026-07-27T11:49:50+00:00",
       "recommendation": "Read closely",
@@ -414,7 +458,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17715v1",
       "published": "2026-07-20T09:09:23+00:00",
       "recommendation": "Read closely",
@@ -457,7 +501,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14647v1",
       "published": "2026-07-16T07:18:05+00:00",
       "recommendation": "Read closely",
@@ -495,7 +539,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14576v1",
       "published": "2026-07-16T05:13:44+00:00",
       "recommendation": "Read closely",
@@ -536,7 +580,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.13394v1",
       "published": "2026-07-15T02:43:16+00:00",
       "recommendation": "Read closely",
@@ -572,7 +616,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24555v1",
       "published": "2026-07-27T15:28:52+00:00",
       "recommendation": "Worth scanning",
@@ -609,7 +653,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24507v1",
       "published": "2026-07-27T14:40:26+00:00",
       "recommendation": "Worth scanning",
@@ -651,7 +695,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.21291v1",
       "published": "2026-07-23T13:13:04+00:00",
       "recommendation": "Worth scanning",
@@ -686,7 +730,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08284v1",
       "published": "2026-07-09T09:28:06+00:00",
       "recommendation": "Worth scanning",
@@ -768,7 +812,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08186v1",
       "published": "2026-07-09T07:37:59+00:00",
       "recommendation": "Worth scanning",
@@ -809,7 +853,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07386v1",
       "published": "2026-07-08T13:17:19+00:00",
       "recommendation": "Worth scanning",
@@ -851,7 +895,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.06452v1",
       "published": "2026-07-07T16:12:51+00:00",
       "recommendation": "Worth scanning",
@@ -892,7 +936,7 @@
         "cs.GR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24665v1",
       "published": "2026-07-27T17:05:04+00:00",
       "recommendation": "Worth scanning",
@@ -927,7 +971,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24371v1",
       "published": "2026-07-27T12:45:27+00:00",
       "recommendation": "Worth scanning",
@@ -962,7 +1006,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24331v1",
       "published": "2026-07-27T12:08:56+00:00",
       "recommendation": "Worth scanning",
@@ -996,7 +1040,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.21384v1",
       "published": "2026-07-23T14:47:00+00:00",
       "recommendation": "Worth scanning",
@@ -1040,7 +1084,7 @@
         "cs.MA",
         "cs.MM"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.15202v1",
       "published": "2026-07-16T16:59:54+00:00",
       "recommendation": "Worth scanning",
@@ -1086,7 +1130,7 @@
         "cs.LG",
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14530v1",
       "published": "2026-07-16T03:31:03+00:00",
       "recommendation": "Worth scanning",
@@ -1123,7 +1167,7 @@
         "cs.CL",
         "math.OC"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.12550v1",
       "published": "2026-07-14T09:23:20+00:00",
       "recommendation": "Worth scanning",
@@ -1158,7 +1202,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
       "published": "2026-07-13T14:05:55+00:00",
       "recommendation": "Worth scanning",
@@ -1197,7 +1241,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24593v1",
       "published": "2026-07-27T15:58:07+00:00",
       "recommendation": "Worth scanning",
@@ -1296,7 +1340,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.20145v1",
       "published": "2026-07-22T13:49:17+00:00",
       "recommendation": "Worth scanning",
@@ -1332,7 +1376,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14711v1",
       "published": "2026-07-16T08:22:08+00:00",
       "recommendation": "Worth scanning",
@@ -1389,7 +1433,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.13431v1",
       "published": "2026-07-15T04:23:22+00:00",
       "recommendation": "Worth scanning",
@@ -1426,7 +1470,7 @@
         "cs.CY",
         "cs.SE"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.12650v1",
       "published": "2026-07-14T11:33:44+00:00",
       "recommendation": "Worth scanning",
@@ -1461,7 +1505,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11758v1",
       "published": "2026-07-13T16:22:01+00:00",
       "recommendation": "Worth scanning",
@@ -1503,7 +1547,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07467v1",
       "published": "2026-07-08T14:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -1538,7 +1582,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07258v1",
       "published": "2026-07-08T10:46:02+00:00",
       "recommendation": "Worth scanning",
@@ -1574,7 +1618,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.06269v1",
       "published": "2026-07-07T13:34:27+00:00",
       "recommendation": "Worth scanning",
@@ -1593,6 +1637,42 @@
       ],
       "updated": "2026-07-07T13:34:27+00:00",
       "url": "http://arxiv.org/abs/2607.06269v1"
+    },
+    {
+      "abstract": "Multimodal large language models (MLLMs) have demonstrated remarkable capabilities by integrating visual and textual understanding within a unified transformer architecture. However, fine-tuning all parameters of these models for visual instruction tuning is computationally expensive and often unnecessary, as the representation requirements for visual and textual tokens diverge significantly in the deeper layers of the network. In this paper, we propose Decoupled Visual Processing (DVP), an efficient training framework that replaces the upper decoder layers of a pretrained LLM with a lightweight, independently trainable single transformer block dedicated exclusively to visual token processing. Specifically, after shared processing through the first half of the decoder layers, visual and textual tokens are split: visual tokens are routed through a newly initialized single transformer block while textual tokens continue through the original frozen decoder layers. The two streams are then concatenated before the language modeling head. During training, only the single transformer block is updated, dramatically reducing the number of trainable parameters. Experiments on the LLaVA-1.5 framework demonstrate that DVP achieves competitive performance on MME, POPE, and ChartQA benchmarks while training only a fraction of the total parameters, suggesting that visual representations in MLLMs can be effectively learned through a decoupled, parameter-efficient pathway.",
+      "arxiv_id": "2607.26596v1",
+      "authors": [
+        "Mingkuan Feng",
+        "Zhengqi Wen",
+        "Jianhua Tao"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-31",
+      "pdf_url": "https://arxiv.org/pdf/2607.26596v1",
+      "published": "2026-07-29T08:16:28+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. Multimodal large language models (MLLMs) have demonstrated remarkable capabilities by integrating visual and textual understanding within a unified transformer architecture.",
+      "title": "Decoupled Visual Processing: Efficient Multimodal Adaptation via Modality-Specific Transformer Substitution",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-29T08:16:28+00:00",
+      "url": "http://arxiv.org/abs/2607.26596v1"
     },
     {
       "abstract": "Multimodal large language models (MLLMs) hold immense potential to revolutionize clinical practice, yet deploying them in the medical domain is fundamentally a vision-centric challenge: models must absorb knowledge from heterogeneous 2D and 3D medical images, and evaluation protocols must align with radiologists' clinical practice and provide an accurate, fine-grained and factualness-driven assessment. In this paper, we introduce ClinFusion, a vision-centric MLLM designed for holistic medical understanding that systematically addresses these limitations. We propose a compositional and cascaded vision encoder architecture featuring a Cascade Spatial-Aware Locality Fusion operator that unifies diverse 2D and native 3D medical image understanding within a fused encoder. We further introduce a vision-grounded evaluation framework, including MedIF-Bench for instruction-following assessment and a region-of-interest-grounded method for clinically aligned and factualness-driven report generation evaluation. We show that ClinFusion sets a new state-of-the-art across a comprehensive suite of 2D and 3D multimodal medical benchmarks---spanning visual question answering, report generation, and instruction following---as well as textual medical tasks, outperforming leading open-source medical MLLMs (\\textit{e.g.}, Hulu-Med, Lingshu) on 20 out of 24 benchmarks and demonstrating multimodal capabilities better than powerful proprietary models such as GPT-5.2 and Gemini-3-Flash on 13 out of 16 benchmarks, and can be further augmented with agentic tool use for retrieval-augmented and tool-assisted clinical workflows. A blinded evaluation by board-certified radiologists confirms that ClinFusion produces the highest-ranked reports, and validates our RoI-grounded metric as achieving the strongest correlation with expert judgment among all automatic evaluation metrics examined.",
@@ -1632,7 +1712,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24743v1",
       "published": "2026-07-27T17:59:49+00:00",
       "recommendation": "Worth scanning",
@@ -1670,7 +1750,7 @@
         "cs.AI",
         "cs.ET"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24714v1",
       "published": "2026-07-27T17:51:18+00:00",
       "recommendation": "Worth scanning",
@@ -2105,7 +2185,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24653v1",
       "published": "2026-07-27T16:49:54+00:00",
       "recommendation": "Worth scanning",
@@ -2141,7 +2221,7 @@
         "cs.AI",
         "cs.DL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24512v1",
       "published": "2026-07-27T14:53:40+00:00",
       "recommendation": "Worth scanning",
@@ -2174,7 +2254,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24352v1",
       "published": "2026-07-27T12:31:25+00:00",
       "recommendation": "Worth scanning",
@@ -2210,7 +2290,7 @@
         "cs.CL",
         "cs.SD"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24030v1",
       "published": "2026-07-27T05:55:50+00:00",
       "recommendation": "Worth scanning",
@@ -2244,7 +2324,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.20214v1",
       "published": "2026-07-22T14:34:49+00:00",
       "recommendation": "Worth scanning",
@@ -2281,7 +2361,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.18232v1",
       "published": "2026-07-20T17:58:31+00:00",
       "recommendation": "Worth scanning",
@@ -2323,7 +2403,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.18213v1",
       "published": "2026-07-20T17:47:44+00:00",
       "recommendation": "Worth scanning",
@@ -2370,7 +2450,7 @@
         "eess.SY",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.18147v1",
       "published": "2026-07-20T16:45:13+00:00",
       "recommendation": "Worth scanning",
@@ -2407,7 +2487,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17883v1",
       "published": "2026-07-20T12:34:44+00:00",
       "recommendation": "Worth scanning",
@@ -2441,7 +2521,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17710v1",
       "published": "2026-07-20T09:06:15+00:00",
       "recommendation": "Worth scanning",
@@ -2480,7 +2560,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.15178v1",
       "published": "2026-07-16T16:33:59+00:00",
       "recommendation": "Worth scanning",
@@ -2514,7 +2594,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.15047v1",
       "published": "2026-07-16T14:26:22+00:00",
       "recommendation": "Worth scanning",
@@ -2550,7 +2630,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.12634v1",
       "published": "2026-07-14T11:11:00+00:00",
       "recommendation": "Worth scanning",
@@ -2586,7 +2666,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11703v1",
       "published": "2026-07-13T15:33:45+00:00",
       "recommendation": "Worth scanning",
@@ -2621,7 +2701,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11400v1",
       "published": "2026-07-13T11:07:57+00:00",
       "recommendation": "Worth scanning",
@@ -2654,7 +2734,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11279v1",
       "published": "2026-07-13T08:59:47+00:00",
       "recommendation": "Worth scanning",
@@ -2700,7 +2780,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11138v1",
       "published": "2026-07-13T06:15:51+00:00",
       "recommendation": "Worth scanning",
@@ -2734,7 +2814,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08601v1",
       "published": "2026-07-09T15:32:54+00:00",
       "recommendation": "Worth scanning",
@@ -2777,7 +2857,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
       "published": "2026-07-09T13:55:55+00:00",
       "recommendation": "Worth scanning",
@@ -2819,7 +2899,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08403v1",
       "published": "2026-07-09T12:28:39+00:00",
       "recommendation": "Worth scanning",
@@ -2858,7 +2938,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08357v1",
       "published": "2026-07-09T11:08:39+00:00",
       "recommendation": "Worth scanning",
@@ -2893,7 +2973,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08288v1",
       "published": "2026-07-09T09:32:03+00:00",
       "recommendation": "Worth scanning",
@@ -2930,7 +3010,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08282v1",
       "published": "2026-07-09T09:23:13+00:00",
       "recommendation": "Worth scanning",
@@ -2966,7 +3046,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08028v1",
       "published": "2026-07-09T01:08:33+00:00",
       "recommendation": "Worth scanning",
@@ -3004,7 +3084,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.06327v1",
       "published": "2026-07-07T14:25:09+00:00",
       "recommendation": "Worth scanning",
@@ -3025,6 +3105,39 @@
       "url": "http://arxiv.org/abs/2607.06327v1"
     },
     {
+      "abstract": "State-of-the-art intracortical brain-to-text systems pair a neural-sequence phone decoder with an external language model. Two design axes remain underexplored: whether selective state-space models (Mamba) improve on recurrent decoders, and how the output target (phonetic vs.\\ character) interacts with that choice. On the public Brain-to-Text '25 benchmark, we study a controlled 2x2 grid (GRU vs.\\ hybrid Mamba decoder; phonetic vs.\\ character targets) trained with a CTC objective under one reproducible protocol. The recurrent baseline remains strongest: the best phonetic GRU reaches 12.62\\% PER and 21.19\\% WER, while the best textual GRU after LM rescoring reaches 13.39\\% CER and 26.28\\% WER. The Mamba hybrid is competitive but does not surpass it. Ablations isolate architectural contributions, and error analysis shows representation-dependent failures: articulatory-like phoneme confusions vs.\\ lexical and word-boundary errors.",
+      "arxiv_id": "2607.26751v1",
+      "authors": [
+        "Lucas Zamora Vera",
+        "Jose A. Gonzalez-Lopez"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "eess.SP"
+      ],
+      "digest_date": "2026-07-31",
+      "pdf_url": "https://arxiv.org/pdf/2607.26751v1",
+      "published": "2026-07-29T10:46:08+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. State-of-the-art intracortical brain-to-text systems pair a neural-sequence phone decoder with an external language model.",
+      "title": "Phoneme- vs. Character-Level Targets and Selective State-Space Models for Intracortical Brain-to-Text",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "mamba"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-07-29T10:46:08+00:00",
+      "url": "http://arxiv.org/abs/2607.26751v1"
+    },
+    {
       "abstract": "Entity matching identifies records that refer to the same real-world entity. Language models can be adapted to this task through bi-encoder, cross-encoder, and generative matcher architectures. However, prior studies often conflate matcher architecture with differences in model backbone, model variant(reflecting different pretraining objectives), and model size, making it difficult to isolate the sources of performance gains. We address this issue through a controlled factorial study spanning three matcher architectures, three model variants and three model sizes from the Qwen3 family, and nine datasets, totaling 1,215 fine-tuning runs. We also evaluate cross-dataset transferability and computational cost. Our results show that model variant is critical for bi-encoders: embedding-oriented variants provide stronger initialization and more favorable representation geometry predictive of downstream matching performance. Cross-encoders retain a consistent advantage over bi-encoders because they jointly encode record pairs rather than representing each record independently, although larger models partially narrow this gap. Generative matchers do not universally outperform cross-encoders. Instead, their advantages concentrate under distribution shift, including subtle unseen differences in record schemas and cross-dataset transfer. We further find that larger models rely more heavily on shortcut learning and therefore do not necessarily perform better. These findings clarify the factors underlying performance differences across matcher architectures and motivate future research and benchmark designs that better disentangle architectural choices from model-level factors while explicitly evaluating distribution shift and cross-dataset transferability. We release our experimental results, code, training scripts, and evaluation data at https://github.com/Jantory/llm-trained-matcher.",
       "arxiv_id": "2607.24688v1",
       "authors": [
@@ -3043,7 +3156,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24688v1",
       "published": "2026-07-27T17:29:18+00:00",
       "recommendation": "Maybe relevant",
@@ -3075,7 +3188,7 @@
         "cs.AI",
         "cs.NE"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24519v1",
       "published": "2026-07-27T14:59:42+00:00",
       "recommendation": "Maybe relevant",
@@ -3108,7 +3221,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24176v1",
       "published": "2026-07-27T09:02:44+00:00",
       "recommendation": "Maybe relevant",
@@ -3145,7 +3258,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.21372v1",
       "published": "2026-07-23T14:37:30+00:00",
       "recommendation": "Maybe relevant",
@@ -3181,7 +3294,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.19787v1",
       "published": "2026-07-22T06:10:53+00:00",
       "recommendation": "Maybe relevant",
@@ -3214,7 +3327,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.18228v1",
       "published": "2026-07-20T17:58:05+00:00",
       "recommendation": "Maybe relevant",
@@ -3247,7 +3360,7 @@
         "math.AP",
         "math.NA"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.18043v1",
       "published": "2026-07-20T15:12:09+00:00",
       "recommendation": "Maybe relevant",
@@ -3285,7 +3398,7 @@
         "cs.CR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17786v1",
       "published": "2026-07-20T10:20:32+00:00",
       "recommendation": "Maybe relevant",
@@ -3321,7 +3434,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17624v1",
       "published": "2026-07-20T07:26:17+00:00",
       "recommendation": "Maybe relevant",
@@ -3365,7 +3478,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.13770v1",
       "published": "2026-07-15T12:31:19+00:00",
       "recommendation": "Maybe relevant",
@@ -3395,7 +3508,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11796v1",
       "published": "2026-07-13T16:48:03+00:00",
       "recommendation": "Maybe relevant",
@@ -3429,7 +3542,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
       "published": "2026-07-13T12:54:47+00:00",
       "recommendation": "Maybe relevant",
@@ -3464,7 +3577,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08754v1",
       "published": "2026-07-09T17:51:50+00:00",
       "recommendation": "Maybe relevant",
@@ -3504,7 +3617,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08359v1",
       "published": "2026-07-09T11:17:04+00:00",
       "recommendation": "Maybe relevant",
@@ -3545,7 +3658,7 @@
         "cs.LG",
         "cs.SE"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08010v1",
       "published": "2026-07-09T00:27:13+00:00",
       "recommendation": "Maybe relevant",
@@ -3606,7 +3719,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
       "published": "2026-07-08T17:26:49+00:00",
       "recommendation": "Maybe relevant",
@@ -3641,7 +3754,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
       "published": "2026-07-08T15:46:48+00:00",
       "recommendation": "Maybe relevant",
@@ -3676,7 +3789,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07077v1",
       "published": "2026-07-08T07:08:50+00:00",
       "recommendation": "Maybe relevant",
@@ -3715,7 +3828,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24730v1",
       "published": "2026-07-27T17:57:02+00:00",
       "recommendation": "Maybe relevant",
@@ -3748,7 +3861,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24434v1",
       "published": "2026-07-27T13:44:42+00:00",
       "recommendation": "Maybe relevant",
@@ -3781,7 +3894,7 @@
         "cs.AI",
         "cs.IR"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.21503v1",
       "published": "2026-07-23T16:51:31+00:00",
       "recommendation": "Maybe relevant",
@@ -3820,7 +3933,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.21354v1",
       "published": "2026-07-23T14:18:01+00:00",
       "recommendation": "Maybe relevant",
@@ -3856,7 +3969,7 @@
         "cs.AI",
         "econ.GN"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.21268v1",
       "published": "2026-07-23T12:40:47+00:00",
       "recommendation": "Maybe relevant",
@@ -3888,7 +4001,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.20402v1",
       "published": "2026-07-22T17:38:39+00:00",
       "recommendation": "Maybe relevant",
@@ -3930,7 +4043,7 @@
         "cs.RO",
         "eess.SY"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17951v1",
       "published": "2026-07-20T13:52:24+00:00",
       "recommendation": "Maybe relevant",
@@ -3967,7 +4080,7 @@
         "cs.CR",
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17535v1",
       "published": "2026-07-20T04:27:50+00:00",
       "recommendation": "Maybe relevant",
@@ -4002,7 +4115,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14480v1",
       "published": "2026-07-16T01:53:09+00:00",
       "recommendation": "Maybe relevant",
@@ -4042,7 +4155,7 @@
         "cs.CL",
         "cs.MA"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.12790v1",
       "published": "2026-07-14T14:02:50+00:00",
       "recommendation": "Maybe relevant",
@@ -4085,7 +4198,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
       "published": "2026-07-13T12:58:28+00:00",
       "recommendation": "Maybe relevant",
@@ -4125,7 +4238,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11377v1",
       "published": "2026-07-13T10:40:32+00:00",
       "recommendation": "Maybe relevant",
@@ -4160,7 +4273,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11288v1",
       "published": "2026-07-13T09:07:30+00:00",
       "recommendation": "Maybe relevant",
@@ -4192,7 +4305,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08312v1",
       "published": "2026-07-09T09:55:17+00:00",
       "recommendation": "Maybe relevant",
@@ -4230,7 +4343,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
       "published": "2026-07-09T07:28:21+00:00",
       "recommendation": "Maybe relevant",
@@ -4264,7 +4377,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07557v1",
       "published": "2026-07-08T15:51:57+00:00",
       "recommendation": "Maybe relevant",
@@ -4303,7 +4416,7 @@
         "cs.CR",
         "cs.MA"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07097v1",
       "published": "2026-07-08T07:31:37+00:00",
       "recommendation": "Maybe relevant",
@@ -4339,7 +4452,7 @@
         "cs.CL",
         "cs.CR"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.06364v1",
       "published": "2026-07-07T15:00:46+00:00",
       "recommendation": "Maybe relevant",
@@ -4360,6 +4473,79 @@
       "url": "http://arxiv.org/abs/2607.06364v1"
     },
     {
+      "abstract": "Recent advancements in Computer Go, driven by AlphaZero and MuZero, rely heavily on Monte Carlo Tree Search (MCTS) to correct the errors of the neural network policy. While effective on massive computational clusters, this dependence creates a critical bottleneck on consumer-grade hardware, where the computational cost of tree management severely limits inference rates. Furthermore, without deep search, these models suffer from hallucination, proposing moves with high confidence that are strategically fatal. This paper introduces a novel Belief-Guided architecture that disentangles the Policy head from a distinct Belief head. Unlike traditional value functions, the Belief head acts as an internal simulator and independent critic, modeling epistemic uncertainty and strategic stability. By integrating memory mechanisms (Transformer/GRU) to handle long-term dependencies and the Ko rule, and utilizing a gating mechanism to filter overconfident policy errors, our model shifts the burden of intelligence from runtime search to parametric \"intuition.\" Experimental results demonstrate that this approach significantly improves search-free win rates and reduces hallucination, enabling professional-level play on limited hardware where massive MCTS is infeasible.",
+      "arxiv_id": "2607.26946v1",
+      "authors": [
+        "Mehrad Yaghoubi",
+        "Azam Bastanfard",
+        "Abbas Jalilvand",
+        "Ashkan Rezaei"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-31",
+      "pdf_url": "https://arxiv.org/pdf/2607.26946v1",
+      "published": "2026-07-29T14:15:29+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Recent advancements in Computer Go, driven by AlphaZero and MuZero, rely heavily on Monte Carlo Tree Search (MCTS) to correct the errors of the neural network policy.",
+      "title": "Belief-Guided Decision Making with Uncertainty Gating in the Game of Go",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-29T14:15:29+00:00",
+      "url": "http://arxiv.org/abs/2607.26946v1"
+    },
+    {
+      "abstract": "Federated learning (FL) enables collaborative learning over decentralized data silos without centralizing raw data. However, heterogeneous local architectures often induce non-aligned representation spaces, making it difficult to transfer global knowledge across silos. Existing paradigms share this knowledge as model parameters, distilled predictions, or class prototypes, yet all encode it in an absolute space that must be aligned across clients. Heterogeneous backbones break this alignment, so the shared knowledge becomes unreliable and misleads local training. We propose FedTopo, a relation-level framework that encodes global knowledge as class relation topology, capturing how classes relate within each client rather than where they lie in feature space. Each client builds its relation topology from local prototypes and uploads it with class statistics. The server then aggregates these relations in a reliability-aware manner that down-weights weakly supported ones, and broadcasts the global topology to clients. The global topology guides local training by emphasizing topology-similar negative classes. Experiments on three datasets under eight heterogeneous backbones show that FedTopo consistently outperforms parameter-, distillation-, and prototype-sharing baselines, with low communication and no inference overhead. Our code is available at https://github.com/Zhaoyang-Ma/FedTopo.",
+      "arxiv_id": "2607.26801v1",
+      "authors": [
+        "Zhaoyang Ma",
+        "Zhihao Wu",
+        "Xin Gao",
+        "Lipo Wang",
+        "Youfang Lin",
+        "Jing Wang"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "digest_date": "2026-07-31",
+      "pdf_url": "https://arxiv.org/pdf/2607.26801v1",
+      "published": "2026-07-29T11:39:21+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Federated learning (FL) enables collaborative learning over decentralized data silos without centralizing raw data.",
+      "title": "FedTopo: Relation-Level Topology Sharing for Model-Heterogeneous Federated Learning",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-07-29T11:39:21+00:00",
+      "url": "http://arxiv.org/abs/2607.26801v1"
+    },
+    {
       "abstract": "Inference systems increasingly combine a fast path that returns predictions within the application's latency deadline together with a higher-accuracy slow path that runs higher-compute methods on stronger, remote hardware, so its results can be returned on time and combined with the fast path predictions. Across several application domains, we abstract this inference architecture as a fast path, a slow path, and a coordination layer with two functions: a router that invokes the slow path and a merger that decides whether to incorporate its returned predictions. In this work, we show that this new coordination layer exposes a new attack surface: shaped workload attacks, e.g., Yo-Yo bursts, can exploit contention at shared resources along the slow path to push benign users' slow-path predictions past their latency deadlines. The merger then discards those predictions, while the fast path continues to return timely outputs. We refer to the resulting loss of slow-path accuracy benefits as accuracy collapse. We demonstrate accuracy collapse in a two-tier edge-cloud multi-object tracking pipeline in autonomous driving. In simulation, approximately 4,000 burst-shaped requests increase benign p99 latency from 92ms to 2s, nearly eliminating the benefit of the slow path's cloud inference, reducing object tracking quality by 7.0 HOTA points on average. We further find that accuracy degradation can significantly vary (2.0-18.7 HOTA points), depending on the video intervals that are targeted in the attack, and that certain rare classes (e.g., stop signs) lose nearly half of their pre-attack prediction accuracy. These results show that workload attacks can degrade prediction quality without needing either access to model weights or victim data, and motivate research on attacks and defenses for routing, merging, scheduling, and resource isolation in these emerging inference pipeline architectures.",
       "arxiv_id": "2607.24692v1",
       "authors": [
@@ -4377,7 +4563,7 @@
         "cs.CR",
         "cs.DC"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24692v1",
       "published": "2026-07-27T17:34:09+00:00",
       "recommendation": "Maybe relevant",
@@ -4413,7 +4599,7 @@
         "cs.LG",
         "cs.CE"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.24131v1",
       "published": "2026-07-27T08:14:29+00:00",
       "recommendation": "Maybe relevant",
@@ -4449,7 +4635,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.21290v1",
       "published": "2026-07-23T13:12:51+00:00",
       "recommendation": "Maybe relevant",
@@ -4490,7 +4676,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.20274v1",
       "published": "2026-07-22T15:25:05+00:00",
       "recommendation": "Maybe relevant",
@@ -4524,7 +4710,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.20141v1",
       "published": "2026-07-22T13:43:43+00:00",
       "recommendation": "Maybe relevant",
@@ -4559,7 +4745,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.20003v1",
       "published": "2026-07-22T10:39:42+00:00",
       "recommendation": "Maybe relevant",
@@ -4594,7 +4780,7 @@
         "cs.NE",
         "q-bio.NC"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.19973v1",
       "published": "2026-07-22T09:55:25+00:00",
       "recommendation": "Maybe relevant",
@@ -4629,7 +4815,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.18149v1",
       "published": "2026-07-20T16:49:30+00:00",
       "recommendation": "Maybe relevant",
@@ -4665,7 +4851,7 @@
         "cs.AR",
         "cs.CV"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.18101v1",
       "published": "2026-07-20T16:02:58+00:00",
       "recommendation": "Maybe relevant",
@@ -4703,7 +4889,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17790v1",
       "published": "2026-07-20T10:22:53+00:00",
       "recommendation": "Maybe relevant",
@@ -4739,7 +4925,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.17782v1",
       "published": "2026-07-20T10:15:02+00:00",
       "recommendation": "Maybe relevant",
@@ -4781,7 +4967,7 @@
         "cs.GR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.15271v1",
       "published": "2026-07-16T17:58:18+00:00",
       "recommendation": "Maybe relevant",
@@ -4831,7 +5017,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.15163v1",
       "published": "2026-07-16T16:08:27+00:00",
       "recommendation": "Maybe relevant",
@@ -4869,7 +5055,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.15123v1",
       "published": "2026-07-16T15:32:44+00:00",
       "recommendation": "Maybe relevant",
@@ -4905,7 +5091,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.15094v1",
       "published": "2026-07-16T15:07:23+00:00",
       "recommendation": "Maybe relevant",
@@ -4957,7 +5143,7 @@
         "cs.LG",
         "cs.DC"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14952v1",
       "published": "2026-07-16T13:00:32+00:00",
       "recommendation": "Maybe relevant",
@@ -4991,7 +5177,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14898v1",
       "published": "2026-07-16T12:16:12+00:00",
       "recommendation": "Maybe relevant",
@@ -5030,7 +5216,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14703v1",
       "published": "2026-07-16T08:04:25+00:00",
       "recommendation": "Maybe relevant",
@@ -5067,7 +5253,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14607v1",
       "published": "2026-07-16T06:10:42+00:00",
       "recommendation": "Maybe relevant",
@@ -5100,7 +5286,7 @@
         "cs.CR",
         "cs.CL"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14587v1",
       "published": "2026-07-16T05:33:55+00:00",
       "recommendation": "Maybe relevant",
@@ -5135,7 +5321,7 @@
         "cs.LG",
         "cs.PF"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14431v1",
       "published": "2026-07-15T23:55:48+00:00",
       "recommendation": "Maybe relevant",
@@ -5168,7 +5354,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.14018v1",
       "published": "2026-07-15T16:50:43+00:00",
       "recommendation": "Maybe relevant",
@@ -5202,7 +5388,7 @@
         "cs.LG",
         "q-fin.CP"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.13929v1",
       "published": "2026-07-15T15:10:10+00:00",
       "recommendation": "Maybe relevant",
@@ -5236,7 +5422,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.13612v1",
       "published": "2026-07-15T08:59:36+00:00",
       "recommendation": "Maybe relevant",
@@ -5273,7 +5459,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.13491v1",
       "published": "2026-07-15T06:37:05+00:00",
       "recommendation": "Maybe relevant",
@@ -5310,7 +5496,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.12909v1",
       "published": "2026-07-14T15:43:41+00:00",
       "recommendation": "Maybe relevant",
@@ -5349,7 +5535,7 @@
         "cs.IR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.12392v1",
       "published": "2026-07-14T06:12:26+00:00",
       "recommendation": "Maybe relevant",
@@ -5387,7 +5573,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.11510v1",
       "published": "2026-07-13T13:00:06+00:00",
       "recommendation": "Maybe relevant",
@@ -5429,7 +5615,7 @@
         "cs.AR",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08427v1",
       "published": "2026-07-09T12:49:24+00:00",
       "recommendation": "Maybe relevant",
@@ -5463,7 +5649,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.08234v1",
       "published": "2026-07-09T08:29:38+00:00",
       "recommendation": "Maybe relevant",
@@ -5499,7 +5685,7 @@
         "q-bio.QM",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07425v1",
       "published": "2026-07-08T13:52:50+00:00",
       "recommendation": "Maybe relevant",
@@ -5538,7 +5724,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07219v1",
       "published": "2026-07-08T10:01:33+00:00",
       "recommendation": "Maybe relevant",
@@ -5581,7 +5767,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07179v1",
       "published": "2026-07-08T09:13:59+00:00",
       "recommendation": "Maybe relevant",
@@ -5615,7 +5801,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-07-30",
+      "digest_date": "2026-07-31",
       "pdf_url": "https://arxiv.org/pdf/2607.07033v1",
       "published": "2026-07-08T06:07:06+00:00",
       "recommendation": "Maybe relevant",
