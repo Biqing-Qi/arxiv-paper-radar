@@ -1,10 +1,51 @@
 {
   "dates": [
-    "2026-08-06"
+    "2026-08-07"
   ],
-  "generated_at": "2026-08-06T00:07:09.107621+00:00",
-  "latest_date": "2026-08-06",
+  "generated_at": "2026-08-07T01:41:56.882081+00:00",
+  "latest_date": "2026-08-07",
   "papers": [
+    {
+      "abstract": "Masked diffusion language models (dLLMs) can commit tokens in any order -- a freedom marketed as their core advantage over autoregressive decoding. We show that on reasoning tasks this freedom is instead the axis of failure. Logging every commitment during decoding of LLaDA-8B on GSM8K, we find that unconstrained (pure) decoding commits the final answer at 15-24% of the trajectory while half the reasoning region is still masked, and collapses to answer-only outputs on up to 90% of problems as the canvas grows. The cause is not the model's termination beliefs -- EOS \"pressure\" is nearly identical across decoders -- but reachability: whether the sampler may act on those beliefs at distant positions. A 2x2 prompt-decoder design shows that chain-of-thought helps only under ordered commitment (interaction +34.8 percentage points, 95% CI [26.8, 42.8]; without reasoning text the decoders are indistinguishable), an interaction we decompose into a collapse channel and an order channel and replicate on Dream-7B and MATH-500. A single-knob intervention -- frontier-gated commitment -- causally recovers the full gap (0.528 to 0.852) while preserving up to 4x parallel decoding, along a measured frontier whose optimal window flips from w=1 at full refinement to unconstrained at 8 tokens/step. Our results reframe existing window-style samplers, previously motivated by efficiency, as the minimal fix for a reasoning pathology they were never designed to address.",
+      "arxiv_id": "2608.05687v1",
+      "authors": [
+        "Jewon Yeom",
+        "Jaewon Sok",
+        "Seonghyeon Park",
+        "Jeongjae Park",
+        "Hwiyeong Lee",
+        "Taesup Kim"
+      ],
+      "boost_hits": [
+        "llm",
+        "reasoning"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05687v1",
+      "published": "2026-08-06T07:25:04+00:00",
+      "recommendation": "Read closely",
+      "score": 20,
+      "summary": "Likely relevant to Diffusion Language Models. Masked diffusion language models (dLLMs) can commit tokens in any order -- a freedom marketed as their core advantage over autoregressive decoding.",
+      "title": "Answer First, Reason Later: Commitment Order in Diffusion LLMs",
+      "topics": [
+        {
+          "id": "diffusion_language_models",
+          "keywords": [
+            "diffusion language model",
+            "diffusion llm",
+            "masked diffusion"
+          ],
+          "label": "Diffusion Language Models",
+          "score": 16
+        }
+      ],
+      "updated": "2026-08-06T07:25:04+00:00",
+      "url": "http://arxiv.org/abs/2608.05687v1"
+    },
     {
       "abstract": "We formulate reinforcement learning (RL) in continuous time with discrete state spaces and possibly arbitrary action spaces via a stochastic control approach, where the state dynamics are modeled as a controlled continuous-time Markov chain (CTMC). We consider policy optimization problems and derive the corresponding policy gradient methods, leading to continuous-time variants of proximal policy optimization (PPO) and group relative policy optimization (GRPO). As a primary application, we develop a complete continuous-time RL framework for fine-tuning score-based discrete diffusion models. The proposed framework enables reward-driven optimization without requiring differentiability on the reward signals. In contrast to the existing GRPO-based approaches that only rely on terminal rewards, our formulation allows intermediate reward or advantage signals to be incorporated throughout the denoising trajectory. Importantly, when specialized to masked diffusion models (MDMs), our framework encompasses a rich class of policy parameterizations over the vocabulary simplex with analytically tractable probability ratios, providing a unified perspective on exploration and policy optimization in MDMs. For masked diffusion large language models (dLLMs), we further propose trajectory subsampling techniques to efficiently estimate computationally prohibitive trajectory likelihoods, reducing the computational cost of computing per-position probability ratios. We showcase the effectiveness of our methods on both low-dimensional entropy-regularized optimization problems and RL post-training of dLLMs on mathematical reasoning and coding tasks.",
       "arxiv_id": "2607.14522v1",
@@ -22,7 +63,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14522v1",
       "published": "2026-07-16T03:19:53+00:00",
       "recommendation": "Read closely",
@@ -61,7 +102,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.15200v1",
       "published": "2026-07-16T16:57:34+00:00",
       "recommendation": "Read closely",
@@ -83,6 +124,47 @@
       "url": "http://arxiv.org/abs/2607.15200v1"
     },
     {
+      "abstract": "Long context reasoning in large language models (LLMs) is usually constrained by the fact that a single inference trajectory has to simultaneously explore the context, store intermediate state, verify evidence, and produce the final answer. This becomes particularly difficult in tasks that require extraction, counting, ordering, or multi-hop reasoning, where an early mistake can propagate until the final response. In this work, we propose Chained Recursive Language Models (Chained RLM), an inference-time architecture, in which the same underlying model is called repeatedly as a sequence of fresh reasoning roots. Each root receives the original problem and context, but does not inherit the full conversational history. Instead, it receives a compact plain-text summary, a plain-text blackboard, and some durable task-specific artifacts written by predecessor roots. The motivation is to manage the context by chopping into partial tasks rather than one large inference response; in each staged computation, intermediate artifacts can be inspected, corrected, and extended by a later fresh inference by the same model. We describe the system model, handoff mechanism, artifact workspace, and evaluation protocol for this system. We study when fresh-context artifact continuation gives a measurable gain in accuracy over direct LLM answering even with recursive tool-calling.",
+      "arxiv_id": "2608.05124v1",
+      "authors": [
+        "Purbesh Mitra",
+        "Sennur Ulukus"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "reasoning",
+        "inference"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IT",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05124v1",
+      "published": "2026-08-05T17:50:08+00:00",
+      "recommendation": "Read closely",
+      "score": 12,
+      "summary": "Likely relevant to Model Architecture. Long context reasoning in large language models (LLMs) is usually constrained by the fact that a single inference trajectory has to simultaneously explore the context, store intermediate state, verify evidence, and produce the final answer.",
+      "title": "Chained Recursive Language Models for Multi-Iteration Reasoning",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "long context",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-08-05T17:50:08+00:00",
+      "url": "http://arxiv.org/abs/2608.05124v1"
+    },
+    {
       "abstract": "Speculative decoding accelerates autoregressive generation by having a cheap draft propose tokens that a target verifies in parallel. Frontier models increasingly ship a built-in Multi-Token-Prediction (MTP/NEXTN) draft head under the assumption that the draft is negligibly cheap. At million-token context this breaks: an MTP draft head typically runs full attention over the entire KV cache at every draft step, so its read grows linearly with context and comes to dominate the draft cost -- precisely where speculation is most valuable. The effect compounds with draft length (a deep native draft can turn net-negative, slower than no speculation) and sharpens under hybrid/linear-attention targets, where cheaper verification leaves the draft's full-attention read exposed. We apply a StreamingLLM-style sliding window plus attention sink to the draft's attention only (Windowed-MTP), leaving full-attention verification intact. It is training-free, drop-in, and lossless by construction: the full-attention target still decides every accepted token, so windowing changes only which tokens are proposed, never which are accepted. It bounds the draft's KV working set to a constant, dropping ~99% of KV entries at 1M. Across three architecture families (Qwen GDN-MoE 35B/122B and a Mamba2-hybrid NoPE 120B) at 1M context on a single GPU in SGLang, windowing cuts the per-decode-step cost over the shipping native MTP draft by +28% to +44%, an input-invariant margin that widens with context. Since per-token latency is this cost divided by acceptance length, at matched acceptance end-to-end decode latency improves by the same amount, and more where windowing also lifts acceptance, while preserving the target's verified output distribution. Finally, the unread draft KV -- 7.7-11% of total KV at 1M -- is reclaimed via a compact ring buffer at no acceptance or quality cost.",
       "arxiv_id": "2607.21535v1",
       "authors": [
@@ -96,7 +178,7 @@
         "cs.CL",
         "cs.PF"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.21535v1",
       "published": "2026-07-23T17:21:44+00:00",
       "recommendation": "Read closely",
@@ -135,7 +217,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.20216v1",
       "published": "2026-07-22T14:36:10+00:00",
       "recommendation": "Read closely",
@@ -176,7 +258,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.12829v1",
       "published": "2026-07-14T14:48:06+00:00",
       "recommendation": "Read closely",
@@ -221,7 +303,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08056v1",
       "published": "2026-07-09T02:07:30+00:00",
       "recommendation": "Read closely",
@@ -265,7 +347,7 @@
         "cs.IR",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.27172v1",
       "published": "2026-07-29T17:46:35+00:00",
       "recommendation": "Read closely",
@@ -300,7 +382,7 @@
         "cs.AI",
         "cs.SD"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.13013v1",
       "published": "2026-07-14T17:53:22+00:00",
       "recommendation": "Read closely",
@@ -345,7 +427,7 @@
         "cs.AI",
         "cs.DC"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.12696v1",
       "published": "2026-07-14T12:22:55+00:00",
       "recommendation": "Read closely",
@@ -381,7 +463,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
       "published": "2026-07-13T11:52:42+00:00",
       "recommendation": "Read closely",
@@ -413,7 +495,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24306v1",
       "published": "2026-07-27T11:49:50+00:00",
       "recommendation": "Read closely",
@@ -458,7 +540,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17715v1",
       "published": "2026-07-20T09:09:23+00:00",
       "recommendation": "Read closely",
@@ -501,7 +583,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14647v1",
       "published": "2026-07-16T07:18:05+00:00",
       "recommendation": "Read closely",
@@ -539,7 +621,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14576v1",
       "published": "2026-07-16T05:13:44+00:00",
       "recommendation": "Read closely",
@@ -580,7 +662,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.13394v1",
       "published": "2026-07-15T02:43:16+00:00",
       "recommendation": "Read closely",
@@ -602,6 +684,46 @@
       "url": "http://arxiv.org/abs/2607.13394v1"
     },
     {
+      "abstract": "Standard Large Language Models (LLMs) execute layers sequentially. Dynamic layer routing, i.e. search for a different execution path through layers involving layer repetitions, skips and other moves, can improve performance. Existing routing approaches often require updating model weights, running expensive search loops per test instance, or demand ground-truth labels during inference. In this work, we propose Markov Chain Routing of Transformer Layers (MACRO), a framework that learns task-specific routes over LLM architectures without modifying underlying parameters. MACRO models layer routing as a context-dependent Markov policy conditioned on layer indices, computation budget phases, directional displacements, and operator context, supporting skip, repeat, and residual hidden-state addition operations. The Markov route distribution is updated via feedback on training data and decoded using a top-k Viterbi algorithm to isolate high-probability candidate programs. We evaluate MACRO across diverse reasoning and knowledge benchmarks on multiple open-weight LLMs. MACRO achieves a +5.0% average accuracy improvement over the unrouted baselines, with largest gains on small models. We outperform the best dynamic routing approach Dr. LLM by +7.2%, while reducing route-search time 9.4x (from 14.8 to 1.6 hours). Our code is publicly available at https://github.com/Batorskq/MACRO.",
+      "arxiv_id": "2608.05872v1",
+      "authors": [
+        "Paweł Batorski",
+        "Abtin Pourhadi",
+        "Akylgali Aitaza",
+        "Przemysław Spurek",
+        "Paul Swoboda"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "reasoning",
+        "inference"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05872v1",
+      "published": "2026-08-06T10:51:34+00:00",
+      "recommendation": "Worth scanning",
+      "score": 9,
+      "summary": "Likely relevant to Model Architecture. Standard Large Language Models (LLMs) execute layers sequentially.",
+      "title": "MACRO: Markov Chain Routing of Transformer Layers",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T10:51:34+00:00",
+      "url": "http://arxiv.org/abs/2608.05872v1"
+    },
+    {
       "abstract": "This work presents Fairness Pruning, a lightweight structural intervention method designed for the management and future mitigation of demographic bias in large language models (LLMs). As a foundational empirical validation of this method, this work focuses on causal bias localization. Using minimally contrastive prompt pairs and inference-time activation capture, the method identifies neurons that react differentially when processing demographic attributes in GLU architectures, evaluating the signal at the down_proj input. Empirical evaluation was conducted on models of up to 3 billion parameters (Llama-3.2 family and Salamandra-2B), combining standardized benchmark evaluation with qualitative text generation experiments. Results demonstrate that zeroing the identified neurons alters how the model responds to associated demographic variables. However, rather than producing flat mitigation, the intervention causes bidirectional bias destabilization: because BiasScore is unsigned, candidate sets mix neurons that push toward and against the stereotype, and the net effect on aggregate bias depends on which sign dominates. The intervention is extremely surgical: zeroing at most 40 neurons in Llama-3.2-1B (less than 0.031% of total MLP width) achieves a mean retention of 99.49% in reasoning and general knowledge capabilities. These findings empirically confirm that demographic bias processing and model capabilities operate on dissociable circuits, establishing the methodological foundations for transitioning from blind zeroing toward directional behavior modulation.",
       "arxiv_id": "2607.28319v1",
       "authors": [
@@ -620,7 +742,7 @@
         "cs.CY",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28319v1",
       "published": "2026-07-30T14:54:33+00:00",
       "recommendation": "Worth scanning",
@@ -655,7 +777,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24555v1",
       "published": "2026-07-27T15:28:52+00:00",
       "recommendation": "Worth scanning",
@@ -692,7 +814,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24507v1",
       "published": "2026-07-27T14:40:26+00:00",
       "recommendation": "Worth scanning",
@@ -734,7 +856,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.21291v1",
       "published": "2026-07-23T13:13:04+00:00",
       "recommendation": "Worth scanning",
@@ -769,7 +891,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08284v1",
       "published": "2026-07-09T09:28:06+00:00",
       "recommendation": "Worth scanning",
@@ -851,7 +973,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08186v1",
       "published": "2026-07-09T07:37:59+00:00",
       "recommendation": "Worth scanning",
@@ -892,7 +1014,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07386v1",
       "published": "2026-07-08T13:17:19+00:00",
       "recommendation": "Worth scanning",
@@ -934,7 +1056,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.06452v1",
       "published": "2026-07-07T16:12:51+00:00",
       "recommendation": "Worth scanning",
@@ -955,6 +1077,91 @@
       "url": "http://arxiv.org/abs/2607.06452v1"
     },
     {
+      "abstract": "Embodied visuomotor models, including Diffusion Policy (DP) and Vision-Language-Action (VLA) models, have demonstrated promising performance on robotic manipulation benchmarks. However, their potential remains fundamentally constrained by the scarcity of large-scale embodied trajectory datasets, leading to insufficient compositional generalization in out-of-distribution (OOD) scenarios with limited capability to capture reusable skill structures. To address this limitation, we propose Skill-Based Memory (SkillMemo) framework that implicitly decomposes long-horizon demonstrations into latent atomic skills and integrates skill-level features into a dynamic episodic memory bank for solving compositional tasks. Specifically, we first introduce an expert-guided trajectory segmentation module built upon a Mixture-of-Experts (MoE) architecture, which implicitly partitions trajectories into distinct skill primitives represented by learned gating coefficients. We further design a skill-level episodic memory architecture that stores compact skill representations as retrievable key-value pairs. During inference, the memory bank retrieves the most relevant skill primitives which are subsequently fused with the model's current gating distribution, providing a robust contextual prior to refine action predictions. Extensive experiments on the simulation benchmark and real-world manipulation tasks demonstrate that SkillMemo consistently enhances both DP and VLA backbones, achieving state-of-the-art performance and outperforming $π_{0.5}$, while exhibiting strong compositional generalization to unseen task configurations.",
+      "arxiv_id": "2608.05970v1",
+      "authors": [
+        "Changyuan Wang",
+        "Chubin Zhang",
+        "Zhenyu Wu",
+        "Runhao Li",
+        "Angyuan Ma",
+        "Ke Chao",
+        "Yinan Liang",
+        "Xiuwei Xu",
+        "Ziwei Wang",
+        "Yansong Tang",
+        "Jiwen Lu"
+      ],
+      "boost_hits": [
+        "llm",
+        "inference"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05970v1",
+      "published": "2026-08-06T12:46:13+00:00",
+      "recommendation": "Worth scanning",
+      "score": 8,
+      "summary": "Likely relevant to Model Architecture. Embodied visuomotor models, including Diffusion Policy (DP) and Vision-Language-Action (VLA) models, have demonstrated promising performance on robotic manipulation benchmarks.",
+      "title": "SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-08-06T12:46:13+00:00",
+      "url": "http://arxiv.org/abs/2608.05970v1"
+    },
+    {
+      "abstract": "On-device deployment of Large Language Models (LLMs) has become essential for personalized edge applications. A primary bottleneck is external memory access (EMA) in feed-forward network (FFN) layers. Speculative decoding and mixture-of-experts (MoE) are promising solutions. Speculative decoding reduces the number of decoding stages by generating multiple tokens per stage, and MoE minimizes per-stage cost through sparse expert activation. However, there is an incompatibility when combining these two techniques. We propose EdgeXpert, a software-hardware co-designed LLM accelerator that resolves this incompatibility. In the prefill stage, the prompt-wise expert reuse reformulates routing as prompt-level expert reuse rather than independent per-token expert selection. It identifies important tokens using a lightweight encoder, constructs a shared expert set from them, and routes less important tokens with a reduced expert budget to lower expert EMA. In the decode stage, depth-aware expert coalescing exploits the contextual similarity and mutual exclusivity of same-depth candidate tokens. Rather than loading the union of all required channels, EdgeXpert loads only salient channels and applies computational calibration to recover accuracy without additional memory access. Synthesized in Samsung 28nm technology at 800 MHz, EdgeXpert achieves up to 56.3% latency reduction and 44.1% energy reduction compared to prior works, while maintaining near-baseline accuracy.",
+      "arxiv_id": "2608.05303v1",
+      "authors": [
+        "Sangwoo Ha",
+        "Hyunwoo Seo",
+        "Yurim Jo",
+        "Youngjin Moon",
+        "Hoi-Jun Yoo"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "inference"
+      ],
+      "categories": [
+        "cs.AR",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05303v1",
+      "published": "2026-08-05T18:03:47+00:00",
+      "recommendation": "Worth scanning",
+      "score": 8,
+      "summary": "Likely relevant to Model Architecture. On-device deployment of Large Language Models (LLMs) has become essential for personalized edge applications.",
+      "title": "EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-08-05T18:03:47+00:00",
+      "url": "http://arxiv.org/abs/2608.05303v1"
+    },
+    {
       "abstract": "The deployment of deep neural networks in safety-critical domains demands reliable estimates of predictive confidence, yet conventional architectures lack principled uncertainty quantification. This survey provides a structured, critical review of methods for Uncertainty Quantification (UQ) in deep learning, scoped to ensemble-based and approximate Bayesian approaches and the measures used to summarize their outputs. Relative to existing UQ surveys, our contribution is depth on efficient ensemble approximations and single-pass methods, and a unified treatment that separates the method producing a predictive distribution from the measure that summarizes its uncertainty. We organize methods into five families: Bayesian neural networks, Monte Carlo Dropout, deep ensembles, efficient ensemble approximations, and last-layer or single-pass approaches. We situate adjacent work on evidential and prior networks, conformal prediction, and post-hoc calibration, together with the decision-time tasks of out-of-distribution detection and selective prediction. For each, we examine theoretical motivation, implementation, empirical performance, and limitations. We then review ensemble diversity theory and uncertainty measures and their decompositions, contrasting the entropy decomposition with pairwise divergence measures, and consolidate evaluation methodology so that our qualitative comparisons share a common basis. We close with a brief treatment of uncertainty in large language models and open research directions, including efficient epistemic measures for classification, last-layer diversity, diversity and calibration under shift, and hybrid architectures.",
       "arxiv_id": "2607.28248v1",
       "authors": [
@@ -968,7 +1175,7 @@
         "stat.ML",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28248v1",
       "published": "2026-07-30T14:10:31+00:00",
       "recommendation": "Worth scanning",
@@ -1006,7 +1213,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28166v1",
       "published": "2026-07-30T13:04:47+00:00",
       "recommendation": "Worth scanning",
@@ -1047,7 +1254,7 @@
         "cs.GR",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24665v1",
       "published": "2026-07-27T17:05:04+00:00",
       "recommendation": "Worth scanning",
@@ -1082,7 +1289,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24371v1",
       "published": "2026-07-27T12:45:27+00:00",
       "recommendation": "Worth scanning",
@@ -1117,7 +1324,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24331v1",
       "published": "2026-07-27T12:08:56+00:00",
       "recommendation": "Worth scanning",
@@ -1151,7 +1358,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.21384v1",
       "published": "2026-07-23T14:47:00+00:00",
       "recommendation": "Worth scanning",
@@ -1195,7 +1402,7 @@
         "cs.MA",
         "cs.MM"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.15202v1",
       "published": "2026-07-16T16:59:54+00:00",
       "recommendation": "Worth scanning",
@@ -1241,7 +1448,7 @@
         "cs.LG",
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14530v1",
       "published": "2026-07-16T03:31:03+00:00",
       "recommendation": "Worth scanning",
@@ -1278,7 +1485,7 @@
         "cs.CL",
         "math.OC"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.12550v1",
       "published": "2026-07-14T09:23:20+00:00",
       "recommendation": "Worth scanning",
@@ -1313,7 +1520,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
       "published": "2026-07-13T14:05:55+00:00",
       "recommendation": "Worth scanning",
@@ -1352,7 +1559,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28527v1",
       "published": "2026-07-30T17:01:27+00:00",
       "recommendation": "Worth scanning",
@@ -1389,7 +1596,7 @@
         "cs.AI",
         "cs.MM"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28269v1",
       "published": "2026-07-30T14:23:01+00:00",
       "recommendation": "Worth scanning",
@@ -1429,7 +1636,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24593v1",
       "published": "2026-07-27T15:58:07+00:00",
       "recommendation": "Worth scanning",
@@ -1528,7 +1735,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.20145v1",
       "published": "2026-07-22T13:49:17+00:00",
       "recommendation": "Worth scanning",
@@ -1564,7 +1771,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14711v1",
       "published": "2026-07-16T08:22:08+00:00",
       "recommendation": "Worth scanning",
@@ -1621,7 +1828,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.13431v1",
       "published": "2026-07-15T04:23:22+00:00",
       "recommendation": "Worth scanning",
@@ -1658,7 +1865,7 @@
         "cs.CY",
         "cs.SE"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.12650v1",
       "published": "2026-07-14T11:33:44+00:00",
       "recommendation": "Worth scanning",
@@ -1693,7 +1900,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11758v1",
       "published": "2026-07-13T16:22:01+00:00",
       "recommendation": "Worth scanning",
@@ -1735,7 +1942,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07467v1",
       "published": "2026-07-08T14:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -1770,7 +1977,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07258v1",
       "published": "2026-07-08T10:46:02+00:00",
       "recommendation": "Worth scanning",
@@ -1806,7 +2013,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.06269v1",
       "published": "2026-07-07T13:34:27+00:00",
       "recommendation": "Worth scanning",
@@ -1825,6 +2032,76 @@
       ],
       "updated": "2026-07-07T13:34:27+00:00",
       "url": "http://arxiv.org/abs/2607.06269v1"
+    },
+    {
+      "abstract": "Commercial grazing systems yield irregular livestock observations, which challenge cattle growth forecasting. This study developed a hybrid machine learning framework for herd level cattle weight forecasting using automated sensing observations collected between 2022 and 2024 in southeastern Australia. Weekly live weight observations, demographic variables, and lagged environmental predictors were integrated into structured forecasting datasets. Herd level forecasting trajectories were generated through temporal aggregation of animal level predictions. Four hybrid architecture families were evaluated, including residual, stacked, cascade, and ensemble assisted frameworks. ARIMA, LSTM, and GRU models were used as comparative baselines. Independent testing demonstrated strong predictive agreement across multiple forecasting horizons. The cascade GB to RF to NN architecture achieved the best performance, with a test R^2 of 0.889, RMSE of 21.319 kg, and MAE of 15.462 kg. Hybrid architectures maintained greater robustness than recurrent sequential models under sparse observation conditions. Forecasting error increased progressively across extended prediction horizons. Feature importance analysis identified animal age, rainfall, and temperature as dominant predictors influencing herd level growth forecasting. The proposed framework may support feed allocation, grazing management, and livestock marketing decisions under heterogeneous sensing environments.",
+      "arxiv_id": "2608.06001v1",
+      "authors": [
+        "Muhammad Riaz Hasib Hossain",
+        "Rafiqul Islam",
+        "Shawn R. McGrath",
+        "Md Zahidul Islam",
+        "David W. Lamb"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.06001v1",
+      "published": "2026-08-06T13:09:05+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. Commercial grazing systems yield irregular livestock observations, which challenge cattle growth forecasting.",
+      "title": "Hybrid Machine Learning Framework for Herd-Level Cattle Growth Pattern and Weight Gain Forecasting in Grazing-Based Production Systems",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "hybrid architecture",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 6
+        }
+      ],
+      "updated": "2026-08-06T13:09:05+00:00",
+      "url": "http://arxiv.org/abs/2608.06001v1"
+    },
+    {
+      "abstract": "Single-cell transcriptomes are sparse observations of coordinated biological programmes, yet most self-supervised models learn by reconstructing individual genes. Here we present BioM-JEPA, a joint-embedding predictive architecture that instead predicts aggregate representations of graph-connected gene blocks defined by protein-association and corpus-derived coexpression evidence. A student network infers each target-block representation from the remaining genes in a cell, while a slowly updated teacher supplies the corresponding target from the full observed gene set. Under the reported extraction procedure, block-level prediction produced embeddings with higher effective rank and weaker association with detected-gene depth in the tested diagnostics than token-prediction, random-block and reconstruction controls. Across CellBench tasks, frozen BioM-JEPA embeddings retained expression, pathway and neighbourhood information and achieved the lowest aggregate perturbation-response error among the evaluated models. Representation diagnostics were also consistent with canonical pancreatic programmes and compositional relationships between genetic perturbations. Linear attention avoids constructing a quadratic gene-by-gene attention matrix; in a matched one-epoch hPancreas experiment at batch size 8, BioM-JEPA provided 5.75-fold higher fine-tuning throughput and 3.76-fold higher held-out embedding throughput than scFoundation. Together, these results support graph-connected gene blocks as useful prediction units for JEPA-style representation learning in single-cell biology.",
+      "arxiv_id": "2608.05928v1",
+      "authors": [
+        "Yuhao Wang",
+        "Zelin Zang",
+        "Yuxuan Liu",
+        "Zhen Lei",
+        "Stan Z. Li"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.LG"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05928v1",
+      "published": "2026-08-06T11:58:29+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. Single-cell transcriptomes are sparse observations of coordinated biological programmes, yet most self-supervised models learn by reconstructing individual genes.",
+      "title": "BioM-JEPA: joint-embedding prediction of graph-connected gene blocks in single cells",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "linear attention",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 6
+        }
+      ],
+      "updated": "2026-08-06T11:58:29+00:00",
+      "url": "http://arxiv.org/abs/2608.05928v1"
     },
     {
       "abstract": "Microservice architectures have become dominant for modernizing monolithic systems, yet identifying appropriate services remains challenging and largely manual. Existing decomposition approaches are predominantly code-centric, limiting applicability in early design stages where only textual requirements are available. Despite advances in Large Language Models (LLMs), limited empirical evidence exists on their ability to synthesize complete microservice architectures from natural-language requirements, including service definitions and inter-service interactions. This study investigates whether an LLM can bridge requirements engineering and architectural design, generating architectures solely from textual requirements and evaluating structural agreement and perceived quality of results. We conduct a mixed-method study using OpenAI o3 under zero-shot (ZS) and few-shot (FS) prompting across two systems (Bookstore, PetClinic), one execution per system/condition. Architectures are evaluated through (i) comparison with reference architectures using precision, recall, and F1-score for service identification and communication recovery, and (ii) a blinded expert assessment of correctness, completeness, modularity, and plausibility, plus open feedback synthesis. OpenAI o3 identifies services with higher agreement under FS prompting (F1 = 0.79 for ZS versus = 0.97 for FS). Communication recovery is more challenging: ZS produces dense architectures with high recall but low precision (F1 = 0.61), while FS improves agreement, reaching F1 = 0.82 and reducing unsupported dependencies. Expert evaluation corroborates these results, with FS architectures perceived as more modular, coherent, and plausible than ZS outputs. OpenAI o3 shows potential for requirements-driven synthesis when guided by exemplar prompting. Results are model- and context-specific from two small systems, not model-independent proof.",
@@ -1848,7 +2125,7 @@
         "cs.SE",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28307v1",
       "published": "2026-07-30T14:45:18+00:00",
       "recommendation": "Worth scanning",
@@ -1884,7 +2161,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.26596v1",
       "published": "2026-07-29T08:16:28+00:00",
       "recommendation": "Worth scanning",
@@ -1942,7 +2219,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24743v1",
       "published": "2026-07-27T17:59:49+00:00",
       "recommendation": "Worth scanning",
@@ -1980,7 +2257,7 @@
         "cs.AI",
         "cs.ET"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24714v1",
       "published": "2026-07-27T17:51:18+00:00",
       "recommendation": "Worth scanning",
@@ -2415,7 +2692,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24653v1",
       "published": "2026-07-27T16:49:54+00:00",
       "recommendation": "Worth scanning",
@@ -2451,7 +2728,7 @@
         "cs.AI",
         "cs.DL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24512v1",
       "published": "2026-07-27T14:53:40+00:00",
       "recommendation": "Worth scanning",
@@ -2484,7 +2761,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24352v1",
       "published": "2026-07-27T12:31:25+00:00",
       "recommendation": "Worth scanning",
@@ -2520,7 +2797,7 @@
         "cs.CL",
         "cs.SD"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24030v1",
       "published": "2026-07-27T05:55:50+00:00",
       "recommendation": "Worth scanning",
@@ -2554,7 +2831,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.20214v1",
       "published": "2026-07-22T14:34:49+00:00",
       "recommendation": "Worth scanning",
@@ -2591,7 +2868,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.18232v1",
       "published": "2026-07-20T17:58:31+00:00",
       "recommendation": "Worth scanning",
@@ -2633,7 +2910,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.18213v1",
       "published": "2026-07-20T17:47:44+00:00",
       "recommendation": "Worth scanning",
@@ -2680,7 +2957,7 @@
         "eess.SY",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.18147v1",
       "published": "2026-07-20T16:45:13+00:00",
       "recommendation": "Worth scanning",
@@ -2717,7 +2994,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17883v1",
       "published": "2026-07-20T12:34:44+00:00",
       "recommendation": "Worth scanning",
@@ -2751,7 +3028,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17710v1",
       "published": "2026-07-20T09:06:15+00:00",
       "recommendation": "Worth scanning",
@@ -2790,7 +3067,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.15178v1",
       "published": "2026-07-16T16:33:59+00:00",
       "recommendation": "Worth scanning",
@@ -2824,7 +3101,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.15047v1",
       "published": "2026-07-16T14:26:22+00:00",
       "recommendation": "Worth scanning",
@@ -2860,7 +3137,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.12634v1",
       "published": "2026-07-14T11:11:00+00:00",
       "recommendation": "Worth scanning",
@@ -2896,7 +3173,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11703v1",
       "published": "2026-07-13T15:33:45+00:00",
       "recommendation": "Worth scanning",
@@ -2931,7 +3208,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11400v1",
       "published": "2026-07-13T11:07:57+00:00",
       "recommendation": "Worth scanning",
@@ -2964,7 +3241,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11279v1",
       "published": "2026-07-13T08:59:47+00:00",
       "recommendation": "Worth scanning",
@@ -3010,7 +3287,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11138v1",
       "published": "2026-07-13T06:15:51+00:00",
       "recommendation": "Worth scanning",
@@ -3044,7 +3321,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08601v1",
       "published": "2026-07-09T15:32:54+00:00",
       "recommendation": "Worth scanning",
@@ -3087,7 +3364,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
       "published": "2026-07-09T13:55:55+00:00",
       "recommendation": "Worth scanning",
@@ -3129,7 +3406,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08403v1",
       "published": "2026-07-09T12:28:39+00:00",
       "recommendation": "Worth scanning",
@@ -3168,7 +3445,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08357v1",
       "published": "2026-07-09T11:08:39+00:00",
       "recommendation": "Worth scanning",
@@ -3203,7 +3480,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08288v1",
       "published": "2026-07-09T09:32:03+00:00",
       "recommendation": "Worth scanning",
@@ -3240,7 +3517,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08282v1",
       "published": "2026-07-09T09:23:13+00:00",
       "recommendation": "Worth scanning",
@@ -3276,7 +3553,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08028v1",
       "published": "2026-07-09T01:08:33+00:00",
       "recommendation": "Worth scanning",
@@ -3314,7 +3591,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.06327v1",
       "published": "2026-07-07T14:25:09+00:00",
       "recommendation": "Worth scanning",
@@ -3335,6 +3612,44 @@
       "url": "http://arxiv.org/abs/2607.06327v1"
     },
     {
+      "abstract": "Despite advances in artificial intelligence (AI) across multiple sectors, today's AI tools, including deep learning and generative AI, still fail when embedded into physical systems, such as robots and vehicles operating under real-world physical laws. This stems from their inability to maintain reliable world models for long-horizon planning under uncertainty and generalize to unseen scenarios. In this context, wireless networks, through pervasive sensing and communication, can orchestrate physical intelligence. However, current architectures optimize throughput, latency, and reliability and cannot support real-time physical AI coordination, requiring agents to maintain shared spatiotemporal context. To address these challenges, a network of holonic digital twins (HDT-Nets) framework is proposed to deliver real-time physical AI inference through holonic agents that actively reason about their environment rather than passively mirror physical assets. Each HDT is realized as a hierarchical structure spanning the physical agent and network edge, reasoning autonomously at the local level while cooperating with neighboring HDTs to form collectively intelligent units. In HDT-Net, causal Markov blankets spanning sensing, communication, and control determine which agents must coordinate and enable counterfactual reasoning over multi-domain interventions. Active inference within these boundaries unifies perception, action, and learning by minimizing expected free energy while deciding which beliefs to transmit based on their cognitive value to the receiver. Category theory ensures that transmitted beliefs preserve semantic structure across heterogeneous agents with incompatible representations. Finally, integrated information theory quantifies when collective intelligence exceeds independent operation and how network intelligence evolves through coordinated learning and information exchange.",
+      "arxiv_id": "2608.06227v1",
+      "authors": [
+        "Christo Kurisummoottil Thomas",
+        "Omar Hashash",
+        "Walid Saad"
+      ],
+      "boost_hits": [
+        "reasoning",
+        "inference"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.AI",
+        "cs.IT",
+        "eess.SY"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.06227v1",
+      "published": "2026-08-06T16:17:43+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. Despite advances in artificial intelligence (AI) across multiple sectors, today's AI tools, including deep learning and generative AI, still fail when embedded into physical systems, such as robots and vehicles operating under real-world physical laws.",
+      "title": "From Passive Mirrors to Active Agents: Holonic Digital Twins for Physical AI over Networks",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T16:17:43+00:00",
+      "url": "http://arxiv.org/abs/2608.06227v1"
+    },
+    {
       "abstract": "Autonomous systems inevitably age, yet their artificial intelligence typically assumes hardware remains in its original condition. Batteries degrade, sensors drift, processors accumulate timing errors, and memory reliability declines, creating a growing mismatch between assumed and actual capability. This can lead to agnostic collapse, where mission failure arises from accumulated hardware degradation rather than a single component fault. We propose Aging-Aware Autonomous Intelligence (AAAI), a framework that integrates hardware health directly into reasoning, planning, and mission execution. AAAI is built on three pillars: hardware self-awareness, which continuously estimates the health of power, sensing, memory, and computation subsystems using physics-of-failure models; self-adaptive reasoning, which adjusts inference complexity, planning horizon, and task priorities according to remaining hardware capability; and survival-centric intelligence, which allocates remaining operational life across mission objectives through performance optimization, resource conservation, and graceful degradation. Rather than introducing new hardware, AAAI unifies prognostics, lifecycle management, and hardware-aware computing into a closed-loop cognitive architecture. We argue that such integration is essential for autonomous systems operating in inaccessible or safety-critical environments, including space missions, marine robotics, and implantable medical devices. By enabling machines to recognize and respond to their own aging, AAAI improves resilience, extends operational lifetime, and supports safer, more graceful mission completion.",
       "arxiv_id": "2607.28451v1",
       "authors": [
@@ -3350,7 +3665,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28451v1",
       "published": "2026-07-30T16:17:31+00:00",
       "recommendation": "Maybe relevant",
@@ -3382,7 +3697,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28308v1",
       "published": "2026-07-30T14:45:39+00:00",
       "recommendation": "Maybe relevant",
@@ -3431,7 +3746,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.27945v1",
       "published": "2026-07-30T09:52:22+00:00",
       "recommendation": "Maybe relevant",
@@ -3465,7 +3780,7 @@
         "cs.AI",
         "eess.SP"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.26751v1",
       "published": "2026-07-29T10:46:08+00:00",
       "recommendation": "Maybe relevant",
@@ -3504,7 +3819,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24688v1",
       "published": "2026-07-27T17:29:18+00:00",
       "recommendation": "Maybe relevant",
@@ -3536,7 +3851,7 @@
         "cs.AI",
         "cs.NE"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24519v1",
       "published": "2026-07-27T14:59:42+00:00",
       "recommendation": "Maybe relevant",
@@ -3569,7 +3884,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24176v1",
       "published": "2026-07-27T09:02:44+00:00",
       "recommendation": "Maybe relevant",
@@ -3606,7 +3921,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.21372v1",
       "published": "2026-07-23T14:37:30+00:00",
       "recommendation": "Maybe relevant",
@@ -3642,7 +3957,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.19787v1",
       "published": "2026-07-22T06:10:53+00:00",
       "recommendation": "Maybe relevant",
@@ -3675,7 +3990,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.18228v1",
       "published": "2026-07-20T17:58:05+00:00",
       "recommendation": "Maybe relevant",
@@ -3708,7 +4023,7 @@
         "math.AP",
         "math.NA"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.18043v1",
       "published": "2026-07-20T15:12:09+00:00",
       "recommendation": "Maybe relevant",
@@ -3746,7 +4061,7 @@
         "cs.CR",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17786v1",
       "published": "2026-07-20T10:20:32+00:00",
       "recommendation": "Maybe relevant",
@@ -3782,7 +4097,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17624v1",
       "published": "2026-07-20T07:26:17+00:00",
       "recommendation": "Maybe relevant",
@@ -3826,7 +4141,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.13770v1",
       "published": "2026-07-15T12:31:19+00:00",
       "recommendation": "Maybe relevant",
@@ -3856,7 +4171,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11796v1",
       "published": "2026-07-13T16:48:03+00:00",
       "recommendation": "Maybe relevant",
@@ -3890,7 +4205,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
       "published": "2026-07-13T12:54:47+00:00",
       "recommendation": "Maybe relevant",
@@ -3925,7 +4240,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08754v1",
       "published": "2026-07-09T17:51:50+00:00",
       "recommendation": "Maybe relevant",
@@ -3965,7 +4280,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08359v1",
       "published": "2026-07-09T11:17:04+00:00",
       "recommendation": "Maybe relevant",
@@ -4006,7 +4321,7 @@
         "cs.LG",
         "cs.SE"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08010v1",
       "published": "2026-07-09T00:27:13+00:00",
       "recommendation": "Maybe relevant",
@@ -4067,7 +4382,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
       "published": "2026-07-08T17:26:49+00:00",
       "recommendation": "Maybe relevant",
@@ -4102,7 +4417,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
       "published": "2026-07-08T15:46:48+00:00",
       "recommendation": "Maybe relevant",
@@ -4137,7 +4452,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07077v1",
       "published": "2026-07-08T07:08:50+00:00",
       "recommendation": "Maybe relevant",
@@ -4158,6 +4473,231 @@
       "url": "http://arxiv.org/abs/2607.07077v1"
     },
     {
+      "abstract": "While deep learning models, particularly transformer-based architectures, have shown impressive performance in time series forecasting, the application of retrieval-augmented generation (RAG) in this domain remains limited. Since RAG has proven effective in enhancing the capabilities of large language models by incorporating relevant external information, retrieving similar time series sequences as references might also improve accuracy in time series forecasting tasks. However, most time series models are constrained by limited training data, smaller parameter scales, and a lack of the extensive generative capabilities found in large language models. Simply concatenating reference sequences into the prompt, as done in language models, may not yield the expected results. To address these challenges, we propose a novel approach, TS-RAG, which leverages RAG to enhance forecasting performance. The framework introduces specially designed reference tokens to effectively fuse information from the input sequence with that from retrieved similar sequences, enabling a more robust capture of complex temporal dynamics. Experimental results demonstrate that TS-RAG achieves consistent state-of-the-art performance across several real-world forecasting benchmarks.",
+      "arxiv_id": "2608.06223v1",
+      "authors": [
+        "Yixiong Xiao",
+        "Congxi Xiao",
+        "Jingbo Zhou"
+      ],
+      "boost_hits": [
+        "large language model"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.06223v1",
+      "published": "2026-08-06T16:12:57+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. While deep learning models, particularly transformer-based architectures, have shown impressive performance in time series forecasting, the application of retrieval-augmented generation (RAG) in this domain remains limited.",
+      "title": "TS-RAG: Retrieval Augmented Generation for Time Series Forecasting",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T16:12:57+00:00",
+      "url": "http://arxiv.org/abs/2608.06223v1"
+    },
+    {
+      "abstract": "Microarchitecture design space exploration suffers from expansive search spaces and expensive PPA evaluation, leaving only a small simulation budget for design decision-making. Existing methods perform blind search without considering microarchitectural dependencies and fail to learn from the iterative search effectively, leading to wasted evaluations and weak Pareto convergence. In this paper, we propose MicroEvo, a knowledge-guided framework that couples off-the-shelf LLMs with Monte Carlo Tree Search (MCTS) for multi-objective microarchitecture optimization. MicroEvo combines LLM-driven evolutionary operators, a Pareto-aware tree policy that balances Pareto contribution and diversity, an active knowledge accumulation mechanism that extracts and reuses optimization insights, and state-aware directives that adapt the search behavior online. Experiments show that MicroEvo improves Pareto-front quality by up to 36.2% over NSGA-II and achieves 10.6x higher search efficiency, and also demonstrates strong scalability to a complex industrial-scale core. The code repository is available at: https://github.com/GEAR-SEU/MicroEvo-ICCAD-26.",
+      "arxiv_id": "2608.06183v1",
+      "authors": [
+        "Jia Xiong",
+        "Runkai Li",
+        "Chenxu Niu",
+        "Guangyuan Gao",
+        "Changwen Xing",
+        "Yifan Zhang",
+        "Xinlai Wan",
+        "Jieran Cui",
+        "Chen Bai",
+        "Yusheng Hua",
+        "Ying Wang",
+        "Ming Ling",
+        "Xi Wang",
+        "Tao Xie"
+      ],
+      "boost_hits": [
+        "llm"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.06183v1",
+      "published": "2026-08-06T15:43:31+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. Microarchitecture design space exploration suffers from expansive search spaces and expensive PPA evaluation, leaving only a small simulation budget for design decision-making.",
+      "title": "MicroEvo: Knowledge-Guided LLM Sampling for Efficient Microarchitecture Design Space Exploration",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T15:43:31+00:00",
+      "url": "http://arxiv.org/abs/2608.06183v1"
+    },
+    {
+      "abstract": "AI agents performing cryptographic operations (signing Git commits, authenticating API calls, issuing certificates) currently store private keys in software-accessible locations: plaintext files, environment variables, or container memory. Any process with sufficient read privileges can extract the raw key material. A recent production incident demonstrated the practical severity: private keys were exfiltrated from a widely deployed framework via email injection in under five minutes. We aim to enforce both key confidentiality and content-aware authorisation for key use. To that end, we replace software-resident keys with hardware-confined keys accessible through a vendor-neutral PKCS#11 interface. A hardware keystore (HSM, TPM, smart card) executes cryptographic operations on-device; the host receives only the result via opaque handles. Hardware confinement is the primary contribution; it is enabled by a surrounding five-layer Zero-Trust enforcement stack comprising session identity (SAGA), scope bounds (Smax), semantic validation (RAV), taint tracking, and the hardware execution boundary. We evaluate against 12 injection scenarios derived from AgentDojo's ImportantInstructionsAttack template (Debenedetti et al., arXiv:2406.13352). We run four LLM models; three follow injections in baseline mode (gpt-oss-120b, Qwen2.5-72B, DeepSeek-V4-Flash, n=192 combined). Baseline Attack Success Rate (ASR): 19.3% [14.3%, 25.4%]; protected ASR: 0% (Wilson 95% CI upper bound 2.0%). Zero false positives across four benign task scenarios.",
+      "arxiv_id": "2608.06130v1",
+      "authors": [
+        "Leo Sambrook",
+        "Sampo Sovio"
+      ],
+      "boost_hits": [
+        "llm"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.06130v1",
+      "published": "2026-08-06T15:04:26+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. AI agents performing cryptographic operations (signing Git commits, authenticating API calls, issuing certificates) currently store private keys in software-accessible locations: plaintext files, environment variables, or container memory.",
+      "title": "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T15:04:26+00:00",
+      "url": "http://arxiv.org/abs/2608.06130v1"
+    },
+    {
+      "abstract": "Positional embeddings (PE) in Transformers encode token distance and order but are largely agnostic to \\textit{syntactic structure}. We introduce \\textbf{S}yntax-\\textbf{i}nformed \\textbf{P}ositional \\textbf{E}mbeddings (\\textbf{SiPE}), which learns a lightweight syntactic prior from dependency parses during pretraining and injects it across all three dominant PE families (absolute, relative, rotary), for both encoders and decoders, leaving self-attention and the rest of the architecture untouched. We isolate \\emph{where} and \\emph{how} the prior should enter the model, and find it depends on the architecture: for autoregressive decoders that use relative PE, the prior is strongest when coupled multiplicatively with the relative-position term of the attention score, outperforming injection into the input embeddings, into self-attention, or into the positional and attention terms jointly---while for encoders it is best added directly to the input embeddings, composing with each encoder's native positional mechanism. We find that models pre-trained with SiPE improve on the SyntaxGym benchmark by up to $10.3\\%$ while simultaneously reducing perplexity by $9.0\\%$ over a base model with no syntactic supervision---a metric nearly every existing syntax-injection method instead degrades. Crucially, these gains extend beyond syntactic generalization: SiPE also improves real-world language understanding, raising scores on the GLUE benchmark by up to $8.2\\%$ over a model trained without it. Unlike existing syntactic language models that marginalize over many parses at inference or discard syntax at runtime, SiPE conditions on a single parse, establishing a new Pareto frontier between syntactic supervision and inference cost.",
+      "arxiv_id": "2608.06111v1",
+      "authors": [
+        "Haris Riaz",
+        "Hyungji Kim",
+        "Mihai Surdeanu"
+      ],
+      "boost_hits": [
+        "pretraining",
+        "inference"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.06111v1",
+      "published": "2026-08-06T14:44:31+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. Positional embeddings (PE) in Transformers encode token distance and order but are largely agnostic to \\textit{syntactic structure}.",
+      "title": "Beyond Sequence Order: Syntax-Informed Positional Embeddings for Transformers",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T14:44:31+00:00",
+      "url": "http://arxiv.org/abs/2608.06111v1"
+    },
+    {
+      "abstract": "General-purpose large language model agents have achieved strong performance on tool-augmented tasks, yet they rely on assumptions break down in blockchain environments. On-chain execution is stateful, adversarial, and economically irreversible, exposing three fundamental gaps: Reactivity, Irreversibility, and Observability. We propose ChainClaw, a blockchain-native agent framework built on OpenClaw, that addresses all three gaps through a layered architecture comprising an event-driven orchestration layer, a simulation-based safety intelligence layer, and an on-chain monitoring runtime layer, unified by a cross-layer memory subsystem. ChainClaw closes the Reactivity gap via event ingestion and simulation feedback, the Irreversibility gap via a pre-execution safety pipeline with transaction simulation and action guard, and the Observability gap via an on-chain read adapter and transaction monitor. We evaluate ChainClaw on a purpose-built benchmark covering seven tasks across four categories and five dimensions. ChainClaw consistently outperforms representative baselines on both safety and task completion.",
+      "arxiv_id": "2608.05790v1",
+      "authors": [
+        "Jiacheng Wei",
+        "Zhaoxin Fan",
+        "Xin Wen",
+        "Yuqin Lan",
+        "Dongrun Li",
+        "Wenjun Wu",
+        "Faguo Wu",
+        "Xiao Zhang"
+      ],
+      "boost_hits": [
+        "large language model"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05790v1",
+      "published": "2026-08-06T09:25:34+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. General-purpose large language model agents have achieved strong performance on tool-augmented tasks, yet they rely on assumptions break down in blockchain environments.",
+      "title": "ChainClaw: A Layered Agent Framework for Reliable On-Chain Execution",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T09:25:34+00:00",
+      "url": "http://arxiv.org/abs/2608.05790v1"
+    },
+    {
+      "abstract": "A geometry-conditioned, neuro-symbolic closed-loop architecture is proposed for laser powder bed fusion, in which a standards-aligned ontology operates inside the control loop and couples symbolic reasoning with statistical learning to set the targets of a constraint-aware predictive controller. The ontology links the process objectives and constraints to the signals a controller can observe, and a description-logic reasoner converts them into the references and bounds enforced on each scan. The demonstrated case is overhang dross, a quality limit on the melt pool depth, which governs quality yet cannot be measured during the build, is mapped through a geometry- and power-dependent depth-to-width ratio onto a bound on the observable width, with the ratio and its calibrated uncertainty supplied by a Gaussian process. The reasoner classifies each upcoming feature and selects the active constraints-adding a lack-of-fusion floor at overhangs, a monotone guard beyond the calibrated range, and an energy-density cap where a process window is declared while running only on changes of geometric context and otherwise leaving a single small quadratic program on the per-scan path. In an Eagar-Tsai surrogate calibrated to the NIST AM-Bench benchmark for IN625, the architecture eliminates the dross produced by a geometry-blind controller, holds dross at zero with only a small residual lack-of-fusion under dual scoring, degrades gracefully under deliberate plant mismatch, and retargets to new alloys and constraints by editing ontology data rather than code. The results establish architectural feasibility, experimental calibration of the ratio is the principal next step.",
+      "arxiv_id": "2608.05773v1",
+      "authors": [
+        "Gisuk Hong",
+        "Jaebong Cho",
+        "Hyunbo Cho"
+      ],
+      "boost_hits": [
+        "reasoning"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05773v1",
+      "published": "2026-08-06T09:05:38+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. A geometry-conditioned, neuro-symbolic closed-loop architecture is proposed for laser powder bed fusion, in which a standards-aligned ontology operates inside the control loop and couples symbolic reasoning with statistical learning to set the targets of a constraint-aware predictive controller.",
+      "title": "Neuro-Symbolic Closed-Loop Control of Laser Powder Bed Fusion with an In-Loop Ontology",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T09:05:38+00:00",
+      "url": "http://arxiv.org/abs/2608.05773v1"
+    },
+    {
       "abstract": "While Multimodal Retrieval-Augmented Generation (MM-RAG) has shown promising results, it still struggles with complex multi-hop reasoning tasks. Existing methods primarily focus on independent instance-level matching, which often fails to capture explicit relationships across modalities and documents. Although Graph-enhanced methods introduce structural modeling, they face a fundamental challenge in multimodal scenarios: incorporating fine-grained visual features leads to rapid graph expansion and retrieval noise, whereas coarse-grained representations cause the discarding of critical local evidence. To address this dilemma, we propose DualG-MRAG, a Dual-tier framework that introduces a decoupled architecture comprising Macro-reasoning and Micro-matching Graphs for Multimodal RAG. Specifically, to suppress retrieval noise by isolating global structural reasoning from fine-grained evidence matching, we construct a Macro Graph for global topological routing and a Micro Graph for precise local verification. Subsequently, to enable dynamic relevance propagation across heterogeneous evidence sources, we formulate retrieval as a query-driven message passing process via a GNN Retriever. Furthermore, to provide the generative model with coherent structural guidance, we introduce a dynamic programming decoding mechanism that extracts explicit reasoning paths directly from the GNN's forward pass, replacing the standard input of isolated document chunks. Extensive experiments demonstrate that DualG-MRAG outperforms baselines in both evidence recall and complex QA accuracy.",
       "arxiv_id": "2607.28580v1",
       "authors": [
@@ -4173,7 +4713,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28580v1",
       "published": "2026-07-30T17:40:05+00:00",
       "recommendation": "Maybe relevant",
@@ -4205,7 +4745,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28097v1",
       "published": "2026-07-30T12:07:56+00:00",
       "recommendation": "Maybe relevant",
@@ -4244,7 +4784,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24730v1",
       "published": "2026-07-27T17:57:02+00:00",
       "recommendation": "Maybe relevant",
@@ -4277,7 +4817,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24434v1",
       "published": "2026-07-27T13:44:42+00:00",
       "recommendation": "Maybe relevant",
@@ -4310,7 +4850,7 @@
         "cs.AI",
         "cs.IR"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.21503v1",
       "published": "2026-07-23T16:51:31+00:00",
       "recommendation": "Maybe relevant",
@@ -4349,7 +4889,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.21354v1",
       "published": "2026-07-23T14:18:01+00:00",
       "recommendation": "Maybe relevant",
@@ -4385,7 +4925,7 @@
         "cs.AI",
         "econ.GN"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.21268v1",
       "published": "2026-07-23T12:40:47+00:00",
       "recommendation": "Maybe relevant",
@@ -4417,7 +4957,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.20402v1",
       "published": "2026-07-22T17:38:39+00:00",
       "recommendation": "Maybe relevant",
@@ -4459,7 +4999,7 @@
         "cs.RO",
         "eess.SY"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17951v1",
       "published": "2026-07-20T13:52:24+00:00",
       "recommendation": "Maybe relevant",
@@ -4496,7 +5036,7 @@
         "cs.CR",
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17535v1",
       "published": "2026-07-20T04:27:50+00:00",
       "recommendation": "Maybe relevant",
@@ -4531,7 +5071,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14480v1",
       "published": "2026-07-16T01:53:09+00:00",
       "recommendation": "Maybe relevant",
@@ -4571,7 +5111,7 @@
         "cs.CL",
         "cs.MA"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.12790v1",
       "published": "2026-07-14T14:02:50+00:00",
       "recommendation": "Maybe relevant",
@@ -4614,7 +5154,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
       "published": "2026-07-13T12:58:28+00:00",
       "recommendation": "Maybe relevant",
@@ -4654,7 +5194,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11377v1",
       "published": "2026-07-13T10:40:32+00:00",
       "recommendation": "Maybe relevant",
@@ -4689,7 +5229,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11288v1",
       "published": "2026-07-13T09:07:30+00:00",
       "recommendation": "Maybe relevant",
@@ -4721,7 +5261,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08312v1",
       "published": "2026-07-09T09:55:17+00:00",
       "recommendation": "Maybe relevant",
@@ -4759,7 +5299,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
       "published": "2026-07-09T07:28:21+00:00",
       "recommendation": "Maybe relevant",
@@ -4793,7 +5333,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07557v1",
       "published": "2026-07-08T15:51:57+00:00",
       "recommendation": "Maybe relevant",
@@ -4832,7 +5372,7 @@
         "cs.CR",
         "cs.MA"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07097v1",
       "published": "2026-07-08T07:31:37+00:00",
       "recommendation": "Maybe relevant",
@@ -4868,7 +5408,7 @@
         "cs.CL",
         "cs.CR"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.06364v1",
       "published": "2026-07-07T15:00:46+00:00",
       "recommendation": "Maybe relevant",
@@ -4889,6 +5429,222 @@
       "url": "http://arxiv.org/abs/2607.06364v1"
     },
     {
+      "abstract": "Inspired by recent evidence that transformer architectures benefit from Self-PreTraining (SPT) on long-context benchmarks, we investigate whether similar gains extend to multimodal, multivariate, and even simple univariate medical time series. Our objective is to assess the impact of SPT on the performance and scalability of transformer-based models across diverse medical applications, particularly under limited data conditions. We evaluate transformer architectures on three representative medical time-series tasks: rehabilitation robotics (Camargo dataset), stress detection (Non-EEG Stress), and Parkinson's disease detection (Gait Parkinson's Disease). Models are trained either from scratch or through SPT using four masking-based objectives designed to promote temporal and cross-modal representation learning, and we systematically vary model depth to examine how capacity interacts with pre-training benefits. Across datasets and configurations, SPT consistently improves classification accuracy by 0-6 percentage points depending on masking strategy, dataset and architecture, with gains observed not only in multivariate settings but also when models are restricted to simple univariate inputs. The improvements increase for deeper models that can better exploit the enriched temporal representations learned during pre-training. These findings indicate that SPT is a simple and general strategy that enhances transformer performance on medical time-series tasks without requiring task-specific architectural changes, supporting its potential to improve robustness and accuracy in data-limited clinical settings.",
+      "arxiv_id": "2608.06122v1",
+      "authors": [
+        "Omar Coser",
+        "Antonio Orvieto",
+        "Paolo Soda",
+        "Loredana Zollo"
+      ],
+      "boost_hits": [
+        "pretraining"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.06122v1",
+      "published": "2026-08-06T14:53:23+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Inspired by recent evidence that transformer architectures benefit from Self-PreTraining (SPT) on long-context benchmarks, we investigate whether similar gains extend to multimodal, multivariate, and even simple univariate medical time series.",
+      "title": "Is Self-Pretraining really useful to improve diagnosis in medical Time Series?",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T14:53:23+00:00",
+      "url": "http://arxiv.org/abs/2608.06122v1"
+    },
+    {
+      "abstract": "To address the limitations of video-based emotion recognition under ambiguous or socially masked behavioral cues, as well as the poor deployability of physiological signals, this paper proposes a reliability-aware physiology-to-video knowledge distillation framework, termed BioKD. The proposed framework leverages physiological signals as privileged information during training to guide a video-based student model in learning deep affective representations, while relying solely on non-intrusive video inputs at inference time. To cope with the high noise and instability of physiological teacher supervision caused by inter-subject variability, signal artifacts, and temporal inconsistency, BioKD incorporates a sample-wise reliability-aware gating mechanism together with a progressive distillation strategy. By adaptively regulating the strength of knowledge transfer, the framework suppresses negative transfer induced by unreliable physiological supervision and enables more stable cross-modal distillation. Experiments on DEAP and AMIGOS show that BioKD consistently outperforms representative baselines under both trial-wise and subject-wise evaluation protocols for valence and arousal recognition. For example, BioKD achieves 68.01\\% on DEAP (trial-wise arousal) and 65.29\\% under the more challenging subject-wise setting, demonstrating improved performance under a subject-independent evaluation setting. Further analyses show that BioKD effectively mitigates overconfident teacher errors and outperforms an entropy-only weighting strategy, confirming the importance of explicitly modeling supervision reliability. In addition, BioKD introduces no additional inference-time overhead relative to the same video student architecture and removes the need for physiological sensing and multimodal synchronization.",
+      "arxiv_id": "2608.06023v1",
+      "authors": [
+        "Bojing Hou",
+        "Ruohao Li",
+        "Yitong Zhu",
+        "Hongjun Liu",
+        "Luwen Yu",
+        "Yuyang Wang"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.06023v1",
+      "published": "2026-08-06T13:30:13+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. To address the limitations of video-based emotion recognition under ambiguous or socially masked behavioral cues, as well as the poor deployability of physiological signals, this paper proposes a reliability-aware physiology-to-video knowledge distillation framework, termed BioKD.",
+      "title": "BioKD: Selective Physiology-to-Video Knowledge Distillation via Reliability Gate for Emotion Recognition",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T13:30:13+00:00",
+      "url": "http://arxiv.org/abs/2608.06023v1"
+    },
+    {
+      "abstract": "Routine CT interpretation is inherently comprehensive, capturing incidental findings across the entire scan volume. 3D CT foundation models could assist this process by providing generalizable representations of anatomy and pathology. To evaluate their diagnostic breadth, we benchmark ten frozen CT encoders across three cohorts of thoracic CT scans, including an unseen internal clinical dataset, using $k$-nearest neighbors, zero-shot prompting, and linear probing. We find no universal state-of-the-art, with rankings fluctuating significantly depending on the evaluation context. While models combining fine-grained image tokenization with vision-language alignment generally perform best, a lightweight supervised encoder remains highly competitive, demonstrating that explicit labels can effectively substitute for scale. Crucially, rather than model architecture, we observe that the primary determinant of performance is a physical bottleneck: a finding's detectability scales with its contrast against surrounding tissue and its spatial extent. Through controlled within-organ comparisons, we empirically demonstrate that widespread or high-contrast abnormalities, such as devices and effusions, are reliably recovered. Conversely, small, low-contrast focal lesions remain a persistent challenge across all evaluated encoders. We attribute this to the inherent limitations of globally pooled embeddings, suggesting that accurately representing small, low-contrast structures will require region- or lesion-level pretraining.",
+      "arxiv_id": "2608.05960v1",
+      "authors": [
+        "Maulik Chevli",
+        "Johannes Brandt",
+        "Rickmer Braren",
+        "Daniel Rueckert",
+        "Philip Müller"
+      ],
+      "boost_hits": [
+        "pretraining"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05960v1",
+      "published": "2026-08-06T12:34:17+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Routine CT interpretation is inherently comprehensive, capturing incidental findings across the entire scan volume.",
+      "title": "Big, Bright, or Invisible: A Frozen-Feature Benchmark of 3D CT Foundation Models",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T12:34:17+00:00",
+      "url": "http://arxiv.org/abs/2608.05960v1"
+    },
+    {
+      "abstract": "The experience sampling method (ESM) is a longitudinal research design where participants report their thoughts, emotional states and behaviours multiple times a day. Our work is motivated by such data collected by the GrowIt! app, which was released to investigate daily emotions among adolescents during the COVID-19 pandemic. Current procedures to analyse ESM data face various challenges. While standard statistical techniques may not scale well to a high-dimensional setting, machine learning procedures can give biased results due to selection bias introduced by missingness. In our motivating dataset, adolescents dropped out due to previous strong feelings of negative emotions. Hence, the implied missing data are of the missing-at-random type that standard machine learning procedures cannot accommodate. We develop a novel neural network architecture that generalises mixed effects models to deep learning to overcome these challenges. It allows semi-parametric and flexible modelling of data's mean and correlation structure through fixed and random effects. For estimation, we use an adaptation of variational auto-encoders and a Bayesian data augmentation algorithm. Through this approach, the model can accommodate longitudinal outcomes following generic distributions, scale well to high-dimensional settings and provide valid inference when data are missing-at-random. We applied the Deep Generalised Mixed Model to the GrowIt! study and various simulations. The results show potential for the Deep Generalised Mixed Model, yet suboptimal performance due to model instability.",
+      "arxiv_id": "2608.05930v1",
+      "authors": [
+        "Nina van Gerwen",
+        "Dimitris Rizopoulos",
+        "Manon Hillegers",
+        "Loes Keijsers",
+        "Sten Willemsen"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05930v1",
+      "published": "2026-08-06T11:59:30+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. The experience sampling method (ESM) is a longitudinal research design where participants report their thoughts, emotional states and behaviours multiple times a day.",
+      "title": "Deep Generalised Mixed Models: a Novel Neural Network Structure for Analysing Hierarchical Data",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T11:59:30+00:00",
+      "url": "http://arxiv.org/abs/2608.05930v1"
+    },
+    {
+      "abstract": "Modern models no longer keep a plain KV cache: latent caches, learned sparse selectors and recurrent states each carry the model's memory in a different form, and each fails differently under compression. We give a runtime observability contract that covers all four memory classes with three operators, instantiate it on six model configurations across five architecture families, and compose the per-stage bounds into an executable request-level risk ledger. Contracts carry their error metric as a type -- composition is only defined when metrics match, and this check rejected our own first composed chain; the repaired chain crosses metrics through two proved bridges, and whatever no formal system can certify is measured instead, dropping the composed tier to empirical automatically: every claim is certified, partially certified, or empirical, composition inherits the weakest tier, and the tier is decided by the machine. Replayed over $12.4$M entry reads and run under eight-way concurrency with per-request budgets and fail-closed identity attribution, the ledger quantifies the honest trade-off on today's witness and holds its risk budget with zero violations. A fused always-on probe observes a declared one-layer subset under CUDA graphs inside the serving noise floor. Applied to a served DeepSeek-V4 stack with a packed compressed-KV prototype, the same machinery localizes a silent corruption to a precise structural boundary -- exact in the eviction-free, identity-isolated regime, with every observed failure in an eviction or slot-reuse regime -- through a machine-adjudicated discrimination campaign whose calculus rejected two of our own confounded inferences along the way. All artifacts, guards, and the Lean development are released at https://github.com/metask-ai/witprobe-attention-memory; every number in this paper regenerates from the shipped artifacts by one command.",
+      "arxiv_id": "2608.05863v1",
+      "authors": [
+        "Fanzhe Wei",
+        "Li Liu",
+        "Ziyang Wang",
+        "Chenyu Wang"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05863v1",
+      "published": "2026-08-06T10:41:50+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Modern models no longer keep a plain KV cache: latent caches, learned sparse selectors and recurrent states each carry the model's memory in a different form, and each fails differently under compression.",
+      "title": "Runtime Observability for Heterogeneous Attention Memory",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-08-06T10:41:50+00:00",
+      "url": "http://arxiv.org/abs/2608.05863v1"
+    },
+    {
+      "abstract": "Infrared small target detection (IRSTD) has achieved substantial progress under domain-consistent evaluation, yet detector performance often degrades markedly when generalizing to unseen infrared domains. Existing methods primarily improve detection by enhancing target responses and suppressing background interference. However, when trained on only a limited set of source domains, their learned decision rules are inevitably established from a restricted range of source-domain target-background relation patterns. We formulate this cross-domain failure as target-background relation shift: unseen domains may exhibit relation patterns that are not observed during training, thereby weakening the discriminative capability learned from the source domains. To address this problem, we propose HyTBE, a Hyperbolic Target-Background Expert model that expands source-domain relation patterns and adaptively adjusts visual representations using explicit relation cues. The Target-Background Relation Intervention selectively perturbs either targets or backgrounds, broadening the observable relation patterns during training while maintaining valid supervision. Subsequently, the Hyperbolic Relation Modeling maps multi-scale visual cues into a Poincaré ball and characterizes the target-background relation of each feature token according to its relative distances to the target and background anchors. The Hyperbolic-guided MoE Adapter further uses these hyperbolic relation representations to calibrate multi-scale visual features and aggregate expert-specific feature corrections for different relation patterns. Leave-one-domain-out experiments on NUAA-SIRST, NUDT-SIRST, and IRSTD-1K demonstrate that HyTBE achieves stronger cross-domain generalization than competitive baselines.",
+      "arxiv_id": "2608.05771v1",
+      "authors": [
+        "Aohua Li",
+        "Jin Kuang",
+        "Yubing Lu",
+        "Pingping Liu"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "digest_date": "2026-08-07",
+      "pdf_url": "https://arxiv.org/pdf/2608.05771v1",
+      "published": "2026-08-06T09:02:09+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Infrared small target detection (IRSTD) has achieved substantial progress under domain-consistent evaluation, yet detector performance often degrades markedly when generalizing to unseen infrared domains.",
+      "title": "HyTBE: Hyperbolic Target-Background Expert Model for Cross-Domain Infrared Small Target Detection",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-08-06T09:02:09+00:00",
+      "url": "http://arxiv.org/abs/2608.05771v1"
+    },
+    {
       "abstract": "Airborne surveillance from low Earth orbit is hindered by two interconnected bottlenecks: nanosatellites have a limited downlink budget, yet the conventional approach still transmits terabytes of raw imagery to the ground for processing, and open satellite datasets for aircraft are scarce and severely class-imbalanced. These limitations either delay timely decision-making or prevent standard detectors from learning robust representations of rare aircraft classes. In this paper, a workflow that combines on-board inference with generative data augmentation is proposed to address both limitations jointly. Inference is executed on a 6U CubeSat equipped with a low-power edge tensor accelerator, while a diffusion model fine-tuned through low-rank adaptation generates synthetic minority-class imagery. This synthetic output is automatically annotated, pseudo-labelled, by an intermediate detector and merged with classically augmented samples. The results show that the balanced dataset increases global mean average precision from 77.9% to 82.2%, with the minority class rising from F1=0.683 to F1=0.811, and that the quantised detector fits the on-chip memory and projects 25-30 frames per second on orbit. This approach contrasts with the conventional bent-pipe architecture, in which the satellite acts as a passive data collector. Therefore, the computational tests support the proposed workflow as a decision-support tool for real-time, autonomous airborne surveillance from nanosatellites.",
       "arxiv_id": "2607.28470v1",
       "authors": [
@@ -4904,7 +5660,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28470v1",
       "published": "2026-07-30T16:26:38+00:00",
       "recommendation": "Maybe relevant",
@@ -4941,7 +5697,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28175v1",
       "published": "2026-07-30T13:12:25+00:00",
       "recommendation": "Maybe relevant",
@@ -4979,7 +5735,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28148v1",
       "published": "2026-07-30T12:55:05+00:00",
       "recommendation": "Maybe relevant",
@@ -5017,7 +5773,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.28035v1",
       "published": "2026-07-30T11:18:18+00:00",
       "recommendation": "Maybe relevant",
@@ -5052,7 +5808,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.26946v1",
       "published": "2026-07-29T14:15:29+00:00",
       "recommendation": "Maybe relevant",
@@ -5090,7 +5846,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.26801v1",
       "published": "2026-07-29T11:39:21+00:00",
       "recommendation": "Maybe relevant",
@@ -5128,7 +5884,7 @@
         "cs.CR",
         "cs.DC"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24692v1",
       "published": "2026-07-27T17:34:09+00:00",
       "recommendation": "Maybe relevant",
@@ -5164,7 +5920,7 @@
         "cs.LG",
         "cs.CE"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.24131v1",
       "published": "2026-07-27T08:14:29+00:00",
       "recommendation": "Maybe relevant",
@@ -5200,7 +5956,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.21290v1",
       "published": "2026-07-23T13:12:51+00:00",
       "recommendation": "Maybe relevant",
@@ -5241,7 +5997,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.20274v1",
       "published": "2026-07-22T15:25:05+00:00",
       "recommendation": "Maybe relevant",
@@ -5275,7 +6031,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.20141v1",
       "published": "2026-07-22T13:43:43+00:00",
       "recommendation": "Maybe relevant",
@@ -5310,7 +6066,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.20003v1",
       "published": "2026-07-22T10:39:42+00:00",
       "recommendation": "Maybe relevant",
@@ -5345,7 +6101,7 @@
         "cs.NE",
         "q-bio.NC"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.19973v1",
       "published": "2026-07-22T09:55:25+00:00",
       "recommendation": "Maybe relevant",
@@ -5380,7 +6136,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.18149v1",
       "published": "2026-07-20T16:49:30+00:00",
       "recommendation": "Maybe relevant",
@@ -5416,7 +6172,7 @@
         "cs.AR",
         "cs.CV"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.18101v1",
       "published": "2026-07-20T16:02:58+00:00",
       "recommendation": "Maybe relevant",
@@ -5454,7 +6210,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17790v1",
       "published": "2026-07-20T10:22:53+00:00",
       "recommendation": "Maybe relevant",
@@ -5490,7 +6246,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.17782v1",
       "published": "2026-07-20T10:15:02+00:00",
       "recommendation": "Maybe relevant",
@@ -5532,7 +6288,7 @@
         "cs.GR",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.15271v1",
       "published": "2026-07-16T17:58:18+00:00",
       "recommendation": "Maybe relevant",
@@ -5582,7 +6338,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.15163v1",
       "published": "2026-07-16T16:08:27+00:00",
       "recommendation": "Maybe relevant",
@@ -5620,7 +6376,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.15123v1",
       "published": "2026-07-16T15:32:44+00:00",
       "recommendation": "Maybe relevant",
@@ -5656,7 +6412,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.15094v1",
       "published": "2026-07-16T15:07:23+00:00",
       "recommendation": "Maybe relevant",
@@ -5708,7 +6464,7 @@
         "cs.LG",
         "cs.DC"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14952v1",
       "published": "2026-07-16T13:00:32+00:00",
       "recommendation": "Maybe relevant",
@@ -5742,7 +6498,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14898v1",
       "published": "2026-07-16T12:16:12+00:00",
       "recommendation": "Maybe relevant",
@@ -5781,7 +6537,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14703v1",
       "published": "2026-07-16T08:04:25+00:00",
       "recommendation": "Maybe relevant",
@@ -5818,7 +6574,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14607v1",
       "published": "2026-07-16T06:10:42+00:00",
       "recommendation": "Maybe relevant",
@@ -5851,7 +6607,7 @@
         "cs.CR",
         "cs.CL"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14587v1",
       "published": "2026-07-16T05:33:55+00:00",
       "recommendation": "Maybe relevant",
@@ -5886,7 +6642,7 @@
         "cs.LG",
         "cs.PF"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14431v1",
       "published": "2026-07-15T23:55:48+00:00",
       "recommendation": "Maybe relevant",
@@ -5919,7 +6675,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.14018v1",
       "published": "2026-07-15T16:50:43+00:00",
       "recommendation": "Maybe relevant",
@@ -5953,7 +6709,7 @@
         "cs.LG",
         "q-fin.CP"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.13929v1",
       "published": "2026-07-15T15:10:10+00:00",
       "recommendation": "Maybe relevant",
@@ -5987,7 +6743,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.13612v1",
       "published": "2026-07-15T08:59:36+00:00",
       "recommendation": "Maybe relevant",
@@ -6024,7 +6780,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.13491v1",
       "published": "2026-07-15T06:37:05+00:00",
       "recommendation": "Maybe relevant",
@@ -6061,7 +6817,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.12909v1",
       "published": "2026-07-14T15:43:41+00:00",
       "recommendation": "Maybe relevant",
@@ -6100,7 +6856,7 @@
         "cs.IR",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.12392v1",
       "published": "2026-07-14T06:12:26+00:00",
       "recommendation": "Maybe relevant",
@@ -6138,7 +6894,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.11510v1",
       "published": "2026-07-13T13:00:06+00:00",
       "recommendation": "Maybe relevant",
@@ -6180,7 +6936,7 @@
         "cs.AR",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08427v1",
       "published": "2026-07-09T12:49:24+00:00",
       "recommendation": "Maybe relevant",
@@ -6214,7 +6970,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.08234v1",
       "published": "2026-07-09T08:29:38+00:00",
       "recommendation": "Maybe relevant",
@@ -6250,7 +7006,7 @@
         "q-bio.QM",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07425v1",
       "published": "2026-07-08T13:52:50+00:00",
       "recommendation": "Maybe relevant",
@@ -6289,7 +7045,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07219v1",
       "published": "2026-07-08T10:01:33+00:00",
       "recommendation": "Maybe relevant",
@@ -6332,7 +7088,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07179v1",
       "published": "2026-07-08T09:13:59+00:00",
       "recommendation": "Maybe relevant",
@@ -6366,7 +7122,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-08-06",
+      "digest_date": "2026-08-07",
       "pdf_url": "https://arxiv.org/pdf/2607.07033v1",
       "published": "2026-07-08T06:07:06+00:00",
       "recommendation": "Maybe relevant",
