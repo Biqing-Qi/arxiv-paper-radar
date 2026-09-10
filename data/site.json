@@ -1,9 +1,9 @@
 {
   "dates": [
-    "2026-09-09"
+    "2026-09-10"
   ],
-  "generated_at": "2026-09-09T01:08:20.014599+00:00",
-  "latest_date": "2026-09-09",
+  "generated_at": "2026-09-10T00:54:15.483699+00:00",
+  "latest_date": "2026-09-10",
   "papers": [
     {
       "abstract": "Masked diffusion language models (dLLMs) can commit tokens in any order -- a freedom marketed as their core advantage over autoregressive decoding. We show that on reasoning tasks this freedom is instead the axis of failure. Logging every commitment during decoding of LLaDA-8B on GSM8K, we find that unconstrained (pure) decoding commits the final answer at 15-24% of the trajectory while half the reasoning region is still masked, and collapses to answer-only outputs on up to 90% of problems as the canvas grows. The cause is not the model's termination beliefs -- EOS \"pressure\" is nearly identical across decoders -- but reachability: whether the sampler may act on those beliefs at distant positions. A 2x2 prompt-decoder design shows that chain-of-thought helps only under ordered commitment (interaction +34.8 percentage points, 95% CI [26.8, 42.8]; without reasoning text the decoders are indistinguishable), an interaction we decompose into a collapse channel and an order channel and replicate on Dream-7B and MATH-500. A single-knob intervention -- frontier-gated commitment -- causally recovers the full gap (0.528 to 0.852) while preserving up to 4x parallel decoding, along a measured frontier whose optimal window flips from w=1 at full refinement to unconstrained at 8 tokens/step. Our results reframe existing window-style samplers, previously motivated by efficiency, as the minimal fix for a reasoning pathology they were never designed to address.",
@@ -24,7 +24,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05687v1",
       "published": "2026-08-06T07:25:04+00:00",
       "recommendation": "Read closely",
@@ -78,7 +78,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.04010v1",
       "published": "2026-09-03T15:48:43+00:00",
       "recommendation": "Read closely",
@@ -116,7 +116,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14522v1",
       "published": "2026-07-16T03:19:53+00:00",
       "recommendation": "Read closely",
@@ -155,7 +155,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.15200v1",
       "published": "2026-07-16T16:57:34+00:00",
       "recommendation": "Read closely",
@@ -191,7 +191,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30922v1",
       "published": "2026-08-31T15:00:30+00:00",
       "recommendation": "Read closely",
@@ -239,7 +239,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23061v1",
       "published": "2026-08-24T10:04:17+00:00",
       "recommendation": "Read closely",
@@ -275,7 +275,7 @@
         "stat.ML",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.20123v1",
       "published": "2026-08-20T14:52:17+00:00",
       "recommendation": "Read closely",
@@ -308,7 +308,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09468v1",
       "published": "2026-08-10T11:38:30+00:00",
       "recommendation": "Read closely",
@@ -350,7 +350,7 @@
         "cs.LG",
         "eess.SP"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05124v1",
       "published": "2026-08-05T17:50:08+00:00",
       "recommendation": "Read closely",
@@ -385,7 +385,7 @@
         "cs.CL",
         "cs.PF"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.21535v1",
       "published": "2026-07-23T17:21:44+00:00",
       "recommendation": "Read closely",
@@ -424,7 +424,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.20216v1",
       "published": "2026-07-22T14:36:10+00:00",
       "recommendation": "Read closely",
@@ -465,7 +465,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.12829v1",
       "published": "2026-07-14T14:48:06+00:00",
       "recommendation": "Read closely",
@@ -510,7 +510,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08056v1",
       "published": "2026-07-09T02:07:30+00:00",
       "recommendation": "Read closely",
@@ -532,6 +532,77 @@
       "url": "http://arxiv.org/abs/2607.08056v1"
     },
     {
+      "abstract": "Recent state-space models (SSMs) such as Mamba achieve language modeling performance comparable to transformers despite relying on fundamentally different architectures. This raises an important question: how do these structural differences influence the geometry and functional nature of their internal representations? We study this question through a multi-scale analysis of representations in transformers, SSMs, and hybrid architecture. First, we find that SSMs distribute their representational information evenly across all dimensions, whereas transformer representations are heavily dominated by a single principal direction. By evaluating hybrid architectures, we observe that the representation space becomes increasingly skewed toward a single dominant direction after each attention layer. Next, we explore how the different geometric spread of representations impacts representational capacity through compressibility. Surprisingly, we find that despite their contrasting geometric structures, both architectures exhibit tightly matched effective capacities. We further investigate whether this skewed geometry affects how concepts are encoded. Using rank-constrained probes, we demonstrate that both architectures encode concepts in subspaces of surprisingly similar dimensionality. Furthermore, we demonstrate that the transformers' dominant principal direction does not inherently encode more conceptual information. Finally, we zoom in and examine the alignment between manifolds, either by analyzing representations of specific topics or by looking at the nearest neighborhoods of tokens, and find that they are highly aligned. Ultimately, our analysis suggests that while transformers and SSMs induce different usage of latent space, they display a striking functional convergence at the level of local semantic manifolds.",
+      "arxiv_id": "2609.08692v1",
+      "authors": [
+        "Amit Ben-Artzy",
+        "Roy Schwartz"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08692v1",
+      "published": "2026-09-08T12:57:30+00:00",
+      "recommendation": "Read closely",
+      "score": 11,
+      "summary": "Likely relevant to Model Architecture. Recent state-space models (SSMs) such as Mamba achieve language modeling performance comparable to transformers despite relying on fundamentally different architectures.",
+      "title": "Global Divergence, Local Convergence: Representation Geometry in SSMs and Transformers",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "mamba",
+            "hybrid architecture",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 11
+        }
+      ],
+      "updated": "2026-09-08T12:57:30+00:00",
+      "url": "http://arxiv.org/abs/2609.08692v1"
+    },
+    {
+      "abstract": "Dynamic layer routing reduces the inference cost of Large Language Models (LLMs) by learning to skip layers for individual tokens. Existing methods, however, treat each routing decision as a local operation conditioned solely on the current hidden state which is a formulation that overlooks the sequential, path-dependent nature of routing across depth: earlier decisions shape the representations seen by downstream routers, and the layer-usage objective couples all decisions jointly. We propose History-Aware Routing (HeRo), a dynamic routing framework that resolves this mismatch by introducing a router memory mechanism to maintain an explicit routing state across model depth. The memory is constructed via linear attention, incrementally aggregating preceding routing scores and their induced residual updates into a compact history representation. At each routed layer, the router conditions jointly on this accumulated state and the current hidden representation to select the executed branch. Instantiated for token-wise FFN routing, HeRo trains only lightweight routers and adapters on a frozen backbone, requiring no modification to pretrained parameters. Across Llama 3.1-8B, Llama 2-7B, and Llama 2-13B, HeRo consistently achieves the highest aggregate performance retention among ten baselines. On Llama 3.1-8B, it bypasses 26.87% of model parameters while achieving 100.24% of dense model performance across seven benchmarks, and retains 97.01% while bypassing 38.82% of model parameters under a tighter computation budget. Ablation studies confirm that removing routing history consistently degrades performance, most notably on multistep reasoning and code generation, validating that explicit routing memory enables more accurate and adaptive dynamic routing than solely conditioning on hidden state.",
+      "arxiv_id": "2609.08189v1",
+      "authors": [
+        "Hongjin Lin",
+        "Wentao Wan",
+        "Keze Wang"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "reasoning",
+        "inference"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08189v1",
+      "published": "2026-09-08T03:20:07+00:00",
+      "recommendation": "Read closely",
+      "score": 11,
+      "summary": "Likely relevant to Model Architecture. Dynamic layer routing reduces the inference cost of Large Language Models (LLMs) by learning to skip layers for individual tokens.",
+      "title": "Do Dynamic Routers Need Memory? HeRo: History-Aware Routing for Efficient LLM Inference",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "linear attention"
+          ],
+          "label": "Model Architecture",
+          "score": 4
+        }
+      ],
+      "updated": "2026-09-08T03:20:07+00:00",
+      "url": "http://arxiv.org/abs/2609.08189v1"
+    },
+    {
       "abstract": "Motivated by parallel decoding in masked diffusion models, we study adaptive parallel sampling of discrete vectors: in each round, a deterministic policy selects unrevealed coordinates on the basis of the values observed so far, and the selected coordinates are sampled independently from their exact conditional marginals. Approximation error is measured by forward Kullback-Leibler divergence, and serial depth is the minimum target-averaged number of rounds meeting a prescribed error budget. Our central result is an exact identity: the divergence of every policy equals the expected conditional total correlation accumulated over its reveal rounds, so conditional total correlation is the exact information cost of within-round parallelism. The identity yields zero-error schedules for finite-order Markov chains with round complexity proportional to the Markov order and logarithmic in sequence length, a matching logarithmic characterization of the Bernoulli walk at every fixed error budget, and a linear-versus-logarithmic separation between left-to-right and hierarchical reveal orders. Uniform random permutations require linearly many expected rounds at every fixed budget; their hard-cap round-error tradeoff is an exact integer-composition problem whose fixed-round asymptotics and joint-scaling frontier we determine. Uniform balanced binary strings have depth of order squared logarithm, and binary one-hot blocks have square-root depth, with rectangular versions realizing every polynomial exponent up to one half. These results separate serial depth from entropy and negative log-likelihood, and establish conditional-dependence structure as a fundamental determinant of parallelizability. Experiments with a masked diffusion language model show that the pseudo-cost distinguishes deployed decoding rules and that its policy rankings agree closely with the quality of self-sampled outputs.",
       "arxiv_id": "2608.25505v1",
       "authors": [
@@ -546,7 +617,7 @@
         "cs.IT",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25505v1",
       "published": "2026-08-26T08:16:24+00:00",
       "recommendation": "Read closely",
@@ -585,7 +656,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25428v1",
       "published": "2026-08-26T06:35:26+00:00",
       "recommendation": "Read closely",
@@ -625,7 +696,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25276v1",
       "published": "2026-08-26T01:23:01+00:00",
       "recommendation": "Read closely",
@@ -660,7 +731,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17950v1",
       "published": "2026-08-18T16:05:25+00:00",
       "recommendation": "Read closely",
@@ -705,7 +776,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12149v1",
       "published": "2026-08-12T15:11:18+00:00",
       "recommendation": "Read closely",
@@ -749,7 +820,7 @@
         "cs.IR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.27172v1",
       "published": "2026-07-29T17:46:35+00:00",
       "recommendation": "Read closely",
@@ -784,7 +855,7 @@
         "cs.AI",
         "cs.SD"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.13013v1",
       "published": "2026-07-14T17:53:22+00:00",
       "recommendation": "Read closely",
@@ -829,7 +900,7 @@
         "cs.AI",
         "cs.DC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.12696v1",
       "published": "2026-07-14T12:22:55+00:00",
       "recommendation": "Read closely",
@@ -865,7 +936,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
       "published": "2026-07-13T11:52:42+00:00",
       "recommendation": "Read closely",
@@ -900,7 +971,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25568v1",
       "published": "2026-08-26T09:20:57+00:00",
       "recommendation": "Read closely",
@@ -938,7 +1009,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.22898v1",
       "published": "2026-08-24T07:26:35+00:00",
       "recommendation": "Read closely",
@@ -977,7 +1048,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18575v1",
       "published": "2026-08-19T06:16:09+00:00",
       "recommendation": "Read closely",
@@ -1014,7 +1085,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09424v1",
       "published": "2026-08-10T10:52:20+00:00",
       "recommendation": "Read closely",
@@ -1045,7 +1116,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24306v1",
       "published": "2026-07-27T11:49:50+00:00",
       "recommendation": "Read closely",
@@ -1090,7 +1161,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17715v1",
       "published": "2026-07-20T09:09:23+00:00",
       "recommendation": "Read closely",
@@ -1133,7 +1204,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14647v1",
       "published": "2026-07-16T07:18:05+00:00",
       "recommendation": "Read closely",
@@ -1171,7 +1242,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14576v1",
       "published": "2026-07-16T05:13:44+00:00",
       "recommendation": "Read closely",
@@ -1212,7 +1283,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.13394v1",
       "published": "2026-07-15T02:43:16+00:00",
       "recommendation": "Read closely",
@@ -1232,6 +1303,50 @@
       ],
       "updated": "2026-07-15T02:43:16+00:00",
       "url": "http://arxiv.org/abs/2607.13394v1"
+    },
+    {
+      "abstract": "Universal multimodal embedding (UME) increasingly demands encoder's capacity for handling a broad range of tasks and modalities with increased complexity. Prior scaling methods either increase the representation size, retrieval effort, or scales the encoder into a heavy multimodal LLM. Recent works, such as Think-Then-Embed (TTE), explore scaling via reasoning tokens. However, embedding models are hard to scale up: increasing parameters directly tradeoffs for the large training batch size that contrastive learning needs, and retrieval has to be served under tight latency. Moreover, UME tasks are diverse in complexity, where scaling up embedders can bring significant redundant computation. In this work, we propose MOEMB, which instead scales UME along the expert axis through mixture-of-experts (MoE), growing encoder capacity while preserving single-vector, non-autoregressive encoding. Through a systematic study of the design space and training recipes for MoE-based UME, MoEMB sets a new state of the art on both MMEB-V2 and MRMR among models trained on public MMEB-family data: with only 3B active parameters, MoEMB surpasses TTE-based methods with >4x active parameters, using significantly less computes. To further improve the scalability and efficiency, we conduct the first comprehensive study of adaptive computation for MoE-based embedding, spanning diverse strategies across training-based and inference-only methods. Together, these results support expert scaling as an effective and efficient direction for UME, with adaptive computation further improving efficiency for MLLM-based embedding models towards large-scale retrieval and recommendation systems.",
+      "arxiv_id": "2609.08663v1",
+      "authors": [
+        "Xuanming Cui",
+        "Shlok Kumar Mishra",
+        "Wentao Bao",
+        "Aashu Singh",
+        "Zihao Wang",
+        "Xiangjun Fan",
+        "Jun Xiao",
+        "Ser-Nam Lim",
+        "Jianpeng Cheng"
+      ],
+      "boost_hits": [
+        "llm",
+        "reasoning",
+        "scaling",
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08663v1",
+      "published": "2026-09-08T12:29:50+00:00",
+      "recommendation": "Worth scanning",
+      "score": 9,
+      "summary": "Likely relevant to Model Architecture. Universal multimodal embedding (UME) increasingly demands encoder's capacity for handling a broad range of tasks and modalities with increased complexity.",
+      "title": "MoEMB: Scaling Universal Multimodal Embeddings with Efficient Mixture-of-Experts Models",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-09-08T12:29:50+00:00",
+      "url": "http://arxiv.org/abs/2609.08663v1"
     },
     {
       "abstract": "The convergence of large language models (LLMs), structured knowledge bases (KBs), and reasoning ability (RA) presents a promising trajectory toward general embodied intelligence (GEI). This paper reviews the evolution of LLM-centered intelligent systems, emphasising their integration with knowledge representation, logical reasoning, and physical embodiment. We analyse LLM architectures, pre-training methods, and inference mechanisms, along with their interaction with external knowledge sources and structured reasoning frameworks. Furthermore, we examine embodied intelligence (EI) paradigms wherein agents learn and act in physical environments. To synthesise these dimensions, we present a conceptual framework that illustrates the synergy among LLMs, KBs, RA, and embodiment, serving as a guiding model for perception, reasoning, and action rather than an implemented engineering architecture. To advance toward GEI, we identify five key challenges: efficient LLM deployment, closed-loop knowledge integration, hybrid symbolic-neural reasoning, perception-action grounding, and continual learning. This survey provides a comprehensive roadmap for developing adaptive, multimodal agents capable of operating in complex, dynamic settings.",
@@ -1258,7 +1373,7 @@
         "cs.AI",
         "cs.RO"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19794v1",
       "published": "2026-08-20T08:45:51+00:00",
       "recommendation": "Worth scanning",
@@ -1294,7 +1409,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17687v1",
       "published": "2026-08-18T12:00:20+00:00",
       "recommendation": "Worth scanning",
@@ -1335,7 +1450,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11758v1",
       "published": "2026-08-12T07:55:15+00:00",
       "recommendation": "Worth scanning",
@@ -1380,7 +1495,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10823v1",
       "published": "2026-08-11T11:50:48+00:00",
       "recommendation": "Worth scanning",
@@ -1421,7 +1536,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05872v1",
       "published": "2026-08-06T10:51:34+00:00",
       "recommendation": "Worth scanning",
@@ -1460,7 +1575,7 @@
         "cs.CY",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28319v1",
       "published": "2026-07-30T14:54:33+00:00",
       "recommendation": "Worth scanning",
@@ -1495,7 +1610,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24555v1",
       "published": "2026-07-27T15:28:52+00:00",
       "recommendation": "Worth scanning",
@@ -1532,7 +1647,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24507v1",
       "published": "2026-07-27T14:40:26+00:00",
       "recommendation": "Worth scanning",
@@ -1574,7 +1689,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.21291v1",
       "published": "2026-07-23T13:13:04+00:00",
       "recommendation": "Worth scanning",
@@ -1609,7 +1724,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08284v1",
       "published": "2026-07-09T09:28:06+00:00",
       "recommendation": "Worth scanning",
@@ -1691,7 +1806,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08186v1",
       "published": "2026-07-09T07:37:59+00:00",
       "recommendation": "Worth scanning",
@@ -1732,7 +1847,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07386v1",
       "published": "2026-07-08T13:17:19+00:00",
       "recommendation": "Worth scanning",
@@ -1774,7 +1889,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.06452v1",
       "published": "2026-07-07T16:12:51+00:00",
       "recommendation": "Worth scanning",
@@ -1811,7 +1926,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.04159v1",
       "published": "2026-09-03T17:49:12+00:00",
       "recommendation": "Worth scanning",
@@ -1851,7 +1966,7 @@
         "cs.AI",
         "cs.CR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02293v1",
       "published": "2026-09-02T08:40:19+00:00",
       "recommendation": "Worth scanning",
@@ -1888,7 +2003,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26990v1",
       "published": "2026-08-27T11:37:13+00:00",
       "recommendation": "Worth scanning",
@@ -1927,7 +2042,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26836v1",
       "published": "2026-08-27T09:06:52+00:00",
       "recommendation": "Worth scanning",
@@ -1970,7 +2085,7 @@
         "cs.CL",
         "cs.IR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25487v1",
       "published": "2026-08-26T07:59:24+00:00",
       "recommendation": "Worth scanning",
@@ -2005,7 +2120,7 @@
         "stat.ML",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.24195v1",
       "published": "2026-08-25T08:00:40+00:00",
       "recommendation": "Worth scanning",
@@ -2054,7 +2169,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23058v1",
       "published": "2026-08-24T10:02:39+00:00",
       "recommendation": "Worth scanning",
@@ -2092,7 +2207,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19758v1",
       "published": "2026-08-20T08:02:55+00:00",
       "recommendation": "Worth scanning",
@@ -2124,7 +2239,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18592v1",
       "published": "2026-08-19T06:34:04+00:00",
       "recommendation": "Worth scanning",
@@ -2166,7 +2281,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17379v1",
       "published": "2026-08-18T05:14:41+00:00",
       "recommendation": "Worth scanning",
@@ -2207,7 +2322,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13463v1",
       "published": "2026-08-13T16:45:24+00:00",
       "recommendation": "Worth scanning",
@@ -2259,7 +2374,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13113v1",
       "published": "2026-08-13T11:40:56+00:00",
       "recommendation": "Worth scanning",
@@ -2297,7 +2412,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12218v1",
       "published": "2026-08-12T16:13:05+00:00",
       "recommendation": "Worth scanning",
@@ -2336,7 +2451,7 @@
         "cs.SD",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12099v1",
       "published": "2026-08-12T14:21:05+00:00",
       "recommendation": "Worth scanning",
@@ -2373,7 +2488,7 @@
         "cs.NI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10532v1",
       "published": "2026-08-11T06:15:20+00:00",
       "recommendation": "Worth scanning",
@@ -2409,7 +2524,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09857v1",
       "published": "2026-08-10T17:15:55+00:00",
       "recommendation": "Worth scanning",
@@ -2453,7 +2568,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05970v1",
       "published": "2026-08-06T12:46:13+00:00",
       "recommendation": "Worth scanning",
@@ -2494,7 +2609,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05303v1",
       "published": "2026-08-05T18:03:47+00:00",
       "recommendation": "Worth scanning",
@@ -2528,7 +2643,7 @@
         "stat.ML",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28248v1",
       "published": "2026-07-30T14:10:31+00:00",
       "recommendation": "Worth scanning",
@@ -2566,7 +2681,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28166v1",
       "published": "2026-07-30T13:04:47+00:00",
       "recommendation": "Worth scanning",
@@ -2607,7 +2722,7 @@
         "cs.GR",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24665v1",
       "published": "2026-07-27T17:05:04+00:00",
       "recommendation": "Worth scanning",
@@ -2642,7 +2757,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24371v1",
       "published": "2026-07-27T12:45:27+00:00",
       "recommendation": "Worth scanning",
@@ -2677,7 +2792,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24331v1",
       "published": "2026-07-27T12:08:56+00:00",
       "recommendation": "Worth scanning",
@@ -2711,7 +2826,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.21384v1",
       "published": "2026-07-23T14:47:00+00:00",
       "recommendation": "Worth scanning",
@@ -2755,7 +2870,7 @@
         "cs.MA",
         "cs.MM"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.15202v1",
       "published": "2026-07-16T16:59:54+00:00",
       "recommendation": "Worth scanning",
@@ -2801,7 +2916,7 @@
         "cs.LG",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14530v1",
       "published": "2026-07-16T03:31:03+00:00",
       "recommendation": "Worth scanning",
@@ -2838,7 +2953,7 @@
         "cs.CL",
         "math.OC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.12550v1",
       "published": "2026-07-14T09:23:20+00:00",
       "recommendation": "Worth scanning",
@@ -2873,7 +2988,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
       "published": "2026-07-13T14:05:55+00:00",
       "recommendation": "Worth scanning",
@@ -2894,6 +3009,44 @@
       "url": "http://arxiv.org/abs/2607.11586v1"
     },
     {
+      "abstract": "Large Language Models (LLMs) are increasingly being investigated for physiological time-series prediction, yet their effectiveness may depend not only on the model itself, but also on how physiological information is represented and presented at inference time. This study investigates prompt-based general-purpose LLMs for postprandial hyperglycemia and hypoglycemia prediction in individuals with type 1 diabetes. Using the OhioT1DM dataset, we evaluate multiple open-weight LLMs under zero-shot and few-shot inference across prediction horizons of 30, 60, and 90 minutes. The analysis varies both the textual representation of the available physiological information and the amount of information exposed to the model, ranging from glucose observations alone to derived descriptors and additional contextual variables related to insulin, meals, carbohydrates, and physical activity. Performance is compared with conventional patient-specific supervised models and with Gluco-LLM, a language-model-based architecture explicitly adapted to glucose time-series forecasting. Results show a marked task-dependent behavior. Conventional supervised models achieve the strongest performance for hyperglycemia prediction, whereas the best observed prompt-based LLM configurations improve performance for hypoglycemia across all investigated horizons. The effectiveness of prompt-based inference is also strongly influenced by how physiological information is represented, while providing additional contextual information does not lead to a systematic improvement. Overall, these findings highlight physiological information representation as a central design factor in prompt-based LLM approaches to glycemic-event prediction.",
+      "arxiv_id": "2609.08772v1",
+      "authors": [
+        "Andrea Apicella",
+        "Pasquale Arpaia",
+        "Matteo Orefice",
+        "Andrea Pollastro",
+        "Roberto Prevete"
+      ],
+      "boost_hits": [
+        "large language model",
+        "llm",
+        "inference"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08772v1",
+      "published": "2026-09-08T14:07:03+00:00",
+      "recommendation": "Worth scanning",
+      "score": 7,
+      "summary": "Likely relevant to Model Architecture. Large Language Models (LLMs) are increasingly being investigated for physiological time-series prediction, yet their effectiveness may depend not only on the model itself, but also on how physiological information is represented and presented at inference time.",
+      "title": "It's All in the Way You Say It: The Role of Information Representation in LLM-Based Glycemic-Event Prediction",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T14:07:03+00:00",
+      "url": "http://arxiv.org/abs/2609.08772v1"
+    },
+    {
       "abstract": "Retrieval Augmented Generation (RAG) is a key component for generating accurate and hallucination free answers using Large Language Models (LLMs). LLMs are improving at handling long context, but still suffer from \"lost in the middle\" problem. Thus, precise and accurate retrieval is important. Current retrievers chunk long context into length-based manageable chunks - in the process throwing away rich and informative semantic global structure in the corpus. We introduce a novel retrieval system STAIR that empowers an LLM to exploit global structure in a corpus such as a Table of Contents (ToC) to efficiently store and retrieve information from its model parameters. Our thorough and careful ablation studies with a finetuned Differentiable Search Index (DSI) system show that ToC helps build a low hallucination (less than 0.05%) generative Information Retrieval (IR) system and can generalize to examples where very few training samples are available. To further research in this novel direction of ToC based retrieval we release SearchTome - a diverse benchmark created from 18 books across 6 diverse domains to further research in this novel direction. STAIR achieves a high Recall@1 score of 82.6% on SearchTome as compared to DSI (76.9%), where the difference is found to be statistically significant. STAIR easily beats other strong baselines such as BM25 (59.5%), DPR (68.7%) and out-of-the-box Mistral (13.8%).",
       "arxiv_id": "2609.03874v1",
       "authors": [
@@ -2911,7 +3064,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03874v1",
       "published": "2026-09-03T14:02:53+00:00",
       "recommendation": "Worth scanning",
@@ -2948,7 +3101,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03844v1",
       "published": "2026-09-03T13:38:49+00:00",
       "recommendation": "Worth scanning",
@@ -3010,7 +3163,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03796v1",
       "published": "2026-09-03T13:02:40+00:00",
       "recommendation": "Worth scanning",
@@ -3048,7 +3201,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30963v1",
       "published": "2026-08-31T15:28:17+00:00",
       "recommendation": "Worth scanning",
@@ -3104,7 +3257,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30567v1",
       "published": "2026-08-31T10:42:35+00:00",
       "recommendation": "Worth scanning",
@@ -3140,7 +3293,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30564v1",
       "published": "2026-08-31T10:39:01+00:00",
       "recommendation": "Worth scanning",
@@ -3176,7 +3329,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25583v1",
       "published": "2026-08-26T09:51:41+00:00",
       "recommendation": "Worth scanning",
@@ -3212,7 +3365,7 @@
         "cs.DB",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25577v1",
       "published": "2026-08-26T09:38:02+00:00",
       "recommendation": "Worth scanning",
@@ -3254,7 +3407,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25531v1",
       "published": "2026-08-26T08:39:09+00:00",
       "recommendation": "Worth scanning",
@@ -3291,7 +3444,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23167v1",
       "published": "2026-08-24T12:13:34+00:00",
       "recommendation": "Worth scanning",
@@ -3332,7 +3485,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.20316v1",
       "published": "2026-08-20T17:54:37+00:00",
       "recommendation": "Worth scanning",
@@ -3369,7 +3522,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16844v1",
       "published": "2026-08-17T17:30:43+00:00",
       "recommendation": "Worth scanning",
@@ -3413,7 +3566,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16513v1",
       "published": "2026-08-17T12:54:10+00:00",
       "recommendation": "Worth scanning",
@@ -3454,7 +3607,7 @@
         "cs.CL",
         "eess.AS"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13101v1",
       "published": "2026-08-13T11:25:23+00:00",
       "recommendation": "Worth scanning",
@@ -3488,7 +3641,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13069v1",
       "published": "2026-08-13T10:33:00+00:00",
       "recommendation": "Worth scanning",
@@ -3524,7 +3677,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12018v1",
       "published": "2026-08-12T12:55:54+00:00",
       "recommendation": "Worth scanning",
@@ -3563,7 +3716,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11785v1",
       "published": "2026-08-12T08:27:14+00:00",
       "recommendation": "Worth scanning",
@@ -3597,7 +3750,7 @@
         "cs.AI",
         "cs.CC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11066v1",
       "published": "2026-08-11T15:32:15+00:00",
       "recommendation": "Worth scanning",
@@ -3635,7 +3788,7 @@
         "cs.LG",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11027v1",
       "published": "2026-08-11T15:07:28+00:00",
       "recommendation": "Worth scanning",
@@ -3671,7 +3824,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10605v1",
       "published": "2026-08-11T07:49:00+00:00",
       "recommendation": "Worth scanning",
@@ -3710,7 +3863,7 @@
         "cs.IR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09605v1",
       "published": "2026-08-10T13:47:46+00:00",
       "recommendation": "Worth scanning",
@@ -3748,7 +3901,7 @@
         "cs.AI",
         "cs.HC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09421v1",
       "published": "2026-08-10T10:49:17+00:00",
       "recommendation": "Worth scanning",
@@ -3788,7 +3941,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28527v1",
       "published": "2026-07-30T17:01:27+00:00",
       "recommendation": "Worth scanning",
@@ -3825,7 +3978,7 @@
         "cs.AI",
         "cs.MM"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28269v1",
       "published": "2026-07-30T14:23:01+00:00",
       "recommendation": "Worth scanning",
@@ -3865,7 +4018,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24593v1",
       "published": "2026-07-27T15:58:07+00:00",
       "recommendation": "Worth scanning",
@@ -3964,7 +4117,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.20145v1",
       "published": "2026-07-22T13:49:17+00:00",
       "recommendation": "Worth scanning",
@@ -4000,7 +4153,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14711v1",
       "published": "2026-07-16T08:22:08+00:00",
       "recommendation": "Worth scanning",
@@ -4057,7 +4210,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.13431v1",
       "published": "2026-07-15T04:23:22+00:00",
       "recommendation": "Worth scanning",
@@ -4094,7 +4247,7 @@
         "cs.CY",
         "cs.SE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.12650v1",
       "published": "2026-07-14T11:33:44+00:00",
       "recommendation": "Worth scanning",
@@ -4129,7 +4282,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11758v1",
       "published": "2026-07-13T16:22:01+00:00",
       "recommendation": "Worth scanning",
@@ -4171,7 +4324,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07467v1",
       "published": "2026-07-08T14:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -4206,7 +4359,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07258v1",
       "published": "2026-07-08T10:46:02+00:00",
       "recommendation": "Worth scanning",
@@ -4242,7 +4395,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.06269v1",
       "published": "2026-07-07T13:34:27+00:00",
       "recommendation": "Worth scanning",
@@ -4263,6 +4416,83 @@
       "url": "http://arxiv.org/abs/2607.06269v1"
     },
     {
+      "abstract": "Long-term memory is a core capability for personalized LLM agents. To support it, existing memory systems organize information using various criteria such as topic segments or summary hierarchies. However, we identify two major limitations in these designs. First, they lack scene awareness: memories from unrelated life scenes share the same retrieval space, which inflates the search space and introduces cross-scene interference. Second, they encode each memory from a single perspective, making it difficult to retrieve complementary views of the same event. In this paper, we propose the CreaMem architecture, which enables scene-aware memory organization by partitioning memory into several Life Scene Memories to reduce cross-scene interference at retrieval. To go beyond the single perspective and achieve cross-memory synergy, entries are dual-coded from both episodic and trait-based perspectives within each memory. We further devise a permemory balanced sampling strategy at retrieval time. Extensive experiments on two long-term memory benchmarks show that CreaMem improves QA accuracy across all evaluation metrics, with particularly large gains on multi-hop reasoning performance, validating scene-aware partitioning and cross-memory synergy. To enhance reproducibility, we release our code in a public GitHub repository.",
+      "arxiv_id": "2609.08550v1",
+      "authors": [
+        "Qixuan Sun",
+        "Yue Que",
+        "Bowei He",
+        "Jin Guo",
+        "Dihang Yang",
+        "Wenchang Situ",
+        "Chen Ma"
+      ],
+      "boost_hits": [
+        "llm",
+        "reasoning"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08550v1",
+      "published": "2026-09-08T10:33:05+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. Long-term memory is a core capability for personalized LLM agents.",
+      "title": "CreaMem: A Scene-Aware Memory Architecture for Personalized Agents",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T10:33:05+00:00",
+      "url": "http://arxiv.org/abs/2609.08550v1"
+    },
+    {
+      "abstract": "Key-value (KV) cache eviction is essential for scaling long-context inference in Large Language Models. However, existing policies predominantly rely on empirical heuristics, lacking a rigorous characterization of token utility under the inherently nonlinear softmax attention mechanism. In this work, we rethink KV cache eviction through the lens of local information geometry, modeling the attention process as a nonlinear Gaussian communication channel. By performing a first-order Taylor expansion of the attention mapping, we derive the Jacobian Information Capacity, a novel objective that explicitly captures query relevance, softmax sensitivity, and structural diversity. Guided by this theory, we introduce Jacap, a capacity-aware eviction method that utilizes softmax-aware importance weighting and statistical leverage scores for subset selection. Extensive experiments across diverse architectures and benchmarks demonstrate that \\textsc{Jacap} delivers superior performance in most scenarios, particularly in high-compression regimes.",
+      "arxiv_id": "2609.08131v1",
+      "authors": [
+        "Jiaming Yang",
+        "Chenwei Tang",
+        "Liangli Zhen",
+        "Chenyang Zhang",
+        "Jiancheng Lv"
+      ],
+      "boost_hits": [
+        "large language model",
+        "scaling",
+        "inference"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08131v1",
+      "published": "2026-09-08T02:08:57+00:00",
+      "recommendation": "Worth scanning",
+      "score": 6,
+      "summary": "Likely relevant to Model Architecture. Key-value (KV) cache eviction is essential for scaling long-context inference in Large Language Models.",
+      "title": "Jacap: Robust KV Cache Eviction via Jacobian-Based Nonlinear Information Capacity Preservation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T02:08:57+00:00",
+      "url": "http://arxiv.org/abs/2609.08131v1"
+    },
+    {
       "abstract": "Hybrid LLMs pair softmax attention with linear-attention layers such as Gated DeltaNet (GDN), whose recurrent state summarizes the context in fixed size. Early community 4-bit quantizations of Qwen3.8-27B (48 GDN layers, 16 attention layers) left the GDN block in 8- or 16-bit precision -- especially its decay and write-strength gates -- on the intuition that errors in a recurrence accumulate over long contexts. We test that intuition by building Minima: NVFP4 W4A4 on all 496 linear layers, GDN included. Across perplexity at 4K/32K, MMLU-Pro, GSM8K, AIME'25, GPQA-Diamond, LiveCodeBench, and RULER retrieval to 64K, Minima matches BF16 within seed noise (5-task average -0.52) while being the smallest (17.5 GiB) and fastest-prefill (+14-19%) recipe we compare, and its 32K perplexity gap shrinks with position. A four-part mechanism study explains why: (i) NVFP4's 16-element block scaling localizes the residual stream's extreme outliers, equalizing activation error across layer roles; (ii) the supposedly fragile gate projections are the least sensitive -- softplus/exponential and sigmoid parameterizations compress ~11% GEMM error to ~2% output error; (iii) the delta-rule recurrence holds injected noise at a flat plateau over 32K tokens and forgets a state impulse within hundreds of steps, because each write overwrites the state along the current key direction; (iv) the per-token quantization cost washes out with context instead of compounding. We also repair a global-scale mismatch that arises when per-module-calibrated NVFP4 checkpoints are served by kernels that fuse those modules into one GEMM, and show calibrated FP8 KV-cache scales are performance-free. The result: a practical recipe -- quantize everything, ship KV scales -- and a mechanistic account of why the recurrent half of a hybrid LLM is the easy half to quantize. Checkpoint: https://huggingface.co/minima-ai/mnma_qwen3.8_27b_nvfp4",
       "arxiv_id": "2609.04098v1",
       "authors": [
@@ -4276,7 +4506,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.04098v1",
       "published": "2026-09-03T17:04:26+00:00",
       "recommendation": "Worth scanning",
@@ -4313,7 +4543,7 @@
         "cs.SE",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03721v1",
       "published": "2026-09-03T11:54:27+00:00",
       "recommendation": "Worth scanning",
@@ -4347,7 +4577,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02315v1",
       "published": "2026-09-02T09:01:42+00:00",
       "recommendation": "Worth scanning",
@@ -4385,7 +4615,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02253v1",
       "published": "2026-09-02T08:00:41+00:00",
       "recommendation": "Worth scanning",
@@ -4420,7 +4650,7 @@
         "cs.LG",
         "stat.CO"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02138v1",
       "published": "2026-09-02T05:45:16+00:00",
       "recommendation": "Worth scanning",
@@ -4455,7 +4685,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.31118v1",
       "published": "2026-08-31T17:30:05+00:00",
       "recommendation": "Worth scanning",
@@ -4490,7 +4720,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30811v1",
       "published": "2026-08-31T13:58:59+00:00",
       "recommendation": "Worth scanning",
@@ -4528,7 +4758,7 @@
         "cs.MA",
         "cs.MM"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30672v1",
       "published": "2026-08-31T12:13:41+00:00",
       "recommendation": "Worth scanning",
@@ -4566,7 +4796,7 @@
         "cs.LG",
         "cs.MA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.29596v1",
       "published": "2026-08-30T06:36:42+00:00",
       "recommendation": "Worth scanning",
@@ -4600,7 +4830,7 @@
         "cs.SE",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.27427v1",
       "published": "2026-08-27T17:50:07+00:00",
       "recommendation": "Worth scanning",
@@ -4635,7 +4865,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.27402v1",
       "published": "2026-08-27T17:30:30+00:00",
       "recommendation": "Worth scanning",
@@ -4676,7 +4906,7 @@
         "cs.AI",
         "cs.CR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.27102v1",
       "published": "2026-08-27T13:18:26+00:00",
       "recommendation": "Worth scanning",
@@ -4716,7 +4946,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.27044v1",
       "published": "2026-08-27T12:31:55+00:00",
       "recommendation": "Worth scanning",
@@ -4753,7 +4983,7 @@
         "cs.LG",
         "cond-mat.mtrl-sci"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26962v1",
       "published": "2026-08-27T11:01:18+00:00",
       "recommendation": "Worth scanning",
@@ -4788,7 +5018,7 @@
         "q-bio.QM",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26585v1",
       "published": "2026-08-27T03:53:59+00:00",
       "recommendation": "Worth scanning",
@@ -4823,7 +5053,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25941v1",
       "published": "2026-08-26T15:57:42+00:00",
       "recommendation": "Worth scanning",
@@ -4862,7 +5092,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25937v1",
       "published": "2026-08-26T15:52:20+00:00",
       "recommendation": "Worth scanning",
@@ -4900,7 +5130,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23497v1",
       "published": "2026-08-24T16:57:28+00:00",
       "recommendation": "Worth scanning",
@@ -4932,7 +5162,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23463v1",
       "published": "2026-08-24T16:31:46+00:00",
       "recommendation": "Worth scanning",
@@ -4966,7 +5196,7 @@
         "cs.AI",
         "cs.CR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.20240v1",
       "published": "2026-08-20T16:31:01+00:00",
       "recommendation": "Worth scanning",
@@ -5005,7 +5235,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.20061v1",
       "published": "2026-08-20T13:57:43+00:00",
       "recommendation": "Worth scanning",
@@ -5044,7 +5274,7 @@
         "cs.AI",
         "cs.PL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19889v1",
       "published": "2026-08-20T10:56:34+00:00",
       "recommendation": "Worth scanning",
@@ -5079,7 +5309,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19529v1",
       "published": "2026-08-20T00:54:36+00:00",
       "recommendation": "Worth scanning",
@@ -5118,7 +5348,7 @@
         "cs.LG",
         "cs.MM"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19115v1",
       "published": "2026-08-19T17:10:03+00:00",
       "recommendation": "Worth scanning",
@@ -5157,7 +5387,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18539v1",
       "published": "2026-08-19T04:45:59+00:00",
       "recommendation": "Worth scanning",
@@ -5193,7 +5423,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18008v1",
       "published": "2026-08-18T16:55:46+00:00",
       "recommendation": "Worth scanning",
@@ -5229,7 +5459,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17638v1",
       "published": "2026-08-18T10:56:31+00:00",
       "recommendation": "Worth scanning",
@@ -5270,7 +5500,7 @@
         "cs.HC",
         "cs.MM"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16514v1",
       "published": "2026-08-17T12:54:39+00:00",
       "recommendation": "Worth scanning",
@@ -5304,7 +5534,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16347v1",
       "published": "2026-08-17T09:53:27+00:00",
       "recommendation": "Worth scanning",
@@ -5334,7 +5564,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16295v1",
       "published": "2026-08-17T09:07:45+00:00",
       "recommendation": "Worth scanning",
@@ -5373,7 +5603,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13517v1",
       "published": "2026-08-13T17:37:53+00:00",
       "recommendation": "Worth scanning",
@@ -5410,7 +5640,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12953v1",
       "published": "2026-08-13T08:32:18+00:00",
       "recommendation": "Worth scanning",
@@ -5453,7 +5683,7 @@
         "cs.IR",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12138v1",
       "published": "2026-08-12T14:55:46+00:00",
       "recommendation": "Worth scanning",
@@ -5492,7 +5722,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12129v1",
       "published": "2026-08-12T14:49:40+00:00",
       "recommendation": "Worth scanning",
@@ -5527,7 +5757,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11753v1",
       "published": "2026-08-12T07:46:29+00:00",
       "recommendation": "Worth scanning",
@@ -5566,7 +5796,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10621v1",
       "published": "2026-08-11T08:08:41+00:00",
       "recommendation": "Worth scanning",
@@ -5608,7 +5838,7 @@
         "cs.AI",
         "cs.SI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09510v1",
       "published": "2026-08-10T12:13:41+00:00",
       "recommendation": "Worth scanning",
@@ -5647,7 +5877,7 @@
         "cs.AI",
         "cs.ET"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06294v1",
       "published": "2026-08-06T17:18:03+00:00",
       "recommendation": "Worth scanning",
@@ -5681,7 +5911,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06001v1",
       "published": "2026-08-06T13:09:05+00:00",
       "recommendation": "Worth scanning",
@@ -5716,7 +5946,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05928v1",
       "published": "2026-08-06T11:58:29+00:00",
       "recommendation": "Worth scanning",
@@ -5759,7 +5989,7 @@
         "cs.SE",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28307v1",
       "published": "2026-07-30T14:45:18+00:00",
       "recommendation": "Worth scanning",
@@ -5795,7 +6025,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.26596v1",
       "published": "2026-07-29T08:16:28+00:00",
       "recommendation": "Worth scanning",
@@ -5853,7 +6083,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24743v1",
       "published": "2026-07-27T17:59:49+00:00",
       "recommendation": "Worth scanning",
@@ -5891,7 +6121,7 @@
         "cs.AI",
         "cs.ET"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24714v1",
       "published": "2026-07-27T17:51:18+00:00",
       "recommendation": "Worth scanning",
@@ -6326,7 +6556,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24653v1",
       "published": "2026-07-27T16:49:54+00:00",
       "recommendation": "Worth scanning",
@@ -6362,7 +6592,7 @@
         "cs.AI",
         "cs.DL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24512v1",
       "published": "2026-07-27T14:53:40+00:00",
       "recommendation": "Worth scanning",
@@ -6395,7 +6625,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24352v1",
       "published": "2026-07-27T12:31:25+00:00",
       "recommendation": "Worth scanning",
@@ -6431,7 +6661,7 @@
         "cs.CL",
         "cs.SD"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24030v1",
       "published": "2026-07-27T05:55:50+00:00",
       "recommendation": "Worth scanning",
@@ -6465,7 +6695,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.20214v1",
       "published": "2026-07-22T14:34:49+00:00",
       "recommendation": "Worth scanning",
@@ -6502,7 +6732,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.18232v1",
       "published": "2026-07-20T17:58:31+00:00",
       "recommendation": "Worth scanning",
@@ -6544,7 +6774,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.18213v1",
       "published": "2026-07-20T17:47:44+00:00",
       "recommendation": "Worth scanning",
@@ -6591,7 +6821,7 @@
         "eess.SY",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.18147v1",
       "published": "2026-07-20T16:45:13+00:00",
       "recommendation": "Worth scanning",
@@ -6628,7 +6858,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17883v1",
       "published": "2026-07-20T12:34:44+00:00",
       "recommendation": "Worth scanning",
@@ -6662,7 +6892,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17710v1",
       "published": "2026-07-20T09:06:15+00:00",
       "recommendation": "Worth scanning",
@@ -6701,7 +6931,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.15178v1",
       "published": "2026-07-16T16:33:59+00:00",
       "recommendation": "Worth scanning",
@@ -6735,7 +6965,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.15047v1",
       "published": "2026-07-16T14:26:22+00:00",
       "recommendation": "Worth scanning",
@@ -6771,7 +7001,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.12634v1",
       "published": "2026-07-14T11:11:00+00:00",
       "recommendation": "Worth scanning",
@@ -6807,7 +7037,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11703v1",
       "published": "2026-07-13T15:33:45+00:00",
       "recommendation": "Worth scanning",
@@ -6842,7 +7072,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11400v1",
       "published": "2026-07-13T11:07:57+00:00",
       "recommendation": "Worth scanning",
@@ -6875,7 +7105,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11279v1",
       "published": "2026-07-13T08:59:47+00:00",
       "recommendation": "Worth scanning",
@@ -6921,7 +7151,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11138v1",
       "published": "2026-07-13T06:15:51+00:00",
       "recommendation": "Worth scanning",
@@ -6955,7 +7185,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08601v1",
       "published": "2026-07-09T15:32:54+00:00",
       "recommendation": "Worth scanning",
@@ -6998,7 +7228,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
       "published": "2026-07-09T13:55:55+00:00",
       "recommendation": "Worth scanning",
@@ -7040,7 +7270,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08403v1",
       "published": "2026-07-09T12:28:39+00:00",
       "recommendation": "Worth scanning",
@@ -7079,7 +7309,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08357v1",
       "published": "2026-07-09T11:08:39+00:00",
       "recommendation": "Worth scanning",
@@ -7114,7 +7344,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08288v1",
       "published": "2026-07-09T09:32:03+00:00",
       "recommendation": "Worth scanning",
@@ -7151,7 +7381,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08282v1",
       "published": "2026-07-09T09:23:13+00:00",
       "recommendation": "Worth scanning",
@@ -7187,7 +7417,7 @@
         "cs.CL",
         "cs.SE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08028v1",
       "published": "2026-07-09T01:08:33+00:00",
       "recommendation": "Worth scanning",
@@ -7225,7 +7455,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.06327v1",
       "published": "2026-07-07T14:25:09+00:00",
       "recommendation": "Worth scanning",
@@ -7246,6 +7476,168 @@
       "url": "http://arxiv.org/abs/2607.06327v1"
     },
     {
+      "abstract": "Onboard object detection in Earth observation is constrained by limited computational resources and the absence of fully corrected imagery. While convolutional detectors are hardware-efficient, they often struggle to extract robust representations from raw and noisy data. Conversely, transformer-based models provide stronger global reasoning capabilities but remain difficult to deploy on FPGA accelerators due to quadratic attention complexity and non-compatible operations. We introduce TriCCOT, a tri-part architecture for robust and deployable onboard object detection. TriCCOT combines a convolutional region proposal network, a conformal prediction stage, and Aper-GATES, our hardware-friendly attention-based classifier. The region proposal network generates candidate bounding boxes, which are subsequently enlarged via conformal prediction, providing a distribution-free probabilistic coverage guarantee. The resulting crops are processed by Aper-GATES, which reformulates self-attention through convolutional projections, global channel statistics, and hardware-friendly gating operations, avoiding standard transformer operations that are poorly suited to CNN-oriented accelerators. Experiments on the DIOR and VDVRaw datasets demonstrate competitive detection performance and improved robustness to spatial blur and signal-dependent noise when compared to FPGA-compatible architectures. Finally, we report full deployment on a Xilinx Versal VCK190 FPGA without modifying the underlying DPU architecture, enabling unified CNN-Transformer inference for spaceborne embedded applications.",
+      "arxiv_id": "2609.08659v1",
+      "authors": [
+        "Adrien Dorise",
+        "Marjorie Bellizzi",
+        "Julia Cohen",
+        "Stéphane May"
+      ],
+      "boost_hits": [
+        "reasoning",
+        "inference"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08659v1",
+      "published": "2026-09-08T12:26:55+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. Onboard object detection in Earth observation is constrained by limited computational resources and the absence of fully corrected imagery.",
+      "title": "TriCCOT: Tri-part Convolutional Conformal Transformer for Onboard Space Object Detection",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T12:26:55+00:00",
+      "url": "http://arxiv.org/abs/2609.08659v1"
+    },
+    {
+      "abstract": "Long context language models now advertise windows of one million tokens, but two habits limit how much of that window is used. Attention heads with nothing useful to read still spend their budget on the first token, which is called the attention sink, and where a fact sits in the context changes whether the model finds it. Gated attention cut first token attention from 46.7 percent to 4.8 percent at NeurIPS 2025, and Kimi K3 pairs that idea with Kimi Delta Attention and Attention Residuals behind a one million token window, eight times past the range where these diagnostics have been reported. This paper asks whether the fix survives that jump. We build SinkProbe, a suite that measures sink mass, massive activation, position resolved recall and the recency gap, and apply it to four small models that differ only in how they mix tokens and depth. Three results follow. The training objective produces the sink, not the architecture. Gating did not reproduce its published effect at our scale. Sink mass, activations and position bias moved independently. Code, data and the measurement protocol are released at https://github.com/sararizwan7/Attention-Mechanisms-in-1M-Context-Window",
+      "arxiv_id": "2609.08574v1",
+      "authors": [
+        "Sara Rizwan",
+        "Samaanah Abdus Salam"
+      ],
+      "boost_hits": [],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08574v1",
+      "published": "2026-09-08T11:10:11+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. Long context language models now advertise windows of one million tokens, but two habits limit how much of that window is used.",
+      "title": "Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context?",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "long context",
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 5
+        }
+      ],
+      "updated": "2026-09-08T11:10:11+00:00",
+      "url": "http://arxiv.org/abs/2609.08574v1"
+    },
+    {
+      "abstract": "Modeling long-term user behavior is central to sequential recommendation and billion-scale industrial recommender systems, yet production ranking models operate under strict latency, memory, communication, and training-throughput constraints. At the 100K scale, the challenge extends beyond attention complexity: raw sequence features must be stored, transferred, and repeatedly processed during training and online serving. Existing approaches based on history truncation, multi-stage behavior retrieval, compressed lifelong histories, or train-short/infer-long extrapolation either weaken end-to-end optimization or retain substantial length-dependent cost. We present SequenceO1, an end-to-end framework for ultra-long user behavior sequence modeling, deployed at full traffic on Douyin with histories of up to 100K interactions. SequenceO1 follows a compress-then-reason design. Its Sketch Attention (SA) uses learnable prototypes and prototype-wise normalization to compress the raw history into a fixed-size, target-agnostic user representation. Target-conditioned Stacked Target-to-History Cross Attention (STCA) then models complementary time scales: a recent 10K suffix for short-term interests and the compact sketch for long-term preferences. To make training and inference practical, SequenceO1 combines low-rank user representation caching, multi-request user-level batching, pipeline lift, and a fused FlashSA kernel to amortize feature storage, communication, and computation across targets, training instances, and consecutive requests. Production experiments show consistent offline and online gains, while the compact cached sketch retains most of the benefit of directly scaling end-to-end sequence ranking to 100K. These results provide a practical model-system approach to efficient attention, sequence compression, and scalable long-sequence and long-context recommendation systems.",
+      "arxiv_id": "2609.08443v1",
+      "authors": [
+        "Lin Guan",
+        "Jia-Qi Yang",
+        "Zhishan Zhao",
+        "Jiaqi Huang",
+        "Hangyu Wang",
+        "Longbin Li",
+        "Beichuan Zhang",
+        "Haonan Jiang",
+        "Jinan Ni",
+        "Xiangyu Fan",
+        "Xiaowen Li",
+        "Ziyao Ren",
+        "Yuhang Qi",
+        "Xiaolong Zhu",
+        "Xuanyuan Luo",
+        "Qiwei Chen",
+        "Yi Cheng",
+        "Lele Yu"
+      ],
+      "boost_hits": [
+        "scaling",
+        "inference"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08443v1",
+      "published": "2026-09-08T08:49:44+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. Modeling long-term user behavior is central to sequential recommendation and billion-scale industrial recommender systems, yet production ranking models operate under strict latency, memory, communication, and training-throughput constraints.",
+      "title": "SequenceO1: End-to-End Ultra-Long (100K) Sequence Modeling in Recommendation with Low-Rank Caching",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "efficient attention"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-09-08T08:49:44+00:00",
+      "url": "http://arxiv.org/abs/2609.08443v1"
+    },
+    {
+      "abstract": "In persistent interactions, long contexts may encode an evolving process rather than a fixed record: later events can revise or revoke earlier information, changing what remains valid and what conclusions follow. We call this setting information evolution (IE). Solving IE requires identifying valid records, applying updates in order, and reconstructing the query-relevant state from the event history. Existing text-first synthesis pipelines make such data difficult to verify because state transitions and answer logic remain implicit. We introduce EvolveScaler, a code-driven framework that defines information evolution before rendering it as natural language. Human-authored operational specifications define state transitions, record validity, difficulty controls, and executable answer logic; a strong LLM then synthesizes a self-contained simulator from each specification. Executing validated simulators produces natural-language multi-turn event histories, while deterministic replay computes reference answers and atomic checklists. We instantiate EvolveScaler with 117 task prototypes and 159 final-question operators across five difficulty levels spanning approximately 7 to 1,200 events per instance, yielding about 35,100 training examples and 585 validated evaluation instances. On the very_long tier, the strongest model reaches 59.3% avg@5, while six models score below 10%. Training an internal A3B model on 6,000 EvolveScaler examples improves performance over its base checkpoint on all eight independently constructed out-of-distribution benchmarks, with a 5.25-point average gain. These results show that code-driven IE synthesis provides both challenging evaluation and transferable training supervision.",
+      "arxiv_id": "2609.08435v1",
+      "authors": [
+        "Ziliang Zhao",
+        "Zenan Xu",
+        "Shuting Wang",
+        "Zhao Wang",
+        "Bowen Cao",
+        "Minda Hu",
+        "Lincheng Li",
+        "Pluto Zhou",
+        "Zhicheng Dou"
+      ],
+      "boost_hits": [
+        "llm"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08435v1",
+      "published": "2026-09-08T08:40:05+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 5,
+      "summary": "Likely relevant to Model Architecture. In persistent interactions, long contexts may encode an evolving process rather than a fixed record: later events can revise or revoke earlier information, changing what remains valid and what conclusions follow.",
+      "title": "EvolveScaler: Synthesizing Information-Evolution Contexts via Executable State Machines and Natural-Language Rendering",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "long context"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-09-08T08:40:05+00:00",
+      "url": "http://arxiv.org/abs/2609.08435v1"
+    },
+    {
       "abstract": "In online meeting delegation, LLM agents fail to recognize when to speak. With no structured way to track stances, coverage, and floor, they miss the moments where they should contribute. Prompt-only delegates stay silent on 51.4% of the absent participant's talking opportunities on the AMI corpus. We present CAPA (Collaborative Agent Predictive Architecture), an architecture for online meeting delegation. A Perceiver updates the meeting state from each observed turn. A Predictor forecasts how the conversation will continue. A Controller decides whether to speak and which proposition to surface. A Generator phrases the chosen contribution in the participant's style. Two judges score the forecast and the action against the next observed turn. A Recalibrator updates the meeting state from those verdicts for future decisions. To evaluate online delegation, we introduce an episode-level protocol that scores whether, when, and what a delegate contributes around the participant's actual idea units. The protocol's schema-constrained LLM judges align with human annotations at Cohen's kappa = 0.71. On 137 AMI meetings, CAPA reduces the silence rate from 51.4% to 2.5%, doubles credited recovery (26.1 --> 52.2), and keeps hallucination at 0.6%. The failure mode shifts from omission to selection, with each residual near-miss attributable to a specific module of the architecture. Mechanism ablations identify the meeting state as the lever that closes the recognition gap, where raw-context scaling alone does not.",
       "arxiv_id": "2609.03923v1",
       "authors": [
@@ -7262,7 +7654,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03923v1",
       "published": "2026-09-03T14:38:09+00:00",
       "recommendation": "Maybe relevant",
@@ -7298,7 +7690,7 @@
         "cs.LG",
         "math.ST"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03501v1",
       "published": "2026-09-03T08:03:16+00:00",
       "recommendation": "Maybe relevant",
@@ -7335,7 +7727,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.29617v1",
       "published": "2026-08-30T07:16:07+00:00",
       "recommendation": "Maybe relevant",
@@ -7368,7 +7760,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26926v1",
       "published": "2026-08-27T10:23:01+00:00",
       "recommendation": "Maybe relevant",
@@ -7401,7 +7793,7 @@
         "cs.LG",
         "cs.RO"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26737v1",
       "published": "2026-08-27T07:29:15+00:00",
       "recommendation": "Maybe relevant",
@@ -7432,7 +7824,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26043v1",
       "published": "2026-08-26T17:21:33+00:00",
       "recommendation": "Maybe relevant",
@@ -7469,7 +7861,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25655v1",
       "published": "2026-08-26T11:37:03+00:00",
       "recommendation": "Maybe relevant",
@@ -7501,7 +7893,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25231v1",
       "published": "2026-08-25T23:41:07+00:00",
       "recommendation": "Maybe relevant",
@@ -7537,7 +7929,7 @@
         "math.ST",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23554v1",
       "published": "2026-08-24T17:54:51+00:00",
       "recommendation": "Maybe relevant",
@@ -7573,7 +7965,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23551v1",
       "published": "2026-08-24T17:54:14+00:00",
       "recommendation": "Maybe relevant",
@@ -7609,7 +8001,7 @@
         "cs.IR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23400v1",
       "published": "2026-08-24T15:47:35+00:00",
       "recommendation": "Maybe relevant",
@@ -7647,7 +8039,7 @@
         "cs.CL",
         "cs.IR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23252v1",
       "published": "2026-08-24T13:44:11+00:00",
       "recommendation": "Maybe relevant",
@@ -7683,7 +8075,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.20210v1",
       "published": "2026-08-20T16:09:43+00:00",
       "recommendation": "Maybe relevant",
@@ -7719,7 +8111,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18733v1",
       "published": "2026-08-19T09:37:00+00:00",
       "recommendation": "Maybe relevant",
@@ -7751,7 +8143,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17896v1",
       "published": "2026-08-18T15:29:18+00:00",
       "recommendation": "Maybe relevant",
@@ -7784,7 +8176,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17342v1",
       "published": "2026-08-18T04:00:16+00:00",
       "recommendation": "Maybe relevant",
@@ -7819,7 +8211,7 @@
         "math.ST",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13520v1",
       "published": "2026-08-13T17:40:17+00:00",
       "recommendation": "Maybe relevant",
@@ -7851,7 +8243,7 @@
         "q-fin.ST",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12251v1",
       "published": "2026-08-12T16:51:51+00:00",
       "recommendation": "Maybe relevant",
@@ -7884,7 +8276,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12083v1",
       "published": "2026-08-12T14:04:49+00:00",
       "recommendation": "Maybe relevant",
@@ -7925,7 +8317,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11768v1",
       "published": "2026-08-12T08:10:02+00:00",
       "recommendation": "Maybe relevant",
@@ -7963,7 +8355,7 @@
         "cs.SD",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11650v1",
       "published": "2026-08-12T04:48:29+00:00",
       "recommendation": "Maybe relevant",
@@ -7999,7 +8391,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10806v1",
       "published": "2026-08-11T11:24:07+00:00",
       "recommendation": "Maybe relevant",
@@ -8035,7 +8427,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10615v1",
       "published": "2026-08-11T07:58:17+00:00",
       "recommendation": "Maybe relevant",
@@ -8142,7 +8534,7 @@
         "cs.LG",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09819v1",
       "published": "2026-08-10T16:39:55+00:00",
       "recommendation": "Maybe relevant",
@@ -8184,7 +8576,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09801v1",
       "published": "2026-08-10T16:22:07+00:00",
       "recommendation": "Maybe relevant",
@@ -8222,7 +8614,7 @@
         "eess.IV",
         "eess.SP"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09752v1",
       "published": "2026-08-10T15:43:43+00:00",
       "recommendation": "Maybe relevant",
@@ -8262,7 +8654,7 @@
         "cs.LO",
         "eess.SY"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09748v1",
       "published": "2026-08-10T15:41:49+00:00",
       "recommendation": "Maybe relevant",
@@ -8299,7 +8691,7 @@
         "cs.CL",
         "cs.DC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09444v1",
       "published": "2026-08-10T11:20:14+00:00",
       "recommendation": "Maybe relevant",
@@ -8333,7 +8725,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09432v1",
       "published": "2026-08-10T11:05:16+00:00",
       "recommendation": "Maybe relevant",
@@ -8369,7 +8761,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09276v1",
       "published": "2026-08-10T08:32:34+00:00",
       "recommendation": "Maybe relevant",
@@ -8407,7 +8799,7 @@
         "cs.IT",
         "eess.SY"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06227v1",
       "published": "2026-08-06T16:17:43+00:00",
       "recommendation": "Maybe relevant",
@@ -8443,7 +8835,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28451v1",
       "published": "2026-07-30T16:17:31+00:00",
       "recommendation": "Maybe relevant",
@@ -8475,7 +8867,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28308v1",
       "published": "2026-07-30T14:45:39+00:00",
       "recommendation": "Maybe relevant",
@@ -8524,7 +8916,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.27945v1",
       "published": "2026-07-30T09:52:22+00:00",
       "recommendation": "Maybe relevant",
@@ -8558,7 +8950,7 @@
         "cs.AI",
         "eess.SP"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.26751v1",
       "published": "2026-07-29T10:46:08+00:00",
       "recommendation": "Maybe relevant",
@@ -8597,7 +8989,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24688v1",
       "published": "2026-07-27T17:29:18+00:00",
       "recommendation": "Maybe relevant",
@@ -8629,7 +9021,7 @@
         "cs.AI",
         "cs.NE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24519v1",
       "published": "2026-07-27T14:59:42+00:00",
       "recommendation": "Maybe relevant",
@@ -8662,7 +9054,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24176v1",
       "published": "2026-07-27T09:02:44+00:00",
       "recommendation": "Maybe relevant",
@@ -8699,7 +9091,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.21372v1",
       "published": "2026-07-23T14:37:30+00:00",
       "recommendation": "Maybe relevant",
@@ -8735,7 +9127,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.19787v1",
       "published": "2026-07-22T06:10:53+00:00",
       "recommendation": "Maybe relevant",
@@ -8768,7 +9160,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.18228v1",
       "published": "2026-07-20T17:58:05+00:00",
       "recommendation": "Maybe relevant",
@@ -8801,7 +9193,7 @@
         "math.AP",
         "math.NA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.18043v1",
       "published": "2026-07-20T15:12:09+00:00",
       "recommendation": "Maybe relevant",
@@ -8839,7 +9231,7 @@
         "cs.CR",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17786v1",
       "published": "2026-07-20T10:20:32+00:00",
       "recommendation": "Maybe relevant",
@@ -8875,7 +9267,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17624v1",
       "published": "2026-07-20T07:26:17+00:00",
       "recommendation": "Maybe relevant",
@@ -8919,7 +9311,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.13770v1",
       "published": "2026-07-15T12:31:19+00:00",
       "recommendation": "Maybe relevant",
@@ -8949,7 +9341,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11796v1",
       "published": "2026-07-13T16:48:03+00:00",
       "recommendation": "Maybe relevant",
@@ -8983,7 +9375,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
       "published": "2026-07-13T12:54:47+00:00",
       "recommendation": "Maybe relevant",
@@ -9018,7 +9410,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08754v1",
       "published": "2026-07-09T17:51:50+00:00",
       "recommendation": "Maybe relevant",
@@ -9058,7 +9450,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08359v1",
       "published": "2026-07-09T11:17:04+00:00",
       "recommendation": "Maybe relevant",
@@ -9099,7 +9491,7 @@
         "cs.LG",
         "cs.SE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08010v1",
       "published": "2026-07-09T00:27:13+00:00",
       "recommendation": "Maybe relevant",
@@ -9160,7 +9552,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
       "published": "2026-07-08T17:26:49+00:00",
       "recommendation": "Maybe relevant",
@@ -9195,7 +9587,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
       "published": "2026-07-08T15:46:48+00:00",
       "recommendation": "Maybe relevant",
@@ -9230,7 +9622,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07077v1",
       "published": "2026-07-08T07:08:50+00:00",
       "recommendation": "Maybe relevant",
@@ -9251,6 +9643,246 @@
       "url": "http://arxiv.org/abs/2607.07077v1"
     },
     {
+      "abstract": "Accurate citations are the foundation of academic writing, tracing intellectual origins and substantiating core claims. However, manually navigating the growing volume of scientific literature is increasingly difficult, prompting reliance on automatic citation recommendation. While modern retrieval-augmented architectures have largely mitigated the fabrication of non-existent papers, current systems relying on semantic similarity struggle with misattribution, often citing authentic papers that fail to logically support the author's claim. To address this challenge, we argue that accurate citation requires a shift from similarity-based search to active, claim-level reasoning. We propose ReCite, a decoupled agentic framework that orchestrates location perception, intent-aware query planning, and reflective verification. Trained on synthesized reasoning trajectories, our agent verifies claim-evidence consistency and triggers self-correction loops when retrieved candidates lack logical support. Experiments demonstrate that our lightweight framework outperforms state-of-the-art massive generative models in strict citation accuracy. By grounding literature matching in verifiable logic rather than semantic overlap, ReCite establishes a reliable foundation for automated academic writing.",
+      "arxiv_id": "2609.09156v1",
+      "authors": [
+        "Yuyang Huang",
+        "Bobo Li",
+        "Jiajia Song",
+        "Yuzhe Ding",
+        "Chong Teng",
+        "Fei Li",
+        "Donghong Ji"
+      ],
+      "boost_hits": [
+        "reasoning"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.09156v1",
+      "published": "2026-09-08T17:59:50+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. Accurate citations are the foundation of academic writing, tracing intellectual origins and substantiating core claims.",
+      "title": "ReCite: Agentic Reasoning for Faithful Citation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T17:59:50+00:00",
+      "url": "http://arxiv.org/abs/2609.09156v1"
+    },
+    {
+      "abstract": "In this work, we present Gander, an end-to-end model that unifies omni perception, realtime interaction, and agentic capabilities within a single framework. In contrast to turn-based conventional paradigms, Gander continuously receives streaming inputs across multiple modalities, including video, speech, and text, enabling natural full-duplex interaction in both everyday conversations and complex workflow-oriented agent scenarios. Users can interrupt the model at any time, while the model can also proactively provide intermediate feedback or ask follow up questions. To natively support these capabilities, Gander adopts two key architectural designs: 1) It employs a Cerebellum-Brain collaborative framework, in which the Cerebellum is responsible for realtime interaction and omni conversational capabilities, while the Brain handles complex reasoning and higher-level agentic tasks. The two components interact continuously through tool calling and the agent orchestration runtime. 2) The Cerebellum is built upon a streaming Thinker-Talker architecture, user inputs and model outputs are further flattened into an ordered token stream at the chunk level, providing a unified representation for low latency, continuous interaction. We conduct comprehensive evaluations of Gander across four dimensions: conversational ability, omni understanding, interactive capability, and agentic intelligence. Internal human evaluations demonstrate that Gander maintains the natural and expressive spoken dialogue capabilities of SOTA open source models while achieving competitive performance in omni interaction. Gander also demonstrates robustness in challenging real-world scenarios, including background noise interference, multi-party interactions, and backchannel communication. We release Gander together with its models, code, and data to facilitate further research and development in the community.",
+      "arxiv_id": "2609.08977v1",
+      "authors": [
+        "Orantqing",
+        "Shengpeng Ji",
+        "Junlong Tong",
+        "Jialong Zuo",
+        "Dongjie Fu",
+        "Di Cao",
+        "Yangzhuo Li",
+        "Shangda Wu",
+        "Franz",
+        "Evan",
+        "Theron Veyra",
+        "Changhao Pan",
+        "Jingyu Lu",
+        "Dongchao Yang",
+        "Zhifei Xie",
+        "Yang Tan",
+        "Xiaoyu Shen",
+        "Xiaoda Yang",
+        "Wenfu Wang",
+        "Teddysun",
+        "Steveyves",
+        "Zhou Zhao",
+        "Bryanytian"
+      ],
+      "boost_hits": [
+        "reasoning"
+      ],
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08977v1",
+      "published": "2026-09-08T16:22:23+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. In this work, we present Gander, an end-to-end model that unifies omni perception, realtime interaction, and agentic capabilities within a single framework.",
+      "title": "Omni Interaction Agent Technical Report",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T16:22:23+00:00",
+      "url": "http://arxiv.org/abs/2609.08977v1"
+    },
+    {
+      "abstract": "The rapid growth of multimodal data has intensified the need for question answering (QA) systems capable of reasoning across heterogeneous sources such as text, tables, and images. In this paper, we present a comprehensive methodological comparison of three influential frameworks, namely Multimodal Adaptive Extraction (MAE), Solar, and UniMMQA, tracing the evolution of multimodal question answering from modality-adaptive pipelines to fully unified architectures. We examine how each approach models cross-modal interactions, transforms heterogeneous inputs, and performs reasoning, highlighting key design differences in modality representation, reasoning, and answer generation. Our analysis demonstrates a clear shift from explicit modality-specific processing toward unified text-centric formulations enabled by pre-trained language models (PLMs). Empirical comparisons across benchmark datasets show that this transition leads to substantial improvements in both Exact Match (EM) and F1-Scores, with UniMMQA achieving the most consistent and scalable performance. Despite these advances, we identify persistent challenges, including information loss during modality transformation, error propagation in multi-stage pipelines, and limitations in capturing fine-grained cross-modal dependencies. Overall, this study provides a deeper understanding of current design trends and offers insights into the future direction of unified multimodal reasoning systems.",
+      "arxiv_id": "2609.08896v1",
+      "authors": [
+        "Abdullah Al Shafi"
+      ],
+      "boost_hits": [
+        "reasoning"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08896v1",
+      "published": "2026-09-08T15:34:00+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. The rapid growth of multimodal data has intensified the need for question answering (QA) systems capable of reasoning across heterogeneous sources such as text, tables, and images.",
+      "title": "Evolution of Multimodal Question Answering: From Modality-Adaptive Extraction to Unified Language Representation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T15:34:00+00:00",
+      "url": "http://arxiv.org/abs/2609.08896v1"
+    },
+    {
+      "abstract": "Designing foundation models for graphs is challenging due to the irregular structure of graphs and the different sizes and characteristics of embeddings. Chimaera integrates mixture-of-experts with graph foundation models (GFM). It integrates different GFM architectures, such as graph prompts and linear GNN models. Large language models are used to generate embeddings, and experts can be trained and combined following different strategies, GFMs, embeddings, etc. Furthermore, Chimaera extends existing linear GNNs to support link-level and graph-level tasks in addition to node-level tasks. Empirical analyses are performed on same-task and cross-task experiments with node, link, and graph classification tasks using six benchmark text-attributed graph datasets. The experiments demonstrate the effectiveness of Chimaera and its capabilities for transfer across tasks and datasets. Further insights include the need to use both large and small language models to generate embeddings for the experts, a strong cross-task transferability of simple but effective linear GNNs, and using few samples only to provide strong results.",
+      "arxiv_id": "2609.08709v1",
+      "authors": [
+        "Jonathan Frank",
+        "David Richerby",
+        "Ansgar Scherp"
+      ],
+      "boost_hits": [
+        "large language model"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08709v1",
+      "published": "2026-09-08T13:07:27+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. Designing foundation models for graphs is challenging due to the irregular structure of graphs and the different sizes and characteristics of embeddings.",
+      "title": "Chimaera: A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T13:07:27+00:00",
+      "url": "http://arxiv.org/abs/2609.08709v1"
+    },
+    {
+      "abstract": "Mixture-of-Experts (MoE) models expand model capacity without a proportional increase in training compute, but increasing sparsity makes reliable hyperparameter transfer challenging. In this work, we show that conventional hyperparameter scaling laws are insufficient for ultra-sparse MoEs: the optimal learning rate and batch size vary with activation ratio, and these shifts cannot be explained by either total or activated parameter count alone. To characterize this dependence, we conduct 1,800 pre-training runs spanning six activated-parameter scales and models with up to 6B total non-embedding parameters, processing approximately 20 trillion tokens at a cost of 200,000 equivalent H800 GPU-hours. Our results reconcile conflicting findings in prior work by revealing two scaling regimes. At fixed sparsity, the optimal batch size follows a power-law relationship with training tokens $D$, whereas the optimal learning rate scales with training compute $C$ and remains robust to the allocation between model size and data. Across sparsity levels, the activation ratio $A$ enters both relationships as an additional multiplicative power-law factor. These observations lead to unified hyperparameter scaling laws that transfer across MoE sparsity levels. Large-scale evaluation shows that the scaling form outperforms alternative functional forms. On a held-out ultra-sparse MoE with 12B total parameters and only 1/64 of its experts activated, the predicted hyperparameters remain close to the observed optima, supporting joint extrapolation across model scale and sparsity. Further experiments demonstrate transfer across expert granularities and isolate the effect of activation ratio from that of total expert count.",
+      "arxiv_id": "2609.08690v1",
+      "authors": [
+        "Changxin Tian",
+        "Kunlong Chen",
+        "Jia Liu",
+        "Ziqi Liu",
+        "Zhiqiang Zhang",
+        "Jun Zhou"
+      ],
+      "boost_hits": [
+        "scaling"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08690v1",
+      "published": "2026-09-08T12:57:20+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. Mixture-of-Experts (MoE) models expand model capacity without a proportional increase in training compute, but increasing sparsity makes reliable hyperparameter transfer challenging.",
+      "title": "Hyperparameter Scaling Laws Across MoE Sparsity",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "moe"
+          ],
+          "label": "Model Architecture",
+          "score": 3
+        }
+      ],
+      "updated": "2026-09-08T12:57:20+00:00",
+      "url": "http://arxiv.org/abs/2609.08690v1"
+    },
+    {
+      "abstract": "Personalized memory helps LLM agents deliver stable, tailored assistance by storing and reusing user-specific data across interactions. In multi-user scenarios, however, retrieval must consider not only semantic similarity but also whether the current requester matches the identity associated with the stored memory. We propose Bio-Memory, a biometric-aware memory architecture that conditions memory retrieval on both semantic similarity and biometric matching. Built on top of A-Mem, Bio-Memory augments each atomic memory note with a biometric embedding and uses biometric matching to form the retrieval candidate pool before semantic ranking. We evaluate Bio-Memory on LoCoMo in a 10-user shared-agent setting over 7 face benchmarks and 10 palmprint protocols. Across datasets, Bio-Memory consistently separates owner and non-owner queries. Under face-based personalization, the largest average gap reaches 27.29% / 21.15% in F1 / BLEU-1 on CALFW; under palmprint-based personalization, the corresponding gap is 25.75% / 19.22% on MS_Blue. These results support biometrics as a practical control signal for personalized memory retrieval in shared environments.",
+      "arxiv_id": "2609.08558v1",
+      "authors": [
+        "Yanhong Qian",
+        "Qingguo Meng",
+        "Shihao Ding",
+        "Xingbo Dong",
+        "Zhe Jin",
+        "Hanrui Wang",
+        "Isao Echizen"
+      ],
+      "boost_hits": [
+        "llm"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08558v1",
+      "published": "2026-09-08T10:46:12+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 4,
+      "summary": "Likely relevant to Model Architecture. Personalized memory helps LLM agents deliver stable, tailored assistance by storing and reusing user-specific data across interactions.",
+      "title": "Personalizing LLM Agent Memory Using Biometrics",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T10:46:12+00:00",
+      "url": "http://arxiv.org/abs/2609.08558v1"
+    },
+    {
       "abstract": "The emergence of agentic AI and LLM-based multi-agent systems (MAS) presents unprecedented opportunities for automating complex tasks, while simultaneously raising critical concerns about the preservation of fundamental human-centered values, such as privacy, fairness, and safety. Although software engineering has traditionally focused on functional correctness, the adoption of LLMs and AI agents into complex socio-technical systems has intensified the need for responsible software engineering and robust value alignment. In MAS, architectural design decisions, such as coordination mechanisms, communication protocols, and system topologies, play a central role in shaping system behavior and the outcomes they produce. This paper argues that architectural choices influence not only the functionality and performance of MAS but can also promote value-oriented system behavior. Therefore, we investigate how different architectural designs support different human-centered values, discussing the following value-preserving architectural patterns: (i) a privacy-aware architecture with a federated topology, (ii) a distributed architecture to promote pluralism and diversity, and (iii) a guard-agent architecture to detect and mitigate unfairness. Finally, we introduce representative use cases to illustrate the proposed architectures in real-world scenarios. By linking architectural design with human-centered values, this work lays the foundation for a unified set of architectural patterns and guidelines towards the design of trustworthy MAS.",
       "arxiv_id": "2609.03920v1",
       "authors": [
@@ -9265,7 +9897,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03920v1",
       "published": "2026-09-03T14:36:23+00:00",
       "recommendation": "Maybe relevant",
@@ -9299,7 +9931,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03887v1",
       "published": "2026-09-03T14:10:17+00:00",
       "recommendation": "Maybe relevant",
@@ -9333,7 +9965,7 @@
         "cs.DB",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03834v1",
       "published": "2026-09-03T13:35:11+00:00",
       "recommendation": "Maybe relevant",
@@ -9370,7 +10002,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03756v1",
       "published": "2026-09-03T12:25:26+00:00",
       "recommendation": "Maybe relevant",
@@ -9403,7 +10035,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03464v1",
       "published": "2026-09-03T07:23:28+00:00",
       "recommendation": "Maybe relevant",
@@ -9436,7 +10068,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02861v1",
       "published": "2026-09-02T17:44:25+00:00",
       "recommendation": "Maybe relevant",
@@ -9475,7 +10107,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02737v1",
       "published": "2026-09-02T15:43:38+00:00",
       "recommendation": "Maybe relevant",
@@ -9508,7 +10140,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02339v1",
       "published": "2026-09-02T09:15:33+00:00",
       "recommendation": "Maybe relevant",
@@ -9544,7 +10176,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02322v1",
       "published": "2026-09-02T09:05:42+00:00",
       "recommendation": "Maybe relevant",
@@ -9577,7 +10209,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.31067v1",
       "published": "2026-08-31T16:42:11+00:00",
       "recommendation": "Maybe relevant",
@@ -9614,7 +10246,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30750v1",
       "published": "2026-08-31T13:17:41+00:00",
       "recommendation": "Maybe relevant",
@@ -9655,7 +10287,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30627v1",
       "published": "2026-08-31T11:34:19+00:00",
       "recommendation": "Maybe relevant",
@@ -9691,7 +10323,7 @@
         "cond-mat.mtrl-sci",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26081v1",
       "published": "2026-08-26T17:45:34+00:00",
       "recommendation": "Maybe relevant",
@@ -9725,7 +10357,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25777v1",
       "published": "2026-08-26T13:20:27+00:00",
       "recommendation": "Maybe relevant",
@@ -9759,7 +10391,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23265v1",
       "published": "2026-08-24T13:52:17+00:00",
       "recommendation": "Maybe relevant",
@@ -9800,7 +10432,7 @@
         "physics.plasm-ph",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23217v1",
       "published": "2026-08-24T13:12:48+00:00",
       "recommendation": "Maybe relevant",
@@ -9836,7 +10468,7 @@
         "cs.AI",
         "cs.SE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.20201v1",
       "published": "2026-08-20T15:59:50+00:00",
       "recommendation": "Maybe relevant",
@@ -9870,7 +10502,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.20065v1",
       "published": "2026-08-20T13:59:57+00:00",
       "recommendation": "Maybe relevant",
@@ -9906,7 +10538,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19920v1",
       "published": "2026-08-20T11:37:04+00:00",
       "recommendation": "Maybe relevant",
@@ -9946,7 +10578,7 @@
         "cs.SE",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19854v1",
       "published": "2026-08-20T10:03:14+00:00",
       "recommendation": "Maybe relevant",
@@ -9980,7 +10612,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19119v1",
       "published": "2026-08-19T17:16:27+00:00",
       "recommendation": "Maybe relevant",
@@ -10017,7 +10649,7 @@
         "cs.CL",
         "cs.MA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19029v1",
       "published": "2026-08-19T15:24:18+00:00",
       "recommendation": "Maybe relevant",
@@ -10052,7 +10684,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18938v1",
       "published": "2026-08-19T14:06:31+00:00",
       "recommendation": "Maybe relevant",
@@ -10087,7 +10719,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18740v1",
       "published": "2026-08-19T09:49:58+00:00",
       "recommendation": "Maybe relevant",
@@ -10125,7 +10757,7 @@
         "cs.CR",
         "cs.DC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18736v1",
       "published": "2026-08-19T09:43:09+00:00",
       "recommendation": "Maybe relevant",
@@ -10161,7 +10793,7 @@
         "cs.LG",
         "cs.PF"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18656v1",
       "published": "2026-08-19T08:02:17+00:00",
       "recommendation": "Maybe relevant",
@@ -10195,7 +10827,7 @@
         "cs.CV",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18628v1",
       "published": "2026-08-19T07:22:15+00:00",
       "recommendation": "Maybe relevant",
@@ -10232,7 +10864,7 @@
         "cs.AI",
         "cs.HC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17823v1",
       "published": "2026-08-18T14:21:50+00:00",
       "recommendation": "Maybe relevant",
@@ -10266,7 +10898,7 @@
         "cs.SE",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17694v1",
       "published": "2026-08-18T12:11:42+00:00",
       "recommendation": "Maybe relevant",
@@ -10308,7 +10940,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17616v1",
       "published": "2026-08-18T10:28:23+00:00",
       "recommendation": "Maybe relevant",
@@ -10343,7 +10975,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17596v1",
       "published": "2026-08-18T10:03:56+00:00",
       "recommendation": "Maybe relevant",
@@ -10385,7 +11017,7 @@
         "cs.AI",
         "cs.SE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17528v1",
       "published": "2026-08-18T08:50:13+00:00",
       "recommendation": "Maybe relevant",
@@ -10425,7 +11057,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17223v1",
       "published": "2026-08-18T00:23:25+00:00",
       "recommendation": "Maybe relevant",
@@ -10471,7 +11103,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16503v1",
       "published": "2026-08-17T12:40:23+00:00",
       "recommendation": "Maybe relevant",
@@ -10505,7 +11137,7 @@
         "cs.CL",
         "cs.CY"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16467v1",
       "published": "2026-08-17T12:04:18+00:00",
       "recommendation": "Maybe relevant",
@@ -10543,7 +11175,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16443v1",
       "published": "2026-08-17T11:40:27+00:00",
       "recommendation": "Maybe relevant",
@@ -10577,7 +11209,7 @@
         "math.ST",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13510v1",
       "published": "2026-08-13T17:34:41+00:00",
       "recommendation": "Maybe relevant",
@@ -10735,7 +11367,7 @@
         "cs.CL",
         "cs.CV"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13505v1",
       "published": "2026-08-13T17:31:28+00:00",
       "recommendation": "Maybe relevant",
@@ -10768,7 +11400,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13420v1",
       "published": "2026-08-13T16:12:52+00:00",
       "recommendation": "Maybe relevant",
@@ -10804,7 +11436,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13345v1",
       "published": "2026-08-13T15:15:09+00:00",
       "recommendation": "Maybe relevant",
@@ -10844,7 +11476,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12282v1",
       "published": "2026-08-12T17:27:27+00:00",
       "recommendation": "Maybe relevant",
@@ -10879,7 +11511,7 @@
         "cs.DC",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11770v1",
       "published": "2026-08-12T08:14:22+00:00",
       "recommendation": "Maybe relevant",
@@ -10915,7 +11547,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11688v1",
       "published": "2026-08-12T05:57:09+00:00",
       "recommendation": "Maybe relevant",
@@ -10958,7 +11590,7 @@
         "cs.AI",
         "cs.NE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10795v1",
       "published": "2026-08-11T11:03:32+00:00",
       "recommendation": "Maybe relevant",
@@ -10993,7 +11625,7 @@
         "cs.CR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10760v1",
       "published": "2026-08-11T10:19:20+00:00",
       "recommendation": "Maybe relevant",
@@ -11029,7 +11661,7 @@
         "cs.CL",
         "cs.CV"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10392v1",
       "published": "2026-08-11T02:40:58+00:00",
       "recommendation": "Maybe relevant",
@@ -11062,7 +11694,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09848v1",
       "published": "2026-08-10T17:07:41+00:00",
       "recommendation": "Maybe relevant",
@@ -11098,7 +11730,7 @@
         "math.NA",
         "math.ST"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09558v1",
       "published": "2026-08-10T12:57:22+00:00",
       "recommendation": "Maybe relevant",
@@ -11135,7 +11767,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.08994v1",
       "published": "2026-08-10T01:28:11+00:00",
       "recommendation": "Maybe relevant",
@@ -11170,7 +11802,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06223v1",
       "published": "2026-08-06T16:12:57+00:00",
       "recommendation": "Maybe relevant",
@@ -11215,7 +11847,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06183v1",
       "published": "2026-08-06T15:43:31+00:00",
       "recommendation": "Maybe relevant",
@@ -11250,7 +11882,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06130v1",
       "published": "2026-08-06T15:04:26+00:00",
       "recommendation": "Maybe relevant",
@@ -11286,7 +11918,7 @@
         "cs.CL",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06111v1",
       "published": "2026-08-06T14:44:31+00:00",
       "recommendation": "Maybe relevant",
@@ -11326,7 +11958,7 @@
         "cs.AI",
         "cs.CR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05790v1",
       "published": "2026-08-06T09:25:34+00:00",
       "recommendation": "Maybe relevant",
@@ -11360,7 +11992,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05773v1",
       "published": "2026-08-06T09:05:38+00:00",
       "recommendation": "Maybe relevant",
@@ -11396,7 +12028,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28580v1",
       "published": "2026-07-30T17:40:05+00:00",
       "recommendation": "Maybe relevant",
@@ -11428,7 +12060,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28097v1",
       "published": "2026-07-30T12:07:56+00:00",
       "recommendation": "Maybe relevant",
@@ -11467,7 +12099,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24730v1",
       "published": "2026-07-27T17:57:02+00:00",
       "recommendation": "Maybe relevant",
@@ -11500,7 +12132,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24434v1",
       "published": "2026-07-27T13:44:42+00:00",
       "recommendation": "Maybe relevant",
@@ -11533,7 +12165,7 @@
         "cs.AI",
         "cs.IR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.21503v1",
       "published": "2026-07-23T16:51:31+00:00",
       "recommendation": "Maybe relevant",
@@ -11572,7 +12204,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.21354v1",
       "published": "2026-07-23T14:18:01+00:00",
       "recommendation": "Maybe relevant",
@@ -11608,7 +12240,7 @@
         "cs.AI",
         "econ.GN"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.21268v1",
       "published": "2026-07-23T12:40:47+00:00",
       "recommendation": "Maybe relevant",
@@ -11640,7 +12272,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.20402v1",
       "published": "2026-07-22T17:38:39+00:00",
       "recommendation": "Maybe relevant",
@@ -11682,7 +12314,7 @@
         "cs.RO",
         "eess.SY"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17951v1",
       "published": "2026-07-20T13:52:24+00:00",
       "recommendation": "Maybe relevant",
@@ -11719,7 +12351,7 @@
         "cs.CR",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17535v1",
       "published": "2026-07-20T04:27:50+00:00",
       "recommendation": "Maybe relevant",
@@ -11754,7 +12386,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14480v1",
       "published": "2026-07-16T01:53:09+00:00",
       "recommendation": "Maybe relevant",
@@ -11794,7 +12426,7 @@
         "cs.CL",
         "cs.MA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.12790v1",
       "published": "2026-07-14T14:02:50+00:00",
       "recommendation": "Maybe relevant",
@@ -11837,7 +12469,7 @@
         "cs.AI",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
       "published": "2026-07-13T12:58:28+00:00",
       "recommendation": "Maybe relevant",
@@ -11877,7 +12509,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11377v1",
       "published": "2026-07-13T10:40:32+00:00",
       "recommendation": "Maybe relevant",
@@ -11912,7 +12544,7 @@
         "cs.AI",
         "cs.MA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11288v1",
       "published": "2026-07-13T09:07:30+00:00",
       "recommendation": "Maybe relevant",
@@ -11944,7 +12576,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08312v1",
       "published": "2026-07-09T09:55:17+00:00",
       "recommendation": "Maybe relevant",
@@ -11982,7 +12614,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
       "published": "2026-07-09T07:28:21+00:00",
       "recommendation": "Maybe relevant",
@@ -12016,7 +12648,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07557v1",
       "published": "2026-07-08T15:51:57+00:00",
       "recommendation": "Maybe relevant",
@@ -12055,7 +12687,7 @@
         "cs.CR",
         "cs.MA"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07097v1",
       "published": "2026-07-08T07:31:37+00:00",
       "recommendation": "Maybe relevant",
@@ -12091,7 +12723,7 @@
         "cs.CL",
         "cs.CR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.06364v1",
       "published": "2026-07-07T15:00:46+00:00",
       "recommendation": "Maybe relevant",
@@ -12110,6 +12742,78 @@
       ],
       "updated": "2026-07-07T15:00:46+00:00",
       "url": "http://arxiv.org/abs/2607.06364v1"
+    },
+    {
+      "abstract": "Approximate machine unlearning aims to remove the influence of specific training data from a trained model without retraining from scratch. We identify a previously undocumented confound in how unlearning is evaluated on BatchNorm-based architectures: a single forward pass over retain data, an operation that modifies no weight, can deterministically rewrite the model's normalization state and reverse the apparent surface-metric forgetting. We formalize this operation as a weight-preserving fixed-point operator and prove that any pre-versus-post gap it induces is provably attributable to BN running statistics rather than to any modification the unlearning method made to the weights. This attribution claim cleanly separates measurement failure (BN artifact) from encoder failure (residual weight-encoded information, recently documented in concurrent work), and the same operator framework yields a unique decomposition of linear-probe elevation into BN-measurement-bias and encoder-geometry components. Empirically, the artifact reverses headline forget accuracy by up to 78 pp across nine evaluated methods on standard benchmarks; an attacker with as few as 10 unlabeled images recovers most of the masked accuracy; and a strict GroupNorm control reduces the artifact to zero across all methods. The tested membership-inference attacks change little under recalibration, locating the observed evaluation failure in forget accuracy and linear probing.",
+      "arxiv_id": "2609.08901v1",
+      "authors": [
+        "Aaryaman Kalani",
+        "Murari Mandal",
+        "Dhruv Kumar",
+        "Mohan Kankanhalli",
+        "Yash Sinha"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08901v1",
+      "published": "2026-09-08T15:39:10+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Approximate machine unlearning aims to remove the influence of specific training data from a trained model without retraining from scratch.",
+      "title": "The BatchNorm Illusion: Diagnosing Normalization Artifacts in Machine Unlearning Evaluation",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T15:39:10+00:00",
+      "url": "http://arxiv.org/abs/2609.08901v1"
+    },
+    {
+      "abstract": "Machine-learning weather models (MLWMs) now match or outperform operational numerical weather prediction (NWP) at global medium-range forecasting, at far lower inference cost. Many deployed MLWMs are deterministic, producing a single forecast with no estimate of its own uncertainty, whereas a growing family of trained-probabilistic models generate calibrated ensembles directly, at the price of a dedicated training run. We ask instead how much uncertainty can be extracted from a deterministic checkpoint that already exists, without retraining it. Where physical ensembles represent model uncertainty by stochastically perturbing parametrisation tendencies, we perturb the network's raw weight tensors at inference time, a scheme we call stochastically perturbed weights (SPW). We also ask whether it works, where and on which scales to inject the noise, and where it fails. A three-phase ablation across four deterministic backbones, Aurora, GraphCast, SFNO, and AIFS, selects one production baseline per model, benchmarked against the trained-probabilistic AIFS-ENS, FourCastNet 3 and Atlas as well as the operational ECMWF ensemble (IFS-ENS) over 112 initialisation times. At a 240 h (10-day) lead time the SPW ensembles reach continuous ranked probability skill scores (CRPSS) between 0.04 and 0.13 below the best trained-probabilistic baseline, at zero marginal training cost. No injection site works across models: the productive tensor group is architecture-specific, so SPW is at present a tuning procedure rather than a plug-and-play recipe. Its main failure mode is a coherent whole-field offset that overdisperses the domain mean, and restricting the noise to coarse scales or perturbing the initial conditions each repair part of it.",
+      "arxiv_id": "2609.08412v1",
+      "authors": [
+        "Simon Adamov",
+        "Oliver Fuhrer",
+        "Reto Knutti",
+        "Sebastian Schemm"
+      ],
+      "boost_hits": [
+        "inference"
+      ],
+      "categories": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "digest_date": "2026-09-10",
+      "pdf_url": "https://arxiv.org/pdf/2609.08412v1",
+      "published": "2026-09-08T08:18:40+00:00",
+      "recommendation": "Maybe relevant",
+      "score": 3,
+      "summary": "Likely relevant to Model Architecture. Machine-learning weather models (MLWMs) now match or outperform operational numerical weather prediction (NWP) at global medium-range forecasting, at far lower inference cost.",
+      "title": "Stochastically Perturbed Weights: Ensembles from Deterministic Machine-Learning Weather Models",
+      "topics": [
+        {
+          "id": "model_architecture",
+          "keywords": [
+            "architecture"
+          ],
+          "label": "Model Architecture",
+          "score": 2
+        }
+      ],
+      "updated": "2026-09-08T08:18:40+00:00",
+      "url": "http://arxiv.org/abs/2609.08412v1"
     },
     {
       "abstract": "As edge-based deep learning applications become more complex, optimizing performance on heterogeneous System-on-Chips (SoCs) presents unique challenges. Traditional pipelining techniques distributing the computation across different on-chip processing units, while effective for throughput, do not address the latency demands posed by modern neural networks with complex interdependencies and extensive operator parallelism. There is a potential in leveraging operator parallelism to enable concurrent execution across multiple processing units, thereby reducing inference latency. However, prioritizing pipelining or parallel execution often necessitates a compromise, where optimizing one performance metric adversely impacts the other. This paper introduces Para-Pipe, a hierarchical mapping framework that integrates intra- and inter-stage operator parallelism within a pipelined architecture. Para-Pipe navigates the trade-off between throughput and latency by selectively fine-tuning parallelism levels within and across pipeline stages. This strategy can significantly reduce inter-processor communication overhead, significantly improving energy efficiency. Our evaluation demonstrates that Para-Pipe generates multiple Pareto-optimal configurations, achieving a balance between throughput and latency on an Amlogic SoC equipped with ARM big.LITTLE CPUs and GPU, as well as the Black Sesame Technology SoC featuring a deep learning accelerator and two DSPs. More importantly, throughput-optimized configurations under Para-Pipe on Amlogic SoC show an average energy efficiency improvement of 11.0% over purely pipelined strategies and 23.3% relative to non-pipelined parallel execution.",
@@ -12132,7 +12836,7 @@
         "cs.LG",
         "cs.PF"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.04168v1",
       "published": "2026-09-03T17:53:44+00:00",
       "recommendation": "Maybe relevant",
@@ -12168,7 +12872,7 @@
         "cs.CL",
         "cs.HC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03797v1",
       "published": "2026-09-03T13:03:23+00:00",
       "recommendation": "Maybe relevant",
@@ -12217,7 +12921,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03667v1",
       "published": "2026-09-03T11:04:23+00:00",
       "recommendation": "Maybe relevant",
@@ -12249,7 +12953,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03533v1",
       "published": "2026-09-03T08:32:46+00:00",
       "recommendation": "Maybe relevant",
@@ -12286,7 +12990,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.03457v1",
       "published": "2026-09-03T07:15:44+00:00",
       "recommendation": "Maybe relevant",
@@ -12320,7 +13024,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02404v1",
       "published": "2026-09-02T10:17:12+00:00",
       "recommendation": "Maybe relevant",
@@ -12359,7 +13063,7 @@
         "cs.CV",
         "cs.MM"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2609.02268v1",
       "published": "2026-09-02T08:15:52+00:00",
       "recommendation": "Maybe relevant",
@@ -12395,7 +13099,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30975v1",
       "published": "2026-08-31T15:36:24+00:00",
       "recommendation": "Maybe relevant",
@@ -12430,7 +13134,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.30726v1",
       "published": "2026-08-31T12:59:37+00:00",
       "recommendation": "Maybe relevant",
@@ -12469,7 +13173,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.27395v1",
       "published": "2026-08-27T17:26:24+00:00",
       "recommendation": "Maybe relevant",
@@ -12502,7 +13206,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.27367v1",
       "published": "2026-08-27T17:04:57+00:00",
       "recommendation": "Maybe relevant",
@@ -12538,7 +13242,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.27286v1",
       "published": "2026-08-27T15:55:30+00:00",
       "recommendation": "Maybe relevant",
@@ -12575,7 +13279,7 @@
         "eess.SP",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.27137v1",
       "published": "2026-08-27T13:50:00+00:00",
       "recommendation": "Maybe relevant",
@@ -12607,7 +13311,7 @@
         "cs.LG",
         "cs.CV"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26965v1",
       "published": "2026-08-27T11:04:41+00:00",
       "recommendation": "Maybe relevant",
@@ -12646,7 +13350,7 @@
         "cond-mat.dis-nn",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26764v1",
       "published": "2026-08-27T07:56:45+00:00",
       "recommendation": "Maybe relevant",
@@ -12682,7 +13386,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26697v1",
       "published": "2026-08-27T06:53:32+00:00",
       "recommendation": "Maybe relevant",
@@ -12718,7 +13422,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26650v1",
       "published": "2026-08-27T06:01:46+00:00",
       "recommendation": "Maybe relevant",
@@ -12755,7 +13459,7 @@
         "cs.IT",
         "eess.SY"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26093v1",
       "published": "2026-08-26T17:56:00+00:00",
       "recommendation": "Maybe relevant",
@@ -12815,7 +13519,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.26088v1",
       "published": "2026-08-26T17:50:52+00:00",
       "recommendation": "Maybe relevant",
@@ -12853,7 +13557,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25774v1",
       "published": "2026-08-26T13:17:20+00:00",
       "recommendation": "Maybe relevant",
@@ -12889,7 +13593,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.25773v1",
       "published": "2026-08-26T13:15:17+00:00",
       "recommendation": "Maybe relevant",
@@ -12925,7 +13629,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23363v1",
       "published": "2026-08-24T15:13:08+00:00",
       "recommendation": "Maybe relevant",
@@ -12959,7 +13663,7 @@
         "cs.IR",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.23221v1",
       "published": "2026-08-24T13:15:29+00:00",
       "recommendation": "Maybe relevant",
@@ -12990,7 +13694,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.22820v1",
       "published": "2026-08-24T05:34:25+00:00",
       "recommendation": "Maybe relevant",
@@ -13024,7 +13728,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.20026v1",
       "published": "2026-08-20T13:34:48+00:00",
       "recommendation": "Maybe relevant",
@@ -13060,7 +13764,7 @@
         "cs.LG",
         "q-bio.QM"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19965v1",
       "published": "2026-08-20T12:35:27+00:00",
       "recommendation": "Maybe relevant",
@@ -13095,7 +13799,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19914v1",
       "published": "2026-08-20T11:30:59+00:00",
       "recommendation": "Maybe relevant",
@@ -13131,7 +13835,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19908v1",
       "published": "2026-08-20T11:24:39+00:00",
       "recommendation": "Maybe relevant",
@@ -13167,7 +13871,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.19075v1",
       "published": "2026-08-19T16:23:56+00:00",
       "recommendation": "Maybe relevant",
@@ -13201,7 +13905,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18486v1",
       "published": "2026-08-19T03:24:51+00:00",
       "recommendation": "Maybe relevant",
@@ -13233,7 +13937,7 @@
       "categories": [
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.18041v1",
       "published": "2026-08-18T17:34:25+00:00",
       "recommendation": "Maybe relevant",
@@ -13272,7 +13976,7 @@
         "cs.CR",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17722v1",
       "published": "2026-08-18T12:46:52+00:00",
       "recommendation": "Maybe relevant",
@@ -13305,7 +14009,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.17646v1",
       "published": "2026-08-18T11:03:57+00:00",
       "recommendation": "Maybe relevant",
@@ -13344,7 +14048,7 @@
         "cs.IR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16797v1",
       "published": "2026-08-17T16:52:56+00:00",
       "recommendation": "Maybe relevant",
@@ -13375,7 +14079,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16384v1",
       "published": "2026-08-17T10:35:36+00:00",
       "recommendation": "Maybe relevant",
@@ -13416,7 +14120,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.16273v1",
       "published": "2026-08-17T08:46:52+00:00",
       "recommendation": "Maybe relevant",
@@ -13459,7 +14163,7 @@
         "cs.IT",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13521v1",
       "published": "2026-08-13T17:40:39+00:00",
       "recommendation": "Maybe relevant",
@@ -13508,7 +14212,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13492v1",
       "published": "2026-08-13T17:21:03+00:00",
       "recommendation": "Maybe relevant",
@@ -13541,7 +14245,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13365v1",
       "published": "2026-08-13T15:31:01+00:00",
       "recommendation": "Maybe relevant",
@@ -13578,7 +14282,7 @@
         "cond-mat.dis-nn",
         "cond-mat.stat-mech"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13335v1",
       "published": "2026-08-13T15:05:43+00:00",
       "recommendation": "Maybe relevant",
@@ -13618,7 +14322,7 @@
         "cs.CL",
         "cs.GT"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.13057v1",
       "published": "2026-08-13T10:21:11+00:00",
       "recommendation": "Maybe relevant",
@@ -13657,7 +14361,7 @@
         "eess.IV",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12944v1",
       "published": "2026-08-13T08:21:06+00:00",
       "recommendation": "Maybe relevant",
@@ -13694,7 +14398,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12299v1",
       "published": "2026-08-12T17:45:03+00:00",
       "recommendation": "Maybe relevant",
@@ -13728,7 +14432,7 @@
         "cs.LG",
         "q-fin.ST"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12259v1",
       "published": "2026-08-12T17:02:06+00:00",
       "recommendation": "Maybe relevant",
@@ -13763,7 +14467,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.12032v1",
       "published": "2026-08-12T13:13:56+00:00",
       "recommendation": "Maybe relevant",
@@ -13798,7 +14502,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11859v1",
       "published": "2026-08-12T09:47:01+00:00",
       "recommendation": "Maybe relevant",
@@ -13830,7 +14534,7 @@
         "quant-ph",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.11173v1",
       "published": "2026-08-11T17:32:30+00:00",
       "recommendation": "Maybe relevant",
@@ -13865,7 +14569,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.10837v1",
       "published": "2026-08-11T12:03:37+00:00",
       "recommendation": "Maybe relevant",
@@ -13912,7 +14616,7 @@
         "cs.AI",
         "cs.AR"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09874v1",
       "published": "2026-08-10T17:28:05+00:00",
       "recommendation": "Maybe relevant",
@@ -13949,7 +14653,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09855v1",
       "published": "2026-08-10T17:13:02+00:00",
       "recommendation": "Maybe relevant",
@@ -13983,7 +14687,7 @@
         "cs.AI",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09703v1",
       "published": "2026-08-10T15:07:29+00:00",
       "recommendation": "Maybe relevant",
@@ -14018,7 +14722,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.09633v1",
       "published": "2026-08-10T14:13:23+00:00",
       "recommendation": "Maybe relevant",
@@ -14054,7 +14758,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06122v1",
       "published": "2026-08-06T14:53:23+00:00",
       "recommendation": "Maybe relevant",
@@ -14091,7 +14795,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.06023v1",
       "published": "2026-08-06T13:30:13+00:00",
       "recommendation": "Maybe relevant",
@@ -14128,7 +14832,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05960v1",
       "published": "2026-08-06T12:34:17+00:00",
       "recommendation": "Maybe relevant",
@@ -14165,7 +14869,7 @@
         "stat.ML",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05930v1",
       "published": "2026-08-06T11:59:30+00:00",
       "recommendation": "Maybe relevant",
@@ -14200,7 +14904,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05863v1",
       "published": "2026-08-06T10:41:50+00:00",
       "recommendation": "Maybe relevant",
@@ -14234,7 +14938,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2608.05771v1",
       "published": "2026-08-06T09:02:09+00:00",
       "recommendation": "Maybe relevant",
@@ -14270,7 +14974,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28470v1",
       "published": "2026-07-30T16:26:38+00:00",
       "recommendation": "Maybe relevant",
@@ -14307,7 +15011,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28175v1",
       "published": "2026-07-30T13:12:25+00:00",
       "recommendation": "Maybe relevant",
@@ -14345,7 +15049,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28148v1",
       "published": "2026-07-30T12:55:05+00:00",
       "recommendation": "Maybe relevant",
@@ -14383,7 +15087,7 @@
       "categories": [
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.28035v1",
       "published": "2026-07-30T11:18:18+00:00",
       "recommendation": "Maybe relevant",
@@ -14418,7 +15122,7 @@
       "categories": [
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.26946v1",
       "published": "2026-07-29T14:15:29+00:00",
       "recommendation": "Maybe relevant",
@@ -14456,7 +15160,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.26801v1",
       "published": "2026-07-29T11:39:21+00:00",
       "recommendation": "Maybe relevant",
@@ -14494,7 +15198,7 @@
         "cs.CR",
         "cs.DC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24692v1",
       "published": "2026-07-27T17:34:09+00:00",
       "recommendation": "Maybe relevant",
@@ -14530,7 +15234,7 @@
         "cs.LG",
         "cs.CE"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.24131v1",
       "published": "2026-07-27T08:14:29+00:00",
       "recommendation": "Maybe relevant",
@@ -14566,7 +15270,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.21290v1",
       "published": "2026-07-23T13:12:51+00:00",
       "recommendation": "Maybe relevant",
@@ -14607,7 +15311,7 @@
         "cs.CL",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.20274v1",
       "published": "2026-07-22T15:25:05+00:00",
       "recommendation": "Maybe relevant",
@@ -14641,7 +15345,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.20141v1",
       "published": "2026-07-22T13:43:43+00:00",
       "recommendation": "Maybe relevant",
@@ -14676,7 +15380,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.20003v1",
       "published": "2026-07-22T10:39:42+00:00",
       "recommendation": "Maybe relevant",
@@ -14711,7 +15415,7 @@
         "cs.NE",
         "q-bio.NC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.19973v1",
       "published": "2026-07-22T09:55:25+00:00",
       "recommendation": "Maybe relevant",
@@ -14746,7 +15450,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.18149v1",
       "published": "2026-07-20T16:49:30+00:00",
       "recommendation": "Maybe relevant",
@@ -14782,7 +15486,7 @@
         "cs.AR",
         "cs.CV"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.18101v1",
       "published": "2026-07-20T16:02:58+00:00",
       "recommendation": "Maybe relevant",
@@ -14820,7 +15524,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17790v1",
       "published": "2026-07-20T10:22:53+00:00",
       "recommendation": "Maybe relevant",
@@ -14856,7 +15560,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.17782v1",
       "published": "2026-07-20T10:15:02+00:00",
       "recommendation": "Maybe relevant",
@@ -14898,7 +15602,7 @@
         "cs.GR",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.15271v1",
       "published": "2026-07-16T17:58:18+00:00",
       "recommendation": "Maybe relevant",
@@ -14948,7 +15652,7 @@
         "cs.RO",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.15163v1",
       "published": "2026-07-16T16:08:27+00:00",
       "recommendation": "Maybe relevant",
@@ -14986,7 +15690,7 @@
         "cs.AR",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.15123v1",
       "published": "2026-07-16T15:32:44+00:00",
       "recommendation": "Maybe relevant",
@@ -15022,7 +15726,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.15094v1",
       "published": "2026-07-16T15:07:23+00:00",
       "recommendation": "Maybe relevant",
@@ -15074,7 +15778,7 @@
         "cs.LG",
         "cs.DC"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14952v1",
       "published": "2026-07-16T13:00:32+00:00",
       "recommendation": "Maybe relevant",
@@ -15108,7 +15812,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14898v1",
       "published": "2026-07-16T12:16:12+00:00",
       "recommendation": "Maybe relevant",
@@ -15147,7 +15851,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14703v1",
       "published": "2026-07-16T08:04:25+00:00",
       "recommendation": "Maybe relevant",
@@ -15184,7 +15888,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14607v1",
       "published": "2026-07-16T06:10:42+00:00",
       "recommendation": "Maybe relevant",
@@ -15217,7 +15921,7 @@
         "cs.CR",
         "cs.CL"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14587v1",
       "published": "2026-07-16T05:33:55+00:00",
       "recommendation": "Maybe relevant",
@@ -15252,7 +15956,7 @@
         "cs.LG",
         "cs.PF"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14431v1",
       "published": "2026-07-15T23:55:48+00:00",
       "recommendation": "Maybe relevant",
@@ -15285,7 +15989,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.14018v1",
       "published": "2026-07-15T16:50:43+00:00",
       "recommendation": "Maybe relevant",
@@ -15319,7 +16023,7 @@
         "cs.LG",
         "q-fin.CP"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.13929v1",
       "published": "2026-07-15T15:10:10+00:00",
       "recommendation": "Maybe relevant",
@@ -15353,7 +16057,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.13612v1",
       "published": "2026-07-15T08:59:36+00:00",
       "recommendation": "Maybe relevant",
@@ -15390,7 +16094,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.13491v1",
       "published": "2026-07-15T06:37:05+00:00",
       "recommendation": "Maybe relevant",
@@ -15427,7 +16131,7 @@
         "cs.AI",
         "cs.CV"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.12909v1",
       "published": "2026-07-14T15:43:41+00:00",
       "recommendation": "Maybe relevant",
@@ -15466,7 +16170,7 @@
         "cs.IR",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.12392v1",
       "published": "2026-07-14T06:12:26+00:00",
       "recommendation": "Maybe relevant",
@@ -15504,7 +16208,7 @@
         "cs.LG",
         "stat.ML"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.11510v1",
       "published": "2026-07-13T13:00:06+00:00",
       "recommendation": "Maybe relevant",
@@ -15546,7 +16250,7 @@
         "cs.AR",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08427v1",
       "published": "2026-07-09T12:49:24+00:00",
       "recommendation": "Maybe relevant",
@@ -15580,7 +16284,7 @@
         "cs.LG",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.08234v1",
       "published": "2026-07-09T08:29:38+00:00",
       "recommendation": "Maybe relevant",
@@ -15616,7 +16320,7 @@
         "q-bio.QM",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07425v1",
       "published": "2026-07-08T13:52:50+00:00",
       "recommendation": "Maybe relevant",
@@ -15655,7 +16359,7 @@
         "cs.AI",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07219v1",
       "published": "2026-07-08T10:01:33+00:00",
       "recommendation": "Maybe relevant",
@@ -15698,7 +16402,7 @@
         "cs.CV",
         "cs.LG"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07179v1",
       "published": "2026-07-08T09:13:59+00:00",
       "recommendation": "Maybe relevant",
@@ -15732,7 +16436,7 @@
         "cs.CV",
         "cs.AI"
       ],
-      "digest_date": "2026-09-09",
+      "digest_date": "2026-09-10",
       "pdf_url": "https://arxiv.org/pdf/2607.07033v1",
       "published": "2026-07-08T06:07:06+00:00",
       "recommendation": "Maybe relevant",
