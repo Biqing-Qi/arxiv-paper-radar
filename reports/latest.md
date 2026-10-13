@@ -1,6 +1,6 @@
-# Daily arXiv Paper Radar - 2026-10-12
+# Daily arXiv Paper Radar - 2026-10-13
 
-Generated at 2026-10-12 10:09 CST.
+Generated at 2026-10-13 11:23 CST.
 
 No new papers matched the configured topics today.
 
