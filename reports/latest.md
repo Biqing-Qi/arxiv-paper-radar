@@ -1,7 +1,17 @@
-# Daily arXiv Paper Radar - 2026-10-26
+# Daily arXiv Paper Radar - 2026-10-27
 
-Generated at 2026-10-26 09:04 CST.
+Generated at 2026-10-27 09:51 CST.
 
-No new papers matched the configured topics today.
+Found **1** new paper(s).
 
-The workflow still ran successfully; try lowering `min_score` or adding more keywords in `config.json` if this happens often.
+### Fed-Universe: A Semantic-Geometric-Topological-Human (S-G-T-H) Stack for Negotiated Alignment in Federated Systems
+
+- Recommendation: **Maybe relevant**
+- Score: `4`
+- Topics: Model Architecture
+- Authors: Ting Xu, Henry Leung
+- Published: 2026-10-25 10:43 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.34009v1) / [PDF](https://arxiv.org/pdf/2610.34009v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Conventional federated learners implicitly optimize for global means, creating a "one-size-fits-all" paradigm that inevitably suppresses the minority under cross-site heterogeneity.
