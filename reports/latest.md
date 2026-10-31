@@ -1,185 +1,149 @@
-# Daily arXiv Paper Radar - 2026-10-30
+# Daily arXiv Paper Radar - 2026-10-31
 
-Generated at 2026-10-30 10:26 CST.
+Generated at 2026-10-31 10:05 CST.
 
-Found **15** new paper(s).
+Found **12** new paper(s).
 
-### Dual DeltaNet: Value-Side Memory Reorganization for Linear Attention
+### Cord: Confidence-Anchored Order Residual Decoding for Masked Diffusion Language Models
 
 - Recommendation: **Read closely**
 - Score: `15`
-- Topics: Model Architecture
-- Authors: Yixiao Qian, Yaxin Zhang, Song Chen, Jiaxu Liu, et al.
-- Published: 2026-10-28 18:09 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38578v1) / [PDF](https://arxiv.org/pdf/2610.38578v1)
-- Matched keywords: `linear attention, mamba, state space model`
+- Topics: Diffusion Language Models
+- Authors: Chengwei Zhou, Zhaoyan Jia, Massoud Pedram, Gourav Datta
+- Published: 2026-10-29 13:03 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.39372v1) / [PDF](https://arxiv.org/pdf/2610.39372v1)
+- Matched keywords: `diffusion language model, masked diffusion`
 
-Likely relevant to Model Architecture. Linear attention and state space models (SSMs) offer efficient alternatives to softmax attention by maintaining a fixed-size recurrent state, but this design requires careful management to preserve useful historical associations and limit interference.
+Likely relevant to Diffusion Language Models. The decoding order of masked diffusion language models (dLLMs) can substantially affect generation quality, yet common decoders typically apply the same reveal rule throughout generation.
 
-### ParaTTT: Parallelizing Test-Time Training Layers with Deep Memories
+### Homebrewed SLMs: Autoregressive and Masked Diffusion Language Models Built at Home for Portuguese
 
 - Recommendation: **Read closely**
-- Score: `11`
-- Topics: Model Architecture
-- Authors: Noel Loo, Neehal Tumma, T. Konstantin Rusch, Mathias Lechner, et al.
-- Published: 2026-10-28 12:08 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38255v1) / [PDF](https://arxiv.org/pdf/2610.38255v1)
-- Matched keywords: `architecture, mamba, recurrent architecture`
-
-Likely relevant to Model Architecture. Test-time training (TTT) layers replace the linear fast-weight memory of modern recurrent architectures with a small neural network trained online by gradient descent.
-
-### Compute Has Shape: Self-Morphing the Internal Computation of Frozen LLMs
-
-- Recommendation: **Worth scanning**
-- Score: `8`
-- Topics: Model Architecture
-- Authors: Junxi Wu, Yiwen Guo, Shu-Tao Xia
-- Published: 2026-10-28 15:19 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38382v1) / [PDF](https://arxiv.org/pdf/2610.38382v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Test-time scaling improves large language models through additional computation, but how to adapt the topology of internal computation to individual inputs remains underexplored.
-
-### Skillful and realistic precipitation forecasting with reinforced diffusion
-
-- Recommendation: **Worth scanning**
-- Score: `6`
+- Score: `10`
 - Topics: Diffusion Language Models
-- Authors: Ozan Sener, Anand Avati, David Hafner, Jierui Lin, et al.
-- Published: 2026-10-29 03:50 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38775v1) / [PDF](https://arxiv.org/pdf/2610.38775v1)
-- Matched keywords: `discrete diffusion`
+- Authors: Pedro Carvalho Brom
+- Published: 2026-10-30 01:34 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.40533v1) / [PDF](https://arxiv.org/pdf/2610.40533v1)
+- Matched keywords: `diffusion language model, masked diffusion`
 
-Likely relevant to Diffusion Language Models. Accurate precipitation forecasting remains elusive as physics-based models struggle to resolve mesoscale convection and machine learning often yields physically inconsistent, blurred results that consistently underestimate extreme events.
+Likely relevant to Diffusion Language Models. Building a language model of one's own no longer requires a data centre.
 
-### Two-Stage Clipping: Linear-Time Approximate and Exact Mixed-Norm Projections for Transformers
+### Attention, Dynamic Wave and Hybrid Sequence Mixers in Language Models
+
+- Recommendation: **Read closely**
+- Score: `10`
+- Topics: Model Architecture
+- Authors: Dmytro Babarytskyi, Oleksandr Babarytskyi
+- Published: 2026-10-29 19:33 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.39854v1) / [PDF](https://arxiv.org/pdf/2610.39854v1)
+- Matched keywords: `architecture, long context`
+
+Likely relevant to Model Architecture. Large Language Models (LLMs) rely on Multi-Head Attention (MHA) for sequence modeling, but scaling to long contexts is constrained by the quadratic cost of attention, motivating sub-quadratic recurrent alternatives.
+
+### KV Cache Quantization for Diffusion Language Models
 
 - Recommendation: **Worth scanning**
-- Score: `6`
-- Topics: Model Architecture
-- Authors: Michel Barlaud, Jean-Paul Marmorat
-- Published: 2026-10-28 18:25 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38598v1) / [PDF](https://arxiv.org/pdf/2610.38598v1)
-- Matched keywords: `architecture`
+- Score: `9`
+- Topics: Diffusion Language Models
+- Authors: Yan Tai, Yunan Ding, Guangzhao Li, Siqi Luo, et al.
+- Published: 2026-10-29 19:31 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.39853v1) / [PDF](https://arxiv.org/pdf/2610.39853v1)
+- Matched keywords: `diffusion language model`
 
-Likely relevant to Model Architecture. Large Language Models (LLMs) based on Transformer architectures have achieved remarkable performance across artificial intelligence tasks, but their computational cost remains a major bottleneck.
+Likely relevant to Diffusion Language Models. KV cache quantization is well studied for autoregressive language models, where cached prefix states are exact under causal attention and quantization is mainly a cache reconstruction problem.
 
-### Learning a Prior-Data Fitted Network for Graph Foundation Models via Structural Causal Model Priors
-
-- Recommendation: **Worth scanning**
-- Score: `6`
-- Topics: Model Architecture
-- Authors: Ziwei Zhang, Tianyin Liao, Chunyu Hu, Ge Lan, et al.
-- Published: 2026-10-28 14:35 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38335v1) / [PDF](https://arxiv.org/pdf/2610.38335v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Graph Foundation Models (GFMs) have recently emerged as a promising paradigm for learning transferable representations across different graphs and domains.
-
-### A Case Study of a Multi-Agent Kernel-Optimization Loop That Learns a New AI Accelerator
+### Rimuru: Unified Memory Management for Modern LLM Serving via Elastic Expert Offloading
 
 - Recommendation: **Worth scanning**
-- Score: `6`
+- Score: `7`
 - Topics: Model Architecture
-- Authors: Byonggon Chun
-- Published: 2026-10-28 14:29 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38329v1) / [PDF](https://arxiv.org/pdf/2610.38329v1)
-- Matched keywords: `architecture`
+- Authors: Zhiyuan Fang, Dingyang Li, Jianfeng Zhong, Bin Wang, et al.
+- Published: 2026-10-29 23:47 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.40305v1) / [PDF](https://arxiv.org/pdf/2610.40305v1)
+- Matched keywords: `architecture, moe`
 
-Likely relevant to Model Architecture. Frontier large language models write correct CUDA kernels for most single-operator benchmark tasks, yet their accuracy collapses on accelerators whose architecture and programming language they have rarely seen.
+Likely relevant to Model Architecture. Modern LLMs strain device memory through large model weights and attention states, particularly in resource-constrained scenarios.
 
-### HotPOT: Operator Transformer with Heterogeneous Physics Experts for Large-Scale PDE Pre-training
+### Low-Bit GDN Recurrent-State Quantization: Global Gradient-aware Allocation and Pure-Write Sliding Windows
+
+- Recommendation: **Worth scanning**
+- Score: `7`
+- Topics: Model Architecture
+- Authors: Qinghang Huang, Xuchu Huang, Xunzhao Yin
+- Published: 2026-10-29 20:33 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.39931v1) / [PDF](https://arxiv.org/pdf/2610.39931v1)
+- Matched keywords: `linear attention`
+
+Likely relevant to Model Architecture. Linear attention stores historical information in a recurrent state of fixed size, providing a compact memory representation for long-context inference.
+
+### An ODE-based Sampler for Discrete Diffusion Models
 
 - Recommendation: **Maybe relevant**
 - Score: `5`
-- Topics: Model Architecture
-- Authors: Jiayi Li, Guancheng Zhou, Yisi Luo, Ruihua Chen, et al.
-- Published: 2026-10-28 11:17 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38218v1) / [PDF](https://arxiv.org/pdf/2610.38218v1)
-- Matched keywords: `architecture, moe`
+- Topics: Diffusion Language Models
+- Authors: Samson Gourevitch, Yazid Janati, Eric Moulines, Eric P. Xing, et al.
+- Published: 2026-10-30 01:55 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.40618v1) / [PDF](https://arxiv.org/pdf/2610.40618v1)
+- Matched keywords: `discrete diffusion`
 
-Likely relevant to Model Architecture. Large-scale PDE pre-training trains a single model on the data from multiple partial differential equations (PDEs).
+Likely relevant to Diffusion Language Models. The marginals of a continuous diffusion model can be reproduced by a deterministic ordinary differential equation (ODE), known as the probability flow ODE, which provides a foundation for accelerated sampling and consistency distillation.
 
-### Routed Continual Learning
-
-- Recommendation: **Maybe relevant**
-- Score: `4`
-- Topics: Model Architecture
-- Authors: Michael Philip, Mahesh Balakrishnan, David Geraghty, David Mao, et al.
-- Published: 2026-10-29 04:03 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38796v1) / [PDF](https://arxiv.org/pdf/2610.38796v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Agents deployed at scale repeatedly encounter related problems, and it is natural to let them learn from each other's experience rather than starting over each time.
-
-### Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models
+### Learning Calibrated Confidence for Multi-Agent Collaboration
 
 - Recommendation: **Maybe relevant**
 - Score: `4`
 - Topics: Model Architecture
-- Authors: Yecheng Wu, Song Han, Han Cai
-- Published: 2026-10-29 02:55 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38681v1) / [PDF](https://arxiv.org/pdf/2610.38681v1)
+- Authors: Chenxiao Fan, Chongming Gao, Gangyi Zhang, Yaxin Gong, et al.
+- Published: 2026-10-29 20:30 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.39927v1) / [PDF](https://arxiv.org/pdf/2610.39927v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Self-distillation offers a way to improve reasoning models when a suitable external teacher is unavailable.
+Likely relevant to Model Architecture. Complex information seeking on the Web often requires collecting evidence from multiple documents and reasoning across them, as in multi-hop question answering.
 
-### Agent Transfer Protocol: Server-Mediated Agent-to-Agent Communication Architecture for the Agentic Web
-
-- Recommendation: **Maybe relevant**
-- Score: `4`
-- Topics: Model Architecture
-- Authors: Yuqi Qiu, Zuyao Xu, Lu Sun, Xiang Li, et al.
-- Published: 2026-10-28 15:41 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38398v1) / [PDF](https://arxiv.org/pdf/2610.38398v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. The Agentic Web needs to support continuous collaboration among agents from different organizations.
-
-### Alpha-TCM: A Nine-Layer Framework for TCM-Guided Multimodal Inference and Structured-Prior Auditing
+### Multi-View MoE: Letting Every Router Shape Expert Computation
 
 - Recommendation: **Maybe relevant**
 - Score: `3`
 - Topics: Model Architecture
-- Authors: Yucheng Liu, Everett X. Wang
-- Published: 2026-10-29 03:35 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38754v1) / [PDF](https://arxiv.org/pdf/2610.38754v1)
-- Matched keywords: `architecture`
+- Authors: Zelin Zhao, Tianchi Ma, Junyuan Shang, Shuohuan Wang, et al.
+- Published: 2026-10-30 01:45 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.40577v1) / [PDF](https://arxiv.org/pdf/2610.40577v1)
+- Matched keywords: `moe`
 
-Likely relevant to Model Architecture. Alpha-TCM makes two contributions under a central thesis: auditable systems should separate domain knowledge, case evidence, probabilistic inference, and downstream authority.
+Likely relevant to Model Architecture. Sparse mixture-of-experts (MoE) models expand parameter capacity by activating a small subset of experts per token.
 
-### SaiVLA-JEPA: Evaluating Future Latent Prediction in JEPA-Conditioned VLA Control
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Rufeng Xiao, Ruihao Xiao, Wei Chen, Xinhai Sun
-- Published: 2026-10-28 17:25 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38508v1) / [PDF](https://arxiv.org/pdf/2610.38508v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Joint-embedding predictive architectures (JEPAs) learn to predict representations rather than pixels, offering a compact way to model how visual scenes evolve.
-
-### DES-JEPA: Learning a Shared Vocabulary for High-Dimensional Discrete Event Sequences
+### NEOPIC: A Neural Operator Framework for Particle-based Kinetic Plasma Simulations
 
 - Recommendation: **Maybe relevant**
 - Score: `3`
 - Topics: Model Architecture
-- Authors: Hugo Math, Maximilian Forstenhäusler, Christos Anagnostopoulos
-- Published: 2026-10-28 16:24 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38445v1) / [PDF](https://arxiv.org/pdf/2610.38445v1)
+- Authors: Sriramkrishnan Muralikrishnan, Chelsea Maria John, Jeffrey Kelling, Michael Bussmann, et al.
+- Published: 2026-10-30 01:33 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.40528v1) / [PDF](https://arxiv.org/pdf/2610.40528v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Temporal foundation models such as Chronos and TimesFM generalize across domains through a shared numerical observation space.
+Likely relevant to Model Architecture. We introduce NEOPIC, a framework for learning the field operator in particle-based methods applied to kinetic plasma simulations.
 
-### DecisionUnlearn-Bench: Unlearning Probabilistic Decisions under Changing Schemas
+### Proving and Improving the Platonic Representation Hypothesis with JEPAs
 
 - Recommendation: **Maybe relevant**
 - Score: `3`
 - Topics: Model Architecture
-- Authors: Tiantong Wu, Wei Yang Bryan Lim
-- Published: 2026-10-28 16:13 CST
-- Links: [arXiv](http://arxiv.org/abs/2610.38431v1) / [PDF](https://arxiv.org/pdf/2610.38431v1)
+- Authors: Randall Balestriero, Yann LeCun
+- Published: 2026-10-29 11:49 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.39302v1) / [PDF](https://arxiv.org/pdf/2610.39302v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Machine unlearning aims to reproduce the behavior of a model trained without designated data.
+Likely relevant to Model Architecture. Whether models trained on different modalities converge to the same representation of the world is central to AI.
+
+### Where Position Matters: Profiling-Guided Layer-Wise RoPE Allocation in Transformers
+
+- Recommendation: **Maybe relevant**
+- Score: `3`
+- Topics: Model Architecture
+- Authors: Zhiwei Liu, Boao Kong, Bing Liu
+- Published: 2026-10-29 10:42 CST
+- Links: [arXiv](http://arxiv.org/abs/2610.39223v1) / [PDF](https://arxiv.org/pdf/2610.39223v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Rotary Position Embedding (RoPE) typically uses uniform coverage across Transformer layers despite heterogeneous positional requirements.
