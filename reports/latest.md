@@ -1,197 +1,149 @@
-# Daily arXiv Paper Radar - 2026-11-06
+# Daily arXiv Paper Radar - 2026-11-07
 
-Generated at 2026-11-06 11:16 CST.
+Generated at 2026-11-07 10:35 CST.
 
-Found **16** new paper(s).
+Found **12** new paper(s).
 
-### PBPO: Prefix-Block Policy Optimization for Diffusion Language Models
+### SpecCTMC: Exact Speculative Simulation of Diffusion Language Model Continuous-Time Markov Chains
 
 - Recommendation: **Read closely**
 - Score: `10`
 - Topics: Diffusion Language Models
-- Authors: Katherine Tieu, Dongqi Fu, Si Zhang, Hanqing Zeng, et al.
-- Published: 2026-11-05 18:20 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07783v1) / [PDF](https://arxiv.org/pdf/2611.07783v1)
+- Authors: Siva Rajesh Kasa, Yasong Dai, Sumit Negi, Hongdong Li
+- Published: 2026-11-06 01:41 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08362v1) / [PDF](https://arxiv.org/pdf/2611.08362v1)
+- Matched keywords: `diffusion language model, masked diffusion`
+
+Likely relevant to Diffusion Language Models. Masked diffusion language models offer parallel text generation, but independently sampling multiple tokens can disrupt their dependencies and change the output distribution.
+
+### Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation
+
+- Recommendation: **Worth scanning**
+- Score: `8`
+- Topics: Model Architecture
+- Authors: Ali Sarabadani, Kheirolah Rahsepar Fard, Tahereh Jeirani
+- Published: 2026-11-06 01:12 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08315v1) / [PDF](https://arxiv.org/pdf/2611.08315v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over heterogeneous knowledge graphs (KGs) remains unclear.
+
+### Create Your Own Work Stack: Deploying Self-hosted AI and Tooling in a Tech Startup
+
+- Recommendation: **Worth scanning**
+- Score: `7`
+- Topics: Model Architecture
+- Authors: Saad Ahmed Bazaz, Talha Amjad, Abdurrehman Subhani, Sohaib Ahmed Bazaz, et al.
+- Published: 2026-11-05 22:49 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08116v1) / [PDF](https://arxiv.org/pdf/2611.08116v1)
+- Matched keywords: `architecture, hybrid architecture`
+
+Likely relevant to Model Architecture. Self-hosting AI is often presented as a way to reduce inference costs and increase control, but deployment introduces its own costs.
+
+### Measured Coupling for Parallel Decoding in Diffusion Language Models
+
+- Recommendation: **Worth scanning**
+- Score: `6`
+- Topics: Diffusion Language Models
+- Authors: Tal Oved, Lior Wolf
+- Published: 2026-11-06 01:10 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08307v1) / [PDF](https://arxiv.org/pdf/2611.08307v1)
 - Matched keywords: `diffusion language model`
 
-Likely relevant to Diffusion Language Models. Diffusion Large Language Models (dLLMs) commonly decode responses by proceeding autoregressively across blocks while iteratively denoising multiple tokens within each block.
+Likely relevant to Diffusion Language Models. Diffusion language models can write many tokens per step, but must choose which tokens are safe to commit together.
 
-### MambaTG: Candidate-Aware State Space Modeling for Future Link Prediction on Temporal Graphs
-
-- Recommendation: **Read closely**
-- Score: `10`
-- Topics: Model Architecture
-- Authors: Nguyen Hong Quan, Sitao Luan, Yilun Zheng, Lihui Chen
-- Published: 2026-11-05 15:19 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07569v1) / [PDF](https://arxiv.org/pdf/2611.07569v1)
-- Matched keywords: `mamba, state space model`
-
-Likely relevant to Model Architecture. Future link prediction on temporal graphs involves both repeated interactions between previously connected node pairs and first-time interactions between pairs with no prior interaction.
-
-### CAMP: Context-Aware Mapping and Placement for LLMs on 3D-IMC Arrays
-
-- Recommendation: **Worth scanning**
-- Score: `7`
-- Topics: Model Architecture
-- Authors: Orhun Görkem, Athanasios Vasilopoulos, Georgios Pagonis, Victoria Clerico, et al.
-- Published: 2026-11-05 17:27 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07707v1) / [PDF](https://arxiv.org/pdf/2611.07707v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Large Language Models (LLMs) incur severe memory-access overheads due to the cost of loading large weight matrices and key-value (KV) caches.
-
-### FlashOffloading: Low-Latency KV Cache Offloading for Long-Context LLM Serving
-
-- Recommendation: **Worth scanning**
-- Score: `7`
-- Topics: Model Architecture
-- Authors: Xuan Wang, Zhuanhao Wu, Tingzhu Fang, Xushi Li, et al.
-- Published: 2026-11-05 14:50 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07542v1) / [PDF](https://arxiv.org/pdf/2611.07542v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. In large language model (LLM) serving systems, the key-value (KV) cache grows linearly with sequence length and concurrency, so long-context inference easily hits the high-bandwidth memory (HBM) capacity wall and results in low concurrency.
-
-### Masked diffusion as random sequential adsorption: an exactly solvable model for parallel decoding
-
-- Recommendation: **Worth scanning**
-- Score: `6`
-- Topics: Diffusion Language Models
-- Authors: Adrian Baule
-- Published: 2026-11-05 19:23 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07845v1) / [PDF](https://arxiv.org/pdf/2611.07845v1)
-- Matched keywords: `masked diffusion`
-
-Likely relevant to Diffusion Language Models. Masked diffusion models generate text by reversing a stochastic masking process.
-
-### An Information Bottleneck for Post-hoc Memorization Mitigation in LLMs
+### Identifying Neural Dynamics Using Nonlinear Interventional State Space Models
 
 - Recommendation: **Worth scanning**
 - Score: `6`
 - Topics: Model Architecture
-- Authors: Dina EL Zein, Shashi Kumar, James Henderson
-- Published: 2026-11-05 16:54 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07669v1) / [PDF](https://arxiv.org/pdf/2611.07669v1)
-- Matched keywords: `architecture`
+- Authors: Hanna M. Tolle, Carles Balsells-Rodas, Yixin Wang, Pedro A. M. Mediano, et al.
+- Published: 2026-11-05 22:48 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08113v1) / [PDF](https://arxiv.org/pdf/2611.08113v1)
+- Matched keywords: `state space model`
 
-Likely relevant to Model Architecture. Recent studies have shown that large language models (LLMs) can memorize and reproduce copyrighted training data, raising serious privacy and intellectual property concerns.
+Likely relevant to Model Architecture. State-space models (SSMs) recover low-dimensional latent dynamics from high-dimensional observations, but latents are generally not identifiable from observational data alone.
 
-### EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure
+### Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter Readout
 
 - Recommendation: **Maybe relevant**
 - Score: `5`
 - Topics: Model Architecture
-- Authors: Kwan Yun, Minhyeok Bang, Colette Suhjung Koo, Junyong Noh
-- Published: 2026-11-05 20:25 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07909v1) / [PDF](https://arxiv.org/pdf/2611.07909v1)
-- Matched keywords: `architecture, moe`
-
-Likely relevant to Model Architecture. Recent advances in Gaussian splatting have enabled efficient and photorealistic head avatar reconstruction, yet monocular video-based or image-based methods still suffer from under-constrained geometry and texture, leading to artifacts such as blurring, stretching, and temporal instability.
-
-### SPARE: Fast Linear Attention Decoding with Compact Recurrent States
-
-- Recommendation: **Maybe relevant**
-- Score: `4`
-- Topics: Model Architecture
-- Authors: Ke Wan, Zaiyi Zheng, Chen Chen
-- Published: 2026-11-05 15:00 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07552v1) / [PDF](https://arxiv.org/pdf/2611.07552v1)
+- Authors: Tushaar Gangavarapu, Gil Tabak, Clemens JS Schaefer
+- Published: 2026-11-06 01:53 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08376v1) / [PDF](https://arxiv.org/pdf/2611.08376v1)
 - Matched keywords: `linear attention`
 
-Likely relevant to Model Architecture. Linear attention reduces the quadratic sequence-length complexity of softmax attention by maintaining fixed-size recurrent states.
+Likely relevant to Model Architecture. Linear attention compresses context into a fixed-size key-value state for linear-time training and constant-memory inference.
 
-### ZYFA: Speed and Accuracy of FP8 FlashAttention on AMD CDNA4
+### LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification
+
+- Recommendation: **Maybe relevant**
+- Score: `5`
+- Topics: Model Architecture
+- Authors: Elmira Salari, Shruti Kshirsagar
+- Published: 2026-11-06 01:12 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08311v1) / [PDF](https://arxiv.org/pdf/2611.08311v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Automatic sleep stage classification from electroencephalography (EEG) signals is a critical task in clinical sleep medicine.
+
+### First-Token Attraction in Mamba Dynamics
+
+- Recommendation: **Maybe relevant**
+- Score: `5`
+- Topics: Model Architecture
+- Authors: Trinh T. Nguyen, Minh-Khoi Nguyen-Nhat, Duy-Tung Pham, Hoang-Son Do, et al.
+- Published: 2026-11-06 01:06 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08303v1) / [PDF](https://arxiv.org/pdf/2611.08303v1)
+- Matched keywords: `mamba`
+
+Likely relevant to Model Architecture. We study token dynamics in deep Mamba models, with a particular focus on the attracting role of the first token.
+
+### AutoCompress: Automated Hardware-Guided Model Compression
 
 - Recommendation: **Maybe relevant**
 - Score: `4`
 - Topics: Model Architecture
-- Authors: Quentin Anthony, Ganesh Bikshandi, Praneeth Medepalli, Stephen Ebert
-- Published: 2026-11-05 13:58 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07496v1) / [PDF](https://arxiv.org/pdf/2611.07496v1)
-- Matched keywords: `long context`
+- Authors: Sheldon Liang, Ali Taghibakhshi, Saurav Muralidharan, Sharath Turuvekere Sreenivas, et al.
+- Published: 2026-11-06 00:53 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08290v1) / [PDF](https://arxiv.org/pdf/2611.08290v1)
+- Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Attention is a core building block of frontier models and often dominates compute-bound prefill at long context.
+Likely relevant to Model Architecture. LLM pruning must preserve quality while meeting hardware- and workload-specific constraints on latency, throughput, and memory.
 
-### LowRAM: Low-Rank Keys and Amortised Values for Composable KV Cache Compression at Test-Time
+### Beyond Quadratic Attention: Separable Gaussian Operators for ODE Vision Transformers
 
 - Recommendation: **Maybe relevant**
 - Score: `4`
 - Topics: Model Architecture
-- Authors: Teresa Delgado, Hugo Hazard, Martin Benfeghoul, Jun Wang, et al.
-- Published: 2026-11-05 03:00 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07025v1) / [PDF](https://arxiv.org/pdf/2611.07025v1)
-- Matched keywords: `long context`
-
-Likely relevant to Model Architecture. Autoregressive decoding relies on the KV cache, whose memory footprint grows linearly with context length and caps batch size and throughput.
-
-### InnerLogic-Surg: An Open Surgical Foundation Model via Continual Pretraining
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Kun Yuan, Hao Ding, Yiqing Shen, Gasper Podobnik, et al.
-- Published: 2026-11-05 20:03 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07883v1) / [PDF](https://arxiv.org/pdf/2611.07883v1)
+- Authors: Carlos Boned Riera, David Romero Sanchez, Oriol Ramos Terrades
+- Published: 2026-11-06 00:17 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08236v1) / [PDF](https://arxiv.org/pdf/2611.08236v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Vision foundation models are the backbone of modern surgical image analysis, yet most surgical systems still rely on encoders pretrained on natural images or on specialist models trained from scratch on comparatively small datasets.
+Likely relevant to Model Architecture. Self-attention carries a quadratic cost in token count, which limits how far Vision Transformers can scale with input resolution.
 
-### Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction
+### La-JEPA: Compact Robot Policies with Latent World Modeling
 
 - Recommendation: **Maybe relevant**
-- Score: `3`
+- Score: `4`
 - Topics: Model Architecture
-- Authors: Shi Yin, Zujian Dai, Xinyang Pan, Lixin He
-- Published: 2026-11-05 17:19 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07695v1) / [PDF](https://arxiv.org/pdf/2611.07695v1)
+- Authors: Mateo Clémente, George Z. Xue, Amin Abyaneh, Liheng Ma, et al.
+- Published: 2026-11-05 23:16 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08156v1) / [PDF](https://arxiv.org/pdf/2611.08156v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Most existing equivariant architectures for Hamiltonian prediction propagate features in direct-sum spaces of irreducible spherical tensors, whereas the target Hamiltonian is naturally an operator block in a direct-product representation over local orbital and spin bases.
+Likely relevant to Model Architecture. World-action models adapt pretrained video generators, and vision-language-action models build on pretrained vision-language backbones; both tie policy architecture and inference cost to large transformers designed for generation rather than control.
 
-### English Calibration Erodes Lithuanian in Expert-Pruned Mixture-of-Experts Language Models
+### SAE Interprets MoE: Sparse AutoEncoders Reveal That MoE Experts Exhibit Human-Interpretable Fine-Grained Specialization
 
 - Recommendation: **Maybe relevant**
 - Score: `3`
 - Topics: Model Architecture
-- Authors: Tomas Rasymas, Povilas Kvedaras
-- Published: 2026-11-05 16:39 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07654v1) / [PDF](https://arxiv.org/pdf/2611.07654v1)
+- Authors: Anyuan Zhuo, Shaohua Zhang, Yuan Lin, Pinyan Lu
+- Published: 2026-11-05 22:35 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.08089v1) / [PDF](https://arxiv.org/pdf/2611.08089v1)
 - Matched keywords: `moe`
 
-Likely relevant to Model Architecture. Expert pruning compresses Mixture-of-Experts (MoE) language models by removing the experts that a calibration set marks as unimportant.
-
-### HyFlash: A Prefix-Memory Prior for On-Device Speculative Decoding
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Jongwoo Ko, Pashmina Cameron
-- Published: 2026-11-05 08:31 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07263v1) / [PDF](https://arxiv.org/pdf/2611.07263v1)
-- Matched keywords: `long context`
-
-Likely relevant to Model Architecture. Parallel block drafting accelerates speculative decoding by predicting multiple future positions in a single backbone pass, but on-device deployment constrains both drafter capacity and context storage.
-
-### Archetypal contexts in the neurons of language models: an architecture for intelligence?
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: David Nordfors
-- Published: 2026-11-05 07:38 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07234v1) / [PDF](https://arxiv.org/pdf/2611.07234v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. We validate our previous hypothesis that a language model holds relational patterns apart from the subject domains that instantiate them (Nordfors, 2026).
-
-### Recursive Sparse Attention: Million-Token Length Extrapolation at Logarithmic Cost
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Ruitian Wang, Xinyu Yang, Minshen Zhang, Hao Zhang
-- Published: 2026-11-05 07:36 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.07232v1) / [PDF](https://arxiv.org/pdf/2611.07232v1)
-- Matched keywords: `sparse attention`
-
-Likely relevant to Model Architecture. At context lengths of about 1M tokens, dense attention is costly in prefill and decoding, and training typically relies on long documents, which become scarcer as the target length increases.
+Likely relevant to Model Architecture. Mixture-of-Experts (MoE) models route each token to a few of many experts, yet what an individual expert is responsible for remains unsettled.
