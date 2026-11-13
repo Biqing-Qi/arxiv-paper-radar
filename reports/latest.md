@@ -1,233 +1,185 @@
-# Daily arXiv Paper Radar - 2026-11-12
+# Daily arXiv Paper Radar - 2026-11-13
 
-Generated at 2026-11-12 11:39 CST.
+Generated at 2026-11-13 11:14 CST.
 
-Found **19** new paper(s).
+Found **15** new paper(s).
 
-### SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving
+### Towards Robust Vision-Language Reasoning: A Multi-Stage Optimization Pipeline with Masked Diffusion Model
+
+- Recommendation: **Read closely**
+- Score: `14`
+- Topics: Diffusion Language Models, Model Architecture
+- Authors: Shunming Liu, Pei Huang, Yajing Sun, Huaxiao Liu
+- Published: 2026-11-11 17:30 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15238v1) / [PDF](https://arxiv.org/pdf/2611.15238v1)
+- Matched keywords: `architecture, discrete diffusion, masked diffusion`
+
+Likely relevant to Diffusion Language Models, Model Architecture. Discrete diffusion generation is emerging as a competitive alternative to autoregressive generation by denoising the entire token sequence through iterative refinement.
+
+### Mask-Pattern Position Augmentation: Training-Free Long-Context Extrapolation for Diffusion LLMs
 
 - Recommendation: **Read closely**
 - Score: `12`
-- Topics: Model Architecture
-- Authors: Haolin Jiang, Weihang Li, Zhongzhu Zhou, Jinwen Pan, et al.
-- Published: 2026-11-10 23:57 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14246v1) / [PDF](https://arxiv.org/pdf/2611.14246v1)
-- Matched keywords: `linear attention, mamba`
-
-Likely relevant to Model Architecture. Hybrid models combine softmax attention with linear attention, which compresses history into fixed-size recurrent states to balance model quality and inference efficiency.
-
-### POEM: Output-Relative Block-Sparse Attention for Long-Context Prefilling
-
-- Recommendation: **Worth scanning**
-- Score: `9`
-- Topics: Model Architecture
-- Authors: Haoyi Wu, Yunkai Dang, Wanyu Zhang, Lei Wang, et al.
-- Published: 2026-11-10 12:52 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13578v1) / [PDF](https://arxiv.org/pdf/2611.13578v1)
-- Matched keywords: `sparse attention`
-
-Likely relevant to Model Architecture. Large language models (LLMs) have shown strong capabilities across diverse applications, making both safety and utility essential for reliable deployment.
-
-### Breakdown of Autoregressive Multi-Step Reasoning Under Concentrated vs. Diffuse Attention Head Dropout
-
-- Recommendation: **Worth scanning**
-- Score: `8`
-- Topics: Model Architecture
-- Authors: Karol Struniawski
-- Published: 2026-11-10 23:29 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14209v1) / [PDF](https://arxiv.org/pdf/2611.14209v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. During extended wakefulness, mammalian neocortical networks experience localized periods of transient neuronal silence termed off-states.
-
-### Taxonomy-Agnostic Neurosymbolic Grounding of Robot Kinematics
-
-- Recommendation: **Worth scanning**
-- Score: `8`
-- Topics: Model Architecture
-- Authors: Bastien Dussard, Aur{é}lie Clodic, Guillaume Sarthou
-- Published: 2026-11-10 18:11 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13850v1) / [PDF](https://arxiv.org/pdf/2611.13850v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. While symbolic reasoning for task allocation requires grounding a robot's physical capabilities, standard Unified Robot Description Format (URDF) files provide only low-level kinematics without the formal semantic context needed for reasoning.
-
-### Blurring the Block Boundaries: Overlapping Block Denoising for Efficient Diffusion Language Models
-
-- Recommendation: **Worth scanning**
-- Score: `7`
 - Topics: Diffusion Language Models
-- Authors: Amir Mann, Jonathan Fhima, Shaked Brody, Or Avitan, et al.
-- Published: 2026-11-11 01:40 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14387v1) / [PDF](https://arxiv.org/pdf/2611.14387v1)
-- Matched keywords: `diffusion language model`
+- Authors: Gaurav Sarkar, Syed Affan Daimi
+- Published: 2026-11-11 12:48 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15029v1) / [PDF](https://arxiv.org/pdf/2611.15029v1)
+- Matched keywords: `diffusion llm`
 
-Likely relevant to Diffusion Language Models. Diffusion Language Models (DLMs) have emerged as effective alternatives to autoregressive models for latency-critical tasks, enabling faster token generation.
+Likely relevant to Diffusion Language Models. Diffusion large language models (dLLMs) generate by iteratively unmasking tokens with bidirectional attention, but rotary position embeddings (RoPE) still confine them to a fixed pretraining window.
 
-### LM-SimBench: A Unified Framework, Dataset, and Benchmark for Large Language Model Training Simulation
+### Schedule-Calibrated Commitment Order in Blockwise Masked Diffusion Language Models
 
-- Recommendation: **Worth scanning**
-- Score: `7`
-- Topics: Model Architecture
-- Authors: Yu Dong, Hong Li, Qiang Sun, Xu Zhou, et al.
-- Published: 2026-11-11 00:26 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14285v1) / [PDF](https://arxiv.org/pdf/2611.14285v1)
-- Matched keywords: `moe`
+- Recommendation: **Read closely**
+- Score: `11`
+- Topics: Diffusion Language Models
+- Authors: Gaurav Sarkar, Umang Pandey, Pratik Prabhanjan Brahma, Zicheng Liu, et al.
+- Published: 2026-11-11 17:27 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15234v1) / [PDF](https://arxiv.org/pdf/2611.15234v1)
+- Matched keywords: `diffusion language model, masked diffusion`
 
-Likely relevant to Model Architecture. Evaluating candidate parallelization strategies through distributed training runs makes strategy selection prohibitively expensive at scale.
+Likely relevant to Diffusion Language Models. Sequential block schedules can make token commitment in masked diffusion language models appear strongly left-to-right even when within-block order is random or reversed.
 
-### Controlled Knowledge Engineering for Taxonomy Induction with Tool-Grounded LLM Agents and Runtime-Adaptive Policies
-
-- Recommendation: **Worth scanning**
-- Score: `7`
-- Topics: Model Architecture
-- Authors: Jonas Limniatis, Bennet Schaarmann, Georg Reuber, Robert Stahlbock
-- Published: 2026-11-10 20:04 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13966v1) / [PDF](https://arxiv.org/pdf/2611.13966v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Taxonomies are structured knowledge representations that support semantic search, recommendation, product catalog organization, and retrieval-augmented generation.
-
-### LUMIR: Decoupled Multimodal Representation Learning from Heterogeneous Data for Next-POI Recommendation
+### Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose
 
 - Recommendation: **Worth scanning**
 - Score: `6`
 - Topics: Model Architecture
-- Authors: Zehui Wang, Wolfram Höpken, Dietmar Jannach
-- Published: 2026-11-10 20:45 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14004v1) / [PDF](https://arxiv.org/pdf/2611.14004v1)
-- Matched keywords: `architecture`
+- Authors: Ivan Poddiakov, Ivan Kruzhilov, Galina Zubkova, Svetlana Erofeeva, et al.
+- Published: 2026-11-11 19:25 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15348v1) / [PDF](https://arxiv.org/pdf/2611.15348v1)
+- Matched keywords: `architecture, recurrent architecture`
 
-Likely relevant to Model Architecture. As multimodal tourism-related information collected from heterogeneous data sources has become increasingly available, learning effective representations has attracted attention for improving recommendation performance.
+Likely relevant to Model Architecture. Electronic nose (eNose) technology offers a portable, non-invasive route for disease screening via exhaled breath analysis.
 
-### REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding
+### Quantum Recurrent Architectures for Financial Time Series Prediction
+
+- Recommendation: **Worth scanning**
+- Score: `6`
+- Topics: Model Architecture
+- Authors: Danyal Maheshwari, Gerhard Hellstern, Martin Zaefferer, Martin Braun, et al.
+- Published: 2026-11-11 18:30 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15298v1) / [PDF](https://arxiv.org/pdf/2611.15298v1)
+- Matched keywords: `architecture, recurrent architecture`
+
+Likely relevant to Model Architecture. This study evaluates quantum classical hybrid recurrent architectures for financial time-series forecasting: a Quantum Long Short-Term Memory (QLSTM) network and Quantum Reservoir Computing (QRC) with lag-based inputs.
+
+### A Closer Look at Language Model Introspection: Probing Information and Reporting
 
 - Recommendation: **Maybe relevant**
 - Score: `5`
 - Topics: Model Architecture
-- Authors: Yu Tian
-- Published: 2026-11-11 01:45 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14399v1) / [PDF](https://arxiv.org/pdf/2611.14399v1)
+- Authors: Dustin Rubin, Vincenzo Timmel, Xufeng He, Aritra Saha, et al.
+- Published: 2026-11-11 17:55 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15267v1) / [PDF](https://arxiv.org/pdf/2611.15267v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Speculative decoding accelerates LLM inference by having a draft model propose multiple tokens for the target model to verify in one pass.
+Likely relevant to Model Architecture. One way to study language-model introspection is to test whether models can identify where their activations have been perturbed.
 
-### EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities
+### Recompute or Restore? Host-Tier KV for Multi-Model Agent Workflows on a Static-Graph NPU Serving Stack
 
 - Recommendation: **Maybe relevant**
 - Score: `5`
 - Topics: Model Architecture
-- Authors: Zhengxiang Huang, Yujie Sun, Shengheng Chen, Zhaode Wang, et al.
-- Published: 2026-11-11 01:16 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14356v1) / [PDF](https://arxiv.org/pdf/2611.14356v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Rapidly evolving LLM architectures and heterogeneous mobile hardware make supporting new models in on-device inference engines a recurring and costly system challenge.
-
-### MMDM: Measuring Massive Multitask Decision Making
-
-- Recommendation: **Maybe relevant**
-- Score: `5`
-- Topics: Model Architecture
-- Authors: Junhao Shen, Qing Zong, Yue Guo, Zhanqiu Zhang, et al.
-- Published: 2026-11-11 00:40 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14309v1) / [PDF](https://arxiv.org/pdf/2611.14309v1)
+- Authors: Sungwon Woo, Seyeon Kim
+- Published: 2026-11-11 15:12 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15126v1) / [PDF](https://arxiv.org/pdf/2611.15126v1)
 - Matched keywords: `long context`
 
-Likely relevant to Model Architecture. System-1 Decision Models directly make structured probabilistic decisions over query-specified options given a state in a single forward pass, without autoregressively generating reasoning trajectories or textual responses.
+Likely relevant to Model Architecture. Agent workflows issue dependent model calls that share long context prefixes, so serving them efficiently depends on reusing the key-value (KV) cache of those prefixes.
 
-### An AI Assistant for Automating Anti-Corruption Expertise of Draft Legislation Based on the TRACE Framework
-
-- Recommendation: **Maybe relevant**
-- Score: `4`
-- Topics: Model Architecture
-- Authors: Serhii Zabolotnii, Alina Tarasova
-- Published: 2026-11-10 23:56 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14244v1) / [PDF](https://arxiv.org/pdf/2611.14244v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. We present an AI assistant for automating anti-corruption expertise of draft legislation based on the TRACE architecture, designed to screen bills for corruption risks: pinpoint provisions an expert would criticise and name the regulatory defect in each.
-
-### From Attack Surface to Defense Architecture: Compositional Security for Agentic Coding Harnesses
+### Incentive-Responsive Agents: A Principal-Agent Framework, Metric Suite, and Runtime Architecture for Long-Lived Personal AI Agents
 
 - Recommendation: **Maybe relevant**
 - Score: `4`
 - Topics: Model Architecture
-- Authors: Simon Hegelich, Bardh Prenkaj, Habiba Sarhan, Morteza Shahrezaye, et al.
-- Published: 2026-11-10 19:52 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13960v1) / [PDF](https://arxiv.org/pdf/2611.13960v1)
+- Authors: Jipu Su
+- Published: 2026-11-11 22:09 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15515v1) / [PDF](https://arxiv.org/pdf/2611.15515v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. AI coding harnesses couple language models to shells, filesystems, and network sockets, turning the harness into an automated Living-off-the-Land (LotL) platform: once an adversary injects instructions into retrieved content, dual-use binaries such as bash, curl, and find become the payload.
+Likely relevant to Model Architecture. Personal AI agents now persist: they hold accounts, mailboxes, long-term memory, and open-ended task streams, yet the dominant way to improve them remains capability-side: prompt engineering, larger models, longer thinking, and retrieval.
 
-### Darmok: Championship Cryptic Crossword Solving via Constraint Tightening and Resilient Orchestration
+### Where Autonomy Belongs: A Separation of Powers for Agentic Program Evolution
 
 - Recommendation: **Maybe relevant**
 - Score: `4`
 - Topics: Model Architecture
-- Authors: Siddhartha Chatterjee
-- Published: 2026-11-10 12:21 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13557v1) / [PDF](https://arxiv.org/pdf/2611.13557v1)
+- Authors: Zhengyang Ai, Tong Liu, Jingxian Tang, Xiaobing Du, et al.
+- Published: 2026-11-11 18:44 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15309v1) / [PDF](https://arxiv.org/pdf/2611.15309v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. We present Darmok, the first automated system to reach superhuman performance on British cryptic crosswords.
+Likely relevant to Model Architecture. LLM-driven program evolution rests on three decisions: govern directs the search from accumulated evidence, propose constructs the next candidate, and judge settles validity and fitness.
 
-### Quantifying the Sampling Frequency Invariance of Time-Series Foundation Models for Sensor Data Applications
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Sourish Gunesh Dhekane, Abinaya Kumar, Torsten Woertwein, Yan-Bo Lin, et al.
-- Published: 2026-11-11 02:01 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.14425v1) / [PDF](https://arxiv.org/pdf/2611.14425v1)
-- Matched keywords: `moe`
-
-Likely relevant to Model Architecture. Time-Series Foundation Models (TSFMs) are increasingly used in sensor applications, where sampling frequency (SF) varies across sensors, devices, and operating modes (e.g., power saving).
-
-### Understanding Mixture-of-Experts Language Models Beyond Expert Boundaries
+### One Fabrication Is Enough: A Fake News Article Changes the Forecasts of LLM Forecasting Systems
 
 - Recommendation: **Maybe relevant**
-- Score: `3`
+- Score: `4`
 - Topics: Model Architecture
-- Authors: Zhenhong Zhou, Mao Zheng, Mingyang Song, Qiankun Li, et al.
-- Published: 2026-11-10 20:14 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13975v1) / [PDF](https://arxiv.org/pdf/2611.13975v1)
-- Matched keywords: `moe`
-
-Likely relevant to Model Architecture. In Mixture-of-Experts (MoE) models, the nature of expert specialization remains controversial.
-
-### PARDIG: Global Precipitation Estimates Learned from Sparse Satellite Observations
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Guy Shalev, Stephan Rasp, Boris Babenko, Andrew El-Kadi, et al.
-- Published: 2026-11-10 19:28 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13941v1) / [PDF](https://arxiv.org/pdf/2611.13941v1)
+- Authors: Zeyu Zhang, Bradly C. Stadie
+- Published: 2026-11-11 14:29 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15102v1) / [PDF](https://arxiv.org/pdf/2611.15102v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Estimating precipitation at the global scale is vital for Earth system science and disaster response, yet observational coverage and measurement precision remain constrained.
+Likely relevant to Model Architecture. LLMs are increasingly used for forecasting, and the best forecasting systems retrieve news as evidence to strengthen their predictions.
 
-### Satellite Pretraining Is Not One Thing: A Matched-Pair Study of Generic and Earth-Observation Foundation Models for Scene Classification
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Sandarbh Agrawal, Rakshith Sathish, Ashwathi Nambiar
-- Published: 2026-11-10 18:10 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13849v1) / [PDF](https://arxiv.org/pdf/2611.13849v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Geospatial foundation models are pretrained on satellite and aerial imagery, but whether such an encoder beats a strong generic one for few-label land-use/land-cover mapping remains unclear, as prior comparisons rarely isolate the pretraining data.
-
-### Alania-2: Turkish text-to-speech with instant and fine-tuned voice cloning
+### MORA: Correcting Time Series Forecasts with Coarse Future Signals
 
 - Recommendation: **Maybe relevant**
 - Score: `3`
 - Topics: Model Architecture
-- Authors: Sezgin Saygili, Emre Kaplaner, Oncel Ozgul, Fikri San Koktas
-- Published: 2026-11-10 18:04 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.13845v1) / [PDF](https://arxiv.org/pdf/2611.13845v1)
+- Authors: Hu Li, Kenan Li, Haonan Xu, longlong, et al.
+- Published: 2026-11-11 20:36 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15413v1) / [PDF](https://arxiv.org/pdf/2611.15413v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. We present Alania-2, a Turkish text-to-speech (TTS) system with two built-in voices, voice design from text descriptions, and two kinds of voice cloning.
+Likely relevant to Model Architecture. Recent architectural advances have improved time-series forecasting.
+
+### Vision-Grounded Semantic Learning and Alignment for Scalable Multilingual Text-Based Person Retrieval
+
+- Recommendation: **Maybe relevant**
+- Score: `3`
+- Topics: Model Architecture
+- Authors: Xinyu Zhou, Fan Li, Shasha Chen, Min Cao, et al.
+- Published: 2026-11-11 19:07 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15328v1) / [PDF](https://arxiv.org/pdf/2611.15328v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Multilingual Text-Based Person Retrieval (TBPR) aims to retrieve individuals with texts in multiple languages.
+
+### Sharp Covering-Number Bounds for Feedforward ReLU Networks via Parameter Symmetries
+
+- Recommendation: **Maybe relevant**
+- Score: `3`
+- Topics: Model Architecture
+- Authors: Ruizhi Deng, Guohao Shen, Tangrui Xiong
+- Published: 2026-11-11 18:34 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15300v1) / [PDF](https://arxiv.org/pdf/2611.15300v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. In neural networks, distinct parameter configurations often realize the same input--output mapping, indicating that nominal parameter counts can overstate functional complexity.
+
+### Learning Rate Transfer and Feature Learning Across Depth for Constrained Spectral Optimizers: Complete Scion
+
+- Recommendation: **Maybe relevant**
+- Score: `3`
+- Topics: Model Architecture
+- Authors: Eline Pot, Laurent Lefebvre, Mathieu Segond, Antonio Silveti-Falls
+- Published: 2026-11-11 18:26 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15291v1) / [PDF](https://arxiv.org/pdf/2611.15291v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Hyperparameter transfer across model depth is instrumental in training deep models, as it enables learning rates calibrated on shallow networks to be effectively applied to deeper architectures.
+
+### Multi-View 3D Reconstruction Using V-JEPA Features
+
+- Recommendation: **Maybe relevant**
+- Score: `3`
+- Topics: Model Architecture
+- Authors: Anwar Shamim, Jeffrin Sam
+- Published: 2026-11-11 15:33 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.15143v1) / [PDF](https://arxiv.org/pdf/2611.15143v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Predictive video encoders provide dense visual representations, but adapting them to 3D reconstruction requires accurate depth, camera poses, and cross-view geometry.
