@@ -1,161 +1,173 @@
-# Daily arXiv Paper Radar - 2026-11-17
+# Daily arXiv Paper Radar - 2026-11-18
 
-Generated at 2026-11-17 12:58 CST.
+Generated at 2026-11-18 12:03 CST.
 
-Found **13** new paper(s).
+Found **14** new paper(s).
 
-### Large Language Model-based Optimization for Wireless Communication: A Survey
+### The Hidden Cost of MoE Diffusion Decoding: Profiling and Fixing the Sampler
+
+- Recommendation: **Read closely**
+- Score: `15`
+- Topics: Diffusion Language Models, Model Architecture
+- Authors: Harshit Samrat, Ramakrishna Paramahamsa Kompella
+- Published: 2026-11-17 04:16 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.21852v1) / [PDF](https://arxiv.org/pdf/2611.21852v1)
+- Matched keywords: `diffusion language model, masked diffusion, moe`
+
+Likely relevant to Diffusion Language Models, Model Architecture. Masked diffusion language models (dLLMs) decode by iteratively denoising a full canvas of tokens, so every forward pass runs a per-token sampling and stopping pipeline over the entire canvas-by-vocabulary logits tensor.
+
+### ReMaRL: Learning to Unmask and Remask in Frozen Diffusion Language Models
+
+- Recommendation: **Read closely**
+- Score: `11`
+- Topics: Diffusion Language Models
+- Authors: Egor Shibaev, Danila Biktimirov, Ivan Klimov, Artem Makoian, et al.
+- Published: 2026-11-17 19:01 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.22576v1) / [PDF](https://arxiv.org/pdf/2611.22576v1)
+- Matched keywords: `diffusion language model, masked diffusion`
+
+Likely relevant to Diffusion Language Models. Masked diffusion language models generate tokens in parallel, and the order in which tokens are unmasked affects final-answer accuracy.
+
+### RISA: Recoverable Sparse Attention for Block-Diffusion Language Models
+
+- Recommendation: **Read closely**
+- Score: `10`
+- Topics: Diffusion Language Models, Model Architecture
+- Authors: Xinrui Zhong, Fanjiang Ye, Yuke Wang
+- Published: 2026-11-17 12:27 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.22191v1) / [PDF](https://arxiv.org/pdf/2611.22191v1)
+- Matched keywords: `diffusion language model, sparse attention`
+
+Likely relevant to Diffusion Language Models, Model Architecture. Block-wise diffusion language models (DLMs) refine multiple tokens in parallel, offering an alternative to token-by-token autoregressive decoding.
+
+### Latent Lattice Language Models
+
+- Recommendation: **Read closely**
+- Score: `10`
+- Topics: Model Architecture
+- Authors: Shivam Duggal, Zongze Wu, William T. Freeman, Antonio Torralba, et al.
+- Published: 2026-11-17 02:59 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.21608v1) / [PDF](https://arxiv.org/pdf/2611.21608v1)
+- Matched keywords: `architecture, mamba`
+
+Likely relevant to Model Architecture. Language models typically increase per-token computation through deeper or looped layers and latent reasoning steps, while richer residual connections improve information flow across layers.
+
+### Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI
 
 - Recommendation: **Worth scanning**
 - Score: `8`
 - Topics: Model Architecture
-- Authors: Muhammad Sohaib, Taehyung Kim, Hyeri Heo, Jemu Ryu, et al.
-- Published: 2026-11-15 16:34 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.19876v1) / [PDF](https://arxiv.org/pdf/2611.19876v1)
+- Authors: Giovanni Adorni, Daniele Grosso
+- Published: 2026-11-18 01:27 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.23106v1) / [PDF](https://arxiv.org/pdf/2611.23106v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. The growing complexity and dynamism of modern wireless communication frameworks have made real-time optimization essential for efficient resource allocation.
+Likely relevant to Model Architecture. Generative Artificial Intelligence is transforming the role of natural language in computational systems.
 
-### Can AI Judge You? An Empirical Audit of Deployment Readiness in LLM-assisted Hiring Systems
-
-- Recommendation: **Worth scanning**
-- Score: `6`
-- Topics: Model Architecture
-- Authors: Spandan Roy, Subhabrata Majumdar, Soudeep Deb
-- Published: 2026-11-16 01:16 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.20140v1) / [PDF](https://arxiv.org/pdf/2611.20140v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Delegating resume screening to large language models (LLMs) requires organizations to establish whether they can distinguish candidates by relevant qualifications while allowing only authorized users to change screening rules or approve exceptions.
-
-### CECAR: Cache & Expert Co-Aware Routing Accelerates On-Device Inference of MoE LLMs
+### MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study
 
 - Recommendation: **Worth scanning**
-- Score: `6`
+- Score: `7`
 - Topics: Model Architecture
-- Authors: Byeongju Kim, Hoonki Lee, Byungjun Kim, Inyul Ra, et al.
-- Published: 2026-11-16 00:47 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.20119v1) / [PDF](https://arxiv.org/pdf/2611.20119v1)
+- Authors: Nikit Srivastava, Joel Dag, René Speck, Axel-Cyrille Ngonga Ngomo
+- Published: 2026-11-18 02:11 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.23158v1) / [PDF](https://arxiv.org/pdf/2611.23158v1)
 - Matched keywords: `moe`
 
-Likely relevant to Model Architecture. Despite growing interest in on-device LLM deployment, large-scale Mixture-of-Experts (MoE) models remain impractical on resource-constrained devices, as sparse expert activation still requires all expert weights to be memory-resident.
+Likely relevant to Model Architecture. Routed low-rank adapters offer a parameter-efficient means to improve the performance of large language models (LLMs) across tasks.
 
-### The novelty exposed: ablation, reproducibility and transparency in 40 technical reports of open-weight large language models (LLMs)
+### Towards Data-Efficient, Real-Time World Models
+
+- Recommendation: **Worth scanning**
+- Score: `6`
+- Topics: Diffusion Language Models
+- Authors: Raluca Stevenson, David Bignell, Jennifer C. White, Tabish Rashid, et al.
+- Published: 2026-11-17 17:52 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.22497v1) / [PDF](https://arxiv.org/pdf/2611.22497v1)
+- Matched keywords: `discrete diffusion`
+
+Likely relevant to Diffusion Language Models. State-of-the-art world models have been used to produce sequences of gameplay that accord with provided user-input actions.
+
+### VRLLM: Turning LLMs into Powerful Tabular Classifiers
 
 - Recommendation: **Worth scanning**
 - Score: `6`
 - Topics: Model Architecture
-- Authors: Bahaeddin Türkoğlu
-- Published: 2026-11-15 21:23 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.20003v1) / [PDF](https://arxiv.org/pdf/2611.20003v1)
+- Authors: Yingtong Dou, Shubham Jain, Junpeng Wang, Hadi Abdullah, et al.
+- Published: 2026-11-17 15:06 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.22308v1) / [PDF](https://arxiv.org/pdf/2611.22308v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. In 2025 alone, 48 new large language model (LLM) architectures were added to the Hugging Face transformers library, and many of them arrive with a technical report that presents the model as new.
+Likely relevant to Model Architecture. Large Language Models (LLMs) have shown strong performance on text, but whether pretrained LLMs are effective for large-scale tabular classification remains unclear, as many previous works demonstrate that LLMs' tabular data classification performance falls behind tree-based models or neural architectures designed f...
 
-### Multi-Branch Transformer
+### Weight-Space Programming Doesn't Need Transformers
 
 - Recommendation: **Worth scanning**
 - Score: `6`
 - Topics: Model Architecture
-- Authors: Gaotang Li, Lingjie Chen, Chunyuan Deng, Zhiwei Xu, et al.
-- Published: 2026-11-15 13:20 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.19800v1) / [PDF](https://arxiv.org/pdf/2611.19800v1)
-- Matched keywords: `long context`
+- Authors: Hyunjong Ok, Jaeho Lee
+- Published: 2026-11-17 09:33 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.22055v1) / [PDF](https://arxiv.org/pdf/2611.22055v1)
+- Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Transformer language models are commonly scaled by making their blocks wider or stacking them deeper.
+Likely relevant to Model Architecture. Standard neural architectures such as the Transformer were chosen because they train well with gradient descent and run fast on GPUs.
 
-### High-Throughput Serving of Nemotron 3.5 Transcribe with Regime-Aware Megakernels and Kernel Fusion
+### Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving
+
+- Recommendation: **Maybe relevant**
+- Score: `5`
+- Topics: Diffusion Language Models
+- Authors: John Gideon, Anshul Gupta, Megan Applegate-Kenton, Kayli Battel, et al.
+- Published: 2026-11-18 02:50 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.23211v1) / [PDF](https://arxiv.org/pdf/2611.23211v1)
+- Matched keywords: `masked diffusion`
+
+Likely relevant to Diffusion Language Models. Human cognitive state (e.g., distraction, stress), gaze, and behavior interact with the driving environment in subtle ways that AI could use to assist drivers, but ground-truth labels for human cognitive state levels are costly to obtain at scale.
+
+### DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding
 
 - Recommendation: **Maybe relevant**
 - Score: `5`
 - Topics: Model Architecture
-- Authors: Aditya Chatterjee, Sanjay Singh Chauhan, Mayank Jain, Arushi Dhingra, et al.
-- Published: 2026-11-16 00:14 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.20095v1) / [PDF](https://arxiv.org/pdf/2611.20095v1)
+- Authors: Jameson Sandler, Shane Bergsma, Mostafa Elhoushi, Bin Claire Zhang, et al.
+- Published: 2026-11-17 05:41 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.21925v1) / [PDF](https://arxiv.org/pdf/2611.21925v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model.
+
+### Contract-Explicit Evaluation: From Auditing Learned Readers to Scoped Certificates
+
+- Recommendation: **Maybe relevant**
+- Score: `4`
+- Topics: Model Architecture
+- Authors: Hao Lu, Weixing Zhu, Ruiyang Li
+- Published: 2026-11-17 20:22 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.22665v1) / [PDF](https://arxiv.org/pdf/2611.22665v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Evaluation readings of document-level relation extraction (DocRE) systems depend jointly on the model and the evaluation contract: gold version, scoring function, threshold.
+
+### LeViT-UNet++: Towards Balanced Fine-Grained Details and Context for Efficient Medical Image Segmentation
+
+- Recommendation: **Maybe relevant**
+- Score: `3`
+- Topics: Model Architecture
+- Authors: Guoping Xu, Jinling Zhu, Liuyue Li
+- Published: 2026-11-17 17:39 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.22482v1) / [PDF](https://arxiv.org/pdf/2611.22482v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Efficient medical image segmentation is essential for clinical applications requiring fast and accurate delineation, such as surgical navigation, radiation therapy, and real-time image-guided intervention.
+
+### What MoE Routing Controls: Causal Interventions on Expert Trajectories
+
+- Recommendation: **Maybe relevant**
+- Score: `3`
+- Topics: Model Architecture
+- Authors: Mukund Athmaram, Manoj Rao, Liang Ma
+- Published: 2026-11-17 11:02 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.22120v1) / [PDF](https://arxiv.org/pdf/2611.22120v1)
 - Matched keywords: `moe`
 
-Likely relevant to Model Architecture. Nemotron 3.5 Transcribe ranks first among open-weight models on the Hugging Face Open ASR leaderboards.
-
-### Towards Agentic Scientific Discovery in Distributed Systems
-
-- Recommendation: **Maybe relevant**
-- Score: `4`
-- Topics: Model Architecture
-- Authors: Rashmita Soni, Abhirup Ghosh, Soumya Banerjee
-- Published: 2026-11-15 22:23 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.20031v1) / [PDF](https://arxiv.org/pdf/2611.20031v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. We investigate when adaptive tool selection helps identify a shared equation across clients with different input coverage.
-
-### Autonomous Multi-modal Agents for ITOps Observability
-
-- Recommendation: **Maybe relevant**
-- Score: `4`
-- Topics: Model Architecture
-- Authors: Gunjan Siddharth, Sanjana Garai, Utsav Shekhar, Prakhar Jain, et al.
-- Published: 2026-11-15 20:45 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.19982v1) / [PDF](https://arxiv.org/pdf/2611.19982v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. ITOps observability products must integrate data from different tools and systems.
-
-### FinVision: Multimodal AI for Visualizing Financial Narratives
-
-- Recommendation: **Maybe relevant**
-- Score: `4`
-- Topics: Model Architecture
-- Authors: Yixuan Tang, Hui Wang, Yi Yang, Allen H. Huang
-- Published: 2026-11-15 19:56 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.19956v1) / [PDF](https://arxiv.org/pdf/2611.19956v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Financial narratives contain rich information about firms' performance and business conditions.
-
-### acuSimNet: Multi-View Self-Occlusion-Awared Visibility Learning for Cranio-Cervical Acupuncture Points
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Jiatao Ma, Qilei Sun
-- Published: 2026-11-15 22:14 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.20025v1) / [PDF](https://arxiv.org/pdf/2611.20025v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. The localization of acupuncture points (acupoints) in Traditional Chinese Medicine (TCM) presents unique challenges since they are defined by abstract principles rather than distinct anatomical landmarks.
-
-### AgenticJevNav: Agentic Object Search and Navigation via Event-Driven Verification
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Shuning Zhang, Shuli Zhang, Yunheng Wang, Wei Lu, et al.
-- Published: 2026-11-15 17:56 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.19912v1) / [PDF](https://arxiv.org/pdf/2611.19912v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Agentic navigation must maintain goals and adapt actions from incomplete evidence despite execution failures and delayed inference.
-
-### A phase diagram for training and inference in language models
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Zhuo-Yang Song, Zeyu Li, Qing-Hong Cao, Ming-xing Luo, et al.
-- Published: 2026-11-15 15:18 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.19848v1) / [PDF](https://arxiv.org/pdf/2611.19848v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. A language model is a complex system whose behavior is determined jointly by the Transformer and the corpus, yet how the representation geometry in the Transformer relates to the actual behavior of language models remains open.
-
-### ProTTS: End-to-End Prominence-aware Natural and Controllable Text-to-Speech via Automatic Word Stress Discovery
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Sai Harshitha Aluru, Chiranjeevi Yarra
-- Published: 2026-11-15 14:29 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.19832v1) / [PDF](https://arxiv.org/pdf/2611.19832v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Natural speech conveys meaning not only through words, but also through the prominence on a few words.
+Likely relevant to Model Architecture. In mixture-of-experts (MoE) language models, a token is routed to a sequence of experts across layers.
