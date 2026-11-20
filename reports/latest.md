@@ -1,185 +1,245 @@
-# Daily arXiv Paper Radar - 2026-11-19
+# Daily arXiv Paper Radar - 2026-11-20
 
-Generated at 2026-11-19 12:00 CST.
+Generated at 2026-11-20 11:53 CST.
 
-Found **15** new paper(s).
+Found **20** new paper(s).
 
-### QDA: Closed-Loop LLM Quantization Design with Agents
+### TRAC: Efficient Diffusion Language Models for Machine Translation via Length-Aware Decoding
 
 - Recommendation: **Read closely**
-- Score: `12`
+- Score: `10`
+- Topics: Diffusion Language Models
+- Authors: Tianyuan Li, Xihan Yang, Chenglong Wang, Yuzhang Wu, et al.
+- Published: 2026-11-19 15:28 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25643v1) / [PDF](https://arxiv.org/pdf/2611.25643v1)
+- Matched keywords: `diffusion language model`
+
+Likely relevant to Diffusion Language Models. Machine translation with large language models requires both high translation quality and low generation latency.
+
+### On-Policy Morphing into Hybrid Attention Models
+
+- Recommendation: **Read closely**
+- Score: `10`
 - Topics: Model Architecture
-- Authors: Xingyang Li, Tianlang Zhao, Song Han, Ligeng Zhu
-- Published: 2026-11-18 03:00 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.23388v1) / [PDF](https://arxiv.org/pdf/2611.23388v1)
-- Matched keywords: `architecture, moe`
+- Authors: Disen Lan, Xuanda Wang, Jianbin Zheng, Huafeng Kuang, et al.
+- Published: 2026-11-19 01:45 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.24809v1) / [PDF](https://arxiv.org/pdf/2611.24809v1)
+- Matched keywords: `architecture, hybrid architecture, linear attention`
 
-Likely relevant to Model Architecture. Post-training quantization is the standard way to serve large language models at low cost.
+Likely relevant to Model Architecture. Hybrid attention models combine full and linear attention to achieve a better quality--efficiency trade-off.
 
-### ViLFlow: Parallel Vision-Language Generation with Continuous Latent Flows
+### FrontierReplay: Split-Free Exact Prefix Caching for Hybrid Language Models
 
 - Recommendation: **Worth scanning**
 - Score: `9`
-- Topics: Diffusion Language Models
-- Authors: Kevin Zhai, Bian Sun, Zhenyi Wang, Song Wang
-- Published: 2026-11-18 19:19 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.24240v1) / [PDF](https://arxiv.org/pdf/2611.24240v1)
-- Matched keywords: `discrete diffusion, masked diffusion`
+- Topics: Model Architecture
+- Authors: Zekun Wang, Yizhuo Wang
+- Published: 2026-11-19 20:34 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.26020v1) / [PDF](https://arxiv.org/pdf/2611.26020v1)
+- Matched keywords: `architecture, hybrid architecture, long context`
 
-Likely relevant to Diffusion Language Models. Vision-language generation has predominantly relied on autoregressive and discrete diffusion models.
+Likely relevant to Model Architecture. Hybrid language models combine self-attention with recurrent layers whose in-place state updates restrict prefix reuse to exact saved positions.
 
-### StitchRAG: Constructing Compact and Evidence-Preserving Contexts for RAG with Diffusion-Based Stitching
+### Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding
 
 - Recommendation: **Worth scanning**
 - Score: `9`
-- Topics: Diffusion Language Models
-- Authors: Minsang Kim, Junpyo Lim, Heeje Cho, Seungjun Baek
-- Published: 2026-11-17 21:33 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.22766v1) / [PDF](https://arxiv.org/pdf/2611.22766v1)
-- Matched keywords: `text diffusion`
-
-Likely relevant to Diffusion Language Models. Retrieval-augmented generation (RAG) improves factuality by grounding large language models (LLMs) in external evidence.
-
-### A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning
-
-- Recommendation: **Worth scanning**
-- Score: `8`
 - Topics: Model Architecture
-- Authors: Andrei Kostin, José Ángel Diaz-Garcia, Karel Gutiérrez-Batista
-- Published: 2026-11-18 16:39 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.24049v1) / [PDF](https://arxiv.org/pdf/2611.24049v1)
+- Authors: Youssef ElNahas, Adel Ammar, Soumaya Chaffar, Wadii Boulila
+- Published: 2026-11-19 18:49 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25898v1) / [PDF](https://arxiv.org/pdf/2611.25898v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. The growth of deceptive online opinions poses a critical risk of misinformation and fraud.
+Likely relevant to Model Architecture. Clinical large language models are usually judged by whether the final answer is right.
 
-### MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study
+### Closing Performance Gap for Diffusion Language Models under Low Inference Budgets
+
+- Recommendation: **Worth scanning**
+- Score: `9`
+- Topics: Diffusion Language Models
+- Authors: Hao Wu, Sipeng Chen, Jingwen Fu, Yuwang Wang
+- Published: 2026-11-19 17:03 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25763v1) / [PDF](https://arxiv.org/pdf/2611.25763v1)
+- Matched keywords: `diffusion language model`
+
+Likely relevant to Diffusion Language Models. Diffusion language models offer an architectural route to low-budget generation by updating multiple tokens in parallel, which can reduce the number of sequential decoding steps relative to token-by-token autoregressive decoding.
+
+### Towards Autoregressive Neural Network Parameter Generation
+
+- Recommendation: **Worth scanning**
+- Score: `9`
+- Topics: Model Architecture
+- Authors: Bedionita Soro, Bruno Andreis, Song Chong, Sung Ju Hwang
+- Published: 2026-11-19 13:39 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25538v1) / [PDF](https://arxiv.org/pdf/2611.25538v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Large Language Models (LLMs) have recently established a new paradigm in machine learning, demonstrating exceptional zero-shot generalization and complex reasoning capabilities.
+
+### DTS: Delta-Based Tile Scoring for Efficient Long-Context Sparse Attention
 
 - Recommendation: **Worth scanning**
 - Score: `7`
 - Topics: Model Architecture
-- Authors: Nikit Srivastava, Joel Dag, René Speck, Axel-Cyrille Ngonga Ngomo
-- Published: 2026-11-18 02:11 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.23158v2) / [PDF](https://arxiv.org/pdf/2611.23158v2)
-- Matched keywords: `moe`
+- Authors: Emre Uğur, Jiawen Qi, Qinyu Chen
+- Published: 2026-11-19 19:23 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25938v1) / [PDF](https://arxiv.org/pdf/2611.25938v1)
+- Matched keywords: `sparse attention`
 
-Likely relevant to Model Architecture. Routed low-rank adapters offer a parameter-efficient means to improve the performance of large language models (LLMs) across tasks.
+Likely relevant to Model Architecture. Large language models (LLMs) increasingly need to process long documents and codebases, making long-context attention a major prefill bottleneck.
 
-### Element-Wise Femoral Stress Prediction: A Hybrid Graph Neural Network Surrogate for Finite Element Analysis
+### One Schedule Does Not Fit All: Adaptive Inference Schedules for Diffusion Language Models
+
+- Recommendation: **Worth scanning**
+- Score: `7`
+- Topics: Diffusion Language Models
+- Authors: Rabimba Karanjai, Linsey Pang, Hemanth Hegadehalli Madhavarao, Richard Williamson, et al.
+- Published: 2026-11-19 18:47 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25895v1) / [PDF](https://arxiv.org/pdf/2611.25895v1)
+- Matched keywords: `diffusion language model`
+
+Likely relevant to Diffusion Language Models. Diffusion language models typically use a fixed denoising schedule across workloads.
+
+### Efficient and Robust Drafting with Multi-Token Prediction
+
+- Recommendation: **Worth scanning**
+- Score: `7`
+- Topics: Model Architecture
+- Authors: Filippo Galgani, Ziwei Ji, Omri Homburger, Ganesh Jawahar, et al.
+- Published: 2026-11-19 17:33 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25813v1) / [PDF](https://arxiv.org/pdf/2611.25813v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Speculative decoding has emerged as a critical technique for accelerating Large Language Model (LLM) inference by decoupling generation into a drafting phase and a parallel verification phase.
+
+### STARK: Moving towards Personalized Agents That Truly Learn and Remember
+
+- Recommendation: **Worth scanning**
+- Score: `7`
+- Topics: Model Architecture
+- Authors: Aryan Jain, Abhishek Jha, Anish Nediyanchath, Promod Yenigalla
+- Published: 2026-11-19 16:19 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25705v1) / [PDF](https://arxiv.org/pdf/2611.25705v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Long-term memory is essential for personalized agentic systems that interact with users over long time periods, yet current architectures only capture what happened while leaving the reasoning of why it happened to be derived later by underlying LLMs.%, and silo knowledge within individual users.
+
+### Validation-driven Deployment of LLM Inference Platforms for Agentic Workloads
 
 - Recommendation: **Worth scanning**
 - Score: `6`
 - Topics: Model Architecture
-- Authors: Sikha O K, Abdollah Moslemi, Elham Alizadeh, Ludovic Humbert, et al.
-- Published: 2026-11-18 19:52 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.24274v1) / [PDF](https://arxiv.org/pdf/2611.24274v1)
-- Matched keywords: `architecture, hybrid architecture`
+- Authors: Shai Gretz, Alon Halfon, Yoav Katz, Lena Dankin, et al.
+- Published: 2026-11-19 18:54 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25905v1) / [PDF](https://arxiv.org/pdf/2611.25905v1)
+- Matched keywords: `moe`
 
-Likely relevant to Model Architecture. Hip fractures represent a significant clinical challenge because they cause excess disability and mortality, and have a growing incidence in aging populations, as bone fragility increases.
+Likely relevant to Model Architecture. Enterprises are moving agentic workloads from closed APIs to their own open-weight model deployments.
 
-### Beyond Replacement: Levenshtein Editing for Diffusion Language Models
+### RouteVerify: Routing Interventions for Step-Level Verification in Mixture-of-Experts Models
+
+- Recommendation: **Worth scanning**
+- Score: `6`
+- Topics: Model Architecture
+- Authors: Yucheng Du, Ryan A. Rossi, Xiyang Hu
+- Published: 2026-11-19 17:11 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25780v1) / [PDF](https://arxiv.org/pdf/2611.25780v1)
+- Matched keywords: `moe`
+
+Likely relevant to Model Architecture. Routing states in mixture-of-experts (MoE) models can distinguish correct from erroneous reasoning steps.
+
+### Clover-35B-A3B-Preview Technical Report
 
 - Recommendation: **Worth scanning**
 - Score: `6`
 - Topics: Diffusion Language Models
-- Authors: Shuaidi Wang, Zhuocheng Gong, Xuejie Liu, Jianguo Li, et al.
-- Published: 2026-11-18 11:05 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.23750v1) / [PDF](https://arxiv.org/pdf/2611.23750v1)
+- Authors: DiffuSpace Technical Team
+- Published: 2026-11-18 23:46 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.24636v1) / [PDF](https://arxiv.org/pdf/2611.24636v1)
 - Matched keywords: `diffusion language model`
 
-Likely relevant to Diffusion Language Models. Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling.
+Likely relevant to Diffusion Language Models. We introduce Clover-35B-A3B-Preview (Clover), a mixture-of-experts diffusion language model with 35 billion total parameters and 3 billion activated parameters, supporting thinking-mode generation.
 
-### GRAFT: Execution-Guided Genetic Recombination for Agent Design
-
-- Recommendation: **Worth scanning**
-- Score: `6`
-- Topics: Model Architecture
-- Authors: Sevda Ebrahimi, Mohammed Saidul Islam, Xiaodan Zhu, Elham Dolatabadi
-- Published: 2026-11-18 05:01 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.23509v1) / [PDF](https://arxiv.org/pdf/2611.23509v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Automated agent design searches for executable architectures that improve LLM-based agent performance, with evolutionary methods using language-model crossover to recombine promising mechanisms for task decomposition, model coordination, and verification.
-
-### Embodied Graph: A Relational World Model for Long-Horizon Tasks
+### An LLM-Driven Traffic-Control xApp for Dynamic 5G RAN Intents
 
 - Recommendation: **Maybe relevant**
 - Score: `5`
 - Topics: Model Architecture
-- Authors: Zongyuan Wu, Xin Wang, Tongtong Feng, Yuan Meng, et al.
-- Published: 2026-11-18 17:30 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.24115v1) / [PDF](https://arxiv.org/pdf/2611.24115v1)
-- Matched keywords: `state space model`
+- Authors: Valerio Triolo, Luca Valcarenghi, Emilio Paolini
+- Published: 2026-11-19 16:47 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25736v1) / [PDF](https://arxiv.org/pdf/2611.25736v1)
+- Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Long-horizon tasks in embodied and web environments involve extended decision sequences and delayed feedback, making accurate planning crucial for success.
+Likely relevant to Model Architecture. Programmable Radio Access Networks (RANs) enable runtime deployment of traffic-control functions, but selecting the appropriate configuration remains challenging as network conditions and service requirements change over time.
 
-### OCTR2A: Real-Time RGB-to-BEV Trajectory Projection and Forecasting at Urban Intersections
+### MambaLIFT: Reference-Based Mechanism-Aware Attribution for VMamba
+
+- Recommendation: **Maybe relevant**
+- Score: `5`
+- Topics: Model Architecture
+- Authors: Jintu Kakati, Niladri B. Puhan
+- Published: 2026-11-19 15:28 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25644v1) / [PDF](https://arxiv.org/pdf/2611.25644v1)
+- Matched keywords: `mamba`
+
+Likely relevant to Model Architecture. Attributing predictions of visual state-space models remains challenging because input-dependent selective dynamics couple feature selection, recurrent state propagation, and shared computational pathways.
+
+### ADAPT: Adaptive Decision and Abstention with Pool-Size-Aware Thresholds for Service Routing
 
 - Recommendation: **Maybe relevant**
 - Score: `4`
 - Topics: Model Architecture
-- Authors: Emanuele Iacobelli, Simone Teglia, Francesco Pro, Claudia Melis Tonti, et al.
-- Published: 2026-11-18 20:47 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.24352v1) / [PDF](https://arxiv.org/pdf/2611.24352v1)
+- Authors: Manile Srun, Muntasir Adnan, Arslan Shaukat, Carlos C. N. Kuhn
+- Published: 2026-11-19 16:58 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25754v1) / [PDF](https://arxiv.org/pdf/2611.25754v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. Trajectory forecasting at urban intersections is often studied assuming that reliable bird's-eye-view (BEV) motion histories are available, which in practice requires costly resources such as LiDAR, aerial views, HD maps, or calibrated infrastructure.
+Likely relevant to Model Architecture. Retrieval-based classifiers efficiently route queries to specialised services, but they typically select a candidate even when no suitable service exists.
 
-### MoE-Context: Show the Model Only What It Needs
+### Can LLMs Resolve Entity Conflicts in Domain Specific NLU Pipelines?
 
 - Recommendation: **Maybe relevant**
-- Score: `3`
+- Score: `4`
 - Topics: Model Architecture
-- Authors: Vedant Navale
-- Published: 2026-11-18 21:08 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.24379v1) / [PDF](https://arxiv.org/pdf/2611.24379v1)
+- Authors: Akansha Bhardwaj, Mingbo Cui, Victor Guimaraes, Dominik Kohler, et al.
+- Published: 2026-11-19 16:45 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25733v1) / [PDF](https://arxiv.org/pdf/2611.25733v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Resolving entity conflicts is a critical step in Pipeline-based NLU architectures, especially when multiple extractors provide overlapping or conflicting outputs.
+
+### VR-SparseQuant: Accurate FP4 Quantization with 2:4 Sparsity on Vera Rubin
+
+- Recommendation: **Maybe relevant**
+- Score: `4`
+- Topics: Model Architecture
+- Authors: Samir Khaki, Wei-Chen Wang, Song Han, Ryan Hanrui Wang
+- Published: 2026-11-19 16:29 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25717v1) / [PDF](https://arxiv.org/pdf/2611.25717v1)
 - Matched keywords: `moe`
 
-Likely relevant to Model Architecture. AI agents read their whole history at every step.
+Likely relevant to Model Architecture. In recent years, GPUs have incorporated increasingly specialized support for low-precision computation, from Hopper's FP8 to Blackwell's FP4 Tensor Cores.
 
-### Rethinking Contrastive Targets in Radiology Language-Image Pretraining
+### The Elephant in the Question: Unified Models Picture the Concepts Behind Their Answers
+
+- Recommendation: **Maybe relevant**
+- Score: `4`
+- Topics: Model Architecture
+- Authors: Tobias Braun, Marcus Rohrbach, Lorenzo Cavallaro
+- Published: 2026-11-19 01:38 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.24793v1) / [PDF](https://arxiv.org/pdf/2611.24793v1)
+- Matched keywords: `architecture`
+
+Likely relevant to Model Architecture. Visualizing intermediate representations could help us inspect the reasoning steps underlying a model output.
+
+### PSTO: A PDE-structured transport operator with shared implicit updates for multiscale CDR systems
 
 - Recommendation: **Maybe relevant**
 - Score: `3`
 - Topics: Model Architecture
-- Authors: Yunhe Gao, Ashwin Kumar, Jiaming Liu, Chong Wang, et al.
-- Published: 2026-11-18 16:08 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.24016v1) / [PDF](https://arxiv.org/pdf/2611.24016v1)
+- Authors: Kaiwen Li, Dezhi Zhou, Kun Wu, Xingcai Lu
+- Published: 2026-11-19 14:54 CST
+- Links: [arXiv](http://arxiv.org/abs/2611.25607v1) / [PDF](https://arxiv.org/pdf/2611.25607v1)
 - Matched keywords: `architecture`
 
-Likely relevant to Model Architecture. CLIP-style contrastive image-text pretraining is widely used in radiology data, where each image is paired with one report and every other report in the batch is treated as a negative.
-
-### OMNIS+: Semantic RAN Slicing and Quantization for Dynamic Split Neural Networks
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Langtian Qin, Avishkar Dnyaneshwar Kawadgave, Ian Andrew Harshbarger, Leïla Nasraoui, et al.
-- Published: 2026-11-18 15:16 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.23977v1) / [PDF](https://arxiv.org/pdf/2611.23977v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Edge computing enables resource-constrained devices to execute machine learning (ML) applications via task offloading, with radio access network (RAN) slicing playing a crucial role in provisioning joint communication and computing resources.
-
-### Angular Conditional Distillation: Overcoming Classifier Geometry Mismatch
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Xuefei Zhang, Ruoqi Wang, Lei Cui
-- Published: 2026-11-18 14:28 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.23941v1) / [PDF](https://arxiv.org/pdf/2611.23941v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Classifier outputs provide a fundamental and univer- sally available knowledge interface for knowledge distil- lation (KD).
-
-### TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning
-
-- Recommendation: **Maybe relevant**
-- Score: `3`
-- Topics: Model Architecture
-- Authors: Pau Mateo-Bernadó, Saivenkata Nagavyjayanthi Polapragada, David Bonet, Pol Arbiol Rakuljic, et al.
-- Published: 2026-11-18 11:35 CST
-- Links: [arXiv](http://arxiv.org/abs/2611.23779v1) / [PDF](https://arxiv.org/pdf/2611.23779v1)
-- Matched keywords: `architecture`
-
-Likely relevant to Model Architecture. Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance.
+Likely relevant to Model Architecture. Multiscale convection-diffusion-reaction (CDR) systems couple spatial transport with local stiff reaction kinetics, making their numerical simulation computationally demanding.
